@@ -1,13 +1,16 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
+.build-*/
+bin/
+Debug/
+linklib/
+Win32/
+Doc/
+CMakeFiles/
+*.log
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+*.vcxproj
+*.vcxproj.filters
+*.opensdf
+*.sdf
+*.sln
+*.v12.suo
+*.cmake

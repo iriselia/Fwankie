@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="52" tilewidth="40" tileheight="40">
+ <tileset firstgid="1" name="Ground" tilewidth="40" tileheight="40">
+  <image source="./Ground.png"/>
+ </tileset>
+ <tileset firstgid="73" name="Trees" tilewidth="40" tileheight="40">
+  <image source="./Trees.png"/>
+  <tile id="11">
+   <properties>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+    <property name="Passable" value="false"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="103" name="Walls" tilewidth="40" tileheight="40">
+  <image source="./Walls.png"/>
+ </tileset>
+ <layer name="Ground" width="40" height="52">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC91Zx04DQQydUxLlgDhQQm8SoUgQuhC9/P834Ug7wnKe7fHupsDhacPsjOftc5nCMKU0VNAh9NhT66eNWyJ8E9YrDNj7LrOp9dPs5r/Xqr5rYAzinNu8cQ+EPuFe9Pc4lfSTHDzOEqVaSY28eSxNLFvSn6hPJHbkPJrPLa34O+RPqz0KjavUQXun+TPiZyvWUdxb/ve+j+etF3uWbd4m31vaWd9b159IK2uertDB4+/5U+qq6ddxdMvz9Css15gDaVOia9YK5YKMfbQePFT6eHEuv8HLEy32PR2lNiU5iHQqsa3FzgrhsiFWC3XSYNkeEXYJezWxTzh2dPLittS+Zwvl+okY3zQ35G9u38sBpI8cH80NZJv/5vZ5Dlj1mPPI4+vmhqeh5h8tp6TGeXzd3PA05N/P9UJ5vZom60weH9EpAmmf67pB2KywRbgAnEdKe0k9svJOyz+u6wHhsMIR4ZXwLp5v1TMCGU/WnknLv3H7KeGswnnCdXJfaddqGeKH4k/mh4z7bWB/B/jEq39SC4sf2v/y+LPWbm887y9rYCk/r76iObw9BKrv2lqh8fPWX15fpJ+9fS3n59VAjV/J+svPlty2ph/yLzoTcF9r/LoK8vdH6xfSH8W69LXGr69gvHdHeRrFTprkh3wd5XdvaBsBylUtlyL82sJymuQXqX+Lzm9R8Nf5tXFWq7N/KuWX308b3vz/gV+TM6+1t2uL37jPFeG6BdwA223we0y/+/cmeJoBv1vCZwB3Bj9tvzFqwG88B7+XtNADYyO5V5cfv/ezMJgDv+cUy4kXg59XG9B+bBHyw7tnkzY+UiwnNHwV8Cu5ZyvJsSb7fItfyf3RPNe3kvujea+/Xvy1cRaqe15q8r+lWaCN+8tpwoq/H3xgbPeAIAAA
+  </data>
+ </layer>
+ <layer name="Clutter" width="40" height="52">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BIQEAAAACIHf5f5gjrEADAAAAAAAAAPAZP6E9mIAgAAA=
+  </data>
+ </layer>
+ <layer name="Layer 1" width="40" height="52">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+1YS07EMAzNHYGZ/TBwCRacgwVCHIA7ThZEWNbzr3ZaQHmS1SpJn5/j1El7aa09drt2u5D7LaDPZ7kGnro9A77RznHX7b7bA7uv5Dp1OwON9H5cx1iuBeFUzHUGXCgvUvzcb/v2W8E1YqAc9FkpxjEG9Vdx0Xh5P8+9xs+5+Ngsl9aPeFA+Jd9VXNq7gtq0+ankkvTSsZp/ja+SC43X/HnaZ3NZ8y75r+TiiKyFPbk4qvkWfoD2La2tElpePfvoDE1Il+YH6eRtVee+AXSetDRHziVViOY3My4CFLekdfYcabBinzE3XtD5ss4clb48qF5X0thIneDQvhc4F6rD6JuIw1MnENBYLceSf+/+MWN/12qwd3+L1IktkNZAdP+I1gGet5k1zlpDCHudP7bWTklb9bU1u05ocXE+TXO0j/rZkuPImve8D5V74Uu39wPt1dD3VRBjBpb/pS/nf+nL+V/6cv6P1vdp9Hv17fW/gCM6f/TfmXTur8R/ye8s/Pb3Y+nLYenL4a/re2vHnu8/DH03PnTME4AgAAA=
+  </data>
+ </layer>
+ <layer name="Layer 2" width="40" height="52">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+1YbUoEMQzNCV31v1qPIOI5/LGIpxCvaEGDIfuStNt0ZpU+CDO0mZeXfqRlChE9Vrurdl/tgb5Rfto1rqodql2rd/nNKNdNtVvhJ7/nd36yr9ZiIYuLfTWXzl3HRFpkvockLs5BcshvrRzZB/Vnccl8db+ee49fc2nfUS6vH/EUOp1PK3YWl7dXUJs3Pplcll7p68X3+DK5kL8Xr6V9Nlc07lb8TC6NnrWwJZdGNt/CLwqdnlteWya8eW05R2doQrq8OEinbkM+I2AuyRtp7rmXZKF3fkf8elDoNG9LK/LdClHuM8amFXK8Cvl3jsxYLcheV5ZvT53QYF+LW3KhOiz7rbgtdQIB+aIYSItE6/kx43z3ajBrifShtkytSEekHaG3DnBc/ZyBaA0hsN/s+8e5tdPSlv0kiusEgqXL09zbJ+OcM8c9a75lP2SehU/Vnne0l0DfR0KOI/gM+pc+H0vfGJa+MVy6vvegv1VfoW3+F2j0jp/8d1YI3/sz8V/mdxYufX8sfWNY+sbw1/W9VjvuaG8pWe6HLz8j9TCAIAAA
+  </data>
+ </layer>
+ <layer name="Layer 3" width="40" height="52">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+1YS07EMAzN9WZo98zAHiHOwJIVmlOMuCeRmAjL8rexmwHlSVajxHl++dRJW0opT9Weyw9auT2Xamu1Q7VjtYfCYwnmWgmux2qnamfgC2MWoh5yHYO42hggB+zLjbH54PYlmGu9lXE7bGuQ1gP7R3JJ7RQP3k8YnLYeLqyZ8ufWCveN5OL0Ql8pvsQXyUX5S/Es9dlc2rxz8SO5MDx7YU8ujGi+iV9Q55ZUFwlpXS3naIYmSpcUh9KJ6yifHjQuyKtp9txLouBd3x4/D6hxc1qz50iCNvaMubECzpd254iMZUH0vuJ8PXkCQ/pe4OLDfpZYljwh9bOuMafFen5knO9SDraeb548sQXcHvCeH948gNctM8dpe4jCXvePrbmT0xb9LMWXJ/C4MJ+k2dsG42xZY8+et7wPkWfhS7XXgfYWMIZMfCntV1B+H1CG8TV9IzD19WHq68O967so7VZ9e/0vwPDOH/x3BjVmfd/9l/XNwr2/H1NfH6a+Pvx1fR+7qODxOTh+JEbc7zV8A59aykaAIAAA
+  </data>
+ </layer>
+</map>

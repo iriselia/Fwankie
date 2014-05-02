@@ -1,15 +1,16 @@
 .build-*/
+*.dir/
 bin/
 Debug/
 linklib/
 Win32/
 CMakeFiles/
+CMakeCache.txt
 *.log
 
-*.vcxproj
-*.vcxproj.filters
+*.vcxproj*
 *.opensdf
 *.sdf
+*.suo
 *.sln
-*.v12.suo
 *.cmake

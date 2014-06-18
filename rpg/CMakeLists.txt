@@ -17,6 +17,7 @@ include_directories( ${HGEHELPERS_SOURCE_DIR}/include )
 include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/TmxParser/include )
 include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/libPNG )
 include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/zlib-1.2.5 )
+include_directories( ${MYGUI_SOURCE_DIR}/MyGUIEngine/include )
 include_directories( ${DIRECTX_SDK_DIR}/include )
 include_directories( ${RPG_INCLUDE_DIRS} )
 

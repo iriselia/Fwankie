@@ -40,12 +40,13 @@ add_subdirectory( 3rdParty/libPNG )
 add_subdirectory( 3rdParty/tinyxml )
 add_subdirectory( 3rdParty/base64 )
 add_subdirectory( 3rdParty/TmxParser )
+add_subdirectory( 3rdParty/MyGUI )
 
 #--- HGE core library and helpers ---
 add_subdirectory( hge/helpers )
 add_subdirectory( hge/core )
 
-#--- HGE TOOLS - comment out of not needed ---
+#--- HGE TOOLS - comment out if not needed ---
 #add_subdirectory( hge/tools/fontconv )
 #add_subdirectory( hge/tools/fonted )
 #add_subdirectory( hge/tools/particleed )

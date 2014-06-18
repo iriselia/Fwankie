@@ -2,6 +2,7 @@
 *.dir/
 Debug/
 CMakeFiles/
+lib/
 CMakeCache.txt
 *.log
 
@@ -11,3 +12,5 @@ CMakeCache.txt
 *.suo
 *.sln
 *.cmake
+*.dll
+*.ilk

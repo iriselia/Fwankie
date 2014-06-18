@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1MultiListItem" kind="class" prot="public">
+    <compoundname>MyGUI::MultiListItem</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1MultiListItem_12350474843cf71f34d90deb2530f56e8" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::MultiListItem::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1MultiListItem_10c00e070ad86b4be8d3953ab544d9132" prot="public" static="no">
+        <type>MultiListItem</type>
+        <definition>typedef MultiListItem MyGUI::MultiListItem::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_187772259dbb1bd7f2f6c9cef8b6d65ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::MultiListItem::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_18d98b688b1812a652ad4c8048b10e76d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::MultiListItem::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_11e7da05e166a5ac02c6631b68d67b6bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::MultiListItem::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_184b49b765aac063ec01fc3936d23d98b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::MultiListItem::MultiListItem</definition>
+        <argsstring>()</argsstring>
+        <name>MultiListItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_139d9a0d6e2eed4ff5b6e01091580b7db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MultiListItem::setCaption</definition>
+        <argsstring>(const UString &amp;_value)</argsstring>
+        <name>setCaption</name>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set item caption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_1cd8207c88b21fc4436e1174f57dff78f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+        <definition>virtual const UString&amp; MyGUI::MultiListItem::getCaption</definition>
+        <argsstring>()</argsstring>
+        <name>getCaption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get item caption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_1edd6d259d6c05d1181a25f80eed28046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MultiListItem::setItemResizingPolicy</definition>
+        <argsstring>(ResizingPolicy _value)</argsstring>
+        <name>setItemResizingPolicy</name>
+        <param>
+          <type>ResizingPolicy</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_1785ff8c701902c42f0dbef1475134560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MultiListItem::setItemWidth</definition>
+        <argsstring>(int _value)</argsstring>
+        <name>setItemWidth</name>
+        <param>
+          <type>int</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_17dbf63e0ca6bc0f8c80808ae2368df46" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::MultiListItem::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_18056bd8072fb0db0eb5466346f99769d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MultiListItem::initialiseOverride</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_1e6eda743a03c3859438f9bf2f6666c42" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MultiListItem::shutdownOverride</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_1e5bd78577483751ddd83dca9482e13e8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MultiListItem::setPropertyOverride</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setPropertyOverride</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMyGUI_1_1MultiListItem_11ef1aefc4ac75a73db251975b60ab955" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MultiListBox *</type>
+        <definition>MultiListBox* MyGUI::MultiListItem::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MultiListItem.h" bodystart="33" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1MultiListItem_12350474843cf71f34d90deb2530f56e8" prot="public" virt="non-virtual"><scope>MyGUI::MultiListItem</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_1cd8207c88b21fc4436e1174f57dff78f" prot="public" virt="virtual"><scope>MyGUI::MultiListItem</scope><name>getCaption</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_17dbf63e0ca6bc0f8c80808ae2368df46" prot="public" virt="non-virtual"><scope>MyGUI::MultiListItem</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_11ef1aefc4ac75a73db251975b60ab955" prot="private" virt="non-virtual"><scope>MyGUI::MultiListItem</scope><name>getOwner</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_187772259dbb1bd7f2f6c9cef8b6d65ef" prot="public" virt="virtual"><scope>MyGUI::MultiListItem</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_18056bd8072fb0db0eb5466346f99769d" prot="protected" virt="virtual"><scope>MyGUI::MultiListItem</scope><name>initialiseOverride</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_18d98b688b1812a652ad4c8048b10e76d" prot="public" virt="virtual"><scope>MyGUI::MultiListItem</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_11e7da05e166a5ac02c6631b68d67b6bf" prot="public" virt="non-virtual"><scope>MyGUI::MultiListItem</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_184b49b765aac063ec01fc3936d23d98b" prot="public" virt="non-virtual"><scope>MyGUI::MultiListItem</scope><name>MultiListItem</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_10c00e070ad86b4be8d3953ab544d9132" prot="public" virt="non-virtual"><scope>MyGUI::MultiListItem</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_139d9a0d6e2eed4ff5b6e01091580b7db" prot="public" virt="virtual"><scope>MyGUI::MultiListItem</scope><name>setCaption</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_1edd6d259d6c05d1181a25f80eed28046" prot="public" virt="non-virtual"><scope>MyGUI::MultiListItem</scope><name>setItemResizingPolicy</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_1785ff8c701902c42f0dbef1475134560" prot="public" virt="non-virtual"><scope>MyGUI::MultiListItem</scope><name>setItemWidth</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_1e5bd78577483751ddd83dca9482e13e8" prot="protected" virt="virtual"><scope>MyGUI::MultiListItem</scope><name>setPropertyOverride</name></member>
+      <member refid="classMyGUI_1_1MultiListItem_1e6eda743a03c3859438f9bf2f6666c42" prot="protected" virt="virtual"><scope>MyGUI::MultiListItem</scope><name>shutdownOverride</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

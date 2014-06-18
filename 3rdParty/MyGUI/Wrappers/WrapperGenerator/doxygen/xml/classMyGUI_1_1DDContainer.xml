@@ -1,0 +1,860 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1DDContainer" kind="class" prot="public">
+    <compoundname>MyGUI::DDContainer</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1DDContainer_1b90c6329a22b79b7c7304e5f517e5707" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::DDContainer::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="42" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1DDContainer_149555a740477b62b40f7fbcae99ede3c" prot="public" static="no">
+        <type>DDContainer</type>
+        <definition>typedef DDContainer MyGUI::DDContainer::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="42" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_175c073e7b5978dc6580bf0384e0c5cf3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::DDContainer::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="42" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_12236eb27e37942f3893d7cc41b55699c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::DDContainer::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="42" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1a058bf467273cdb204c8e29a2016761f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::DDContainer::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="42" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1ce83ef5433236a2e11b4577f7860a88d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::DDContainer::DDContainer</definition>
+        <argsstring>()</argsstring>
+        <name>DDContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1d937c3ec64d37c572b812473621736d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::DDContainer::setNeedDragDrop</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setNeedDragDrop</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set drag&apos;n&apos;drop mode flag. Disabled (false) by default. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1fb2052c4db666cb58a5dd9ae08e19b67" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::DDContainer::getNeedDragDrop</definition>
+        <argsstring>() const </argsstring>
+        <name>getNeedDragDrop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get drag&apos;n&apos;drop mode flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1df509951770e0dd244341dca42567cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::DDContainer::resetDrag</definition>
+        <argsstring>()</argsstring>
+        <name>resetDrag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_193a6ef72470071b2bc1ec76cf75d1183" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::DDContainer::_setContainerItemInfo</definition>
+        <argsstring>(size_t _index, bool _set, bool _accept)</argsstring>
+        <name>_setContainerItemInfo</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_set</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_accept</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_119f8a2a8712954476d1be6c8cdf38a0c" prot="public" static="no" mutable="no">
+        <type>EventHandle_DDContainerPtrCDDItemInfoRefBoolRef</type>
+        <definition>EventHandle_DDContainerPtrCDDItemInfoRefBoolRef MyGUI::DDContainer::eventStartDrag</definition>
+        <argsstring></argsstring>
+        <name>eventStartDrag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Request for start drag.<linebreak/>
+ signature : void method(MyGUI::DDContainer* _sender, const MyGUI::DDItemInfo&amp; _info, bool&amp; _result) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information about DDContainers </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>write here true if container can be draggedor false if it can&apos;t </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="64" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_1122979b372eeec1a03cf8b5dd611e9cc" prot="public" static="no" mutable="no">
+        <type>EventHandle_DDContainerPtrCDDItemInfoRefBoolRef</type>
+        <definition>EventHandle_DDContainerPtrCDDItemInfoRefBoolRef MyGUI::DDContainer::eventRequestDrop</definition>
+        <argsstring></argsstring>
+        <name>eventRequestDrop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Request for start drop (moving mouse over container, but not dropped yet).<linebreak/>
+ signature : void method(MyGUI::DDContainer* _sender, const MyGUI::DDItemInfo&amp; _info, bool&amp; _result) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information about DDContainers </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>write here true if container accept dragged widget or false if it isn&apos;t </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="73" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_1dd2e14d7a06997fa4f5b9484ee1454df" prot="public" static="no" mutable="no">
+        <type>EventHandle_DDContainerPtrCDDItemInfoRefBool</type>
+        <definition>EventHandle_DDContainerPtrCDDItemInfoRefBool MyGUI::DDContainer::eventDropResult</definition>
+        <argsstring></argsstring>
+        <name>eventDropResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : End drag (drop).<linebreak/>
+ signature : void method(MyGUI::DDContainer* _sender, const MyGUI::DDItemInfo&amp; _info, bool _result) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>information about DDContainers </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true then drop was successfull </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="82" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_1995380b356e8c769cc059ad908ad6fbb" prot="public" static="no" mutable="no">
+        <type>EventHandle_EventHandle_DDContainerPtrDDItemState</type>
+        <definition>EventHandle_EventHandle_DDContainerPtrDDItemState MyGUI::DDContainer::eventChangeDDState</definition>
+        <argsstring></argsstring>
+        <name>eventChangeDDState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Drag&apos;n&apos;drop state changed.<linebreak/>
+ signature : void method(MyGUI::DDContainer* _sender, MyGUI::DDItemState _state) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new state </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="90" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_16738ab85c025503a8d701f0437a19cf5" prot="public" static="no" mutable="no">
+        <type>EventHandle_EventHandle_DDContainerPtrWidgetPtrRefIntCoordRef</type>
+        <definition>EventHandle_EventHandle_DDContainerPtrWidgetPtrRefIntCoordRef MyGUI::DDContainer::requestDragWidgetInfo</definition>
+        <argsstring></argsstring>
+        <name>requestDragWidgetInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : [not used] Request widget for dragging.<linebreak/>
+ signature : void method(MyGUI::DDContainer* _sender, MyGUI::Widget*&amp; _item, MyGUI::IntCoord&amp; _dimension) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>write widget pointer here </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_dimension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>write widget coordinate here </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="99" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_1f8575a4ed25b4a52676ed0b963465569" prot="public" static="no" mutable="no">
+        <type>delegates::CMultiDelegate1&lt; DDContainer * &gt;</type>
+        <definition>delegates::CMultiDelegate1&lt;DDContainer*&gt; MyGUI::DDContainer::_eventInvalideContainer</definition>
+        <argsstring></argsstring>
+        <name>_eventInvalideContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : [Internal event] невалидна информация для контейнера.<linebreak/>
+ signature : void method(MyGUI::DDContainer* _sender) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="111" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_121a380f75a705aa47f73dfe1bdaa3608" prot="public" static="no" mutable="no">
+        <type>delegates::CMultiDelegate3&lt; DDContainer *, Widget *, const DDWidgetState &amp; &gt;</type>
+        <definition>delegates::CMultiDelegate3&lt;DDContainer*, Widget*, const DDWidgetState&amp;&gt; MyGUI::DDContainer::eventUpdateDropState</definition>
+        <argsstring></argsstring>
+        <name>eventUpdateDropState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : [Internal event] !!обновить виджеты дропа DD_FIXME наверное internal.<linebreak/>
+ signature : void method(MyGUI::DDContainer* _sender, MyGUI::Widget* _item, const MyGUI::DDWidgetState&amp; _state) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="120" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1a5801f07009a2f0a954d8da6a86173e2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::DDContainer::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="42" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1722cca315b774dd26813c197366f8a6c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::DDContainer::onMouseButtonPressed</definition>
+        <argsstring>(int _left, int _top, MouseButton _id)</argsstring>
+        <name>onMouseButtonPressed</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_14c1e2b986fa0d3c10d00840d8363ea7c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::DDContainer::onMouseButtonReleased</definition>
+        <argsstring>(int _left, int _top, MouseButton _id)</argsstring>
+        <name>onMouseButtonReleased</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1973f70e4ac0cdb6c2013885b7d336042" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::DDContainer::onMouseDrag</definition>
+        <argsstring>(int _left, int _top, MouseButton _id)</argsstring>
+        <name>onMouseDrag</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1dfe005b34186f89893d221e810e260d8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::DDContainer::notifyInvalideDrop</definition>
+        <argsstring>(DDContainer *_sender)</argsstring>
+        <name>notifyInvalideDrop</name>
+        <param>
+          <type>DDContainer *</type>
+          <declname>_sender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_10e89da3c29b7f657cf37c2c527b26a62" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::DDContainer::removeDropItems</definition>
+        <argsstring>()</argsstring>
+        <name>removeDropItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_153547c6c9e9be883e047bae2dec2f9ef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::DDContainer::updateDropItems</definition>
+        <argsstring>()</argsstring>
+        <name>updateDropItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_11fb813a0992f3df59885d86280585d8b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::DDContainer::updateDropItemsState</definition>
+        <argsstring>(const DDWidgetState &amp;_state)</argsstring>
+        <name>updateDropItemsState</name>
+        <param>
+          <type>const DDWidgetState &amp;</type>
+          <declname>_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1e58e968e03be38015089019d6ded36e7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::DDContainer::mouseDrag</definition>
+        <argsstring>(MouseButton _id)</argsstring>
+        <name>mouseDrag</name>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1bd5fbbaa3d609be48a792b79c6fc33b0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::DDContainer::mouseButtonReleased</definition>
+        <argsstring>(MouseButton _id)</argsstring>
+        <name>mouseButtonReleased</name>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_18979d54650fb33ab81f7e30c2ebb4e0e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::DDContainer::mouseButtonPressed</definition>
+        <argsstring>(MouseButton _id)</argsstring>
+        <name>mouseButtonPressed</name>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1f84cbcb2f2da144caf181475084801ba" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::DDContainer::endDrop</definition>
+        <argsstring>(bool _reset)</argsstring>
+        <name>endDrop</name>
+        <param>
+          <type>bool</type>
+          <declname>_reset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1DDContainer_1d165abb39e0a3914294547eb409fd034" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::DDContainer::setPropertyOverride</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setPropertyOverride</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_1c16a953aa5e09b0df3becb7da1e8f33d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::DDContainer::mDropResult</definition>
+        <argsstring></argsstring>
+        <name>mDropResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="142" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_1d87ae08337b9187080b417c3cfe6b0cb" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::DDContainer::mNeedDrop</definition>
+        <argsstring></argsstring>
+        <name>mNeedDrop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="143" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_18cb436e32bdcde630170173adcd69487" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::DDContainer::mStartDrop</definition>
+        <argsstring></argsstring>
+        <name>mStartDrop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="144" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_15e75c79dcca12af158919608731e73ee" prot="protected" static="no" mutable="no">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::DDContainer::mOldDrop</definition>
+        <argsstring></argsstring>
+        <name>mOldDrop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="146" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_148fe55d5b6a7553833cb1cf0e441f697" prot="protected" static="no" mutable="no">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::DDContainer::mCurrentSender</definition>
+        <argsstring></argsstring>
+        <name>mCurrentSender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="147" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_107d0eee67e504bb96ef82abf1d264f8f" prot="protected" static="no" mutable="no">
+        <type><ref refid="structMyGUI_1_1DDItemInfo" kindref="compound">DDItemInfo</ref></type>
+        <definition>DDItemInfo MyGUI::DDContainer::mDropInfo</definition>
+        <argsstring></argsstring>
+        <name>mDropInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="149" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_17c5c730daa00ba6eb1b77ae360bf619e" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MyGUI::DDContainer::mDropSenderIndex</definition>
+        <argsstring></argsstring>
+        <name>mDropSenderIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="151" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_1c865800a3af739badb9eb871d475b1a4" prot="protected" static="no" mutable="no">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::DDContainer::mDropItem</definition>
+        <argsstring></argsstring>
+        <name>mDropItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="154" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_1ddf0406fd87272cce88abcd4a2322672" prot="protected" static="no" mutable="no">
+        <type>IntCoord</type>
+        <definition>IntCoord MyGUI::DDContainer::mDropDimension</definition>
+        <argsstring></argsstring>
+        <name>mDropDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="155" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_1b6ec17f6065e22f8a6671e050eb9e287" prot="protected" static="no" mutable="no">
+        <type>IntPoint</type>
+        <definition>IntPoint MyGUI::DDContainer::mClickInWidget</definition>
+        <argsstring></argsstring>
+        <name>mClickInWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="157" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_14f1cd204f92cf13ca1412893b7320cf8" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::DDContainer::mNeedDragDrop</definition>
+        <argsstring></argsstring>
+        <name>mNeedDragDrop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="160" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1DDContainer_169c42d6c99fc2284bf677b64599118e8" prot="protected" static="no" mutable="no">
+        <type>DDContainer *</type>
+        <definition>DDContainer* MyGUI::DDContainer::mReseiverContainer</definition>
+        <argsstring></argsstring>
+        <name>mReseiverContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="162" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="151">
+        <label>MyGUI::DDContainer</label>
+        <childnode refid="152" relation="usage">
+          <edgelabel>mDropInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="152">
+        <label>MyGUI::DDItemInfo</label>
+        <link refid="structMyGUI_1_1DDItemInfo"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" line="41" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DDContainer.h" bodystart="39" bodyend="163"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1DDContainer_1f8575a4ed25b4a52676ed0b963465569" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>_eventInvalideContainer</name></member>
+      <member refid="classMyGUI_1_1DDContainer_193a6ef72470071b2bc1ec76cf75d1183" prot="public" virt="virtual"><scope>MyGUI::DDContainer</scope><name>_setContainerItemInfo</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1b90c6329a22b79b7c7304e5f517e5707" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1ce83ef5433236a2e11b4577f7860a88d" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>DDContainer</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1f84cbcb2f2da144caf181475084801ba" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>endDrop</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1995380b356e8c769cc059ad908ad6fbb" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>eventChangeDDState</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1dd2e14d7a06997fa4f5b9484ee1454df" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>eventDropResult</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1122979b372eeec1a03cf8b5dd611e9cc" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>eventRequestDrop</name></member>
+      <member refid="classMyGUI_1_1DDContainer_119f8a2a8712954476d1be6c8cdf38a0c" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>eventStartDrag</name></member>
+      <member refid="classMyGUI_1_1DDContainer_121a380f75a705aa47f73dfe1bdaa3608" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>eventUpdateDropState</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1a5801f07009a2f0a954d8da6a86173e2" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1fb2052c4db666cb58a5dd9ae08e19b67" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>getNeedDragDrop</name></member>
+      <member refid="classMyGUI_1_1DDContainer_175c073e7b5978dc6580bf0384e0c5cf3" prot="public" virt="virtual"><scope>MyGUI::DDContainer</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1DDContainer_12236eb27e37942f3893d7cc41b55699c" prot="public" virt="virtual"><scope>MyGUI::DDContainer</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1a058bf467273cdb204c8e29a2016761f" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1b6ec17f6065e22f8a6671e050eb9e287" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mClickInWidget</name></member>
+      <member refid="classMyGUI_1_1DDContainer_148fe55d5b6a7553833cb1cf0e441f697" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mCurrentSender</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1ddf0406fd87272cce88abcd4a2322672" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mDropDimension</name></member>
+      <member refid="classMyGUI_1_1DDContainer_107d0eee67e504bb96ef82abf1d264f8f" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mDropInfo</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1c865800a3af739badb9eb871d475b1a4" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mDropItem</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1c16a953aa5e09b0df3becb7da1e8f33d" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mDropResult</name></member>
+      <member refid="classMyGUI_1_1DDContainer_17c5c730daa00ba6eb1b77ae360bf619e" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mDropSenderIndex</name></member>
+      <member refid="classMyGUI_1_1DDContainer_14f1cd204f92cf13ca1412893b7320cf8" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mNeedDragDrop</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1d87ae08337b9187080b417c3cfe6b0cb" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mNeedDrop</name></member>
+      <member refid="classMyGUI_1_1DDContainer_15e75c79dcca12af158919608731e73ee" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mOldDrop</name></member>
+      <member refid="classMyGUI_1_1DDContainer_18979d54650fb33ab81f7e30c2ebb4e0e" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mouseButtonPressed</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1bd5fbbaa3d609be48a792b79c6fc33b0" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mouseButtonReleased</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1e58e968e03be38015089019d6ded36e7" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mouseDrag</name></member>
+      <member refid="classMyGUI_1_1DDContainer_169c42d6c99fc2284bf677b64599118e8" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mReseiverContainer</name></member>
+      <member refid="classMyGUI_1_1DDContainer_18cb436e32bdcde630170173adcd69487" prot="protected" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>mStartDrop</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1dfe005b34186f89893d221e810e260d8" prot="protected" virt="virtual"><scope>MyGUI::DDContainer</scope><name>notifyInvalideDrop</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1722cca315b774dd26813c197366f8a6c" prot="protected" virt="virtual"><scope>MyGUI::DDContainer</scope><name>onMouseButtonPressed</name></member>
+      <member refid="classMyGUI_1_1DDContainer_14c1e2b986fa0d3c10d00840d8363ea7c" prot="protected" virt="virtual"><scope>MyGUI::DDContainer</scope><name>onMouseButtonReleased</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1973f70e4ac0cdb6c2013885b7d336042" prot="protected" virt="virtual"><scope>MyGUI::DDContainer</scope><name>onMouseDrag</name></member>
+      <member refid="classMyGUI_1_1DDContainer_10e89da3c29b7f657cf37c2c527b26a62" prot="protected" virt="virtual"><scope>MyGUI::DDContainer</scope><name>removeDropItems</name></member>
+      <member refid="classMyGUI_1_1DDContainer_16738ab85c025503a8d701f0437a19cf5" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>requestDragWidgetInfo</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1df509951770e0dd244341dca42567cf4" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>resetDrag</name></member>
+      <member refid="classMyGUI_1_1DDContainer_149555a740477b62b40f7fbcae99ede3c" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1d937c3ec64d37c572b812473621736d5" prot="public" virt="non-virtual"><scope>MyGUI::DDContainer</scope><name>setNeedDragDrop</name></member>
+      <member refid="classMyGUI_1_1DDContainer_1d165abb39e0a3914294547eb409fd034" prot="protected" virt="virtual"><scope>MyGUI::DDContainer</scope><name>setPropertyOverride</name></member>
+      <member refid="classMyGUI_1_1DDContainer_153547c6c9e9be883e047bae2dec2f9ef" prot="protected" virt="virtual"><scope>MyGUI::DDContainer</scope><name>updateDropItems</name></member>
+      <member refid="classMyGUI_1_1DDContainer_11fb813a0992f3df59885d86280585d8b" prot="protected" virt="virtual"><scope>MyGUI::DDContainer</scope><name>updateDropItemsState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

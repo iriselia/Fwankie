@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1TabItem" kind="class" prot="public">
+    <compoundname>MyGUI::TabItem</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1TabItem_165cd4f5c44acf45de52e7dbd6809f858" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::TabItem::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1TabItem_1a9c62ad6e36f2f113796097e012e1f70" prot="public" static="no">
+        <type>TabItem</type>
+        <definition>typedef TabItem MyGUI::TabItem::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1TabItem_1b311a99ea9ca7b9fa45fb9af8df8d375" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::TabItem::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TabItem_1b35afbcbdfe6ffb99b7246205053bfaa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::TabItem::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TabItem_1416fd3cae9ba9b5b32456af8cb230fd6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::TabItem::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TabItem_18560ed49bf1a9e73ac01c3e2d2a4037a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::TabItem::TabItem</definition>
+        <argsstring>()</argsstring>
+        <name>TabItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TabItem_1d87d08b822185c3c8b2cd89d994afa64" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TabItem::setCaption</definition>
+        <argsstring>(const UString &amp;_value)</argsstring>
+        <name>setCaption</name>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set item caption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TabItem_12f3e495f99cbc3767e320ed510c5549d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+        <definition>virtual const UString&amp; MyGUI::TabItem::getCaption</definition>
+        <argsstring>()</argsstring>
+        <name>getCaption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get item caption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TabItem_1dd4c9415b640f3c22fb8f6c2739d2c3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::TabItem::setButtonWidth</definition>
+        <argsstring>(int _value=DEFAULT)</argsstring>
+        <name>setButtonWidth</name>
+        <param>
+          <type>int</type>
+          <declname>_value</declname>
+          <defval>DEFAULT</defval>
+        </param>
+        <briefdescription>
+<para>Set button width. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1TabItem_16f8a168196879f286c4347b6a29c2353" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::TabItem::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1TabItem_17e9d8d7a1e96cef44b87ec9684198a6f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TabItem::initialiseOverride</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TabItem_1ec5eb97462f81c6ad8162472bebc175c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TabItem::shutdownOverride</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TabItem_1d5aeead1baa047fcb315a6c19e254947" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TabItem::setPropertyOverride</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setPropertyOverride</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TabItem.h" bodystart="32" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1TabItem_165cd4f5c44acf45de52e7dbd6809f858" prot="public" virt="non-virtual"><scope>MyGUI::TabItem</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1TabItem_12f3e495f99cbc3767e320ed510c5549d" prot="public" virt="virtual"><scope>MyGUI::TabItem</scope><name>getCaption</name></member>
+      <member refid="classMyGUI_1_1TabItem_16f8a168196879f286c4347b6a29c2353" prot="public" virt="non-virtual"><scope>MyGUI::TabItem</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1TabItem_1b311a99ea9ca7b9fa45fb9af8df8d375" prot="public" virt="virtual"><scope>MyGUI::TabItem</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1TabItem_17e9d8d7a1e96cef44b87ec9684198a6f" prot="protected" virt="virtual"><scope>MyGUI::TabItem</scope><name>initialiseOverride</name></member>
+      <member refid="classMyGUI_1_1TabItem_1b35afbcbdfe6ffb99b7246205053bfaa" prot="public" virt="virtual"><scope>MyGUI::TabItem</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1TabItem_1416fd3cae9ba9b5b32456af8cb230fd6" prot="public" virt="non-virtual"><scope>MyGUI::TabItem</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1TabItem_1a9c62ad6e36f2f113796097e012e1f70" prot="public" virt="non-virtual"><scope>MyGUI::TabItem</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1TabItem_1dd4c9415b640f3c22fb8f6c2739d2c3f" prot="public" virt="non-virtual"><scope>MyGUI::TabItem</scope><name>setButtonWidth</name></member>
+      <member refid="classMyGUI_1_1TabItem_1d87d08b822185c3c8b2cd89d994afa64" prot="public" virt="virtual"><scope>MyGUI::TabItem</scope><name>setCaption</name></member>
+      <member refid="classMyGUI_1_1TabItem_1d5aeead1baa047fcb315a6c19e254947" prot="protected" virt="virtual"><scope>MyGUI::TabItem</scope><name>setPropertyOverride</name></member>
+      <member refid="classMyGUI_1_1TabItem_1ec5eb97462f81c6ad8162472bebc175c" prot="protected" virt="virtual"><scope>MyGUI::TabItem</scope><name>shutdownOverride</name></member>
+      <member refid="classMyGUI_1_1TabItem_18560ed49bf1a9e73ac01c3e2d2a4037a" prot="public" virt="non-virtual"><scope>MyGUI::TabItem</scope><name>TabItem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

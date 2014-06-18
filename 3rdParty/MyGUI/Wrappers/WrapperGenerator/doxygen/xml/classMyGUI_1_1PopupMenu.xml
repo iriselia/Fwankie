@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1PopupMenu" kind="class" prot="public">
+    <compoundname>MyGUI::PopupMenu</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1PopupMenu_1f35335b26fa45e082d5a6bdf9f72cdba" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::PopupMenu::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1PopupMenu_1db21fb6bcdda9a2fc691b470f9f4a818" prot="public" static="no">
+        <type>PopupMenu</type>
+        <definition>typedef PopupMenu MyGUI::PopupMenu::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1PopupMenu_10a93fd3863fb9aa3364bc06c3be44724" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::PopupMenu::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1PopupMenu_13f63802683b59ff8fe7863ca3249f6e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::PopupMenu::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1PopupMenu_16ae3f20c361c321b9103bbdddfb38ffd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::PopupMenu::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1PopupMenu_1a8bad0042f7141fbdb9972d4bc615bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::PopupMenu::PopupMenu</definition>
+        <argsstring>()</argsstring>
+        <name>PopupMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" line="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1PopupMenu_10046472182828691e92b416fc3aa3743" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::PopupMenu::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" line="33" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_PopupMenu.h" bodystart="31" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1PopupMenu_1f35335b26fa45e082d5a6bdf9f72cdba" prot="public" virt="non-virtual"><scope>MyGUI::PopupMenu</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1PopupMenu_10046472182828691e92b416fc3aa3743" prot="public" virt="non-virtual"><scope>MyGUI::PopupMenu</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1PopupMenu_10a93fd3863fb9aa3364bc06c3be44724" prot="public" virt="virtual"><scope>MyGUI::PopupMenu</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1PopupMenu_13f63802683b59ff8fe7863ca3249f6e0" prot="public" virt="virtual"><scope>MyGUI::PopupMenu</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1PopupMenu_16ae3f20c361c321b9103bbdddfb38ffd" prot="public" virt="non-virtual"><scope>MyGUI::PopupMenu</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1PopupMenu_1a8bad0042f7141fbdb9972d4bc615bf9" prot="public" virt="non-virtual"><scope>MyGUI::PopupMenu</scope><name>PopupMenu</name></member>
+      <member refid="classMyGUI_1_1PopupMenu_1db21fb6bcdda9a2fc691b470f9f4a818" prot="public" virt="non-virtual"><scope>MyGUI::PopupMenu</scope><name>RTTIBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

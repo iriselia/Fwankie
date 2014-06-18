@@ -1,0 +1,1216 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1ImageBox" kind="class" prot="public">
+    <compoundname>MyGUI::ImageBox</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1ImageBox_105f977dc8cd57cb59e4d0ab3cf18ab99" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::ImageBox::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1ImageBox_15e400c23f25b7b34bea4932de63a75cb" prot="public" static="no">
+        <type>ImageBox</type>
+        <definition>typedef ImageBox MyGUI::ImageBox::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_142d8880e5329fac61ed1884cd24c6458" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::ImageBox::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_15c5ae01e0ff70b94d3b8c534ddf23651" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::ImageBox::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_14395e28529f86f818c6a47465e08f15f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::ImageBox::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1bf91a21c5a4feb5e42b6c8b622f99f7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::ImageBox::ImageBox</definition>
+        <argsstring>()</argsstring>
+        <name>ImageBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_11d2d784bb7af565702ea5cedbc452d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setImageInfo</definition>
+        <argsstring>(const std::string &amp;_texture, const IntCoord &amp;_coord, const IntSize &amp;_tile)</argsstring>
+        <name>setImageInfo</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_texture</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_coord</declname>
+        </param>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_tile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_145c50a70c82ea844b6148be5367cbf3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setImageTexture</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>setImageTexture</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1d53fc835a758d292df93ad71c15ec0d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setImageRect</definition>
+        <argsstring>(const IntRect &amp;_value)</argsstring>
+        <name>setImageRect</name>
+        <param>
+          <type>const IntRect &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set _rect - part of texture where we take tiles </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_16a9ca76a8c1092a72057ce1e435b9586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setImageCoord</definition>
+        <argsstring>(const IntCoord &amp;_value)</argsstring>
+        <name>setImageCoord</name>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set _coord - part of texture where we take tiles </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_14253289986f0b75a96aa1a1d59f9d0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setImageTile</definition>
+        <argsstring>(const IntSize &amp;_value)</argsstring>
+        <name>setImageTile</name>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set _tile size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_14cc594aae0968034282f38d6d4817645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setImageIndex</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>setImageIndex</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set current tile index <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- tile index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Tiles in file start numbering from left to right and from top to bottom. <linebreak/>
+ For example:<linebreak/>
+ <preformatted>
+				+---+---+---+
+				| 0 | 1 | 2 |
+				+---+---+---+
+				| 3 | 4 | 5 |
+				+---+---+---+
+			</preformatted> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1c16e31ee9376bc75bf7535aaf3105fc8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ImageBox::getImageIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>getImageIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current tile index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_153f0121b508b06cd9e277a41b0dfd59e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ImageBox::getItemCount</definition>
+        <argsstring>() const </argsstring>
+        <name>getItemCount</name>
+        <briefdescription>
+<para>Get number of items. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_14161b3d80bf9d0726bf092e720a73dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setItemSelect</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>setItemSelect</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+<para>Select specified _index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1214f06b8cddd02f62546aa6ee13244a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ImageBox::getItemSelect</definition>
+        <argsstring>() const </argsstring>
+        <name>getItemSelect</name>
+        <briefdescription>
+<para>Get index of selected item (ITEM_NONE if none selected). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_130069d7384c1164c018dd9406a6811b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::resetItemSelect</definition>
+        <argsstring>()</argsstring>
+        <name>resetItemSelect</name>
+        <briefdescription>
+<para>Reset item selection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_16f7620e82bf8a58c8f7cb7b35ab91c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::insertItem</definition>
+        <argsstring>(size_t _index, const IntCoord &amp;_item)</argsstring>
+        <name>insertItem</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+<para>Insert an item into a list at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1deba07d33266002459502c2067685688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::addItem</definition>
+        <argsstring>(const IntCoord &amp;_item)</argsstring>
+        <name>addItem</name>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+<para>Add an item to the end of a list. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1f810fb12ffce94cdd2bcae77aa242676" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setItem</definition>
+        <argsstring>(size_t _index, const IntCoord &amp;_item)</argsstring>
+        <name>setItem</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+<para>Replace an item at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1d893afec6382965279e55e08f585a407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::deleteItem</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>deleteItem</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+<para>Delete item at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_189a7565cbc6849655b3a84ba41f8babb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::deleteAllItems</definition>
+        <argsstring>()</argsstring>
+        <name>deleteAllItems</name>
+        <briefdescription>
+<para>Delete all items. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1ace35735f82aec8330f2c41c52b56683" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::addItemFrame</definition>
+        <argsstring>(size_t _index, const IntCoord &amp;_item)</argsstring>
+        <name>addItemFrame</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add frame <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image item index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame coordinates at image texture </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_126fd6bf7ffbf46a59b93a14834c44e99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::insertItemFrame</definition>
+        <argsstring>(size_t _index, size_t _indexFrame, const IntCoord &amp;_item)</argsstring>
+        <name>insertItemFrame</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_indexFrame</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert frame <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image item index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_indexFrame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame index where we insert frame </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame coordinates at image texture </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1faa6641fa8f261aa7b06637fa8293fe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::addItemFrameDublicate</definition>
+        <argsstring>(size_t _index, size_t _indexSourceFrame)</argsstring>
+        <name>addItemFrameDublicate</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_indexSourceFrame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add copy of frame (similar to ImageBox::addItemFrame but we copy frame coordinates) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image item index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_indexSourceFrame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame index of frame that we copying </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_13304423ae4d75c0ed18475daee8b25c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::insertItemFrameDublicate</definition>
+        <argsstring>(size_t _index, size_t _indexFrame, size_t _indexSourceFrame)</argsstring>
+        <name>insertItemFrameDublicate</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_indexFrame</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_indexSourceFrame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert copy of frame (similar to ImageBox::insertItemFrame but we copy frame coordinates) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image item index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_indexFrame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame index where we insert frame </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_indexSourceFrame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame index of frame that we copying </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1124285b00fa07897c85cbc693adc0ebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setItemFrame</definition>
+        <argsstring>(size_t _index, size_t _indexFrame, const IntCoord &amp;_item)</argsstring>
+        <name>setItemFrame</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_indexFrame</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change frame <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image item index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_indexFrame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame index to change </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame coordinates at image texture </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_17adb38cad8a54557c5febb091509be8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::deleteItemFrame</definition>
+        <argsstring>(size_t _index, size_t _indexFrame)</argsstring>
+        <name>deleteItemFrame</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_indexFrame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete frame <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image item index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_indexFrame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frame index that we delete </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_12c2dba57bd7384b56369b86a00c952fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::deleteAllItemFrames</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>deleteAllItemFrames</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Delete all frames <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image item index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_11d0ce84d6a9c235d5eab89f53e28ffc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setItemFrameRate</definition>
+        <argsstring>(size_t _index, float _rate)</argsstring>
+        <name>setItemFrameRate</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set item frame rate <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image item index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration of one frame in seconds </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_163c4ea59a0b1706f7312a0a4fea821bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float MyGUI::ImageBox::getItemFrameRate</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>getItemFrameRate</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get item frame rate <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Image item index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_142677ebb267c48ea865039a2da9c602d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::ImageBox::setItemResource</definition>
+        <argsstring>(const std::string &amp;_name)</argsstring>
+        <name>setItemResource</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select current items resource used in ImageBox <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false if resource with such name not exist </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1caa0a23ba61ea7654f40d06c06e41804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setItemGroup</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>setItemGroup</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select current item group </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_140dc66f9253c071144ea7b76a09bbbc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setItemName</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>setItemName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select current item mane </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1518460debac2030da2d28a690f54c9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setItemResourcePtr</definition>
+        <argsstring>(ResourceImageSetPtr _resource)</argsstring>
+        <name>setItemResourcePtr</name>
+        <param>
+          <type>ResourceImageSetPtr</type>
+          <declname>_resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select current items resource used in ImageBox <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resource pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1653367a8f18e24b88a741b2eac39e032" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setItemResourceInfo</definition>
+        <argsstring>(const ImageIndexInfo &amp;_info)</argsstring>
+        <name>setItemResourceInfo</name>
+        <param>
+          <type>const ImageIndexInfo &amp;</type>
+          <declname>_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set current item </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_117771e2a328f3da6a4597dd29a2cd133" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ResourceImageSetPtr</type>
+        <definition>ResourceImageSetPtr MyGUI::ImageBox::getItemResource</definition>
+        <argsstring>() const </argsstring>
+        <name>getItemResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current items resource used in ImageBox </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1c7a686a301f737e547b28b0dc8a88ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::setItemResourceInfo</definition>
+        <argsstring>(ResourceImageSetPtr _resource, const std::string &amp;_group, const std::string &amp;_name)</argsstring>
+        <name>setItemResourceInfo</name>
+        <param>
+          <type>ResourceImageSetPtr</type>
+          <declname>_resource</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_group</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Select current item resource, group and name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="189"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1586d7fc0d98ff8aa7357812162d41d99" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::ImageBox::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_19bcc5378d204690240c2e394630b598b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ImageBox::shutdownOverride</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1e4c8e08c058a82e2a5dac8de3f4b3900" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ImageBox::setPropertyOverride</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setPropertyOverride</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_12679ff94da1fe8c42c4237a3756b4335" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::frameEntered</definition>
+        <argsstring>(float _frame)</argsstring>
+        <name>frameEntered</name>
+        <param>
+          <type>float</type>
+          <declname>_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_179e7a5652de59201dc01f4ebe2ad2478" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::recalcIndexes</definition>
+        <argsstring>()</argsstring>
+        <name>recalcIndexes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1b2875250ce4de15921023362882d796a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::updateSelectIndex</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>updateSelectIndex</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_1ffb211682242292a5a3e1eb41f5a2ef4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::frameAdvise</definition>
+        <argsstring>(bool _advise)</argsstring>
+        <name>frameAdvise</name>
+        <param>
+          <type>bool</type>
+          <declname>_advise</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ImageBox_148890d391e535be0404d9741e89cc01e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ImageBox::_setUVSet</definition>
+        <argsstring>(const FloatRect &amp;_rect)</argsstring>
+        <name>_setUVSet</name>
+        <param>
+          <type>const FloatRect &amp;</type>
+          <declname>_rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="204"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_10a95f5cf0303a8c73e8ac6137b7ee34a" prot="private" static="no" mutable="no">
+        <type>IntRect</type>
+        <definition>IntRect MyGUI::ImageBox::mRectImage</definition>
+        <argsstring></argsstring>
+        <name>mRectImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="208" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_1b7fd0a8f7c7d4b7ca1124bcd538182c1" prot="private" static="no" mutable="no">
+        <type>IntSize</type>
+        <definition>IntSize MyGUI::ImageBox::mSizeTile</definition>
+        <argsstring></argsstring>
+        <name>mSizeTile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="210" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_1f7e186e0ea81488b5b0d229304a51ad9" prot="private" static="no" mutable="no">
+        <type>IntSize</type>
+        <definition>IntSize MyGUI::ImageBox::mSizeTexture</definition>
+        <argsstring></argsstring>
+        <name>mSizeTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="212" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_105c8fb2ce64b116b74994d6a21ea3f6e" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ImageBox::mIndexSelect</definition>
+        <argsstring></argsstring>
+        <name>mIndexSelect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="214" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_11d35044662049482dc503aad79910755" prot="private" static="no" mutable="no">
+        <type>VectorImages</type>
+        <definition>VectorImages MyGUI::ImageBox::mItems</definition>
+        <argsstring></argsstring>
+        <name>mItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="216" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_17901c3302b6d8f5d6ce7d6e0f461c02f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::ImageBox::mFrameAdvise</definition>
+        <argsstring></argsstring>
+        <name>mFrameAdvise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="218" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_180c235d5e0e24571c163b5cce00dc2d5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyGUI::ImageBox::mCurrentTime</definition>
+        <argsstring></argsstring>
+        <name>mCurrentTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="219" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_15b335b34344e1243d1a656be8b7b02c5" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ImageBox::mCurrentFrame</definition>
+        <argsstring></argsstring>
+        <name>mCurrentFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="220" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_1f7c0f9ca6d08a8bddb9bbc82fba8b964" prot="private" static="no" mutable="no">
+        <type>ResourceImageSetPtr</type>
+        <definition>ResourceImageSetPtr MyGUI::ImageBox::mResource</definition>
+        <argsstring></argsstring>
+        <name>mResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="222" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_162d64dd20526c54a328a5d281284677f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::ImageBox::mItemName</definition>
+        <argsstring></argsstring>
+        <name>mItemName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="223" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_190981bbab35723daaa11b2140dfe0a1e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::ImageBox::mItemGroup</definition>
+        <argsstring></argsstring>
+        <name>mItemGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="224" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ImageBox_124f8e693fbd92cf45db1a317e2fb4d31" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::ImageBox::mCurrentTextureName</definition>
+        <argsstring></argsstring>
+        <name>mCurrentTextureName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="225" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ImageBox.h" bodystart="33" bodyend="226"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1ImageBox_148890d391e535be0404d9741e89cc01e" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>_setUVSet</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1deba07d33266002459502c2067685688" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>addItem</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1ace35735f82aec8330f2c41c52b56683" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>addItemFrame</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1faa6641fa8f261aa7b06637fa8293fe1" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>addItemFrameDublicate</name></member>
+      <member refid="classMyGUI_1_1ImageBox_105f977dc8cd57cb59e4d0ab3cf18ab99" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1ImageBox_12c2dba57bd7384b56369b86a00c952fb" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>deleteAllItemFrames</name></member>
+      <member refid="classMyGUI_1_1ImageBox_189a7565cbc6849655b3a84ba41f8babb" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>deleteAllItems</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1d893afec6382965279e55e08f585a407" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>deleteItem</name></member>
+      <member refid="classMyGUI_1_1ImageBox_17adb38cad8a54557c5febb091509be8b" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>deleteItemFrame</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1ffb211682242292a5a3e1eb41f5a2ef4" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>frameAdvise</name></member>
+      <member refid="classMyGUI_1_1ImageBox_12679ff94da1fe8c42c4237a3756b4335" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>frameEntered</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1586d7fc0d98ff8aa7357812162d41d99" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1c16e31ee9376bc75bf7535aaf3105fc8" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>getImageIndex</name></member>
+      <member refid="classMyGUI_1_1ImageBox_153f0121b508b06cd9e277a41b0dfd59e" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>getItemCount</name></member>
+      <member refid="classMyGUI_1_1ImageBox_163c4ea59a0b1706f7312a0a4fea821bd" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>getItemFrameRate</name></member>
+      <member refid="classMyGUI_1_1ImageBox_117771e2a328f3da6a4597dd29a2cd133" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>getItemResource</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1214f06b8cddd02f62546aa6ee13244a2" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>getItemSelect</name></member>
+      <member refid="classMyGUI_1_1ImageBox_142d8880e5329fac61ed1884cd24c6458" prot="public" virt="virtual"><scope>MyGUI::ImageBox</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1bf91a21c5a4feb5e42b6c8b622f99f7a" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>ImageBox</name></member>
+      <member refid="classMyGUI_1_1ImageBox_16f7620e82bf8a58c8f7cb7b35ab91c6e" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>insertItem</name></member>
+      <member refid="classMyGUI_1_1ImageBox_126fd6bf7ffbf46a59b93a14834c44e99" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>insertItemFrame</name></member>
+      <member refid="classMyGUI_1_1ImageBox_13304423ae4d75c0ed18475daee8b25c6" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>insertItemFrameDublicate</name></member>
+      <member refid="classMyGUI_1_1ImageBox_15c5ae01e0ff70b94d3b8c534ddf23651" prot="public" virt="virtual"><scope>MyGUI::ImageBox</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1ImageBox_14395e28529f86f818c6a47465e08f15f" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1ImageBox_15b335b34344e1243d1a656be8b7b02c5" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mCurrentFrame</name></member>
+      <member refid="classMyGUI_1_1ImageBox_124f8e693fbd92cf45db1a317e2fb4d31" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mCurrentTextureName</name></member>
+      <member refid="classMyGUI_1_1ImageBox_180c235d5e0e24571c163b5cce00dc2d5" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mCurrentTime</name></member>
+      <member refid="classMyGUI_1_1ImageBox_17901c3302b6d8f5d6ce7d6e0f461c02f" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mFrameAdvise</name></member>
+      <member refid="classMyGUI_1_1ImageBox_105c8fb2ce64b116b74994d6a21ea3f6e" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mIndexSelect</name></member>
+      <member refid="classMyGUI_1_1ImageBox_190981bbab35723daaa11b2140dfe0a1e" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mItemGroup</name></member>
+      <member refid="classMyGUI_1_1ImageBox_162d64dd20526c54a328a5d281284677f" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mItemName</name></member>
+      <member refid="classMyGUI_1_1ImageBox_11d35044662049482dc503aad79910755" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mItems</name></member>
+      <member refid="classMyGUI_1_1ImageBox_10a95f5cf0303a8c73e8ac6137b7ee34a" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mRectImage</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1f7c0f9ca6d08a8bddb9bbc82fba8b964" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mResource</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1f7e186e0ea81488b5b0d229304a51ad9" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mSizeTexture</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1b7fd0a8f7c7d4b7ca1124bcd538182c1" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>mSizeTile</name></member>
+      <member refid="classMyGUI_1_1ImageBox_179e7a5652de59201dc01f4ebe2ad2478" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>recalcIndexes</name></member>
+      <member refid="classMyGUI_1_1ImageBox_130069d7384c1164c018dd9406a6811b9" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>resetItemSelect</name></member>
+      <member refid="classMyGUI_1_1ImageBox_15e400c23f25b7b34bea4932de63a75cb" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1ImageBox_16a9ca76a8c1092a72057ce1e435b9586" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setImageCoord</name></member>
+      <member refid="classMyGUI_1_1ImageBox_14cc594aae0968034282f38d6d4817645" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setImageIndex</name></member>
+      <member refid="classMyGUI_1_1ImageBox_11d2d784bb7af565702ea5cedbc452d43" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setImageInfo</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1d53fc835a758d292df93ad71c15ec0d8" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setImageRect</name></member>
+      <member refid="classMyGUI_1_1ImageBox_145c50a70c82ea844b6148be5367cbf3b" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setImageTexture</name></member>
+      <member refid="classMyGUI_1_1ImageBox_14253289986f0b75a96aa1a1d59f9d0e5" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setImageTile</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1f810fb12ffce94cdd2bcae77aa242676" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setItem</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1124285b00fa07897c85cbc693adc0ebd" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setItemFrame</name></member>
+      <member refid="classMyGUI_1_1ImageBox_11d0ce84d6a9c235d5eab89f53e28ffc3" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setItemFrameRate</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1caa0a23ba61ea7654f40d06c06e41804" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setItemGroup</name></member>
+      <member refid="classMyGUI_1_1ImageBox_140dc66f9253c071144ea7b76a09bbbc9" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setItemName</name></member>
+      <member refid="classMyGUI_1_1ImageBox_142677ebb267c48ea865039a2da9c602d" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setItemResource</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1653367a8f18e24b88a741b2eac39e032" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setItemResourceInfo</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1c7a686a301f737e547b28b0dc8a88ead" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setItemResourceInfo</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1518460debac2030da2d28a690f54c9a2" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setItemResourcePtr</name></member>
+      <member refid="classMyGUI_1_1ImageBox_14161b3d80bf9d0726bf092e720a73dff" prot="public" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>setItemSelect</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1e4c8e08c058a82e2a5dac8de3f4b3900" prot="protected" virt="virtual"><scope>MyGUI::ImageBox</scope><name>setPropertyOverride</name></member>
+      <member refid="classMyGUI_1_1ImageBox_19bcc5378d204690240c2e394630b598b" prot="protected" virt="virtual"><scope>MyGUI::ImageBox</scope><name>shutdownOverride</name></member>
+      <member refid="classMyGUI_1_1ImageBox_1b2875250ce4de15921023362882d796a" prot="private" virt="non-virtual"><scope>MyGUI::ImageBox</scope><name>updateSelectIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

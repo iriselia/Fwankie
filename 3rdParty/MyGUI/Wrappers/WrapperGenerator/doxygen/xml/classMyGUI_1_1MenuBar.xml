@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1MenuBar" kind="class" prot="public">
+    <compoundname>MyGUI::MenuBar</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1MenuBar_17fd6986b9777be3e78d9ccbc6604ef41" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::MenuBar::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1MenuBar_105c842ec427658ce88aa9e0f0bffead4" prot="public" static="no">
+        <type>MenuBar</type>
+        <definition>typedef MenuBar MyGUI::MenuBar::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1MenuBar_1628d9c278ec8fc6d49e3b24c41eedc46" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::MenuBar::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuBar_1cfe4dbcb858c8c118bd201bc897d6cb0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::MenuBar::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuBar_1755007eb122f8e1c0a71c11083da043c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::MenuBar::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuBar_1dfcb3feb612508bb7c1ec2c812b1161c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::MenuBar::MenuBar</definition>
+        <argsstring>()</argsstring>
+        <name>MenuBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" line="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1MenuBar_111b90c93d55ae35bd1f861bf114b1950" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::MenuBar::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" line="33" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuBar.h" bodystart="31" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1MenuBar_17fd6986b9777be3e78d9ccbc6604ef41" prot="public" virt="non-virtual"><scope>MyGUI::MenuBar</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1MenuBar_111b90c93d55ae35bd1f861bf114b1950" prot="public" virt="non-virtual"><scope>MyGUI::MenuBar</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1MenuBar_1628d9c278ec8fc6d49e3b24c41eedc46" prot="public" virt="virtual"><scope>MyGUI::MenuBar</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1MenuBar_1cfe4dbcb858c8c118bd201bc897d6cb0" prot="public" virt="virtual"><scope>MyGUI::MenuBar</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1MenuBar_1755007eb122f8e1c0a71c11083da043c" prot="public" virt="non-virtual"><scope>MyGUI::MenuBar</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1MenuBar_1dfcb3feb612508bb7c1ec2c812b1161c" prot="public" virt="non-virtual"><scope>MyGUI::MenuBar</scope><name>MenuBar</name></member>
+      <member refid="classMyGUI_1_1MenuBar_105c842ec427658ce88aa9e0f0bffead4" prot="public" virt="non-virtual"><scope>MyGUI::MenuBar</scope><name>RTTIBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1117 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1Canvas" kind="class" prot="public">
+    <compoundname>MyGUI::Canvas</compoundname>
+    <includes local="no">MyGUI_Canvas.h</includes>
+    <innerclass refid="structMyGUI_1_1Canvas_1_1Event">MyGUI::Canvas::Event</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1Canvas_1890b413db8ff60373050d5d9ee6f262b" prot="public" static="no">
+        <type><ref refid="classMyGUI_1_1Canvas" kindref="compound">RTTIBase</ref></type>
+        <definition>typedef RTTIBase MyGUI::Canvas::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1Canvas_135c011bbfa492fd65b8fee498410f474" prot="public" static="no">
+        <type><ref refid="classMyGUI_1_1Canvas" kindref="compound">Canvas</ref></type>
+        <definition>typedef Canvas MyGUI::Canvas::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1Canvas_16d0b525c91f39c3c906663518d7ec63b" prot="public" static="no">
+        <type>delegates::CMultiDelegate1&lt; <ref refid="classMyGUI_1_1Canvas" kindref="compound">Canvas</ref> * &gt;</type>
+        <definition>typedef delegates::CMultiDelegate1&lt;Canvas*&gt; MyGUI::Canvas::EventHandle_CanvasPtr</definition>
+        <argsstring></argsstring>
+        <name>EventHandle_CanvasPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="61" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1Canvas_16f3a3c5108b1b3be78cef36b4a823ecd" prot="public" static="no">
+        <type>delegates::CDelegate2&lt; <ref refid="classMyGUI_1_1Canvas" kindref="compound">Canvas</ref> *, Event &gt;</type>
+        <definition>typedef delegates::CDelegate2&lt;Canvas*, Event&gt; MyGUI::Canvas::EventHandle_CanvasPtrEvent</definition>
+        <argsstring></argsstring>
+        <name>EventHandle_CanvasPtrEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="62" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="enum" id="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce33546" prot="public" static="no">
+        <name>TextureResizeMode</name>
+        <enumvalue id="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce3354662e4ef85ff24242e8eeace8fe528d703" prot="public">
+          <name>TRM_PT_CONST_SIZE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce335464c3e16f756d918006b8bd4c62abe1244" prot="public">
+          <name>TRM_PT_VIEW_REQUESTED</name>
+          <briefdescription>
+<para>Texture doesn&apos;t resizes and fills all widget space. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce335460937f0e6427f2fa3eb01271d0b50885d" prot="public">
+          <name>TRM_PT_VIEW_ALL</name>
+          <briefdescription>
+<para>Texture resizes and fills all widget space. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Available resize and view modes of texture <simplesect kind="remark"><para>PT - Power of Two (size) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="70" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="69" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_132c32a149649ec8da0cd986191c935cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::Canvas::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1ce63ef05ddd5a453846b2ddf416d3edd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::Canvas::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1ef6e0697a785080e1ab72131545eaa73" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::Canvas::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_15e94a83307e6479e6561aef0153ec223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::Canvas::Canvas</definition>
+        <argsstring>()</argsstring>
+        <name>Canvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_13a349181c10a587b6c3fdd5910119206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::createTexture</definition>
+        <argsstring>(TextureResizeMode _resizeMode, TextureUsage _usage=getDefaultTextureUsage(), PixelFormat _format=getDefaultTextureFormat())</argsstring>
+        <name>createTexture</name>
+        <param>
+          <type><ref refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce33546" kindref="member">TextureResizeMode</ref></type>
+          <declname>_resizeMode</declname>
+        </param>
+        <param>
+          <type>TextureUsage</type>
+          <declname>_usage</declname>
+          <defval>getDefaultTextureUsage()</defval>
+        </param>
+        <param>
+          <type>PixelFormat</type>
+          <declname>_format</declname>
+          <defval>getDefaultTextureFormat()</defval>
+        </param>
+        <briefdescription>
+<para>Creates texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_18b6a1709142e0f6583bb5c2b8c45a550" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::createTexture</definition>
+        <argsstring>(int _width, int _height, TextureResizeMode _resizeMode, TextureUsage _usage=getDefaultTextureUsage(), PixelFormat _format=getDefaultTextureFormat())</argsstring>
+        <name>createTexture</name>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <param>
+          <type><ref refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce33546" kindref="member">TextureResizeMode</ref></type>
+          <declname>_resizeMode</declname>
+        </param>
+        <param>
+          <type>TextureUsage</type>
+          <declname>_usage</declname>
+          <defval>getDefaultTextureUsage()</defval>
+        </param>
+        <param>
+          <type>PixelFormat</type>
+          <declname>_format</declname>
+          <defval>getDefaultTextureFormat()</defval>
+        </param>
+        <briefdescription>
+<para>Creates texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_12b2c2458033e68c353df7edc6778221e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::createTexture</definition>
+        <argsstring>(const IntSize &amp;_size, TextureResizeMode _resizeMode, TextureUsage _usage=getDefaultTextureUsage(), PixelFormat _format=getDefaultTextureFormat())</argsstring>
+        <name>createTexture</name>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_size</declname>
+        </param>
+        <param>
+          <type><ref refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce33546" kindref="member">TextureResizeMode</ref></type>
+          <declname>_resizeMode</declname>
+        </param>
+        <param>
+          <type>TextureUsage</type>
+          <declname>_usage</declname>
+          <defval>getDefaultTextureUsage()</defval>
+        </param>
+        <param>
+          <type>PixelFormat</type>
+          <declname>_format</declname>
+          <defval>getDefaultTextureFormat()</defval>
+        </param>
+        <briefdescription>
+<para>Creates texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_14f720ecb033044ca1d725d973746b2f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::destroyTexture</definition>
+        <argsstring>()</argsstring>
+        <name>destroyTexture</name>
+        <briefdescription>
+<para>Destroys texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1811d6a81e9c190dd98a9a5d1f144882a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::updateTexture</definition>
+        <argsstring>()</argsstring>
+        <name>updateTexture</name>
+        <briefdescription>
+<para>Call user delegate update and removes old texture if it isn&apos;t original. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1cd75e58b1b0e464683a2d208e2a6e81e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* MyGUI::Canvas::lock</definition>
+        <argsstring>(TextureUsage _usage=TextureUsage::Write)</argsstring>
+        <name>lock</name>
+        <param>
+          <type>TextureUsage</type>
+          <declname>_usage</declname>
+          <defval>TextureUsage::Write</defval>
+        </param>
+        <briefdescription>
+<para>Locks hardware pixel buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_128d51c6498b5b868ff414094ed72c13f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::unlock</definition>
+        <argsstring>()</argsstring>
+        <name>unlock</name>
+        <briefdescription>
+<para>Unlocks hardware pixel buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_15babe65dce3eb19ac902145aa7f6b78d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Canvas::isLocked</definition>
+        <argsstring>() const </argsstring>
+        <name>isLocked</name>
+        <briefdescription>
+<para>Checks lockness of hardware _pixel buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_19e780811ae1a8987f9d18e3ccfcf5b07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MyGUI::Canvas::getTextureRealWidth</definition>
+        <argsstring>() const </argsstring>
+        <name>getTextureRealWidth</name>
+        <briefdescription>
+<para>Returns real width of texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_15b9651e2717289dc229b4f383f83e644" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MyGUI::Canvas::getTextureRealHeight</definition>
+        <argsstring>() const </argsstring>
+        <name>getTextureRealHeight</name>
+        <briefdescription>
+<para>Returns real height of texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_17bc13055358ea16626c1845a6df5bddb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IntSize</type>
+        <definition>IntSize MyGUI::Canvas::getTextureRealSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getTextureRealSize</name>
+        <briefdescription>
+<para>Returns real _size of texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_180a075bad0825f6b6e7e71d6478c60ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MyGUI::Canvas::getTextureSrcWidth</definition>
+        <argsstring>() const </argsstring>
+        <name>getTextureSrcWidth</name>
+        <briefdescription>
+<para>Returns needed width while creating texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_171d8d6d90a0e89b7254e40b75d586164" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MyGUI::Canvas::getTextureSrcHeight</definition>
+        <argsstring>() const </argsstring>
+        <name>getTextureSrcHeight</name>
+        <briefdescription>
+<para>Returns needed height while creating texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_173cb67d6ece0331273e54f008c22f094" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IntSize</type>
+        <definition>IntSize MyGUI::Canvas::getTextureSrcSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getTextureSrcSize</name>
+        <briefdescription>
+<para>Returns needed sizes while creating texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_17f49dce0b8d21fc1e39997f8fbb993e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>PixelFormat</type>
+        <definition>PixelFormat MyGUI::Canvas::getTextureFormat</definition>
+        <argsstring>() const </argsstring>
+        <name>getTextureFormat</name>
+        <briefdescription>
+<para>Returns needed sizes while creating texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_12c8da218226a3191c4143f02778b5bc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; MyGUI::Canvas::getTextureName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTextureName</name>
+        <briefdescription>
+<para>Returns name of the current texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1bfc7a6cb3997dc61dbff52f4ebde5a86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Canvas::setSize</definition>
+        <argsstring>(const IntSize &amp;_value)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para><copydoc link="Widget::setSize(const IntSize& _value)"></copydoc>
+ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_15f60615d0e02556ec81337d4101a5016" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Canvas::setCoord</definition>
+        <argsstring>(const IntCoord &amp;_value)</argsstring>
+        <name>setCoord</name>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para><copydoc link="Widget::setCoord(const IntCoord& _value)"></copydoc>
+ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1b8aa9e1a81b18cfeb8298fd7899686f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::setSize</definition>
+        <argsstring>(int _width, int _height)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setSize(int _width, int _height)"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1df5a787ab425178b4121f6f11f3fae64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::setCoord</definition>
+        <argsstring>(int _left, int _top, int _width, int _height)</argsstring>
+        <name>setCoord</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setCoord(int _left, int _top, int _width, int _height)"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1e5d15b259ea92e5b08abde80fc3c6cfc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce33546" kindref="member">TextureResizeMode</ref></type>
+        <definition>TextureResizeMode MyGUI::Canvas::getResizeMode</definition>
+        <argsstring>() const </argsstring>
+        <name>getResizeMode</name>
+        <briefdescription>
+<para>Returns resize mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1a495a0af819a55bbfc9ee7ad1c8351e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::setResizeMode</definition>
+        <argsstring>(TextureResizeMode _value)</argsstring>
+        <name>setResizeMode</name>
+        <param>
+          <type><ref refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce33546" kindref="member">TextureResizeMode</ref></type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>Sets resize mode of texture. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce33546" kindref="member">TextureResizeMode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1224bb79fa71f37409504121db9a6bd00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Canvas::isTextureSrcSize</definition>
+        <argsstring>() const </argsstring>
+        <name>isTextureSrcSize</name>
+        <briefdescription>
+<para>Checks if the texture has the source (required by user) size, otherwise real texture size are bigger. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_13a84cb1f1f351481b50297a5f16a42e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Canvas::isTextureCreated</definition>
+        <argsstring>() const </argsstring>
+        <name>isTextureCreated</name>
+        <briefdescription>
+<para>Returns true if the texture was created (and exists), otherwise false. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_17f5a8c55bb5f841caa69cdd175b7f322" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Canvas::isTextureManaged</definition>
+        <argsstring>() const </argsstring>
+        <name>isTextureManaged</name>
+        <briefdescription>
+<para>Returns true if we own the texture, otherwise false. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>mManaged </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_18bd4909b3d343e8f4b0beaa10a88a809" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ITexture *</type>
+        <definition>ITexture* MyGUI::Canvas::getTexture</definition>
+        <argsstring>() const </argsstring>
+        <name>getTexture</name>
+        <briefdescription>
+<para>Reurns interface texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1c40754149d076dc1a360aaa7d5ef530d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::setTextureManaged</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setTextureManaged</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>Sets the texture managed. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Be careful with assigning managed status to texture, which wasn&apos;t created in Canvas!</para></simplesect>
+<simplesect kind="see"><para>mManaged </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="155"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1Canvas_18f2005603c1beff94db624d3854467bd" prot="public" static="no" mutable="no">
+        <type>EventHandle_CanvasPtr</type>
+        <definition>EventHandle_CanvasPtr MyGUI::Canvas::eventPreTextureChanges</definition>
+        <argsstring></argsstring>
+        <name>eventPreTextureChanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Notify user texture instance will be changed<simplesect kind="see"><para><ref refid="classMyGUI_1_1Canvas_13285a438807a63af658b9f87b5b724de" kindref="member">requestUpdateCanvas</ref>.<linebreak/>
+ signature : void method(MyGUI::Canvas* _canvas)<linebreak/>
+ </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_canvas</parametername>
+<parametername>which</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>will be updated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="168" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Canvas_13285a438807a63af658b9f87b5b724de" prot="public" static="no" mutable="no">
+        <type>EventHandle_CanvasPtrEvent</type>
+        <definition>EventHandle_CanvasPtrEvent MyGUI::Canvas::requestUpdateCanvas</definition>
+        <argsstring></argsstring>
+        <name>requestUpdateCanvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Texture instance was changed (May be caused by resizing texture or lossing device). User have to update all references to new instance of texture.<linebreak/>
+ signature : void method(MyGUI::Canvas* _canvas, MyGUI::Canvas::Event _event)<linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_canvas</parametername>
+<parametername>which</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>needs to update </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="175" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_18c680c4bb5aa729538316f80864b14ed" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::Canvas::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_125144dfbd28f72a0b144284fff834d9c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TextureUsage</type>
+        <definition>static TextureUsage MyGUI::Canvas::getDefaultTextureUsage</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultTextureUsage</name>
+        <briefdescription>
+<para>Returns default GUI texture usage. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1f057909dc67db22eea06e5be9b736b1f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PixelFormat</type>
+        <definition>static PixelFormat MyGUI::Canvas::getDefaultTextureFormat</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultTextureFormat</name>
+        <briefdescription>
+<para>Returns default GUI texture format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="161"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_15eff97147ec3192990810f2689fd915a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Canvas::shutdownOverride</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1decf70524a20d702cb9a549087cf3649" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Canvas::initialiseOverride</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1598294496fa17f2249ae96fb1376c0c8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::_destroyTexture</definition>
+        <argsstring>(bool _sendEvent)</argsstring>
+        <name>_destroyTexture</name>
+        <param>
+          <type>bool</type>
+          <declname>_sendEvent</declname>
+        </param>
+        <briefdescription>
+<para>Destroys texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1c3a23638f2c5a97b73b47caaef63d9ea" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::validate</definition>
+        <argsstring>(int &amp;_width, int &amp;_height, TextureUsage &amp;_usage, PixelFormat &amp;_format) const </argsstring>
+        <name>validate</name>
+        <param>
+          <type>int &amp;</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>_height</declname>
+        </param>
+        <param>
+          <type>TextureUsage &amp;</type>
+          <declname>_usage</declname>
+        </param>
+        <param>
+          <type>PixelFormat &amp;</type>
+          <declname>_format</declname>
+        </param>
+        <briefdescription>
+<para>Update entered parameters according to current texture resize mode(size) and restore (if can) parameters of usage and format from texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_11c983733c189eced06aabdca6b9f00ee" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::createExactTexture</definition>
+        <argsstring>(int _width, int _height, TextureUsage _usage, PixelFormat _format)</argsstring>
+        <name>createExactTexture</name>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <param>
+          <type>TextureUsage</type>
+          <declname>_usage</declname>
+        </param>
+        <param>
+          <type>PixelFormat</type>
+          <declname>_format</declname>
+        </param>
+        <briefdescription>
+<para>Creates the texture itself. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_12e4615ab741552f0e98dc4fc9c200bba" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Canvas::checkCreate</definition>
+        <argsstring>(int _width, int _height) const </argsstring>
+        <name>checkCreate</name>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+<para>Checks if we need to create a texture with such sizes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_149a40292b67abc12cd8c1da376143e8c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::resize</definition>
+        <argsstring>(const IntSize &amp;_size)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_size</declname>
+        </param>
+        <briefdescription>
+<para>Calls when resize widget. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_117c0a636afb98688026c1f1235292d36" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::correctUV</definition>
+        <argsstring>()</argsstring>
+        <name>correctUV</name>
+        <briefdescription>
+<para>Correct texture uv-coordinates. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_10df6f8176bbf259284a258bf383a6700" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::frameAdvise</definition>
+        <argsstring>(bool _advise)</argsstring>
+        <name>frameAdvise</name>
+        <param>
+          <type>bool</type>
+          <declname>_advise</declname>
+        </param>
+        <briefdescription>
+<para>For updating once per frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_11b8e0eb9d8c0361f0625b039e787be64" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::frameEntered</definition>
+        <argsstring>(float _time)</argsstring>
+        <name>frameEntered</name>
+        <param>
+          <type>float</type>
+          <declname>_time</declname>
+        </param>
+        <briefdescription>
+<para>For updating once per frame. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1bd50f94dd638b7979f7df50e31ecb3a9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Canvas::textureInvalidate</definition>
+        <argsstring>(ITexture *_texture)</argsstring>
+        <name>textureInvalidate</name>
+        <param>
+          <type>ITexture *</type>
+          <declname>_texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Canvas_1547e467b25d642693bd5d4037e528225" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Canvas::_setUVSet</definition>
+        <argsstring>(const FloatRect &amp;_rect)</argsstring>
+        <name>_setUVSet</name>
+        <param>
+          <type>const FloatRect &amp;</type>
+          <declname>_rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="207"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1Canvas_1890922c53f63ba2783363a62166f944a" prot="protected" static="no" mutable="no">
+        <type>ITexture *</type>
+        <definition>ITexture* MyGUI::Canvas::mTexture</definition>
+        <argsstring></argsstring>
+        <name>mTexture</name>
+        <briefdescription>
+<para>Current texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="211" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Canvas_100324fe2c3d88d25358c6c5c50721a54" prot="protected" static="no" mutable="no">
+        <type>IntSize</type>
+        <definition>IntSize MyGUI::Canvas::mReqTexSize</definition>
+        <argsstring></argsstring>
+        <name>mReqTexSize</name>
+        <briefdescription>
+<para>Requested bu user sizes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="214" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Canvas_1b9b8ebc7bd1eebbb3c9e82cee2f6fc86" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::Canvas::mGenTexName</definition>
+        <argsstring></argsstring>
+        <name>mGenTexName</name>
+        <briefdescription>
+<para>Generated texture name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="217" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Canvas_146ea98dff368206048f3a745f9946651" prot="protected" static="no" mutable="no">
+        <type><ref refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce33546" kindref="member">TextureResizeMode</ref></type>
+        <definition>TextureResizeMode MyGUI::Canvas::mTexResizeMode</definition>
+        <argsstring></argsstring>
+        <name>mTexResizeMode</name>
+        <briefdescription>
+<para>Texture resize mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce33546" kindref="member">TextureResizeMode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="220" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Canvas_16bcce208ea58ec7ca77a5e00f0611667" prot="protected" static="no" mutable="no">
+        <type>uint8 *</type>
+        <definition>uint8* MyGUI::Canvas::mTexData</definition>
+        <argsstring></argsstring>
+        <name>mTexData</name>
+        <briefdescription>
+<para>Saved pointer from last calling lock. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classMyGUI_1_1Canvas_1cd75e58b1b0e464683a2d208e2a6e81e" kindref="member">lock</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="223" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Canvas_1345ed6c8ac12cb407d4cf607254d28a5" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Canvas::mTexManaged</definition>
+        <argsstring></argsstring>
+        <name>mTexManaged</name>
+        <briefdescription>
+<para>true if we own the texture (can delete it or replace by another instance), otherwise false </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="226" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Canvas_12704f6bb83b2a6efd83fc3247431f753" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Canvas::mFrameAdvise</definition>
+        <argsstring></argsstring>
+        <name>mFrameAdvise</name>
+        <briefdescription>
+<para>For updating once per frame. True state means updating before next frame starts. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="229" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Canvas_1867df93bd95ae795c50f967e8af5fad4" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Canvas::mInvalidateData</definition>
+        <argsstring></argsstring>
+        <name>mInvalidateData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="231" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Widget wrapper over Texture - shows the texture. Implemented: resizing of texture (see TextureResizeMode); recovery after loosing device; </para>    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" line="39" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Canvas.h" bodystart="36" bodyend="232"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1Canvas_1598294496fa17f2249ae96fb1376c0c8" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>_destroyTexture</name></member>
+      <member refid="classMyGUI_1_1Canvas_1547e467b25d642693bd5d4037e528225" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>_setUVSet</name></member>
+      <member refid="classMyGUI_1_1Canvas_1890b413db8ff60373050d5d9ee6f262b" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1Canvas_15e94a83307e6479e6561aef0153ec223" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>Canvas</name></member>
+      <member refid="classMyGUI_1_1Canvas_12e4615ab741552f0e98dc4fc9c200bba" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>checkCreate</name></member>
+      <member refid="classMyGUI_1_1Canvas_117c0a636afb98688026c1f1235292d36" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>correctUV</name></member>
+      <member refid="classMyGUI_1_1Canvas_11c983733c189eced06aabdca6b9f00ee" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>createExactTexture</name></member>
+      <member refid="classMyGUI_1_1Canvas_13a349181c10a587b6c3fdd5910119206" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>createTexture</name></member>
+      <member refid="classMyGUI_1_1Canvas_18b6a1709142e0f6583bb5c2b8c45a550" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>createTexture</name></member>
+      <member refid="classMyGUI_1_1Canvas_12b2c2458033e68c353df7edc6778221e" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>createTexture</name></member>
+      <member refid="classMyGUI_1_1Canvas_14f720ecb033044ca1d725d973746b2f6" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>destroyTexture</name></member>
+      <member refid="classMyGUI_1_1Canvas_16d0b525c91f39c3c906663518d7ec63b" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>EventHandle_CanvasPtr</name></member>
+      <member refid="classMyGUI_1_1Canvas_16f3a3c5108b1b3be78cef36b4a823ecd" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>EventHandle_CanvasPtrEvent</name></member>
+      <member refid="classMyGUI_1_1Canvas_18f2005603c1beff94db624d3854467bd" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>eventPreTextureChanges</name></member>
+      <member refid="classMyGUI_1_1Canvas_10df6f8176bbf259284a258bf383a6700" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>frameAdvise</name></member>
+      <member refid="classMyGUI_1_1Canvas_11b8e0eb9d8c0361f0625b039e787be64" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>frameEntered</name></member>
+      <member refid="classMyGUI_1_1Canvas_18c680c4bb5aa729538316f80864b14ed" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1Canvas_1f057909dc67db22eea06e5be9b736b1f" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getDefaultTextureFormat</name></member>
+      <member refid="classMyGUI_1_1Canvas_125144dfbd28f72a0b144284fff834d9c" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getDefaultTextureUsage</name></member>
+      <member refid="classMyGUI_1_1Canvas_1e5d15b259ea92e5b08abde80fc3c6cfc" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getResizeMode</name></member>
+      <member refid="classMyGUI_1_1Canvas_18bd4909b3d343e8f4b0beaa10a88a809" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getTexture</name></member>
+      <member refid="classMyGUI_1_1Canvas_17f49dce0b8d21fc1e39997f8fbb993e2" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getTextureFormat</name></member>
+      <member refid="classMyGUI_1_1Canvas_12c8da218226a3191c4143f02778b5bc4" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getTextureName</name></member>
+      <member refid="classMyGUI_1_1Canvas_15b9651e2717289dc229b4f383f83e644" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getTextureRealHeight</name></member>
+      <member refid="classMyGUI_1_1Canvas_17bc13055358ea16626c1845a6df5bddb" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getTextureRealSize</name></member>
+      <member refid="classMyGUI_1_1Canvas_19e780811ae1a8987f9d18e3ccfcf5b07" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getTextureRealWidth</name></member>
+      <member refid="classMyGUI_1_1Canvas_171d8d6d90a0e89b7254e40b75d586164" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getTextureSrcHeight</name></member>
+      <member refid="classMyGUI_1_1Canvas_173cb67d6ece0331273e54f008c22f094" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getTextureSrcSize</name></member>
+      <member refid="classMyGUI_1_1Canvas_180a075bad0825f6b6e7e71d6478c60ac" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>getTextureSrcWidth</name></member>
+      <member refid="classMyGUI_1_1Canvas_132c32a149649ec8da0cd986191c935cd" prot="public" virt="virtual"><scope>MyGUI::Canvas</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1Canvas_1decf70524a20d702cb9a549087cf3649" prot="protected" virt="virtual"><scope>MyGUI::Canvas</scope><name>initialiseOverride</name></member>
+      <member refid="classMyGUI_1_1Canvas_15babe65dce3eb19ac902145aa7f6b78d" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>isLocked</name></member>
+      <member refid="classMyGUI_1_1Canvas_13a84cb1f1f351481b50297a5f16a42e8" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>isTextureCreated</name></member>
+      <member refid="classMyGUI_1_1Canvas_17f5a8c55bb5f841caa69cdd175b7f322" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>isTextureManaged</name></member>
+      <member refid="classMyGUI_1_1Canvas_1224bb79fa71f37409504121db9a6bd00" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>isTextureSrcSize</name></member>
+      <member refid="classMyGUI_1_1Canvas_1ce63ef05ddd5a453846b2ddf416d3edd" prot="public" virt="virtual"><scope>MyGUI::Canvas</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1Canvas_1ef6e0697a785080e1ab72131545eaa73" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1Canvas_1cd75e58b1b0e464683a2d208e2a6e81e" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>lock</name></member>
+      <member refid="classMyGUI_1_1Canvas_12704f6bb83b2a6efd83fc3247431f753" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>mFrameAdvise</name></member>
+      <member refid="classMyGUI_1_1Canvas_1b9b8ebc7bd1eebbb3c9e82cee2f6fc86" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>mGenTexName</name></member>
+      <member refid="classMyGUI_1_1Canvas_1867df93bd95ae795c50f967e8af5fad4" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>mInvalidateData</name></member>
+      <member refid="classMyGUI_1_1Canvas_100324fe2c3d88d25358c6c5c50721a54" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>mReqTexSize</name></member>
+      <member refid="classMyGUI_1_1Canvas_16bcce208ea58ec7ca77a5e00f0611667" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>mTexData</name></member>
+      <member refid="classMyGUI_1_1Canvas_1345ed6c8ac12cb407d4cf607254d28a5" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>mTexManaged</name></member>
+      <member refid="classMyGUI_1_1Canvas_146ea98dff368206048f3a745f9946651" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>mTexResizeMode</name></member>
+      <member refid="classMyGUI_1_1Canvas_1890922c53f63ba2783363a62166f944a" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>mTexture</name></member>
+      <member refid="classMyGUI_1_1Canvas_13285a438807a63af658b9f87b5b724de" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>requestUpdateCanvas</name></member>
+      <member refid="classMyGUI_1_1Canvas_149a40292b67abc12cd8c1da376143e8c" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>resize</name></member>
+      <member refid="classMyGUI_1_1Canvas_135c011bbfa492fd65b8fee498410f474" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1Canvas_15f60615d0e02556ec81337d4101a5016" prot="public" virt="virtual"><scope>MyGUI::Canvas</scope><name>setCoord</name></member>
+      <member refid="classMyGUI_1_1Canvas_1df5a787ab425178b4121f6f11f3fae64" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>setCoord</name></member>
+      <member refid="classMyGUI_1_1Canvas_1a495a0af819a55bbfc9ee7ad1c8351e8" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>setResizeMode</name></member>
+      <member refid="classMyGUI_1_1Canvas_1bfc7a6cb3997dc61dbff52f4ebde5a86" prot="public" virt="virtual"><scope>MyGUI::Canvas</scope><name>setSize</name></member>
+      <member refid="classMyGUI_1_1Canvas_1b8aa9e1a81b18cfeb8298fd7899686f1" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>setSize</name></member>
+      <member refid="classMyGUI_1_1Canvas_1c40754149d076dc1a360aaa7d5ef530d" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>setTextureManaged</name></member>
+      <member refid="classMyGUI_1_1Canvas_15eff97147ec3192990810f2689fd915a" prot="protected" virt="virtual"><scope>MyGUI::Canvas</scope><name>shutdownOverride</name></member>
+      <member refid="classMyGUI_1_1Canvas_1bd50f94dd638b7979f7df50e31ecb3a9" prot="protected" virt="virtual"><scope>MyGUI::Canvas</scope><name>textureInvalidate</name></member>
+      <member refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce33546" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>TextureResizeMode</name></member>
+      <member refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce3354662e4ef85ff24242e8eeace8fe528d703" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>TRM_PT_CONST_SIZE</name></member>
+      <member refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce335460937f0e6427f2fa3eb01271d0b50885d" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>TRM_PT_VIEW_ALL</name></member>
+      <member refid="classMyGUI_1_1Canvas_1b75ae5f78f7f0479abb0c63a5ce335464c3e16f756d918006b8bd4c62abe1244" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>TRM_PT_VIEW_REQUESTED</name></member>
+      <member refid="classMyGUI_1_1Canvas_128d51c6498b5b868ff414094ed72c13f" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>unlock</name></member>
+      <member refid="classMyGUI_1_1Canvas_1811d6a81e9c190dd98a9a5d1f144882a" prot="public" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>updateTexture</name></member>
+      <member refid="classMyGUI_1_1Canvas_1c3a23638f2c5a97b73b47caaef63d9ea" prot="protected" virt="non-virtual"><scope>MyGUI::Canvas</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1VScroll" kind="class" prot="public">
+    <compoundname>MyGUI::VScroll</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1VScroll_1828dd99e5ad7f50e19060ce69fc772fb" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::VScroll::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" line="39" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1VScroll_1f54d0a24aacfbae46a58d998977ae01f" prot="public" static="no">
+        <type>VScroll</type>
+        <definition>typedef VScroll MyGUI::VScroll::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" line="39" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1VScroll_10031fb171155d07e4a9ae89e8baa18e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::VScroll::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" line="39" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1VScroll_12acfb3870e08cf11f5fad8f795296113" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::VScroll::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" line="39" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1VScroll_14b34fc5419769c3101a7025b13a61b44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::VScroll::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" line="39" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1VScroll_119ca2ea24d7b21901c661da5fb00454a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::VScroll::VScroll</definition>
+        <argsstring>()</argsstring>
+        <name>VScroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" line="43" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1VScroll_123361effbf981eb578a2e5ce08468a1b" prot="public" static="no" mutable="no">
+        <type>EventPair&lt; EventHandle_WidgetSizeT, EventHandle_VScrollPtrSizeT &gt;</type>
+        <definition>EventPair&lt;EventHandle_WidgetSizeT, EventHandle_VScrollPtrSizeT&gt; MyGUI::VScroll::eventScrollChangePosition</definition>
+        <argsstring></argsstring>
+        <name>eventScrollChangePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : scroll tracker position changed.<linebreak/>
+ signature : void method(MyGUI::VScroll* _sender, size_t _position)<linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- new tracker position </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" line="54" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1VScroll_1d1f1fde1e59e10300c74fad1aa236bd6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::VScroll::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" line="39" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" line="38" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_DeprecatedWidgets.h" bodystart="36" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1VScroll_1828dd99e5ad7f50e19060ce69fc772fb" prot="public" virt="non-virtual"><scope>MyGUI::VScroll</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1VScroll_123361effbf981eb578a2e5ce08468a1b" prot="public" virt="non-virtual"><scope>MyGUI::VScroll</scope><name>eventScrollChangePosition</name></member>
+      <member refid="classMyGUI_1_1VScroll_1d1f1fde1e59e10300c74fad1aa236bd6" prot="public" virt="non-virtual"><scope>MyGUI::VScroll</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1VScroll_10031fb171155d07e4a9ae89e8baa18e9" prot="public" virt="virtual"><scope>MyGUI::VScroll</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1VScroll_12acfb3870e08cf11f5fad8f795296113" prot="public" virt="virtual"><scope>MyGUI::VScroll</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1VScroll_14b34fc5419769c3101a7025b13a61b44" prot="public" virt="non-virtual"><scope>MyGUI::VScroll</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1VScroll_1f54d0a24aacfbae46a58d998977ae01f" prot="public" virt="non-virtual"><scope>MyGUI::VScroll</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1VScroll_119ca2ea24d7b21901c661da5fb00454a" prot="public" virt="non-virtual"><scope>MyGUI::VScroll</scope><name>VScroll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1TextBox" kind="class" prot="public">
+    <compoundname>MyGUI::TextBox</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1TextBox_19de997c622f19554b3fe41cf5c59a0f5" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::TextBox::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1TextBox_1fb7369bf080624170fbed666fd25dd5b" prot="public" static="no">
+        <type>TextBox</type>
+        <definition>typedef TextBox MyGUI::TextBox::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_1fbcfc0d11323779f155ec0be73a129ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::TextBox::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_11e4f6fdecb0c8b91e4cf1cc6731004ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::TextBox::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_16f44e01a8d08ece1a8683e8df9fca5b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::TextBox::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_1c9823be8b1b86d97123b9ab05ee81c77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::TextBox::TextBox</definition>
+        <argsstring>()</argsstring>
+        <name>TextBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_15e8dfe8de46c133f662ffba060f18d23" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IntCoord</type>
+        <definition>virtual IntCoord MyGUI::TextBox::getTextRegion</definition>
+        <argsstring>()</argsstring>
+        <name>getTextRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get text region coordinate </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_1c5cac14b8c5a65f647dda4847b47cea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IntSize</type>
+        <definition>virtual IntSize MyGUI::TextBox::getTextSize</definition>
+        <argsstring>()</argsstring>
+        <name>getTextSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get text region size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_10add0f3ad9abbc285ba369c8a4d5080d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TextBox::setCaption</definition>
+        <argsstring>(const UString &amp;_value)</argsstring>
+        <name>setCaption</name>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget caption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_121d2e96a9c1c31b2dc26348cda7ebd81" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+        <definition>virtual const UString&amp; MyGUI::TextBox::getCaption</definition>
+        <argsstring>()</argsstring>
+        <name>getCaption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get widget caption </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_18882452ac6bd460e73f46121c63b081b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TextBox::setFontName</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>setFontName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget text font </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_1eb499df22061231d04ff0a29e87b2b06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; MyGUI::TextBox::getFontName</definition>
+        <argsstring>()</argsstring>
+        <name>getFontName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get widget text font name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_1e567487392d88976456984442c5e44a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TextBox::setFontHeight</definition>
+        <argsstring>(int _value)</argsstring>
+        <name>setFontHeight</name>
+        <param>
+          <type>int</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget text font height </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_182cf5031ad57c818cfa9c5a9a0393263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MyGUI::TextBox::getFontHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getFontHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get widget text font height </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_10e3f84f169ccbb4d62057423c9f3cf8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TextBox::setTextAlign</definition>
+        <argsstring>(Align _value)</argsstring>
+        <name>setTextAlign</name>
+        <param>
+          <type>Align</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget text align </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_1e2b4578eeb95ab1fb771e163d50f9b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Align</type>
+        <definition>Align MyGUI::TextBox::getTextAlign</definition>
+        <argsstring>()</argsstring>
+        <name>getTextAlign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get widget text align </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_199437c63dc672cd4a2203533803b9b88" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TextBox::setTextColour</definition>
+        <argsstring>(const Colour &amp;_value)</argsstring>
+        <name>setTextColour</name>
+        <param>
+          <type>const Colour &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget text colour </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_1acc4e9fde74bb63723f7abd59f20ca29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const Colour &amp;</type>
+        <definition>const Colour&amp; MyGUI::TextBox::getTextColour</definition>
+        <argsstring>()</argsstring>
+        <name>getTextColour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get widget text colour </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_120fe368f3845d4036a9f3d0cca2de148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::TextBox::setCaptionWithReplacing</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>setCaptionWithReplacing</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set TextBox caption and replace special sequences.<linebreak/>
+ &quot;\\n&quot; will be replaced with new line character;<linebreak/>
+ &quot;#{Keyword}&quot; replaced with string from LanguageManager or left as it is if kayword wasn&apos;t found. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_1e9a1ea838b24ff17dc97bd8bf345e266" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TextBox::setTextShadowColour</definition>
+        <argsstring>(const Colour &amp;_value)</argsstring>
+        <name>setTextShadowColour</name>
+        <param>
+          <type>const Colour &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget text shadow colour </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_14d6ac0eb45e0d495ed874367cfac7577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const Colour &amp;</type>
+        <definition>const Colour&amp; MyGUI::TextBox::getTextShadowColour</definition>
+        <argsstring>()</argsstring>
+        <name>getTextShadowColour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get widget text shadow colour </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_1e04d6fd910e1756e6e24b6c9e004f0ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TextBox::setTextShadow</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setTextShadow</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget text shadow </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_1c0080a7ed833342b98c9376772d189e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::TextBox::getTextShadow</definition>
+        <argsstring>()</argsstring>
+        <name>getTextShadow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get widget text shadow </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_161c948036f66b138fc56d7fca6c794c4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::TextBox::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1TextBox_1ccb4705e7de752650eec196f172da676" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::TextBox::setPropertyOverride</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setPropertyOverride</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" line="33" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_TextBox.h" bodystart="31" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1TextBox_19de997c622f19554b3fe41cf5c59a0f5" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1TextBox_121d2e96a9c1c31b2dc26348cda7ebd81" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>getCaption</name></member>
+      <member refid="classMyGUI_1_1TextBox_161c948036f66b138fc56d7fca6c794c4" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1TextBox_182cf5031ad57c818cfa9c5a9a0393263" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>getFontHeight</name></member>
+      <member refid="classMyGUI_1_1TextBox_1eb499df22061231d04ff0a29e87b2b06" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>getFontName</name></member>
+      <member refid="classMyGUI_1_1TextBox_1e2b4578eeb95ab1fb771e163d50f9b9c" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>getTextAlign</name></member>
+      <member refid="classMyGUI_1_1TextBox_1acc4e9fde74bb63723f7abd59f20ca29" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>getTextColour</name></member>
+      <member refid="classMyGUI_1_1TextBox_15e8dfe8de46c133f662ffba060f18d23" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>getTextRegion</name></member>
+      <member refid="classMyGUI_1_1TextBox_1c0080a7ed833342b98c9376772d189e7" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>getTextShadow</name></member>
+      <member refid="classMyGUI_1_1TextBox_14d6ac0eb45e0d495ed874367cfac7577" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>getTextShadowColour</name></member>
+      <member refid="classMyGUI_1_1TextBox_1c5cac14b8c5a65f647dda4847b47cea8" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>getTextSize</name></member>
+      <member refid="classMyGUI_1_1TextBox_1fbcfc0d11323779f155ec0be73a129ab" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1TextBox_11e4f6fdecb0c8b91e4cf1cc6731004ab" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1TextBox_16f44e01a8d08ece1a8683e8df9fca5b7" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1TextBox_1fb7369bf080624170fbed666fd25dd5b" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1TextBox_10add0f3ad9abbc285ba369c8a4d5080d" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>setCaption</name></member>
+      <member refid="classMyGUI_1_1TextBox_120fe368f3845d4036a9f3d0cca2de148" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>setCaptionWithReplacing</name></member>
+      <member refid="classMyGUI_1_1TextBox_1e567487392d88976456984442c5e44a2" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>setFontHeight</name></member>
+      <member refid="classMyGUI_1_1TextBox_18882452ac6bd460e73f46121c63b081b" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>setFontName</name></member>
+      <member refid="classMyGUI_1_1TextBox_1ccb4705e7de752650eec196f172da676" prot="protected" virt="virtual"><scope>MyGUI::TextBox</scope><name>setPropertyOverride</name></member>
+      <member refid="classMyGUI_1_1TextBox_10e3f84f169ccbb4d62057423c9f3cf8f" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>setTextAlign</name></member>
+      <member refid="classMyGUI_1_1TextBox_199437c63dc672cd4a2203533803b9b88" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>setTextColour</name></member>
+      <member refid="classMyGUI_1_1TextBox_1e04d6fd910e1756e6e24b6c9e004f0ab" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>setTextShadow</name></member>
+      <member refid="classMyGUI_1_1TextBox_1e9a1ea838b24ff17dc97bd8bf345e266" prot="public" virt="virtual"><scope>MyGUI::TextBox</scope><name>setTextShadowColour</name></member>
+      <member refid="classMyGUI_1_1TextBox_1c9823be8b1b86d97123b9ab05ee81c77" prot="public" virt="non-virtual"><scope>MyGUI::TextBox</scope><name>TextBox</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

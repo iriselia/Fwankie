@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1ProgressBar" kind="class" prot="public">
+    <compoundname>MyGUI::ProgressBar</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1ProgressBar_1ea00815bb4fd0bd19fc3b553874cfa10" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::ProgressBar::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1ProgressBar_14d60277d13711475bcc07f1f3d20bf9c" prot="public" static="no">
+        <type>ProgressBar</type>
+        <definition>typedef ProgressBar MyGUI::ProgressBar::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_10c92a8ef607e517ca0c9787d6f1b6121" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::ProgressBar::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1a10680cef786e24ccf4f88c8ee257f4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::ProgressBar::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1e09fab67ba2092fb6e9b31cf8a613dee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::ProgressBar::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1424f1e9323edd4caa8308db0a4ce7df4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::ProgressBar::ProgressBar</definition>
+        <argsstring>()</argsstring>
+        <name>ProgressBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1a6f05459798b5f114e82325d1ead97bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ProgressBar::setProgressRange</definition>
+        <argsstring>(size_t _value)</argsstring>
+        <name>setProgressRange</name>
+        <param>
+          <type>size_t</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set progress range </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_12afb1f9715e1a4a06c443a525dfcaa7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ProgressBar::getProgressRange</definition>
+        <argsstring>() const </argsstring>
+        <name>getProgressRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get progress range </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1dd0c42de366b1ebc3bb55ef3b42f0b81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ProgressBar::setProgressPosition</definition>
+        <argsstring>(size_t _value)</argsstring>
+        <name>setProgressPosition</name>
+        <param>
+          <type>size_t</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set progress position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_183046a034b77606c6a92bb1c9f6e00c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ProgressBar::getProgressPosition</definition>
+        <argsstring>() const </argsstring>
+        <name>getProgressPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get progress position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1e29aed50237830f233444b75a8c6d4eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ProgressBar::setProgressAutoTrack</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setProgressAutoTrack</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable progress auto tracking </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1c686ff36f8c6fbd0341c987e26250757" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::ProgressBar::getProgressAutoTrack</definition>
+        <argsstring>() const </argsstring>
+        <name>getProgressAutoTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get progress auto tracking flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_173834f41215b85fad124f8a13688002b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ProgressBar::setFlowDirection</definition>
+        <argsstring>(FlowDirection _value)</argsstring>
+        <name>setFlowDirection</name>
+        <param>
+          <type>FlowDirection</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1f03cdee41b7c5bf4e122c6564c5e3e16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>FlowDirection</type>
+        <definition>FlowDirection MyGUI::ProgressBar::getFlowDirection</definition>
+        <argsstring>() const </argsstring>
+        <name>getFlowDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1bddb30b91c731220bdbb945a7412be5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ProgressBar::setPosition</definition>
+        <argsstring>(const IntPoint &amp;_value)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>const IntPoint &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para><copydoc link="Widget::setPosition(const IntPoint& _value)"></copydoc>
+ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_122f852e7b318e9b15d7cb7db49384818" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ProgressBar::setSize</definition>
+        <argsstring>(const IntSize &amp;_value)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para><copydoc link="Widget::setSize(const IntSize& _value)"></copydoc>
+ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1f572bb88936769d153fe7236c43a9623" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ProgressBar::setCoord</definition>
+        <argsstring>(const IntCoord &amp;_value)</argsstring>
+        <name>setCoord</name>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para><copydoc link="Widget::setCoord(const IntCoord& _value)"></copydoc>
+ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1dc97c123bd066312081735211956862d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ProgressBar::setPosition</definition>
+        <argsstring>(int _left, int _top)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setPosition(int _left, int _top)"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1609e4430575a56583a96341b030455b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ProgressBar::setSize</definition>
+        <argsstring>(int _width, int _height)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setSize(int _width, int _height)"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_168fab6fc7d497ed5bf9e62d6846f153d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ProgressBar::setCoord</definition>
+        <argsstring>(int _left, int _top, int _width, int _height)</argsstring>
+        <name>setCoord</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setCoord(int _left, int _top, int _width, int _height)"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_10772a94526a081c0a398a60cff869ac2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::ProgressBar::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1b845ea9bbd161ae2dfa1d9233314f810" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ProgressBar::initialiseOverride</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1f06f6a24e9d190edaf3513af1e05c45a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ProgressBar::shutdownOverride</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_162160b3393f99b0abe598db525e6e15d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ProgressBar::setPropertyOverride</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setPropertyOverride</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_14be0e424169d109404ac4d84d52951d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ProgressBar::frameEntered</definition>
+        <argsstring>(float _time)</argsstring>
+        <name>frameEntered</name>
+        <param>
+          <type>float</type>
+          <declname>_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1b6ef9d1ede122c6a89bb4f1bbe421101" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ProgressBar::updateTrack</definition>
+        <argsstring>()</argsstring>
+        <name>updateTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_1a1b3b82358cd477915613af6207fb03c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MyGUI::ProgressBar::getClientWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getClientWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_160babdab0f2eb11bf19e4f5fe3b1dd97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MyGUI::ProgressBar::getClientHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getClientHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ProgressBar_183b3301f9b79dde0bafbfb3d4df5938e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ProgressBar::setTrackPosition</definition>
+        <argsstring>(Widget *_widget, int _left, int _top, int _width, int _height)</argsstring>
+        <name>setTrackPosition</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="87"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_10d28554896dded15c7d21689207317e0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::ProgressBar::mTrackSkin</definition>
+        <argsstring></argsstring>
+        <name>mTrackSkin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="90" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_17b85f744e90f105058da8abe140b7140" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyGUI::ProgressBar::mTrackWidth</definition>
+        <argsstring></argsstring>
+        <name>mTrackWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="91" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_1be23e74c80b7800660d4579c7a4d948f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyGUI::ProgressBar::mTrackStep</definition>
+        <argsstring></argsstring>
+        <name>mTrackStep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="92" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_1841c257d930dd8aff2fd1489a0eda30d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyGUI::ProgressBar::mTrackMin</definition>
+        <argsstring></argsstring>
+        <name>mTrackMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="93" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_1dc85a0fdb3323943eb5f6199ed921247" prot="private" static="no" mutable="no">
+        <type>VectorWidgetPtr</type>
+        <definition>VectorWidgetPtr MyGUI::ProgressBar::mVectorTrack</definition>
+        <argsstring></argsstring>
+        <name>mVectorTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="95" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_1960a2f8e42ef1502ff11da9374772731" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ProgressBar::mRange</definition>
+        <argsstring></argsstring>
+        <name>mRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="96" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_1c33f232e7e5030c0b7cf66044ac1a28a" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ProgressBar::mStartPosition</definition>
+        <argsstring></argsstring>
+        <name>mStartPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="97" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_15bce183af4bef0990c7c38107ec33b5d" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ProgressBar::mEndPosition</definition>
+        <argsstring></argsstring>
+        <name>mEndPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="97" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_12bf094b5355733aa9bae10c05026f753" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyGUI::ProgressBar::mAutoPosition</definition>
+        <argsstring></argsstring>
+        <name>mAutoPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="98" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_11badf230a8a032b0b9fbcae3a57199e7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::ProgressBar::mAutoTrack</definition>
+        <argsstring></argsstring>
+        <name>mAutoTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="99" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_1d12ac10b93b691bb33cfd0858cb0e1d4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::ProgressBar::mFillTrack</definition>
+        <argsstring></argsstring>
+        <name>mFillTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="100" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_1952d2979f54034e217846bd981e67906" prot="private" static="no" mutable="no">
+        <type>FlowDirection</type>
+        <definition>FlowDirection MyGUI::ProgressBar::mFlowDirection</definition>
+        <argsstring></argsstring>
+        <name>mFlowDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="102" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ProgressBar_1ebb9decc84bb16e364dad9e0aff2e4fa" prot="private" static="no" mutable="no">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::ProgressBar::mClient</definition>
+        <argsstring></argsstring>
+        <name>mClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="104" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ProgressBar.h" bodystart="33" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1ProgressBar_1ea00815bb4fd0bd19fc3b553874cfa10" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_14be0e424169d109404ac4d84d52951d8" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>frameEntered</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_10772a94526a081c0a398a60cff869ac2" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_160babdab0f2eb11bf19e4f5fe3b1dd97" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>getClientHeight</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1a1b3b82358cd477915613af6207fb03c" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>getClientWidth</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1f03cdee41b7c5bf4e122c6564c5e3e16" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>getFlowDirection</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1c686ff36f8c6fbd0341c987e26250757" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>getProgressAutoTrack</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_183046a034b77606c6a92bb1c9f6e00c1" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>getProgressPosition</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_12afb1f9715e1a4a06c443a525dfcaa7a" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>getProgressRange</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_10c92a8ef607e517ca0c9787d6f1b6121" prot="public" virt="virtual"><scope>MyGUI::ProgressBar</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1b845ea9bbd161ae2dfa1d9233314f810" prot="protected" virt="virtual"><scope>MyGUI::ProgressBar</scope><name>initialiseOverride</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1a10680cef786e24ccf4f88c8ee257f4c" prot="public" virt="virtual"><scope>MyGUI::ProgressBar</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1e09fab67ba2092fb6e9b31cf8a613dee" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_12bf094b5355733aa9bae10c05026f753" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mAutoPosition</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_11badf230a8a032b0b9fbcae3a57199e7" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mAutoTrack</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1ebb9decc84bb16e364dad9e0aff2e4fa" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mClient</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_15bce183af4bef0990c7c38107ec33b5d" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mEndPosition</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1d12ac10b93b691bb33cfd0858cb0e1d4" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mFillTrack</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1952d2979f54034e217846bd981e67906" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mFlowDirection</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1960a2f8e42ef1502ff11da9374772731" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mRange</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1c33f232e7e5030c0b7cf66044ac1a28a" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mStartPosition</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1841c257d930dd8aff2fd1489a0eda30d" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mTrackMin</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_10d28554896dded15c7d21689207317e0" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mTrackSkin</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1be23e74c80b7800660d4579c7a4d948f" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mTrackStep</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_17b85f744e90f105058da8abe140b7140" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mTrackWidth</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1dc85a0fdb3323943eb5f6199ed921247" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>mVectorTrack</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1424f1e9323edd4caa8308db0a4ce7df4" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>ProgressBar</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_14d60277d13711475bcc07f1f3d20bf9c" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1f572bb88936769d153fe7236c43a9623" prot="public" virt="virtual"><scope>MyGUI::ProgressBar</scope><name>setCoord</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_168fab6fc7d497ed5bf9e62d6846f153d" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>setCoord</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_173834f41215b85fad124f8a13688002b" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>setFlowDirection</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1bddb30b91c731220bdbb945a7412be5e" prot="public" virt="virtual"><scope>MyGUI::ProgressBar</scope><name>setPosition</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1dc97c123bd066312081735211956862d" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>setPosition</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1e29aed50237830f233444b75a8c6d4eb" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>setProgressAutoTrack</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1dd0c42de366b1ebc3bb55ef3b42f0b81" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>setProgressPosition</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1a6f05459798b5f114e82325d1ead97bc" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>setProgressRange</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_162160b3393f99b0abe598db525e6e15d" prot="protected" virt="virtual"><scope>MyGUI::ProgressBar</scope><name>setPropertyOverride</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_122f852e7b318e9b15d7cb7db49384818" prot="public" virt="virtual"><scope>MyGUI::ProgressBar</scope><name>setSize</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1609e4430575a56583a96341b030455b3" prot="public" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>setSize</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_183b3301f9b79dde0bafbfb3d4df5938e" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>setTrackPosition</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1f06f6a24e9d190edaf3513af1e05c45a" prot="protected" virt="virtual"><scope>MyGUI::ProgressBar</scope><name>shutdownOverride</name></member>
+      <member refid="classMyGUI_1_1ProgressBar_1b6ef9d1ede122c6a89bb4f1bbe421101" prot="private" virt="non-virtual"><scope>MyGUI::ProgressBar</scope><name>updateTrack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2089 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1MenuControl" kind="class" prot="public">
+    <compoundname>MyGUI::MenuControl</compoundname>
+    <innerclass refid="structMyGUI_1_1MenuControl_1_1ItemInfo">MyGUI::MenuControl::ItemInfo</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1MenuControl_19bfc8d44881ba61f738bb855366845fe" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::MenuControl::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="47" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1MenuControl_18e9fdf2e3a58f3e612a588200608c0b2" prot="public" static="no">
+        <type>MenuControl</type>
+        <definition>typedef MenuControl MyGUI::MenuControl::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="47" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1MenuControl_1515859186a920d9122ffeaf5c4fe2aa0" prot="public" static="no">
+        <type>std::vector&lt; ItemInfo &gt;</type>
+        <definition>typedef std::vector&lt;ItemInfo&gt; MyGUI::MenuControl::VectorMenuItemInfo</definition>
+        <argsstring></argsstring>
+        <name>VectorMenuItemInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="81" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_11afb6232643dd8412cd2c01069ab6c32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::MenuControl::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="47" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1633c476a988e1cf98a959e65163e01c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::MenuControl::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="47" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1b8b1de42cd99fc88e6f1607129a4dd96" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="47" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1e2ac1482aa62dd86b9eedf2edd15c586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::MenuControl::MenuControl</definition>
+        <argsstring>()</argsstring>
+        <name>MenuControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1d326cf96ed9f9e64de08f31c6d09a333" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MenuControl::setVisible</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setVisible</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setVisible"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_190d84276e3e451a53ddbf4588e1fcfac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setVisibleSmooth</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setVisibleSmooth</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hide or show Menu smooth </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1ed6d2ee37d26b4d8c8c6d22f218d78ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::MenuControl::getItemCount</definition>
+        <argsstring>() const </argsstring>
+        <name>getItemCount</name>
+        <briefdescription>
+<para>Get number of items. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1ed26a3443ef71e33420d32a62450fd7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuItem *</type>
+        <definition>MenuItem* MyGUI::MenuControl::insertItemAt</definition>
+        <argsstring>(size_t _index, const UString &amp;_name, MenuItemType _type=MenuItemType::Normal, const std::string &amp;_id=&quot;&quot;, Any _data=Any::Null)</argsstring>
+        <name>insertItemAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>MenuItemType</type>
+          <declname>_type</declname>
+          <defval>MenuItemType::Normal</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_id</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>_data</declname>
+          <defval>Any::Null</defval>
+        </param>
+        <briefdescription>
+<para>Insert an item into a array at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_130d6389c65fb67bcb0b7dc49c43f3e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuItem *</type>
+        <definition>MenuItem* MyGUI::MenuControl::insertItem</definition>
+        <argsstring>(MenuItem *_to, const UString &amp;_name, MenuItemType _type=MenuItemType::Normal, const std::string &amp;_id=&quot;&quot;, Any _data=Any::Null)</argsstring>
+        <name>insertItem</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_to</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>MenuItemType</type>
+          <declname>_type</declname>
+          <defval>MenuItemType::Normal</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_id</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>_data</declname>
+          <defval>Any::Null</defval>
+        </param>
+        <briefdescription>
+<para>Insert an item into a array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1b6749ee9f77afb52f26204ffd86a3cad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuItem *</type>
+        <definition>MenuItem* MyGUI::MenuControl::addItem</definition>
+        <argsstring>(const UString &amp;_name, MenuItemType _type=MenuItemType::Normal, const std::string &amp;_id=&quot;&quot;, Any _data=Any::Null)</argsstring>
+        <name>addItem</name>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>MenuItemType</type>
+          <declname>_type</declname>
+          <defval>MenuItemType::Normal</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_id</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>_data</declname>
+          <defval>Any::Null</defval>
+        </param>
+        <briefdescription>
+<para>Add an item to the end of a array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_153a2e9a3af85f2f883761789415dff30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::removeItemAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>removeItemAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+<para>Remove item at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_18554441eaf63c898c9daa6fff929b8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::removeItem</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>removeItem</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+<para>Remove item. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_10cc1a607ebbb405ea5aade7180aa0d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::removeAllItems</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllItems</name>
+        <briefdescription>
+<para>Remove all items. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1be9ff7ec836d5b8681021b622e69ecd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuItem *</type>
+        <definition>MenuItem* MyGUI::MenuControl::getItemAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>getItemAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+<para>Get item from specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1c483adc46713df590cddcc4e9eedd09b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::MenuControl::getItemIndex</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>getItemIndex</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+<para>Get item index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1a80d0c0fdf28178fe431dc4b8d2f49b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::MenuControl::findItemIndex</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>findItemIndex</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+<para>Search item, returns the position of the first occurrence in array or ITEM_NONE if item not found. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1525e1074833687a1f0c70b72593e296c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuItem *</type>
+        <definition>MenuItem* MyGUI::MenuControl::findItemWith</definition>
+        <argsstring>(const UString &amp;_name)</argsstring>
+        <name>findItemWith</name>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+<para>Search item, returns the item of the first occurrence in array or nullptr if item not found. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_15b4a629da88ae470560890478eaeec3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setItemDataAt</definition>
+        <argsstring>(size_t _index, Any _data)</argsstring>
+        <name>setItemDataAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>_data</declname>
+        </param>
+        <briefdescription>
+<para>Replace an item data at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1a3fbd2e3bede93b02e84e34828333a9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setItemData</definition>
+        <argsstring>(MenuItem *_item, Any _data)</argsstring>
+        <name>setItemData</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>_data</declname>
+        </param>
+        <briefdescription>
+<para>Replace an item data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1c48a3f1f2d19bbac92f39bdc811e8af7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::clearItemDataAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>clearItemDataAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+<para>Clear an item data at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1ae98b06985a9fff8451d72ff83668831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::clearItemData</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>clearItemData</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+<para>Clear an item data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_150d2f9400bdc05f89e6039e96addb1a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>ValueType</declname>
+            <defname>ValueType</defname>
+          </param>
+        </templateparamlist>
+        <type>ValueType *</type>
+        <definition>ValueType* MyGUI::MenuControl::getItemDataAt</definition>
+        <argsstring>(size_t _index, bool _throw=true)</argsstring>
+        <name>getItemDataAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_throw</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Get item data from specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="141" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="140" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1cd60afac5b956b5c59fec30aeb439307" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>ValueType</declname>
+            <defname>ValueType</defname>
+          </param>
+        </templateparamlist>
+        <type>ValueType *</type>
+        <definition>ValueType* MyGUI::MenuControl::getItemData</definition>
+        <argsstring>(MenuItem *_item, bool _throw=true)</argsstring>
+        <name>getItemData</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_throw</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Get item data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="148" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_15e80913fb7c0f26fdc5aaeca3f6a51cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setItemIdAt</definition>
+        <argsstring>(size_t _index, const std::string &amp;_id)</argsstring>
+        <name>setItemIdAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+<para>Replace an item id at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1f8f63613982fd2205d07babcf51e4b5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setItemId</definition>
+        <argsstring>(MenuItem *_item, const std::string &amp;_id)</argsstring>
+        <name>setItemId</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+<para>Replace an item id. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1532285bcb238cd4b54897fcd7374dc47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; MyGUI::MenuControl::getItemIdAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>getItemIdAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+<para>Get item id from specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_14615c8c0054fab4c38e94d4695d2db9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; MyGUI::MenuControl::getItemId</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>getItemId</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+<para>Get item id. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1e442d20d6218652c44c5c943d480f627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuItem *</type>
+        <definition>MenuItem* MyGUI::MenuControl::getItemById</definition>
+        <argsstring>(const std::string &amp;_id)</argsstring>
+        <name>getItemById</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get item by id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1367a60f146eedf13f7732b2b3990a2b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuItem *</type>
+        <definition>MenuItem* MyGUI::MenuControl::findItemById</definition>
+        <argsstring>(const std::string &amp;_id, bool _recursive=false)</argsstring>
+        <name>findItemById</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_recursive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find item by id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_18b0b23d651869d8e709aa5d54d2ffb5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::MenuControl::getItemIndexById</definition>
+        <argsstring>(const std::string &amp;_id)</argsstring>
+        <name>getItemIndexById</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get item index by id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_10256bfc313764ac74ea4cd723a83f8a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setItemNameAt</definition>
+        <argsstring>(size_t _index, const UString &amp;_name)</argsstring>
+        <name>setItemNameAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+<para>Replace an item name at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_139e46f972f10eece1102bcdac7c9392a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setItemName</definition>
+        <argsstring>(MenuItem *_item, const UString &amp;_name)</argsstring>
+        <name>setItemName</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+<para>Replace an item name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_19db93a83afbf67f15469347793cb0f9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+        <definition>const UString&amp; MyGUI::MenuControl::getItemNameAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>getItemNameAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+<para>Get item from specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1e91d8b49523bd3ede813f22a03b6228b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+        <definition>const UString&amp; MyGUI::MenuControl::getItemName</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>getItemName</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+<para>Get item from specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_157bc0dc8a089a63304ed68a3f9b222f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::MenuControl::findItemIndexWith</definition>
+        <argsstring>(const UString &amp;_name)</argsstring>
+        <name>findItemIndexWith</name>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+<para>Search item, returns the position of the first occurrence in array or ITEM_NONE if item not found. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1c5efde70defe1ae8bc9c8e19566e2041" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setItemChildVisibleAt</definition>
+        <argsstring>(size_t _index, bool _visible)</argsstring>
+        <name>setItemChildVisibleAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Show or hide item (submenu) at a specified position </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1fa9530dd679ee5142a297cfd83486934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setItemChildVisible</definition>
+        <argsstring>(MenuItem *_item, bool _visible)</argsstring>
+        <name>setItemChildVisible</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Show or hide item (submenu) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_192f51fab3dfa5edaeadb7c3b2c1b880f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>Type *</type>
+        <definition>Type* MyGUI::MenuControl::createItemChildTAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>createItemChildTAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create specific type child item (submenu) for item by index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="197" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="196" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1db570b6977a5095d7bbd00cbc4cc8eb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>Type *</type>
+        <definition>Type* MyGUI::MenuControl::createItemChildT</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>createItemChildT</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create specific type child item (submenu) for item </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="204" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1a03b37f25f4654a687a158413dbc2dc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuControl *</type>
+        <definition>MenuControl* MyGUI::MenuControl::getItemChildAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>getItemChildAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get child item (submenu) from item by index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1131e8e1cc0bc08c3ca2a883489e73dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuControl *</type>
+        <definition>MenuControl* MyGUI::MenuControl::getItemChild</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>getItemChild</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get child item (submenu) from item </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_18c97fa34197dcda7e9ae89f8baeed2bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuControl *</type>
+        <definition>MenuControl* MyGUI::MenuControl::createItemChildAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>createItemChildAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create child item (submenu) for item by index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1d9e06cffa60ee2d7c2de63ac0ed814c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuControl *</type>
+        <definition>MenuControl* MyGUI::MenuControl::createItemChild</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>createItemChild</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create child item (submenu) for item </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_189c440a6a1d00eb21de8bdacb56f2542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::removeItemChildAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>removeItemChildAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove child item (submenu) for item by index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_14c7e8137208e712867aac1bcf8626c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::removeItemChild</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>removeItemChild</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove child item (submenu) for item </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1553071931e0a331326a1a633f0d22e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuItemType</type>
+        <definition>MenuItemType MyGUI::MenuControl::getItemTypeAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>getItemTypeAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get item type (see MenuItemType) from item by index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_11a0c7dbd3231255e3caa08d718fb9ee0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuItemType</type>
+        <definition>MenuItemType MyGUI::MenuControl::getItemType</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>getItemType</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get item type (see MenuItemType) from item </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_19151feb3b6be12c38aadea58743f60d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setItemTypeAt</definition>
+        <argsstring>(size_t _index, MenuItemType _type)</argsstring>
+        <name>setItemTypeAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>MenuItemType</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set item type (see MenuItemType) from item by index </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1c9487440d1148c7d65316d6a71762ffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setItemType</definition>
+        <argsstring>(MenuItem *_item, MenuItemType _type)</argsstring>
+        <name>setItemType</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <param>
+          <type>MenuItemType</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set item type (see MenuItemType) from item </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_19b90b3a4a6fe4bba1feacb4a6c58af58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setPopupAccept</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setPopupAccept</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set mode when clicking on item with submenu generate eventMenuCtrlAccept and closes menu </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_157317439e3083772efcf7cf4efaca524" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::getPopupAccept</definition>
+        <argsstring>() const </argsstring>
+        <name>getPopupAccept</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get mode when clicking on item with submenu generate eventMenuCtrlAccept and closes menu </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_12d69318c1a60561f7602e61b929425e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuItem *</type>
+        <definition>MenuItem* MyGUI::MenuControl::getMenuItemParent</definition>
+        <argsstring>()</argsstring>
+        <name>getMenuItemParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get parent menu item or nullptr if no item </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_172abeadc817aa8d3b63e0a4b4ec719fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::setVerticalAlignment</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setVerticalAlignment</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vertical alignment mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1179214394354f9c283c876dc2b0c69dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::getVerticalAlignment</definition>
+        <argsstring>() const </argsstring>
+        <name>getVerticalAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get vertical alignment mode flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1622cb6756776959a16d9837188720c6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::_notifyDeleteItem</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>_notifyDeleteItem</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_16acb936bb5298afccd3c998ae2fe6f30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::_notifyDeletePopup</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>_notifyDeletePopup</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1b7eb544e73952833c42059894782ee49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::_notifyUpdateName</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>_notifyUpdateName</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1f351ee1a37e8fd2cee1ff8454796dbc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::_wrapItemChild</definition>
+        <argsstring>(MenuItem *_item, MenuControl *_widget)</argsstring>
+        <name>_wrapItemChild</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <param>
+          <type>MenuControl *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_144572babae8694a991f594c9e1718d2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t MyGUI::MenuControl::_getItemCount</definition>
+        <argsstring>()</argsstring>
+        <name>_getItemCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_16c53f2cafa7d7bd2bcea04fd8256ba74" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MenuControl::_addItem</definition>
+        <argsstring>(const MyGUI::UString &amp;_name)</argsstring>
+        <name>_addItem</name>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">MyGUI::UString</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1709e9a06ab6a5d9ee14f1d1b3301ed2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MenuControl::_removeItemAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>_removeItemAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_18948cd8ae5fdf9c57e6f9ef18cf821aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Widget *</type>
+        <definition>virtual Widget* MyGUI::MenuControl::_getItemAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>_getItemAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_181b6a0ea5441d6f42deb1e5cd24bac05" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MenuControl::_setItemNameAt</definition>
+        <argsstring>(size_t _index, const UString &amp;_name)</argsstring>
+        <name>_setItemNameAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_152e62d17f71613a3ee9874e7d77f6455" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+        <definition>virtual const UString&amp; MyGUI::MenuControl::_getItemNameAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>_getItemNameAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1fa507d7a35f77f61c7ce7bfe82707634" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MenuControl::_setItemSelected</definition>
+        <argsstring>(IItem *_item)</argsstring>
+        <name>_setItemSelected</name>
+        <param>
+          <type>IItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_15b1e36931ebad44b39f8f876a2034e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::_updateItems</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>_updateItems</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1226576645ac258fda42b77884420a033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::_updateSizeForEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>_updateSizeForEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="285"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_1c46c3f2a1945d199b73dc038d7b2a83b" prot="public" static="no" mutable="no">
+        <type>EventHandle_MenuCtrlPtrMenuItemPtr</type>
+        <definition>EventHandle_MenuCtrlPtrMenuItemPtr MyGUI::MenuControl::eventMenuCtrlAccept</definition>
+        <argsstring></argsstring>
+        <name>eventMenuCtrlAccept</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Enter pressed or mouse clicked.<linebreak/>
+ signature : void method(MyGUI::MenuControl* _sender, MyGUI::MenuItem* _item)<linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected item </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="259" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_168173d67e6c5d09ff297fffcfe4537a2" prot="public" static="no" mutable="no">
+        <type>EventHandle_MenuCtrlPtr</type>
+        <definition>EventHandle_MenuCtrlPtr MyGUI::MenuControl::eventMenuCtrlClose</definition>
+        <argsstring></argsstring>
+        <name>eventMenuCtrlClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Menu was closed by select or focus change.<linebreak/>
+ signature : void method(MyGUI::MenuControl* _sender)<linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="266" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1932e40027f3974327b0114542b30fd1b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::MenuControl::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="47" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_19b9095a8516d793794f5e76cb2afe0ed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MenuControl::initialiseOverride</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1a849e593c9fb856ab1d5be8305f4110b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MenuControl::shutdownOverride</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_11d1996110608dcddbd883090f7d16143" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MenuControl::onKeyChangeRootFocus</definition>
+        <argsstring>(bool _focus)</argsstring>
+        <name>onKeyChangeRootFocus</name>
+        <param>
+          <type>bool</type>
+          <declname>_focus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1820193a108fd0e982b96a19794402040" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MenuControl::onWidgetCreated</definition>
+        <argsstring>(Widget *_widget)</argsstring>
+        <name>onWidgetCreated</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_13c0dafd34e90ce6b38432dc582216640" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::MenuControl::setPropertyOverride</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setPropertyOverride</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="295"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_1c0130d03c9a304827fb989f563defaf5" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::mHideByAccept</definition>
+        <argsstring></argsstring>
+        <name>mHideByAccept</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="322" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_15c3db26e5c7db2ab2179971ee29763bb" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::mMenuDropMode</definition>
+        <argsstring></argsstring>
+        <name>mMenuDropMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="324" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_19f3172c01cea8c14f5104bd682c23e12" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::mIsMenuDrop</definition>
+        <argsstring></argsstring>
+        <name>mIsMenuDrop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="325" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_1a4dfb7ab2112045d680807f23309c935" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::mHideByLostKey</definition>
+        <argsstring></argsstring>
+        <name>mHideByLostKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="326" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_140d8e61b93c24a2d2c44fbc768454364" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::mResizeToContent</definition>
+        <argsstring></argsstring>
+        <name>mResizeToContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="327" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_186a10dabca13c513f9517756aaed4b28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::notifyRootKeyChangeFocus</definition>
+        <argsstring>(Widget *_sender, bool _focus)</argsstring>
+        <name>notifyRootKeyChangeFocus</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_focus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1e143954067863a5daf7ff3749acc595a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::notifyMouseButtonClick</definition>
+        <argsstring>(Widget *_sender)</argsstring>
+        <name>notifyMouseButtonClick</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_13564e0be464b9daedd31fed80d618bb9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::notifyMouseSetFocus</definition>
+        <argsstring>(Widget *_sender, Widget *_new)</argsstring>
+        <name>notifyMouseSetFocus</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>Widget *</type>
+          <declname>_new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1be6705e8d77a7e376c9adf53faa551c0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; MyGUI::MenuControl::getSkinByType</definition>
+        <argsstring>(MenuItemType _type) const </argsstring>
+        <name>getSkinByType</name>
+        <param>
+          <type>MenuItemType</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1fdb737d84096f325b4dc6594f6fdcf29" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string MyGUI::MenuControl::getIconIndexByType</definition>
+        <argsstring>(MenuItemType _type) const </argsstring>
+        <name>getIconIndexByType</name>
+        <param>
+          <type>MenuItemType</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1ab28b359bef2eec0ad5adbc8a1b074b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1b07762ea4b7088de6e4f713ec30c77a7" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuItemType</type>
+        <definition>MenuItemType MyGUI::MenuControl::getItemType</definition>
+        <argsstring>(bool _submenu, bool _separator) const </argsstring>
+        <name>getItemType</name>
+        <param>
+          <type>bool</type>
+          <declname>_submenu</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_separator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1f311ed7c9f2c08f3482e76be20e917c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::notifyMenuCtrlAccept</definition>
+        <argsstring>(MenuItem *_item)</argsstring>
+        <name>notifyMenuCtrlAccept</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1114db82b79dc1e5613b5856de21d802d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::MenuControl::createItemChildByType</definition>
+        <argsstring>(size_t _index, const std::string &amp;_type)</argsstring>
+        <name>createItemChildByType</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_1f9612abd13ea050c605d0be8e0c63bd2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::_wrapItem</definition>
+        <argsstring>(MenuItem *_item, size_t _index, const UString &amp;_name, MenuItemType _type, const std::string &amp;_id, Any _data)</argsstring>
+        <name>_wrapItem</name>
+        <param>
+          <type>MenuItem *</type>
+          <declname>_item</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMyGUI_1_1UString" kindref="compound">UString</ref> &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>MenuItemType</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_id</declname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_172c74f94d5716fc1b86b1388aa5e6eaa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMyGUI_1_1ControllerFadeAlpha" kindref="compound">ControllerFadeAlpha</ref> *</type>
+        <definition>ControllerFadeAlpha* MyGUI::MenuControl::createControllerFadeAlpha</definition>
+        <argsstring>(float _alpha, float _coef, bool _enable)</argsstring>
+        <name>createControllerFadeAlpha</name>
+        <param>
+          <type>float</type>
+          <declname>_alpha</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_coef</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_138b39ceb90d6100685dd795bf7e70408" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::MenuControl::_getClientWidget</definition>
+        <argsstring>()</argsstring>
+        <name>_getClientWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1MenuControl_15dc74e67537e3a4b40f0043499cff7f8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::MenuControl::_setItemChildVisibleAt</definition>
+        <argsstring>(size_t _index, bool _visible, bool _smooth)</argsstring>
+        <name>_setItemChildVisibleAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_visible</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_smooth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="319"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_193909917235a730abc81e2aef942c4e5" prot="private" static="no" mutable="no">
+        <type>VectorMenuItemInfo</type>
+        <definition>VectorMenuItemInfo MyGUI::MenuControl::mItemsInfo</definition>
+        <argsstring></argsstring>
+        <name>mItemsInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="330" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_1cd9afaf5b930cd498806119d2bdc1aaa" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::MenuControl::mItemNormalSkin</definition>
+        <argsstring></argsstring>
+        <name>mItemNormalSkin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="332" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_13525023ee7b1e24cd975f80d354bc1ac" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::MenuControl::mItemPopupSkin</definition>
+        <argsstring></argsstring>
+        <name>mItemPopupSkin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="333" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_144ba2415684849a0658d216179d9ae89" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::MenuControl::mItemSeparatorSkin</definition>
+        <argsstring></argsstring>
+        <name>mItemSeparatorSkin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="334" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_1c5a8da266e2fe92dc34182f6cd7d3be8" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::MenuControl::mSubMenuSkin</definition>
+        <argsstring></argsstring>
+        <name>mSubMenuSkin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="336" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_197f15b0dd59afc163edcf97f1aeb74e5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::MenuControl::mSubMenuLayer</definition>
+        <argsstring></argsstring>
+        <name>mSubMenuLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="337" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_1ceffc2e692a756c2f1cbf516492018c1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::mShutdown</definition>
+        <argsstring></argsstring>
+        <name>mShutdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="340" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_142fdff600be4559dff3e0eeca28cf93b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::mVerticalAlignment</definition>
+        <argsstring></argsstring>
+        <name>mVerticalAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="342" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_15924373e130b29c09a7ed15aa75ae4cd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyGUI::MenuControl::mDistanceButton</definition>
+        <argsstring></argsstring>
+        <name>mDistanceButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="343" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_1e03bc6411219fb091d04ce7489f4b0c3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::mPopupAccept</definition>
+        <argsstring></argsstring>
+        <name>mPopupAccept</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="344" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_124379981f844e87ce71d5b8a6857e561" prot="private" static="no" mutable="no">
+        <type>MenuItem *</type>
+        <definition>MenuItem* MyGUI::MenuControl::mOwner</definition>
+        <argsstring></argsstring>
+        <name>mOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="345" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_12905c4a83284fb4576839cff07d919b4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::mAnimateSmooth</definition>
+        <argsstring></argsstring>
+        <name>mAnimateSmooth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="346" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_1a23952c3dccabbda3f6c40ed8ad4fb09" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::MenuControl::mChangeChildSkin</definition>
+        <argsstring></argsstring>
+        <name>mChangeChildSkin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="348" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1MenuControl_10247046dc457bdd82a4e88d00c2a4ce7" prot="private" static="no" mutable="no">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::MenuControl::mClient</definition>
+        <argsstring></argsstring>
+        <name>mClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="349" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" line="46" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_MenuControl.h" bodystart="42" bodyend="350"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1MenuControl_16c53f2cafa7d7bd2bcea04fd8256ba74" prot="public" virt="virtual"><scope>MyGUI::MenuControl</scope><name>_addItem</name></member>
+      <member refid="classMyGUI_1_1MenuControl_138b39ceb90d6100685dd795bf7e70408" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>_getClientWidget</name></member>
+      <member refid="classMyGUI_1_1MenuControl_18948cd8ae5fdf9c57e6f9ef18cf821aa" prot="public" virt="virtual"><scope>MyGUI::MenuControl</scope><name>_getItemAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_144572babae8694a991f594c9e1718d2c" prot="public" virt="virtual"><scope>MyGUI::MenuControl</scope><name>_getItemCount</name></member>
+      <member refid="classMyGUI_1_1MenuControl_152e62d17f71613a3ee9874e7d77f6455" prot="public" virt="virtual"><scope>MyGUI::MenuControl</scope><name>_getItemNameAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1622cb6756776959a16d9837188720c6a" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>_notifyDeleteItem</name></member>
+      <member refid="classMyGUI_1_1MenuControl_16acb936bb5298afccd3c998ae2fe6f30" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>_notifyDeletePopup</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1b7eb544e73952833c42059894782ee49" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>_notifyUpdateName</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1709e9a06ab6a5d9ee14f1d1b3301ed2e" prot="public" virt="virtual"><scope>MyGUI::MenuControl</scope><name>_removeItemAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_15dc74e67537e3a4b40f0043499cff7f8" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>_setItemChildVisibleAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_181b6a0ea5441d6f42deb1e5cd24bac05" prot="public" virt="virtual"><scope>MyGUI::MenuControl</scope><name>_setItemNameAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1fa507d7a35f77f61c7ce7bfe82707634" prot="public" virt="virtual"><scope>MyGUI::MenuControl</scope><name>_setItemSelected</name></member>
+      <member refid="classMyGUI_1_1MenuControl_15b1e36931ebad44b39f8f876a2034e0f" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>_updateItems</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1226576645ac258fda42b77884420a033" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>_updateSizeForEmpty</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1f9612abd13ea050c605d0be8e0c63bd2" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>_wrapItem</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1f351ee1a37e8fd2cee1ff8454796dbc1" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>_wrapItemChild</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1b6749ee9f77afb52f26204ffd86a3cad" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>addItem</name></member>
+      <member refid="classMyGUI_1_1MenuControl_19bfc8d44881ba61f738bb855366845fe" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1ae98b06985a9fff8451d72ff83668831" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>clearItemData</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1c48a3f1f2d19bbac92f39bdc811e8af7" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>clearItemDataAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_172c74f94d5716fc1b86b1388aa5e6eaa" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>createControllerFadeAlpha</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1d9e06cffa60ee2d7c2de63ac0ed814c9" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>createItemChild</name></member>
+      <member refid="classMyGUI_1_1MenuControl_18c97fa34197dcda7e9ae89f8baeed2bc" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>createItemChildAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1114db82b79dc1e5613b5856de21d802d" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>createItemChildByType</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1db570b6977a5095d7bbd00cbc4cc8eb1" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>createItemChildT</name></member>
+      <member refid="classMyGUI_1_1MenuControl_192f51fab3dfa5edaeadb7c3b2c1b880f" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>createItemChildTAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1c46c3f2a1945d199b73dc038d7b2a83b" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>eventMenuCtrlAccept</name></member>
+      <member refid="classMyGUI_1_1MenuControl_168173d67e6c5d09ff297fffcfe4537a2" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>eventMenuCtrlClose</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1367a60f146eedf13f7732b2b3990a2b6" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>findItemById</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1a80d0c0fdf28178fe431dc4b8d2f49b0" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>findItemIndex</name></member>
+      <member refid="classMyGUI_1_1MenuControl_157bc0dc8a089a63304ed68a3f9b222f4" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>findItemIndexWith</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1525e1074833687a1f0c70b72593e296c" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>findItemWith</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1932e40027f3974327b0114542b30fd1b" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1fdb737d84096f325b4dc6594f6fdcf29" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getIconIndexByType</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1be9ff7ec836d5b8681021b622e69ecd7" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1e442d20d6218652c44c5c943d480f627" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemById</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1131e8e1cc0bc08c3ca2a883489e73dc4" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemChild</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1a03b37f25f4654a687a158413dbc2dc2" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemChildAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1ed6d2ee37d26b4d8c8c6d22f218d78ea" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemCount</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1cd60afac5b956b5c59fec30aeb439307" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemData</name></member>
+      <member refid="classMyGUI_1_1MenuControl_150d2f9400bdc05f89e6039e96addb1a8" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemDataAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_14615c8c0054fab4c38e94d4695d2db9d" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemId</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1532285bcb238cd4b54897fcd7374dc47" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemIdAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1c483adc46713df590cddcc4e9eedd09b" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemIndex</name></member>
+      <member refid="classMyGUI_1_1MenuControl_18b0b23d651869d8e709aa5d54d2ffb5f" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemIndexById</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1e91d8b49523bd3ede813f22a03b6228b" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemName</name></member>
+      <member refid="classMyGUI_1_1MenuControl_19db93a83afbf67f15469347793cb0f9f" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemNameAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_11a0c7dbd3231255e3caa08d718fb9ee0" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemType</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1b07762ea4b7088de6e4f713ec30c77a7" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemType</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1553071931e0a331326a1a633f0d22e06" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getItemTypeAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_12d69318c1a60561f7602e61b929425e6" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getMenuItemParent</name></member>
+      <member refid="classMyGUI_1_1MenuControl_157317439e3083772efcf7cf4efaca524" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getPopupAccept</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1be6705e8d77a7e376c9adf53faa551c0" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getSkinByType</name></member>
+      <member refid="classMyGUI_1_1MenuControl_11afb6232643dd8412cd2c01069ab6c32" prot="public" virt="virtual"><scope>MyGUI::MenuControl</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1179214394354f9c283c876dc2b0c69dd" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>getVerticalAlignment</name></member>
+      <member refid="classMyGUI_1_1MenuControl_19b9095a8516d793794f5e76cb2afe0ed" prot="protected" virt="virtual"><scope>MyGUI::MenuControl</scope><name>initialiseOverride</name></member>
+      <member refid="classMyGUI_1_1MenuControl_130d6389c65fb67bcb0b7dc49c43f3e0f" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>insertItem</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1ed26a3443ef71e33420d32a62450fd7a" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>insertItemAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1633c476a988e1cf98a959e65163e01c1" prot="public" virt="virtual"><scope>MyGUI::MenuControl</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1b8b1de42cd99fc88e6f1607129a4dd96" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1MenuControl_12905c4a83284fb4576839cff07d919b4" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mAnimateSmooth</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1a23952c3dccabbda3f6c40ed8ad4fb09" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mChangeChildSkin</name></member>
+      <member refid="classMyGUI_1_1MenuControl_10247046dc457bdd82a4e88d00c2a4ce7" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mClient</name></member>
+      <member refid="classMyGUI_1_1MenuControl_15924373e130b29c09a7ed15aa75ae4cd" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mDistanceButton</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1e2ac1482aa62dd86b9eedf2edd15c586" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>MenuControl</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1c0130d03c9a304827fb989f563defaf5" prot="protected" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mHideByAccept</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1a4dfb7ab2112045d680807f23309c935" prot="protected" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mHideByLostKey</name></member>
+      <member refid="classMyGUI_1_1MenuControl_19f3172c01cea8c14f5104bd682c23e12" prot="protected" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mIsMenuDrop</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1cd9afaf5b930cd498806119d2bdc1aaa" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mItemNormalSkin</name></member>
+      <member refid="classMyGUI_1_1MenuControl_13525023ee7b1e24cd975f80d354bc1ac" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mItemPopupSkin</name></member>
+      <member refid="classMyGUI_1_1MenuControl_144ba2415684849a0658d216179d9ae89" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mItemSeparatorSkin</name></member>
+      <member refid="classMyGUI_1_1MenuControl_193909917235a730abc81e2aef942c4e5" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mItemsInfo</name></member>
+      <member refid="classMyGUI_1_1MenuControl_15c3db26e5c7db2ab2179971ee29763bb" prot="protected" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mMenuDropMode</name></member>
+      <member refid="classMyGUI_1_1MenuControl_124379981f844e87ce71d5b8a6857e561" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mOwner</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1e03bc6411219fb091d04ce7489f4b0c3" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mPopupAccept</name></member>
+      <member refid="classMyGUI_1_1MenuControl_140d8e61b93c24a2d2c44fbc768454364" prot="protected" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mResizeToContent</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1ceffc2e692a756c2f1cbf516492018c1" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mShutdown</name></member>
+      <member refid="classMyGUI_1_1MenuControl_197f15b0dd59afc163edcf97f1aeb74e5" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mSubMenuLayer</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1c5a8da266e2fe92dc34182f6cd7d3be8" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mSubMenuSkin</name></member>
+      <member refid="classMyGUI_1_1MenuControl_142fdff600be4559dff3e0eeca28cf93b" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>mVerticalAlignment</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1f311ed7c9f2c08f3482e76be20e917c8" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>notifyMenuCtrlAccept</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1e143954067863a5daf7ff3749acc595a" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>notifyMouseButtonClick</name></member>
+      <member refid="classMyGUI_1_1MenuControl_13564e0be464b9daedd31fed80d618bb9" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>notifyMouseSetFocus</name></member>
+      <member refid="classMyGUI_1_1MenuControl_186a10dabca13c513f9517756aaed4b28" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>notifyRootKeyChangeFocus</name></member>
+      <member refid="classMyGUI_1_1MenuControl_11d1996110608dcddbd883090f7d16143" prot="protected" virt="virtual"><scope>MyGUI::MenuControl</scope><name>onKeyChangeRootFocus</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1820193a108fd0e982b96a19794402040" prot="protected" virt="virtual"><scope>MyGUI::MenuControl</scope><name>onWidgetCreated</name></member>
+      <member refid="classMyGUI_1_1MenuControl_10cc1a607ebbb405ea5aade7180aa0d73" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>removeAllItems</name></member>
+      <member refid="classMyGUI_1_1MenuControl_18554441eaf63c898c9daa6fff929b8f5" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>removeItem</name></member>
+      <member refid="classMyGUI_1_1MenuControl_153a2e9a3af85f2f883761789415dff30" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>removeItemAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_14c7e8137208e712867aac1bcf8626c8d" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>removeItemChild</name></member>
+      <member refid="classMyGUI_1_1MenuControl_189c440a6a1d00eb21de8bdacb56f2542" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>removeItemChildAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_18e9fdf2e3a58f3e612a588200608c0b2" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1fa9530dd679ee5142a297cfd83486934" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setItemChildVisible</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1c5efde70defe1ae8bc9c8e19566e2041" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setItemChildVisibleAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1a3fbd2e3bede93b02e84e34828333a9f" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setItemData</name></member>
+      <member refid="classMyGUI_1_1MenuControl_15b4a629da88ae470560890478eaeec3b" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setItemDataAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1f8f63613982fd2205d07babcf51e4b5f" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setItemId</name></member>
+      <member refid="classMyGUI_1_1MenuControl_15e80913fb7c0f26fdc5aaeca3f6a51cc" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setItemIdAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_139e46f972f10eece1102bcdac7c9392a" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setItemName</name></member>
+      <member refid="classMyGUI_1_1MenuControl_10256bfc313764ac74ea4cd723a83f8a1" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setItemNameAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1c9487440d1148c7d65316d6a71762ffe" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setItemType</name></member>
+      <member refid="classMyGUI_1_1MenuControl_19151feb3b6be12c38aadea58743f60d8" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setItemTypeAt</name></member>
+      <member refid="classMyGUI_1_1MenuControl_19b90b3a4a6fe4bba1feacb4a6c58af58" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setPopupAccept</name></member>
+      <member refid="classMyGUI_1_1MenuControl_13c0dafd34e90ce6b38432dc582216640" prot="protected" virt="virtual"><scope>MyGUI::MenuControl</scope><name>setPropertyOverride</name></member>
+      <member refid="classMyGUI_1_1MenuControl_172abeadc817aa8d3b63e0a4b4ec719fd" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setVerticalAlignment</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1d326cf96ed9f9e64de08f31c6d09a333" prot="public" virt="virtual"><scope>MyGUI::MenuControl</scope><name>setVisible</name></member>
+      <member refid="classMyGUI_1_1MenuControl_190d84276e3e451a53ddbf4588e1fcfac" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>setVisibleSmooth</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1a849e593c9fb856ab1d5be8305f4110b" prot="protected" virt="virtual"><scope>MyGUI::MenuControl</scope><name>shutdownOverride</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1ab28b359bef2eec0ad5adbc8a1b074b5" prot="private" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>update</name></member>
+      <member refid="classMyGUI_1_1MenuControl_1515859186a920d9122ffeaf5c4fe2aa0" prot="public" virt="non-virtual"><scope>MyGUI::MenuControl</scope><name>VectorMenuItemInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

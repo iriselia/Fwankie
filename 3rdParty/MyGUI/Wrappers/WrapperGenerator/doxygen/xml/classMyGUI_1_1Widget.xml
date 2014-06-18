@@ -1,0 +1,2641 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1Widget" kind="class" prot="public">
+    <compoundname>MyGUI::Widget</compoundname>
+    <basecompoundref refid="classMyGUI_1_1UserData" prot="public" virt="non-virtual">MyGUI::UserData</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1Widget_1c35a5223105967529b9df5813c468d37" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::Widget::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="53" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1Widget_130c68354c5a07b549a2377952a56f48e" prot="public" static="no">
+        <type>Widget</type>
+        <definition>typedef Widget MyGUI::Widget::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="53" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1faad6178370730c10dbe87982b9ab8f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::Widget::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="53" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_13cd209d4767cf39c1848e538e3ddb1d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::Widget::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="53" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_10b8989ef6cf8b54a07ecd0b857579b8d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="53" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1f4814618768bc07a685495895ca47b04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::Widget::Widget</definition>
+        <argsstring>()</argsstring>
+        <name>Widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1b5d34f121420fbd4f439d7a8432d7755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::createWidgetT</definition>
+        <argsstring>(const std::string &amp;_type, const std::string &amp;_skin, const IntCoord &amp;_coord, Align _align, const std::string &amp;_name=&quot;&quot;)</argsstring>
+        <name>createWidgetT</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_coord</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create child widget <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_skin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget skin </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int coordinates of widget (_left, _top, _width, _height) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget align (possible values can be found in enum Align) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if needed (you can use it for finding widget by name later) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_12e74ae3d0a439f4edd509e73d4b2a083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::createWidgetT</definition>
+        <argsstring>(const std::string &amp;_type, const std::string &amp;_skin, int _left, int _top, int _width, int _height, Align _align, const std::string &amp;_name=&quot;&quot;)</argsstring>
+        <name>createWidgetT</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See Widget::createWidgetT(const std::string&amp; _type, const std::string&amp; _skin, const IntCoord&amp; _coord, Align _align, const std::string&amp; _name = &quot;&quot;) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_19ea260d13d1de5fb272e8fe3c6f6464c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::createWidgetRealT</definition>
+        <argsstring>(const std::string &amp;_type, const std::string &amp;_skin, const FloatCoord &amp;_coord, Align _align, const std::string &amp;_name=&quot;&quot;)</argsstring>
+        <name>createWidgetRealT</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>const FloatCoord &amp;</type>
+          <declname>_coord</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create widget using coordinates relative to parent. see Widget::createWidgetT(const std::string&amp; _type, const std::string&amp; _skin, const IntCoord&amp; _coord, Align _align, const std::string&amp; _name = &quot;&quot;) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_100fdb672b101caf560a07b86e67a72d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::createWidgetRealT</definition>
+        <argsstring>(const std::string &amp;_type, const std::string &amp;_skin, float _left, float _top, float _width, float _height, Align _align, const std::string &amp;_name=&quot;&quot;)</argsstring>
+        <name>createWidgetRealT</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_height</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create widget using coordinates relative to parent. see Widget::createWidgetT(const std::string&amp; _type, const std::string&amp; _skin, const IntCoord&amp; _coord, Align _align, const std::string&amp; _name = &quot;&quot;) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1d66c5415fde332d5aab563402cffb09f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* MyGUI::Widget::createWidget</definition>
+        <argsstring>(const std::string &amp;_skin, const IntCoord &amp;_coord, Align _align, const std::string &amp;_name=&quot;&quot;)</argsstring>
+        <name>createWidget</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_coord</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as Widget::createWidgetT but return T pointer instead of Widget* </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="80" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_13a28d2e883ce82536b686ac992be672d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* MyGUI::Widget::createWidget</definition>
+        <argsstring>(const std::string &amp;_skin, int _left, int _top, int _width, int _height, Align _align, const std::string &amp;_name=&quot;&quot;)</argsstring>
+        <name>createWidget</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as Widget::createWidgetT but return T pointer instead of Widget* </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="87" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1721d33e78bb5c6ed975e8d41c8bdb683" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* MyGUI::Widget::createWidgetReal</definition>
+        <argsstring>(const std::string &amp;_skin, const FloatCoord &amp;_coord, Align _align, const std::string &amp;_name=&quot;&quot;)</argsstring>
+        <name>createWidgetReal</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>const FloatCoord &amp;</type>
+          <declname>_coord</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as Widget::createWidgetRealT but return T* instead of Widget* </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="94" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1412c63af17890a8d43075782891b66ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* MyGUI::Widget::createWidgetReal</definition>
+        <argsstring>(const std::string &amp;_skin, float _left, float _top, float _width, float _height, Align _align, const std::string &amp;_name=&quot;&quot;)</argsstring>
+        <name>createWidgetReal</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_height</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as Widget::createWidgetRealT but return T* instead of Widget* </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="101" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1e26a4a5e8ea3fa4bafd969eb952d88e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::createWidgetT</definition>
+        <argsstring>(WidgetStyle _style, const std::string &amp;_type, const std::string &amp;_skin, const IntCoord &amp;_coord, Align _align, const std::string &amp;_layer=&quot;&quot;, const std::string &amp;_name=&quot;&quot;)</argsstring>
+        <name>createWidgetT</name>
+        <param>
+          <type>WidgetStyle</type>
+          <declname>_style</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_coord</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_layer</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create child widget <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Child, Popup or Overlapped widget style </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_skin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget skin </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int coordinates of widget (_left, _top, _width, _height) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget align (possible values can be found in enum Align) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>layer where widget will be created (all layers usually defined in core_layer.xml file). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional widget name (you can use it for finding widget by name later) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1f8660295aafb142287644c239a313e53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* MyGUI::Widget::createWidget</definition>
+        <argsstring>(WidgetStyle _style, const std::string &amp;_skin, const IntCoord &amp;_coord, Align _align, const std::string &amp;_layer=&quot;&quot;, const std::string &amp;_name=&quot;&quot;)</argsstring>
+        <name>createWidget</name>
+        <param>
+          <type>WidgetStyle</type>
+          <declname>_style</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_coord</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_layer</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as Widget::createWidgetT but return T* instead of Widget* </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="119" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1bf87d2b9d27a2543da8fc7daea6abf75" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::setPosition</definition>
+        <argsstring>(const IntPoint &amp;_value)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>const IntPoint &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget position (position of left top corner) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1b8928099957173c4f58aee98d043faab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::setSize</definition>
+        <argsstring>(const IntSize &amp;_value)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_156333ae229f81cfdc9daa834599b96de" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::setCoord</definition>
+        <argsstring>(const IntCoord &amp;_value)</argsstring>
+        <name>setCoord</name>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget position and size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_10463ede4342db8bc5ade2d78d77a142e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setPosition</definition>
+        <argsstring>(int _left, int _top)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See Widget::setPosition(const IntPoint&amp; _pos) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_12bdc82ea4f915b8d9b4b36c61b5a3915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setSize</definition>
+        <argsstring>(int _width, int _height)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See Widget::setSize(const IntSize&amp; _size) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1745fbe9e4f3c2f798a021ae07498fc97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setCoord</definition>
+        <argsstring>(int _left, int _top, int _width, int _height)</argsstring>
+        <name>setCoord</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See Widget::setCoord(const IntCoord&amp; _coord) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_15a5f7a24564bb6e04b48d0c524f0ef24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setRealPosition</definition>
+        <argsstring>(const FloatPoint &amp;_value)</argsstring>
+        <name>setRealPosition</name>
+        <param>
+          <type>const FloatPoint &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget position (position of left top corner) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1d7fba1f9976c36eacb528d6db9213ddf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setRealSize</definition>
+        <argsstring>(const FloatSize &amp;_value)</argsstring>
+        <name>setRealSize</name>
+        <param>
+          <type>const FloatSize &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_18833c303314683bbebadb154d337d3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setRealCoord</definition>
+        <argsstring>(const FloatCoord &amp;_value)</argsstring>
+        <name>setRealCoord</name>
+        <param>
+          <type>const FloatCoord &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget position and size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1c963db4709c8dfc9e681dfccd5fb6524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setRealPosition</definition>
+        <argsstring>(float _left, float _top)</argsstring>
+        <name>setRealPosition</name>
+        <param>
+          <type>float</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See Widget::setRealPosition(const FloatPoint&amp; _point) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_15d89ff45c4bc5f6158382067673903ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setRealSize</definition>
+        <argsstring>(float _width, float _height)</argsstring>
+        <name>setRealSize</name>
+        <param>
+          <type>float</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See Widget::setRealSize(const FloatSize&amp; _size) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1dfd8bd56bcecaee166bbfd12ff962f67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setRealCoord</definition>
+        <argsstring>(float _left, float _top, float _width, float _height)</argsstring>
+        <name>setRealCoord</name>
+        <param>
+          <type>float</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>See Widget::setRealPosition(const FloatCoord&amp; _coord) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1421a0e4eec959e8a5cd7f12ff459bfbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; MyGUI::Widget::getName</definition>
+        <argsstring>() const </argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para>Get name of widget. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1d98f045bfca3a54b5adacf8d0c090bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::setVisible</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setVisible</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hide or show widget </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1fa7ad1d5a3213ee9f8c4567e6f3fdd7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::getVisible</definition>
+        <argsstring>() const </argsstring>
+        <name>getVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true if visible </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1028a8ae99e47f513065ce3cbb11e4022" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::getInheritedVisible</definition>
+        <argsstring>() const </argsstring>
+        <name>getInheritedVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return widget&apos;s visibility based on it&apos;s and parents visibility. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1ebace37eedee14b3ff746b7a0085b993" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::setAlign</definition>
+        <argsstring>(Align _value)</argsstring>
+        <name>setAlign</name>
+        <param>
+          <type>Align</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set align </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_134cafbef78da90ca8fb6aca8964b337a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Align</type>
+        <definition>Align MyGUI::Widget::getAlign</definition>
+        <argsstring>() const </argsstring>
+        <name>getAlign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get align </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_11204361b28430fa9a3b6927d6b4fe9ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setAlpha</definition>
+        <argsstring>(float _value)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>float</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget opacity </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1db1d462f1145cafb358754c03cd3e7f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float MyGUI::Widget::getAlpha</definition>
+        <argsstring>() const </argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get widget opacity </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_18b44677724faa4112312655e5feed8ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setInheritsAlpha</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setInheritsAlpha</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable inherits alpha mode.<linebreak/>
+ Inherits alpha mode: when enabled widget alpha is it&apos;s own alpha value multiplied by parent&apos;s real alpha (that depend on parent&apos;s parent and so on).<linebreak/>
+ When disabled widget&apos;s alpha doesn&apos;t depend on parent&apos;s alpha. So this is used when you need things like semi-transparent window with non-transparent text on it and window&apos;s alpha changes.<linebreak/>
+ Enabled (true) by default. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1c2118d0bf46d9a7ec21c7aed9c7e71ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::getInheritsAlpha</definition>
+        <argsstring>() const </argsstring>
+        <name>getInheritsAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get inherits alpha mode flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1cbf134e83d95f63ff7ba7f4b3596449f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setColour</definition>
+        <argsstring>(const Colour &amp;_value)</argsstring>
+        <name>setColour</name>
+        <param>
+          <type>const Colour &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1b3ec05a74f05236afb58855985781cd0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::isRootWidget</definition>
+        <argsstring>() const </argsstring>
+        <name>isRootWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is this widget is root widget (root == without parents) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_174eb9e9819797e68a510a2ae6c3a410a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::getParent</definition>
+        <argsstring>() const </argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get parent widget or nullptr if no parent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1ee1378b1a9bd3db495cbea32f0a13e20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IntSize</type>
+        <definition>IntSize MyGUI::Widget::getParentSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getParentSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1abfb5cf6661813f729bd30b4042e95d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>EnumeratorWidgetPtr</type>
+        <definition>EnumeratorWidgetPtr MyGUI::Widget::getEnumerator</definition>
+        <argsstring>() const </argsstring>
+        <name>getEnumerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get child widgets Enumerator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_195ebe8be9fd3d29f7fa8f7846515eeec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::Widget::getChildCount</definition>
+        <argsstring>()</argsstring>
+        <name>getChildCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get child count </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1028535563d6d3666658d83e4d479fa6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::getChildAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>getChildAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get child by index (index from 0 to child_count - 1) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1d054e1027a48f2ccb9af0179359dadc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::findWidget</definition>
+        <argsstring>(const std::string &amp;_name)</argsstring>
+        <name>findWidget</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find widget by name. Search recursively through all childs starting from this widget. <simplesect kind="return"><para>Return first found widget with given name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1e6d193b99a9d69973922d1b8e0f0b70e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::findWidgets</definition>
+        <argsstring>(const std::string &amp;_name, VectorWidgetPtr &amp;_result)</argsstring>
+        <name>findWidgets</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>VectorWidgetPtr &amp;</type>
+          <declname>_result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find all widgets with given name and add them into _result. Search recursively through all childs starting from this widget. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1beda60b920b1808641169d8543171269" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::setEnabled</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable widget </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1f5a0bfe2b4f596d2dffdc7fcea5200b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setEnabledSilent</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setEnabledSilent</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable widget without changing widget&apos;s state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_15cd729c40ad712c7036a0d3f6a2507b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::getEnabled</definition>
+        <argsstring>() const </argsstring>
+        <name>getEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is widget enabled </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1c373e8170168b97491e777b99de0872b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::getInheritedEnabled</definition>
+        <argsstring>() const </argsstring>
+        <name>getInheritedEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is widget enabled and all it&apos;s parents in hierarchy is enabled. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_15ffebc869b3b4c36e31178616b27fc86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntCoord</type>
+        <definition>IntCoord MyGUI::Widget::getClientCoord</definition>
+        <argsstring>()</argsstring>
+        <name>getClientCoord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get rectangle where child widgets placed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1ac162cf5e6c51d487c71ae2e2d041352" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::getClientWidget</definition>
+        <argsstring>()</argsstring>
+        <name>getClientWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get client area widget or nullptr if widget don&apos;t have client </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1056ac7afc041cf328037e210c742302f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::detachFromWidget</definition>
+        <argsstring>(const std::string &amp;_layer=&quot;&quot;)</argsstring>
+        <name>detachFromWidget</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_layer</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Detach widget from widgets hierarchy <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attach to specified layer (if any) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_105110870f31f66a901b3b11737c194de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::attachToWidget</definition>
+        <argsstring>(Widget *_parent, WidgetStyle _style=WidgetStyle::Child, const std::string &amp;_layer=&quot;&quot;)</argsstring>
+        <name>attachToWidget</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_parent</declname>
+        </param>
+        <param>
+          <type>WidgetStyle</type>
+          <declname>_style</declname>
+          <defval>WidgetStyle::Child</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_layer</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attach widget to parent <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New parent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New widget style (see WidgetStyle::Enum) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attach to specified layer (if any) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1be74d6cc433da6140629423b120735a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::changeWidgetSkin</definition>
+        <argsstring>(const std::string &amp;_skinName)</argsstring>
+        <name>changeWidgetSkin</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skinName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change widget skin </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1372d21a0125ab28cc5c2c295290a2806" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setWidgetStyle</definition>
+        <argsstring>(WidgetStyle _style, const std::string &amp;_layer=&quot;&quot;)</argsstring>
+        <name>setWidgetStyle</name>
+        <param>
+          <type>WidgetStyle</type>
+          <declname>_style</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_layer</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set widget style. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New widget style (see WidgetStyle::Enum) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attach to specified layer (if any) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>When choosing WidgetStyle::Popup style you also need attach widget to layer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_15accf9c998578f20adcec5987dc820f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>WidgetStyle</type>
+        <definition>WidgetStyle MyGUI::Widget::getWidgetStyle</definition>
+        <argsstring>() const </argsstring>
+        <name>getWidgetStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get widget style </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_11a6ea7822f869b777800b0d351112e69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setProperty</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setProperty</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set any widget property <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property name (for example Alpha or Enabled) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value converted to string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_106700537a6fffaf43aa9c93e89d9cc7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t MyGUI::Widget::_getItemIndex</definition>
+        <argsstring>(Widget *_item)</argsstring>
+        <name>_getItemIndex</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1deee68fb42acc2fab667b169587e9ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_forcePick</definition>
+        <argsstring>(Widget *_widget)</argsstring>
+        <name>_forcePick</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1ae54386446434e4b133c244925402375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_initialise</definition>
+        <argsstring>(WidgetStyle _style, const IntCoord &amp;_coord, const std::string &amp;_skinName, Widget *_parent, ICroppedRectangle *_croppedParent, const std::string &amp;_name)</argsstring>
+        <name>_initialise</name>
+        <param>
+          <type>WidgetStyle</type>
+          <declname>_style</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_coord</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skinName</declname>
+        </param>
+        <param>
+          <type>Widget *</type>
+          <declname>_parent</declname>
+        </param>
+        <param>
+          <type>ICroppedRectangle *</type>
+          <declname>_croppedParent</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_155b19482fe01925c36e29af671e3d092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>_shutdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_125136884a04944ef8b199c582e15482c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_destroyChildWidget</definition>
+        <argsstring>(Widget *_widget)</argsstring>
+        <name>_destroyChildWidget</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1d3d48604ad15f958b81bf423f80271c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_setContainer</definition>
+        <argsstring>(Widget *_value)</argsstring>
+        <name>_setContainer</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1f3d99ead3ce8fda0defa2feb0fbaee27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::_getContainer</definition>
+        <argsstring>()</argsstring>
+        <name>_getContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_15df6dbd95e99b9b65b385d815026cf26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_setAlign</definition>
+        <argsstring>(const IntSize &amp;_oldsize, const IntSize &amp;_newSize)</argsstring>
+        <name>_setAlign</name>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_oldsize</declname>
+        </param>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_newSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_134c44665e7d51c7eb65bf70f0479e1c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::_checkPoint</definition>
+        <argsstring>(int _left, int _top) const </argsstring>
+        <name>_checkPoint</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_13601e5ca0d565451dfcf106850506a51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::_createSkinWidget</definition>
+        <argsstring>(WidgetStyle _style, const std::string &amp;_type, const std::string &amp;_skin, const IntCoord &amp;_coord, Align _align, const std::string &amp;_layer=&quot;&quot;, const std::string &amp;_name=&quot;&quot;)</argsstring>
+        <name>_createSkinWidget</name>
+        <param>
+          <type>WidgetStyle</type>
+          <declname>_style</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_coord</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_layer</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1175526a4b039cf13c7fec7012d7287fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::_resetContainer</definition>
+        <argsstring>(bool _update)</argsstring>
+        <name>_resetContainer</name>
+        <param>
+          <type>bool</type>
+          <declname>_update</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_13325a1f4c26917f6f73b207d0986e1bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::_setWidgetState</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>_setWidgetState</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="297"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_130efcbdb772c4a75f8208a99c4f9f34d" prot="public" static="no" mutable="no">
+        <type>EventHandle_WidgetStringString</type>
+        <definition>EventHandle_WidgetStringString MyGUI::Widget::eventChangeProperty</definition>
+        <argsstring></argsstring>
+        <name>eventChangeProperty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Widget property changed through setProperty (in code, or from layout)<linebreak/>
+ signature : void method(MyGUI::Widget* _sender, const std::string&amp; _key, const std::string&amp; _value); <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="271" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1b2012e0bb89d4becb35762362474601e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::Widget::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="53" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1Widget_18ff3c2a98bbea22f4f0191bcac54b643" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>virtual</type>
+        <definition>virtual MyGUI::Widget::~Widget</definition>
+        <argsstring>()</argsstring>
+        <name>~Widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1dee1c7e9399beabdad99bf10b97693c6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::shutdownOverride</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1987812d417960a148a72df09dd3948c4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::initialiseOverride</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1dd935a48ef2c39688d8026c01e9e3939" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_updateView</definition>
+        <argsstring>()</argsstring>
+        <name>_updateView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1d88d7deb826efb660943ccb0bb457cae" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::baseCreateWidget</definition>
+        <argsstring>(WidgetStyle _style, const std::string &amp;_type, const std::string &amp;_skin, const IntCoord &amp;_coord, Align _align, const std::string &amp;_layer, const std::string &amp;_name, bool _template)</argsstring>
+        <name>baseCreateWidget</name>
+        <param>
+          <type>WidgetStyle</type>
+          <declname>_style</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_skin</declname>
+        </param>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_coord</declname>
+        </param>
+        <param>
+          <type>Align</type>
+          <declname>_align</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_layer</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_10df77f6d74fe5fc24701819e0b7e0fe8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_destroyAllChildWidget</definition>
+        <argsstring>()</argsstring>
+        <name>_destroyAllChildWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1fef9a1d046d1b78f8c76de1db83d20c6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t MyGUI::Widget::_getContainerIndex</definition>
+        <argsstring>(const IntPoint &amp;_point)</argsstring>
+        <name>_getContainerIndex</name>
+        <param>
+          <type>const IntPoint &amp;</type>
+          <declname>_point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1d4c4a2cf2c3dd8b71126291a55e69139" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::baseUpdateEnable</definition>
+        <argsstring>()</argsstring>
+        <name>baseUpdateEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_175cedb78192d81e9dd1cef4a6c7a9fe3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ILayerItem *</type>
+        <definition>virtual ILayerItem* MyGUI::Widget::getLayerItemByPoint</definition>
+        <argsstring>(int _left, int _top) const </argsstring>
+        <name>getLayerItemByPoint</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_13e00b99c46a0c1ebacf29604d503804d" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const IntCoord &amp;</type>
+        <definition>virtual const IntCoord&amp; MyGUI::Widget::getLayerItemCoord</definition>
+        <argsstring>() const </argsstring>
+        <name>getLayerItemCoord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1b390f48a62a30d529c901cf8cfa1c24c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void MyGUI::Widget::assignWidget</definition>
+        <argsstring>(T *&amp;_widget, const std::string &amp;_name)</argsstring>
+        <name>assignWidget</name>
+        <param>
+          <type>T *&amp;</type>
+          <declname>_widget</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="325" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="324" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_14a6523e37fad5103ef5896bdf349861d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VectorWidgetPtr</type>
+        <definition>VectorWidgetPtr MyGUI::Widget::getSkinWidgetsByName</definition>
+        <argsstring>(const std::string &amp;_name)</argsstring>
+        <name>getSkinWidgetsByName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="338"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1c1c862389f772c52077fe4f2cf6568b5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::destroySkinWidget</definition>
+        <argsstring>(Widget *_widget)</argsstring>
+        <name>destroySkinWidget</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1a8cfc0deeb8c2c53c6fabf52dd167639" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::onWidgetCreated</definition>
+        <argsstring>(Widget *_widget)</argsstring>
+        <name>onWidgetCreated</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1c64ffb617119185afaf5ef9650d4f9a5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::onWidgetDestroy</definition>
+        <argsstring>(Widget *_widget)</argsstring>
+        <name>onWidgetDestroy</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="343"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1c717aa06253e913156a6d24fb3d4cbc4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setWidgetClient</definition>
+        <argsstring>(Widget *_widget)</argsstring>
+        <name>setWidgetClient</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1b9ce72d4c54f0098eabee9c7d35e282d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::setPropertyOverride</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setPropertyOverride</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="347"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1fc4cf211ce3ed66c76fffc8e091f4b5a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::frameEntered</definition>
+        <argsstring>(float _frame)</argsstring>
+        <name>frameEntered</name>
+        <param>
+          <type>float</type>
+          <declname>_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_178f2608fa366a498499f7ddf4e0f1c91" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const WidgetInfo *</type>
+        <definition>const WidgetInfo* MyGUI::Widget::initialiseWidgetSkinBase</definition>
+        <argsstring>(ResourceSkin *_info, ResourceLayout *_templateInfo)</argsstring>
+        <name>initialiseWidgetSkinBase</name>
+        <param>
+          <type>ResourceSkin *</type>
+          <declname>_info</declname>
+        </param>
+        <param>
+          <type><ref refid="classMyGUI_1_1ResourceLayout" kindref="compound">ResourceLayout</ref> *</type>
+          <declname>_templateInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_174bbd60fdf6f0e76c4fd844dbeaaacb2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::shutdownWidgetSkinBase</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownWidgetSkinBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1779688c06433f6d97ac419cc7d868633" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_updateAlpha</definition>
+        <argsstring>()</argsstring>
+        <name>_updateAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1083b0a1d2a7894484dc269379caf9062" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_updateAbsolutePoint</definition>
+        <argsstring>()</argsstring>
+        <name>_updateAbsolutePoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_16d2193a6f66fe0fb5e11c7c1a471b79c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_updateVisible</definition>
+        <argsstring>()</argsstring>
+        <name>_updateVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1aa8f99eb5f40c58c491bcb99c2c210cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_updateEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>_updateEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1bae65df642190b7f6fdc159101a2689b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float MyGUI::Widget::_getRealAlpha</definition>
+        <argsstring>() const </argsstring>
+        <name>_getRealAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1a1628a018145c4a8b1f5468b690bb0d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_createChildSkinWidget</definition>
+        <argsstring>(ResourceSkin *_info)</argsstring>
+        <name>_createChildSkinWidget</name>
+        <param>
+          <type>ResourceSkin *</type>
+          <declname>_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1e68d0455ae9be8a24b76fb39947c7584" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_destroyChildSkinWidget</definition>
+        <argsstring>()</argsstring>
+        <name>_destroyChildSkinWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1872a0acdfac60450997e9939f91729f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_parseSkinProperties</definition>
+        <argsstring>(ResourceSkin *_info)</argsstring>
+        <name>_parseSkinProperties</name>
+        <param>
+          <type>ResourceSkin *</type>
+          <declname>_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1b5641d212f4174ced6dcbfb76d1f4051" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_checkInheristProperties</definition>
+        <argsstring>()</argsstring>
+        <name>_checkInheristProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1b9621de693a524b0eeb44ca3ce717fad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_linkChildWidget</definition>
+        <argsstring>(Widget *_widget)</argsstring>
+        <name>_linkChildWidget</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_18e7b28a4b2b1608797ecd8bb71ccd701" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::_unlinkChildWidget</definition>
+        <argsstring>(Widget *_widget)</argsstring>
+        <name>_unlinkChildWidget</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="372"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1342373a1e4d13c43052c2addc8943e32" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Widget::setSkinProperty</definition>
+        <argsstring>(ResourceSkin *_info)</argsstring>
+        <name>setSkinProperty</name>
+        <param>
+          <type>ResourceSkin *</type>
+          <declname>_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Widget_1b9ed7d4e112251f3c23215302a5c2746" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Widget::resizeLayerItemView</definition>
+        <argsstring>(const IntSize &amp;_oldView, const IntSize &amp;_newView)</argsstring>
+        <name>resizeLayerItemView</name>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_oldView</declname>
+        </param>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_newView</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="376"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_1e5c10590506940692344c160739e706c" prot="private" static="no" mutable="no">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::mWidgetClient</definition>
+        <argsstring></argsstring>
+        <name>mWidgetClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="382" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_1b2ab467e6bd9e559c3319958f3a39cf2" prot="private" static="no" mutable="no">
+        <type>VectorWidgetPtr</type>
+        <definition>VectorWidgetPtr MyGUI::Widget::mWidgetChild</definition>
+        <argsstring></argsstring>
+        <name>mWidgetChild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="385" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_125d2145a1973d8355281908b4492a2c7" prot="private" static="no" mutable="no">
+        <type>VectorWidgetPtr</type>
+        <definition>VectorWidgetPtr MyGUI::Widget::mWidgetChildSkin</definition>
+        <argsstring></argsstring>
+        <name>mWidgetChildSkin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="388" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_19cc9d8c3109285b94c15bf3aded87cc1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::mEnabled</definition>
+        <argsstring></argsstring>
+        <name>mEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="391" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_19df94164b4900bb7b99beee20adef322" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::mInheritsEnabled</definition>
+        <argsstring></argsstring>
+        <name>mInheritsEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="392" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_1425037bf3e7173c9ebd706746d48d3b9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::mInheritsVisible</definition>
+        <argsstring></argsstring>
+        <name>mInheritsVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="394" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_15b4865b08263a350e633f3161a2dff01" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyGUI::Widget::mAlpha</definition>
+        <argsstring></argsstring>
+        <name>mAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="396" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_12fb3da7acb6bcf114dc8a5c8add664af" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyGUI::Widget::mRealAlpha</definition>
+        <argsstring></argsstring>
+        <name>mRealAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="397" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_11c1a2ea0ef3fd33fa25f8f90d109b8b3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::mInheritsAlpha</definition>
+        <argsstring></argsstring>
+        <name>mInheritsAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="398" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_15369115faf6477ff221094e37f3845fc" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::Widget::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="400" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_1c3bc484021d057711367387051667b3f" prot="private" static="no" mutable="no">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::mParent</definition>
+        <argsstring></argsstring>
+        <name>mParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="403" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_1b5c00d41627922f79b96724ac75411d7" prot="private" static="no" mutable="no">
+        <type>WidgetStyle</type>
+        <definition>WidgetStyle MyGUI::Widget::mWidgetStyle</definition>
+        <argsstring></argsstring>
+        <name>mWidgetStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="406" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_1c2790c2f41dd74aa61d1b77720f3989d" prot="private" static="no" mutable="no">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::Widget::mContainer</definition>
+        <argsstring></argsstring>
+        <name>mContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="408" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_12c892ce83a3bdc4e05afb640c945f930" prot="private" static="no" mutable="no">
+        <type>Align</type>
+        <definition>Align MyGUI::Widget::mAlign</definition>
+        <argsstring></argsstring>
+        <name>mAlign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="410" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Widget_1729c385449fc53aac9bfeb9d9d0c14a1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Widget::mVisible</definition>
+        <argsstring></argsstring>
+        <name>mVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="411" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classMyGUI_1_1Widget_1804721196da6de4cfc2e8337927765ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WidgetManager</definition>
+        <argsstring></argsstring>
+        <name>WidgetManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="51" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="556">
+        <label>MyGUI::UserData</label>
+        <link refid="classMyGUI_1_1UserData"/>
+      </node>
+      <node id="555">
+        <label>MyGUI::Widget</label>
+        <childnode refid="556" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="558">
+        <label>MyGUI::UserData</label>
+        <link refid="classMyGUI_1_1UserData"/>
+      </node>
+      <node id="557">
+        <label>MyGUI::Widget</label>
+        <childnode refid="558" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" line="49" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Widget.h" bodystart="41" bodyend="412"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1Widget_1b5641d212f4174ced6dcbfb76d1f4051" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_checkInheristProperties</name></member>
+      <member refid="classMyGUI_1_1Widget_134c44665e7d51c7eb65bf70f0479e1c3" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_checkPoint</name></member>
+      <member refid="classMyGUI_1_1Widget_1a1628a018145c4a8b1f5468b690bb0d2" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_createChildSkinWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_13601e5ca0d565451dfcf106850506a51" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_createSkinWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_10df77f6d74fe5fc24701819e0b7e0fe8" prot="protected" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_destroyAllChildWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_1e68d0455ae9be8a24b76fb39947c7584" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_destroyChildSkinWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_125136884a04944ef8b199c582e15482c" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_destroyChildWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_1deee68fb42acc2fab667b169587e9ce3" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_forcePick</name></member>
+      <member refid="classMyGUI_1_1Widget_1f3d99ead3ce8fda0defa2feb0fbaee27" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_getContainer</name></member>
+      <member refid="classMyGUI_1_1Widget_1fef9a1d046d1b78f8c76de1db83d20c6" prot="protected" virt="virtual"><scope>MyGUI::Widget</scope><name>_getContainerIndex</name></member>
+      <member refid="classMyGUI_1_1UserData_1fc4382ac3423790f57b478a0fe5030a2" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_getInternalData</name></member>
+      <member refid="classMyGUI_1_1Widget_106700537a6fffaf43aa9c93e89d9cc7d" prot="public" virt="virtual"><scope>MyGUI::Widget</scope><name>_getItemIndex</name></member>
+      <member refid="classMyGUI_1_1Widget_1bae65df642190b7f6fdc159101a2689b" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_getRealAlpha</name></member>
+      <member refid="classMyGUI_1_1Widget_1ae54386446434e4b133c244925402375" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_initialise</name></member>
+      <member refid="classMyGUI_1_1Widget_1b9621de693a524b0eeb44ca3ce717fad" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_linkChildWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_1872a0acdfac60450997e9939f91729f6" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_parseSkinProperties</name></member>
+      <member refid="classMyGUI_1_1Widget_1175526a4b039cf13c7fec7012d7287fc" prot="public" virt="virtual"><scope>MyGUI::Widget</scope><name>_resetContainer</name></member>
+      <member refid="classMyGUI_1_1Widget_15df6dbd95e99b9b65b385d815026cf26" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_setAlign</name></member>
+      <member refid="classMyGUI_1_1Widget_1d3d48604ad15f958b81bf423f80271c9" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_setContainer</name></member>
+      <member refid="classMyGUI_1_1UserData_12bd52c146bad41f99bbc7ed31335ad18" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_setInternalData</name></member>
+      <member refid="classMyGUI_1_1Widget_13325a1f4c26917f6f73b207d0986e1bd" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_setWidgetState</name></member>
+      <member refid="classMyGUI_1_1Widget_155b19482fe01925c36e29af671e3d092" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_shutdown</name></member>
+      <member refid="classMyGUI_1_1Widget_18e7b28a4b2b1608797ecd8bb71ccd701" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_unlinkChildWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_1083b0a1d2a7894484dc269379caf9062" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_updateAbsolutePoint</name></member>
+      <member refid="classMyGUI_1_1Widget_1779688c06433f6d97ac419cc7d868633" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_updateAlpha</name></member>
+      <member refid="classMyGUI_1_1Widget_1aa8f99eb5f40c58c491bcb99c2c210cb" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_updateEnabled</name></member>
+      <member refid="classMyGUI_1_1Widget_1dd935a48ef2c39688d8026c01e9e3939" prot="protected" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_updateView</name></member>
+      <member refid="classMyGUI_1_1Widget_16d2193a6f66fe0fb5e11c7c1a471b79c" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>_updateVisible</name></member>
+      <member refid="classMyGUI_1_1Widget_1b390f48a62a30d529c901cf8cfa1c24c" prot="protected" virt="non-virtual"><scope>MyGUI::Widget</scope><name>assignWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_105110870f31f66a901b3b11737c194de" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>attachToWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_1c35a5223105967529b9df5813c468d37" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1Widget_1d88d7deb826efb660943ccb0bb457cae" prot="protected" virt="non-virtual"><scope>MyGUI::Widget</scope><name>baseCreateWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_1d4c4a2cf2c3dd8b71126291a55e69139" prot="protected" virt="virtual"><scope>MyGUI::Widget</scope><name>baseUpdateEnable</name></member>
+      <member refid="classMyGUI_1_1Widget_1be74d6cc433da6140629423b120735a4" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>changeWidgetSkin</name></member>
+      <member refid="classMyGUI_1_1UserData_1f71561f766d83082a82cbdd6d218bd6b" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>clearUserString</name></member>
+      <member refid="classMyGUI_1_1UserData_154fecc1b40c23594c6518589b6912e49" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>clearUserStrings</name></member>
+      <member refid="classMyGUI_1_1Widget_1d66c5415fde332d5aab563402cffb09f" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>createWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_13a28d2e883ce82536b686ac992be672d" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>createWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_1f8660295aafb142287644c239a313e53" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>createWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_1721d33e78bb5c6ed975e8d41c8bdb683" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>createWidgetReal</name></member>
+      <member refid="classMyGUI_1_1Widget_1412c63af17890a8d43075782891b66ea" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>createWidgetReal</name></member>
+      <member refid="classMyGUI_1_1Widget_19ea260d13d1de5fb272e8fe3c6f6464c" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>createWidgetRealT</name></member>
+      <member refid="classMyGUI_1_1Widget_100fdb672b101caf560a07b86e67a72d4" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>createWidgetRealT</name></member>
+      <member refid="classMyGUI_1_1Widget_1b5d34f121420fbd4f439d7a8432d7755" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>createWidgetT</name></member>
+      <member refid="classMyGUI_1_1Widget_12e74ae3d0a439f4edd509e73d4b2a083" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>createWidgetT</name></member>
+      <member refid="classMyGUI_1_1Widget_1e26a4a5e8ea3fa4bafd969eb952d88e9" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>createWidgetT</name></member>
+      <member refid="classMyGUI_1_1Widget_1c1c862389f772c52077fe4f2cf6568b5" prot="protected" virt="non-virtual"><scope>MyGUI::Widget</scope><name>destroySkinWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_1056ac7afc041cf328037e210c742302f" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>detachFromWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_130efcbdb772c4a75f8208a99c4f9f34d" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>eventChangeProperty</name></member>
+      <member refid="classMyGUI_1_1Widget_1d054e1027a48f2ccb9af0179359dadc5" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>findWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_1e6d193b99a9d69973922d1b8e0f0b70e" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>findWidgets</name></member>
+      <member refid="classMyGUI_1_1Widget_1fc4cf211ce3ed66c76fffc8e091f4b5a" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>frameEntered</name></member>
+      <member refid="classMyGUI_1_1Widget_134cafbef78da90ca8fb6aca8964b337a" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getAlign</name></member>
+      <member refid="classMyGUI_1_1Widget_1db1d462f1145cafb358754c03cd3e7f2" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getAlpha</name></member>
+      <member refid="classMyGUI_1_1Widget_1028535563d6d3666658d83e4d479fa6d" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getChildAt</name></member>
+      <member refid="classMyGUI_1_1Widget_195ebe8be9fd3d29f7fa8f7846515eeec" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getChildCount</name></member>
+      <member refid="classMyGUI_1_1Widget_1b2012e0bb89d4becb35762362474601e" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1Widget_15ffebc869b3b4c36e31178616b27fc86" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getClientCoord</name></member>
+      <member refid="classMyGUI_1_1Widget_1ac162cf5e6c51d487c71ae2e2d041352" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getClientWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_15cd729c40ad712c7036a0d3f6a2507b2" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getEnabled</name></member>
+      <member refid="classMyGUI_1_1Widget_1abfb5cf6661813f729bd30b4042e95d7" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getEnumerator</name></member>
+      <member refid="classMyGUI_1_1Widget_1c373e8170168b97491e777b99de0872b" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getInheritedEnabled</name></member>
+      <member refid="classMyGUI_1_1Widget_1028a8ae99e47f513065ce3cbb11e4022" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getInheritedVisible</name></member>
+      <member refid="classMyGUI_1_1Widget_1c2118d0bf46d9a7ec21c7aed9c7e71ca" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getInheritsAlpha</name></member>
+      <member refid="classMyGUI_1_1Widget_175cedb78192d81e9dd1cef4a6c7a9fe3" prot="protected" virt="virtual"><scope>MyGUI::Widget</scope><name>getLayerItemByPoint</name></member>
+      <member refid="classMyGUI_1_1Widget_13e00b99c46a0c1ebacf29604d503804d" prot="protected" virt="virtual"><scope>MyGUI::Widget</scope><name>getLayerItemCoord</name></member>
+      <member refid="classMyGUI_1_1Widget_1421a0e4eec959e8a5cd7f12ff459bfbf" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getName</name></member>
+      <member refid="classMyGUI_1_1Widget_174eb9e9819797e68a510a2ae6c3a410a" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getParent</name></member>
+      <member refid="classMyGUI_1_1Widget_1ee1378b1a9bd3db495cbea32f0a13e20" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getParentSize</name></member>
+      <member refid="classMyGUI_1_1Widget_14a6523e37fad5103ef5896bdf349861d" prot="protected" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getSkinWidgetsByName</name></member>
+      <member refid="classMyGUI_1_1Widget_1faad6178370730c10dbe87982b9ab8f8" prot="public" virt="virtual"><scope>MyGUI::Widget</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1UserData_1eadd08cc61e475b95c588daf74789a06" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getUserData</name></member>
+      <member refid="classMyGUI_1_1UserData_17c62f7374453eaf6e5316ac369559c53" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getUserString</name></member>
+      <member refid="classMyGUI_1_1UserData_19bc43d45330305b52c5c3f0e9dffabab" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getUserStrings</name></member>
+      <member refid="classMyGUI_1_1Widget_1fa7ad1d5a3213ee9f8c4567e6f3fdd7d" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getVisible</name></member>
+      <member refid="classMyGUI_1_1Widget_15accf9c998578f20adcec5987dc820f2" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>getWidgetStyle</name></member>
+      <member refid="classMyGUI_1_1Widget_1987812d417960a148a72df09dd3948c4" prot="protected" virt="virtual"><scope>MyGUI::Widget</scope><name>initialiseOverride</name></member>
+      <member refid="classMyGUI_1_1Widget_178f2608fa366a498499f7ddf4e0f1c91" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>initialiseWidgetSkinBase</name></member>
+      <member refid="classMyGUI_1_1Widget_1b3ec05a74f05236afb58855985781cd0" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>isRootWidget</name></member>
+      <member refid="classMyGUI_1_1Widget_13cd209d4767cf39c1848e538e3ddb1d1" prot="public" virt="virtual"><scope>MyGUI::Widget</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1Widget_10b8989ef6cf8b54a07ecd0b857579b8d" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1UserData_10bac17bc60b499cf0386ec3815d67f17" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>isUserString</name></member>
+      <member refid="classMyGUI_1_1Widget_12c892ce83a3bdc4e05afb640c945f930" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mAlign</name></member>
+      <member refid="classMyGUI_1_1Widget_15b4865b08263a350e633f3161a2dff01" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mAlpha</name></member>
+      <member refid="classMyGUI_1_1Widget_1c2790c2f41dd74aa61d1b77720f3989d" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mContainer</name></member>
+      <member refid="classMyGUI_1_1Widget_19cc9d8c3109285b94c15bf3aded87cc1" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mEnabled</name></member>
+      <member refid="classMyGUI_1_1Widget_11c1a2ea0ef3fd33fa25f8f90d109b8b3" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mInheritsAlpha</name></member>
+      <member refid="classMyGUI_1_1Widget_19df94164b4900bb7b99beee20adef322" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mInheritsEnabled</name></member>
+      <member refid="classMyGUI_1_1Widget_1425037bf3e7173c9ebd706746d48d3b9" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mInheritsVisible</name></member>
+      <member refid="classMyGUI_1_1Widget_15369115faf6477ff221094e37f3845fc" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mName</name></member>
+      <member refid="classMyGUI_1_1Widget_1c3bc484021d057711367387051667b3f" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mParent</name></member>
+      <member refid="classMyGUI_1_1Widget_12fb3da7acb6bcf114dc8a5c8add664af" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mRealAlpha</name></member>
+      <member refid="classMyGUI_1_1Widget_1729c385449fc53aac9bfeb9d9d0c14a1" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mVisible</name></member>
+      <member refid="classMyGUI_1_1Widget_1b2ab467e6bd9e559c3319958f3a39cf2" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mWidgetChild</name></member>
+      <member refid="classMyGUI_1_1Widget_125d2145a1973d8355281908b4492a2c7" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mWidgetChildSkin</name></member>
+      <member refid="classMyGUI_1_1Widget_1e5c10590506940692344c160739e706c" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mWidgetClient</name></member>
+      <member refid="classMyGUI_1_1Widget_1b5c00d41627922f79b96724ac75411d7" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>mWidgetStyle</name></member>
+      <member refid="classMyGUI_1_1Widget_1a8cfc0deeb8c2c53c6fabf52dd167639" prot="protected" virt="virtual"><scope>MyGUI::Widget</scope><name>onWidgetCreated</name></member>
+      <member refid="classMyGUI_1_1Widget_1c64ffb617119185afaf5ef9650d4f9a5" prot="protected" virt="virtual"><scope>MyGUI::Widget</scope><name>onWidgetDestroy</name></member>
+      <member refid="classMyGUI_1_1Widget_1b9ed7d4e112251f3c23215302a5c2746" prot="private" virt="virtual"><scope>MyGUI::Widget</scope><name>resizeLayerItemView</name></member>
+      <member refid="classMyGUI_1_1Widget_130c68354c5a07b549a2377952a56f48e" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1Widget_1ebace37eedee14b3ff746b7a0085b993" prot="public" virt="virtual"><scope>MyGUI::Widget</scope><name>setAlign</name></member>
+      <member refid="classMyGUI_1_1Widget_11204361b28430fa9a3b6927d6b4fe9ee" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setAlpha</name></member>
+      <member refid="classMyGUI_1_1Widget_1cbf134e83d95f63ff7ba7f4b3596449f" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setColour</name></member>
+      <member refid="classMyGUI_1_1Widget_156333ae229f81cfdc9daa834599b96de" prot="public" virt="virtual"><scope>MyGUI::Widget</scope><name>setCoord</name></member>
+      <member refid="classMyGUI_1_1Widget_1745fbe9e4f3c2f798a021ae07498fc97" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setCoord</name></member>
+      <member refid="classMyGUI_1_1Widget_1beda60b920b1808641169d8543171269" prot="public" virt="virtual"><scope>MyGUI::Widget</scope><name>setEnabled</name></member>
+      <member refid="classMyGUI_1_1Widget_1f5a0bfe2b4f596d2dffdc7fcea5200b1" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setEnabledSilent</name></member>
+      <member refid="classMyGUI_1_1Widget_18b44677724faa4112312655e5feed8ae" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setInheritsAlpha</name></member>
+      <member refid="classMyGUI_1_1Widget_1bf87d2b9d27a2543da8fc7daea6abf75" prot="public" virt="virtual"><scope>MyGUI::Widget</scope><name>setPosition</name></member>
+      <member refid="classMyGUI_1_1Widget_10463ede4342db8bc5ade2d78d77a142e" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setPosition</name></member>
+      <member refid="classMyGUI_1_1Widget_11a6ea7822f869b777800b0d351112e69" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setProperty</name></member>
+      <member refid="classMyGUI_1_1Widget_1b9ce72d4c54f0098eabee9c7d35e282d" prot="protected" virt="virtual"><scope>MyGUI::Widget</scope><name>setPropertyOverride</name></member>
+      <member refid="classMyGUI_1_1Widget_18833c303314683bbebadb154d337d3cb" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setRealCoord</name></member>
+      <member refid="classMyGUI_1_1Widget_1dfd8bd56bcecaee166bbfd12ff962f67" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setRealCoord</name></member>
+      <member refid="classMyGUI_1_1Widget_15a5f7a24564bb6e04b48d0c524f0ef24" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setRealPosition</name></member>
+      <member refid="classMyGUI_1_1Widget_1c963db4709c8dfc9e681dfccd5fb6524" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setRealPosition</name></member>
+      <member refid="classMyGUI_1_1Widget_1d7fba1f9976c36eacb528d6db9213ddf" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setRealSize</name></member>
+      <member refid="classMyGUI_1_1Widget_15d89ff45c4bc5f6158382067673903ba" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setRealSize</name></member>
+      <member refid="classMyGUI_1_1Widget_1b8928099957173c4f58aee98d043faab" prot="public" virt="virtual"><scope>MyGUI::Widget</scope><name>setSize</name></member>
+      <member refid="classMyGUI_1_1Widget_12bdc82ea4f915b8d9b4b36c61b5a3915" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setSize</name></member>
+      <member refid="classMyGUI_1_1Widget_1342373a1e4d13c43052c2addc8943e32" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setSkinProperty</name></member>
+      <member refid="classMyGUI_1_1UserData_145916c0682a72614a1ed72a9efded82c" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setUserData</name></member>
+      <member refid="classMyGUI_1_1UserData_19630c47aa8d58cbc89628aad50725245" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setUserString</name></member>
+      <member refid="classMyGUI_1_1Widget_1d98f045bfca3a54b5adacf8d0c090bc2" prot="public" virt="virtual"><scope>MyGUI::Widget</scope><name>setVisible</name></member>
+      <member refid="classMyGUI_1_1Widget_1c717aa06253e913156a6d24fb3d4cbc4" prot="protected" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setWidgetClient</name></member>
+      <member refid="classMyGUI_1_1Widget_1372d21a0125ab28cc5c2c295290a2806" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>setWidgetStyle</name></member>
+      <member refid="classMyGUI_1_1Widget_1dee1c7e9399beabdad99bf10b97693c6" prot="protected" virt="virtual"><scope>MyGUI::Widget</scope><name>shutdownOverride</name></member>
+      <member refid="classMyGUI_1_1Widget_174bbd60fdf6f0e76c4fd844dbeaaacb2" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>shutdownWidgetSkinBase</name></member>
+      <member refid="classMyGUI_1_1UserData_1108076068708e939519f9c775c2ae87b" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>UserData</name></member>
+      <member refid="classMyGUI_1_1Widget_1f4814618768bc07a685495895ca47b04" prot="public" virt="non-virtual"><scope>MyGUI::Widget</scope><name>Widget</name></member>
+      <member refid="classMyGUI_1_1Widget_1804721196da6de4cfc2e8337927765ad" prot="private" virt="non-virtual"><scope>MyGUI::Widget</scope><name>WidgetManager</name></member>
+      <member refid="classMyGUI_1_1UserData_1a970af2c1f39e0fa8801fd9defb06d84" prot="public" virt="virtual"><scope>MyGUI::Widget</scope><name>~UserData</name></member>
+      <member refid="classMyGUI_1_1Widget_18ff3c2a98bbea22f4f0191bcac54b643" prot="protected" virt="virtual"><scope>MyGUI::Widget</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

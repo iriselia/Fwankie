@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1Button" kind="class" prot="public">
+    <compoundname>MyGUI::Button</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1Button_1b102386ae350f9700271c76bf1096c2e" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::Button::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1Button_17a1cb41841e9d40e50dc30397cd445a8" prot="public" static="no">
+        <type>Button</type>
+        <definition>typedef Button MyGUI::Button::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1Button_1cb0015e0094ee25e0118bd5a4ba6c1b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::Button::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_1660a26b306b4cbb6f18e5fa6f624d6f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::Button::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_1b390ad7a1b48e88532ae7ab31c90b9dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::Button::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_14a45b53aaac1df4a1c5837c0246ebfca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::Button::Button</definition>
+        <argsstring>()</argsstring>
+        <name>Button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_14c867b09dda7b6d22f724b2813142e00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Button::setStateSelected</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setStateSelected</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>Set button selected state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_1d3c2c460e60c2eaa03f83af3ed951d58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Button::getStateSelected</definition>
+        <argsstring>() const </argsstring>
+        <name>getStateSelected</name>
+        <briefdescription>
+<para>Get buton selected. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_1bcc71981a4ff1ef7b447d53cd39e466f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Button::setModeImage</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setModeImage</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable Image mode<linebreak/>
+ Image mode: when button state changed Image on button also change it&apos;s picture.<linebreak/>
+ Disabled (false) by default. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_15ce21d2b9d0fee30ffc4361efdff3baa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Button::getModeImage</definition>
+        <argsstring>() const </argsstring>
+        <name>getModeImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Image mode flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_18aa51de9d8b7a1b1468d7bfc7142f5e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Button::setImageResource</definition>
+        <argsstring>(const std::string &amp;_name)</argsstring>
+        <name>setImageResource</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_104dbe36ac29a26f6e70f3b3b0266eecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Button::setImageGroup</definition>
+        <argsstring>(const std::string &amp;_name)</argsstring>
+        <name>setImageGroup</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_10fa6898909d595f2cdb171b08e18deba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Button::setImageName</definition>
+        <argsstring>(const std::string &amp;_name)</argsstring>
+        <name>setImageName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_113d1735eedde2c22f7e02f0cb5bdd96e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Button::_setMouseFocus</definition>
+        <argsstring>(bool _focus)</argsstring>
+        <name>_setMouseFocus</name>
+        <param>
+          <type>bool</type>
+          <declname>_focus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_1a1cb5fd3fd0388b5ab105ea8cafa6008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ImageBox *</type>
+        <definition>ImageBox* MyGUI::Button::_getImageBox</definition>
+        <argsstring>()</argsstring>
+        <name>_getImageBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1Button_119373629cf7f96ce5a904c8ae8566a30" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::Button::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="35" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1Button_1895d4b6d4e2cb41402350e1830250898" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Button::initialiseOverride</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_1020da83689bb164ad57e54e029aa6898" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Button::shutdownOverride</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_1e6dac6d5b157463db386d9f24cb71722" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Button::onMouseLostFocus</definition>
+        <argsstring>(Widget *_new)</argsstring>
+        <name>onMouseLostFocus</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_15d89eb1a4ed7600ea6ca9509f811842e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Button::onMouseSetFocus</definition>
+        <argsstring>(Widget *_old)</argsstring>
+        <name>onMouseSetFocus</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_old</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_1ff5aaac878cbdb58049093a7959008d6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Button::onMouseButtonPressed</definition>
+        <argsstring>(int _left, int _top, MouseButton _id)</argsstring>
+        <name>onMouseButtonPressed</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_15f9795cf94073910d01995ed19caaf2b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Button::onMouseButtonReleased</definition>
+        <argsstring>(int _left, int _top, MouseButton _id)</argsstring>
+        <name>onMouseButtonReleased</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_1266193db2a685b8767e2ef7c063df5d0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Button::baseUpdateEnable</definition>
+        <argsstring>()</argsstring>
+        <name>baseUpdateEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_1ea0ac035957ce7b80cbd7f86383df371" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::Button::_setState</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>_setState</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1Button_1098cc6609803c7e4f5bca241faf99faf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::Button::setPropertyOverride</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setPropertyOverride</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMyGUI_1_1Button_1dd0700107f460739171a11e6beae58f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::Button::updateButtonState</definition>
+        <argsstring>()</argsstring>
+        <name>updateButtonState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="80"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1Button_1730e522b1c7f0dfcd685d99817395990" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Button::mIsMousePressed</definition>
+        <argsstring></argsstring>
+        <name>mIsMousePressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="84" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Button_1666accd5e70cc74367d4a3a2bcb52183" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Button::mIsMouseFocus</definition>
+        <argsstring></argsstring>
+        <name>mIsMouseFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="86" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Button_1b9d24e5528d80842e23e42d09a143357" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Button::mStateSelected</definition>
+        <argsstring></argsstring>
+        <name>mStateSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="88" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Button_1c902e87aee79d3bd76644a28662f449c" prot="private" static="no" mutable="no">
+        <type>ImageBox *</type>
+        <definition>ImageBox* MyGUI::Button::mImage</definition>
+        <argsstring></argsstring>
+        <name>mImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="90" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1Button_107b2061a9f1ddb844cc41cb2be3fbc0e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::Button::mModeImage</definition>
+        <argsstring></argsstring>
+        <name>mModeImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="91" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" line="34" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_Button.h" bodystart="31" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1Button_1a1cb5fd3fd0388b5ab105ea8cafa6008" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>_getImageBox</name></member>
+      <member refid="classMyGUI_1_1Button_113d1735eedde2c22f7e02f0cb5bdd96e" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>_setMouseFocus</name></member>
+      <member refid="classMyGUI_1_1Button_1ea0ac035957ce7b80cbd7f86383df371" prot="protected" virt="non-virtual"><scope>MyGUI::Button</scope><name>_setState</name></member>
+      <member refid="classMyGUI_1_1Button_1b102386ae350f9700271c76bf1096c2e" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1Button_1266193db2a685b8767e2ef7c063df5d0" prot="protected" virt="virtual"><scope>MyGUI::Button</scope><name>baseUpdateEnable</name></member>
+      <member refid="classMyGUI_1_1Button_14a45b53aaac1df4a1c5837c0246ebfca" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>Button</name></member>
+      <member refid="classMyGUI_1_1Button_119373629cf7f96ce5a904c8ae8566a30" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1Button_15ce21d2b9d0fee30ffc4361efdff3baa" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>getModeImage</name></member>
+      <member refid="classMyGUI_1_1Button_1d3c2c460e60c2eaa03f83af3ed951d58" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>getStateSelected</name></member>
+      <member refid="classMyGUI_1_1Button_1cb0015e0094ee25e0118bd5a4ba6c1b2" prot="public" virt="virtual"><scope>MyGUI::Button</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1Button_1895d4b6d4e2cb41402350e1830250898" prot="protected" virt="virtual"><scope>MyGUI::Button</scope><name>initialiseOverride</name></member>
+      <member refid="classMyGUI_1_1Button_1660a26b306b4cbb6f18e5fa6f624d6f0" prot="public" virt="virtual"><scope>MyGUI::Button</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1Button_1b390ad7a1b48e88532ae7ab31c90b9dd" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1Button_1c902e87aee79d3bd76644a28662f449c" prot="private" virt="non-virtual"><scope>MyGUI::Button</scope><name>mImage</name></member>
+      <member refid="classMyGUI_1_1Button_1666accd5e70cc74367d4a3a2bcb52183" prot="private" virt="non-virtual"><scope>MyGUI::Button</scope><name>mIsMouseFocus</name></member>
+      <member refid="classMyGUI_1_1Button_1730e522b1c7f0dfcd685d99817395990" prot="private" virt="non-virtual"><scope>MyGUI::Button</scope><name>mIsMousePressed</name></member>
+      <member refid="classMyGUI_1_1Button_107b2061a9f1ddb844cc41cb2be3fbc0e" prot="private" virt="non-virtual"><scope>MyGUI::Button</scope><name>mModeImage</name></member>
+      <member refid="classMyGUI_1_1Button_1b9d24e5528d80842e23e42d09a143357" prot="private" virt="non-virtual"><scope>MyGUI::Button</scope><name>mStateSelected</name></member>
+      <member refid="classMyGUI_1_1Button_1ff5aaac878cbdb58049093a7959008d6" prot="protected" virt="virtual"><scope>MyGUI::Button</scope><name>onMouseButtonPressed</name></member>
+      <member refid="classMyGUI_1_1Button_15f9795cf94073910d01995ed19caaf2b" prot="protected" virt="virtual"><scope>MyGUI::Button</scope><name>onMouseButtonReleased</name></member>
+      <member refid="classMyGUI_1_1Button_1e6dac6d5b157463db386d9f24cb71722" prot="protected" virt="virtual"><scope>MyGUI::Button</scope><name>onMouseLostFocus</name></member>
+      <member refid="classMyGUI_1_1Button_15d89eb1a4ed7600ea6ca9509f811842e" prot="protected" virt="virtual"><scope>MyGUI::Button</scope><name>onMouseSetFocus</name></member>
+      <member refid="classMyGUI_1_1Button_17a1cb41841e9d40e50dc30397cd445a8" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1Button_104dbe36ac29a26f6e70f3b3b0266eecb" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>setImageGroup</name></member>
+      <member refid="classMyGUI_1_1Button_10fa6898909d595f2cdb171b08e18deba" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>setImageName</name></member>
+      <member refid="classMyGUI_1_1Button_18aa51de9d8b7a1b1468d7bfc7142f5e5" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>setImageResource</name></member>
+      <member refid="classMyGUI_1_1Button_1bcc71981a4ff1ef7b447d53cd39e466f" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>setModeImage</name></member>
+      <member refid="classMyGUI_1_1Button_1098cc6609803c7e4f5bca241faf99faf" prot="protected" virt="virtual"><scope>MyGUI::Button</scope><name>setPropertyOverride</name></member>
+      <member refid="classMyGUI_1_1Button_14c867b09dda7b6d22f724b2813142e00" prot="public" virt="non-virtual"><scope>MyGUI::Button</scope><name>setStateSelected</name></member>
+      <member refid="classMyGUI_1_1Button_1020da83689bb164ad57e54e029aa6898" prot="protected" virt="virtual"><scope>MyGUI::Button</scope><name>shutdownOverride</name></member>
+      <member refid="classMyGUI_1_1Button_1dd0700107f460739171a11e6beae58f5" prot="private" virt="non-virtual"><scope>MyGUI::Button</scope><name>updateButtonState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

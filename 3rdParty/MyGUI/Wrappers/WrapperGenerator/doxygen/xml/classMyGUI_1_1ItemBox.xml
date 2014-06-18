@@ -1,0 +1,1894 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1ItemBox" kind="class" prot="public">
+    <compoundname>MyGUI::ItemBox</compoundname>
+    <innerclass refid="structMyGUI_1_1ItemBox_1_1ItemDataInfo">MyGUI::ItemBox::ItemDataInfo</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1ItemBox_15f135edccf121e08fa10cf95e9d0fd4d" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::ItemBox::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="46" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1ItemBox_1cf5b8e917e6af0f644a68a79f6aabe3f" prot="public" static="no">
+        <type>ItemBox</type>
+        <definition>typedef ItemBox MyGUI::ItemBox::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="46" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1c9023eec6d63c1ba9049b1da4c3568ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::ItemBox::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="46" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_19c1f59fed6bf8ac759241fcab3fa1e0e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::ItemBox::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="46" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_13558ffdf7f4111801ccf33796e64490e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::ItemBox::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="46" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_16a5a5eea9718d77e60b5e7cf5601d4a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::ItemBox::ItemBox</definition>
+        <argsstring>()</argsstring>
+        <name>ItemBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1f77cee6c347c1e333a8c67890f2c9da0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ItemBox::getItemCount</definition>
+        <argsstring>() const </argsstring>
+        <name>getItemCount</name>
+        <briefdescription>
+<para>Get number of items. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_175edc5cec54b629f6cfdcb4ad2b9db19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::insertItemAt</definition>
+        <argsstring>(size_t _index, Any _data=Any::Null)</argsstring>
+        <name>insertItemAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>_data</declname>
+          <defval>Any::Null</defval>
+        </param>
+        <briefdescription>
+<para>Insert an item into a array at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1386f8552faff5b62f6a8b3b95e17356d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::addItem</definition>
+        <argsstring>(Any _data=Any::Null)</argsstring>
+        <name>addItem</name>
+        <param>
+          <type>Any</type>
+          <declname>_data</declname>
+          <defval>Any::Null</defval>
+        </param>
+        <briefdescription>
+<para>Add an item to the end of a array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1df85d9c086c303371d1abb81123076ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::removeItemAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>removeItemAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+<para>Remove item at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1dac004f948b9c4477e5407fbc5d6ca61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::removeAllItems</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllItems</name>
+        <briefdescription>
+<para>Remove all items. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1530a5909007462fb0a6276a4b8757f9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::redrawItemAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>redrawItemAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+<para>Redraw at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_173936ae127b361e42996abb614362afb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::redrawAllItems</definition>
+        <argsstring>()</argsstring>
+        <name>redrawAllItems</name>
+        <briefdescription>
+<para>Redraw all items. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1cf2a448cb226935e5e50637c20f1c304" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ItemBox::getIndexSelected</definition>
+        <argsstring>() const </argsstring>
+        <name>getIndexSelected</name>
+        <briefdescription>
+<para>Get index of selected item (ITEM_NONE if none selected). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_16caa58e735962ac3fe84a861c11471ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::setIndexSelected</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>setIndexSelected</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+<para>Select specified _index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1edf54761a8c43c531b98275cebd77211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::clearIndexSelected</definition>
+        <argsstring>()</argsstring>
+        <name>clearIndexSelected</name>
+        <briefdescription>
+<para>Clear item selection. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_19bff2dcac334f6a65d849357040a1b58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::setItemDataAt</definition>
+        <argsstring>(size_t _index, Any _data)</argsstring>
+        <name>setItemDataAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>_data</declname>
+        </param>
+        <briefdescription>
+<para>Replace an item data at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1099e8005038a189c6cc092cf8a1feac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::clearItemDataAt</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>clearItemDataAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+<para>Clear an item data at a specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_100c5bdecf036ae3b374a367091716f05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>ValueType</declname>
+            <defname>ValueType</defname>
+          </param>
+        </templateparamlist>
+        <type>ValueType *</type>
+        <definition>ValueType* MyGUI::ItemBox::getItemDataAt</definition>
+        <argsstring>(size_t _index, bool _throw=true)</argsstring>
+        <name>getItemDataAt</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_throw</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Get item data from specified position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="101" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="100" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1ae082cba51c6867b39615dd5d2e19a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::setVerticalAlignment</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setVerticalAlignment</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vertical alignment grid mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1f2f811ad036a01c16a845bf7427e9062" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::ItemBox::getVerticalAlignment</definition>
+        <argsstring>() const </argsstring>
+        <name>getVerticalAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get vertical alignment grid mode flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1bbe6884ce223a8d92857c1c1b62c3def" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ItemBox::getIndexByWidget</definition>
+        <argsstring>(Widget *_widget)</argsstring>
+        <name>getIndexByWidget</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get item index by item Widget pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1d7bec89e9462da229e01009c70a19512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::ItemBox::getWidgetDrag</definition>
+        <argsstring>()</argsstring>
+        <name>getWidgetDrag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get widget created for drop </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1137b99ae3d2361e1b321b3bfeaed5242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::ItemBox::getWidgetByIndex</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>getWidgetByIndex</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get item Widget pointer by item index if it is visible <simplesect kind="note"><para>returned widget can be deleted, so this pointer is valid only at time when you got it and can be invalid next frame </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_190d078086258a558bdcdd193e3ad661e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::resetDrag</definition>
+        <argsstring>()</argsstring>
+        <name>resetDrag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt drag as if widget was dropped into empty space </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1e41548885cc310719779509ed8628241" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::setPosition</definition>
+        <argsstring>(const IntPoint &amp;_value)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>const IntPoint &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para><copydoc link="Widget::setPosition(const IntPoint& _value)"></copydoc>
+ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1649762c6568f007ac190023e17f4fe34" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::setSize</definition>
+        <argsstring>(const IntSize &amp;_value)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para><copydoc link="Widget::setSize(const IntSize& _value)"></copydoc>
+ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1953ec48af5e221367250922d1d87cf7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::setCoord</definition>
+        <argsstring>(const IntCoord &amp;_value)</argsstring>
+        <name>setCoord</name>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para><copydoc link="Widget::setCoord(const IntCoord& _value)"></copydoc>
+ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_18e8aca523e8d55bd6b1003e7166de730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::setPosition</definition>
+        <argsstring>(int _left, int _top)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setPosition(int _left, int _top)"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_126432b7a477a11642612566a8947900e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::setSize</definition>
+        <argsstring>(int _width, int _height)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setSize(int _width, int _height)"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_10ee3cfe241f4b1c7ef9cb93b685e2949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::setCoord</definition>
+        <argsstring>(int _left, int _top, int _width, int _height)</argsstring>
+        <name>setCoord</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setCoord(int _left, int _top, int _width, int _height)"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_17b6ead4ea746751f13d11709f62749aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::_resetContainer</definition>
+        <argsstring>(bool _update)</argsstring>
+        <name>_resetContainer</name>
+        <param>
+          <type>bool</type>
+          <declname>_update</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="202"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_18e4aa4f8f71195b5985f6b7c9366d65b" prot="public" static="no" mutable="no">
+        <type>EventHandle_ItemBoxPtrWidgetPtr</type>
+        <definition>EventHandle_ItemBoxPtrWidgetPtr MyGUI::ItemBox::requestCreateWidgetItem</definition>
+        <argsstring></argsstring>
+        <name>requestCreateWidgetItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Request for creating new item.<linebreak/>
+ signature : void method(MyGUI::ItemBox* _sender, MyGUI::Widget* _item) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget item pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="149" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_1f1ec2e439efbf0a1f6258e159093f8d5" prot="public" static="no" mutable="no">
+        <type>EventHandle_ItemBoxPtrIntCoordRefBool</type>
+        <definition>EventHandle_ItemBoxPtrIntCoordRefBool MyGUI::ItemBox::requestCoordItem</definition>
+        <argsstring></argsstring>
+        <name>requestCoordItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Request for item coordinate.<linebreak/>
+ signature : void method(MyGUI::ItemBox* _sender, MyGUI::IntCoord&amp; _coord, bool _drag) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>write heer item coordinate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_drag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is this item dragging </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="158" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_11e994bea6beb50c7a37d8f35c7368342" prot="public" static="no" mutable="no">
+        <type>EventHandle_ItemBoxPtrWidgetPtrCIBCellDrawInfoRef</type>
+        <definition>EventHandle_ItemBoxPtrWidgetPtrCIBCellDrawInfoRef MyGUI::ItemBox::requestDrawItem</definition>
+        <argsstring></argsstring>
+        <name>requestDrawItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Request for item redraw.<linebreak/>
+ signature : void method(MyGUI::ItemBox* _sender, MyGUI::Widget* _item, const MyGUI::IBDrawItemInfo&amp; _info) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget item pointer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>item info </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="167" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_193cb4ac3843c6a4eafcc543e964beece" prot="public" static="no" mutable="no">
+        <type>EventHandle_ItemBoxPtrSizeT</type>
+        <definition>EventHandle_ItemBoxPtrSizeT MyGUI::ItemBox::eventSelectItemAccept</definition>
+        <argsstring></argsstring>
+        <name>eventSelectItemAccept</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Doubleclick or enter pressed on item.<linebreak/>
+ signature : void method(MyGUI::ItemBox* _sender, size_t _index) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>item index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="175" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_1f3d42219a8ffdb9e62b705af6b297380" prot="public" static="no" mutable="no">
+        <type>EventHandle_ItemBoxPtrSizeT</type>
+        <definition>EventHandle_ItemBoxPtrSizeT MyGUI::ItemBox::eventChangeItemPosition</definition>
+        <argsstring></argsstring>
+        <name>eventChangeItemPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Position of selected item was changed.<linebreak/>
+ signature : void method(MyGUI::ItemBox* _sender, size_t _index) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>item index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="183" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_18aa3c46ee7cd889f74c8c78ff262784b" prot="public" static="no" mutable="no">
+        <type>EventHandle_ItemBoxPtrSizeT</type>
+        <definition>EventHandle_ItemBoxPtrSizeT MyGUI::ItemBox::eventMouseItemActivate</definition>
+        <argsstring></argsstring>
+        <name>eventMouseItemActivate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Click on item.<linebreak/>
+ signature : void method(MyGUI::ItemBox* _sender, size_t _index) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>item index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="191" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_1f2bd3b4be6e0c2591f707920a2523fa5" prot="public" static="no" mutable="no">
+        <type>EventHandle_ItemBoxPtrCIBNotifyCellDataRef</type>
+        <definition>EventHandle_ItemBoxPtrCIBNotifyCellDataRef MyGUI::ItemBox::eventNotifyItem</definition>
+        <argsstring></argsstring>
+        <name>eventNotifyItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Event : Notify about event in item widget.<linebreak/>
+ signature : void method(MyGUI::ItemBox* _sender, const MyGUI::IBNotifyItemData&amp; _info) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>widget that called this event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>info about item notify </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="199" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1e781d566b970b50ef1d1ec0a76830d08" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::ItemBox::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="46" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1ItemBox_125a3743cab1cf7aa99f769bc24f2732f" prot="protected" static="no">
+        <type>std::vector&lt; ItemDataInfo &gt;</type>
+        <definition>typedef std::vector&lt;ItemDataInfo&gt; MyGUI::ItemBox::VectorItemInfo</definition>
+        <argsstring></argsstring>
+        <name>VectorItemInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="214" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_148af132732961b2a29ade20f17afa156" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::initialiseOverride</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_11e036f4483e4b1ec8a8427e2ac150d3d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::shutdownOverride</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1ff5e3c225c2e07731fb8b2fac4ded384" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::onMouseButtonPressed</definition>
+        <argsstring>(int _left, int _top, MouseButton _id)</argsstring>
+        <name>onMouseButtonPressed</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_12eb4ebd594bfd79566e06e48c672219d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::onMouseButtonReleased</definition>
+        <argsstring>(int _left, int _top, MouseButton _id)</argsstring>
+        <name>onMouseButtonReleased</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1c8e7076dafe89b35ad9a7b61413a95a1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::onMouseDrag</definition>
+        <argsstring>(int _left, int _top, MouseButton _id)</argsstring>
+        <name>onMouseDrag</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1c9b0c5a41146a807ded247ca5310a9b8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::onMouseWheel</definition>
+        <argsstring>(int _rel)</argsstring>
+        <name>onMouseWheel</name>
+        <param>
+          <type>int</type>
+          <declname>_rel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1e35998c084138e9d268ccd9f503ebb9e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::onKeyLostFocus</definition>
+        <argsstring>(Widget *_new)</argsstring>
+        <name>onKeyLostFocus</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_19069119e32e9c860ddef3915b9a706ea" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::onKeySetFocus</definition>
+        <argsstring>(Widget *_old)</argsstring>
+        <name>onKeySetFocus</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_old</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1ddc9fed82e2a198085e102c457140990" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::notifyKeyButtonPressed</definition>
+        <argsstring>(Widget *_sender, KeyCode _key, Char _char)</argsstring>
+        <name>notifyKeyButtonPressed</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>KeyCode</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>Char</type>
+          <declname>_char</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1942fb2f5492380784b0b0b2246b83a9b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::notifyKeyButtonReleased</definition>
+        <argsstring>(Widget *_sender, KeyCode _key)</argsstring>
+        <name>notifyKeyButtonReleased</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>KeyCode</type>
+          <declname>_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_165bcff29f51361d84af5045de851c83d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::notifyScrollChangePosition</definition>
+        <argsstring>(ScrollBar *_sender, size_t _index)</argsstring>
+        <name>notifyScrollChangePosition</name>
+        <param>
+          <type>ScrollBar *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1360dbcb9f36541caca9f748acb7ffd20" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::notifyMouseWheel</definition>
+        <argsstring>(Widget *_sender, int _rel)</argsstring>
+        <name>notifyMouseWheel</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_rel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1cd066f8a0e516e65dfe8bcafe516abaf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::notifyRootMouseChangeFocus</definition>
+        <argsstring>(Widget *_sender, bool _focus)</argsstring>
+        <name>notifyRootMouseChangeFocus</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_focus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_144d59f88b2def3b8b0b0ff28f7968e55" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::notifyMouseButtonDoubleClick</definition>
+        <argsstring>(Widget *_sender)</argsstring>
+        <name>notifyMouseButtonDoubleClick</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_18379968cbf30f845fd2f1a9efdf7c5c2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t MyGUI::ItemBox::_getItemIndex</definition>
+        <argsstring>(Widget *_item)</argsstring>
+        <name>_getItemIndex</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_115c80dbc110a26bc72e371e82262de43" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::notifyMouseDrag</definition>
+        <argsstring>(Widget *_sender, int _left, int _top, MouseButton _id)</argsstring>
+        <name>notifyMouseDrag</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1868b9a5d304dac8e9e7fa547f6a06ce6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::notifyMouseButtonPressed</definition>
+        <argsstring>(Widget *_sender, int _left, int _top, MouseButton _id)</argsstring>
+        <name>notifyMouseButtonPressed</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_11a67a631236821ab418a32b438877b8d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::notifyMouseButtonReleased</definition>
+        <argsstring>(Widget *_sender, int _left, int _top, MouseButton _id)</argsstring>
+        <name>notifyMouseButtonReleased</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1a49a32bd02eb1c9bf2fdf4f68af0e31f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::removeDropItems</definition>
+        <argsstring>()</argsstring>
+        <name>removeDropItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1aa4c1890e0ce1161929e90b4dc7f3c34" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::updateDropItems</definition>
+        <argsstring>()</argsstring>
+        <name>updateDropItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_19c319cdbbff0ca904985c9d2682fb272" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::updateDropItemsState</definition>
+        <argsstring>(const DDWidgetState &amp;_state)</argsstring>
+        <name>updateDropItemsState</name>
+        <param>
+          <type>const DDWidgetState &amp;</type>
+          <declname>_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_18d810c1c65a6114edc9ad1f06e5f05c0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::updateMetrics</definition>
+        <argsstring>()</argsstring>
+        <name>updateMetrics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1a4326ab4166b05552e5411586f898374" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::_updateAllVisible</definition>
+        <argsstring>(bool _redraw)</argsstring>
+        <name>_updateAllVisible</name>
+        <param>
+          <type>bool</type>
+          <declname>_redraw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1382270aa5f09cad3ee337958651b94e3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::updateFromResize</definition>
+        <argsstring>()</argsstring>
+        <name>updateFromResize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1018db71e63c89195eaf01cbb94893179" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::ItemBox::getItemWidget</definition>
+        <argsstring>(size_t _index)</argsstring>
+        <name>getItemWidget</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_15e08fb07196eb4e12d971de720b010f6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::_setContainerItemInfo</definition>
+        <argsstring>(size_t _index, bool _set, bool _accept)</argsstring>
+        <name>_setContainerItemInfo</name>
+        <param>
+          <type>size_t</type>
+          <declname>_index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_set</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_accept</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_177863afcd36c28f328b9f1d3225ff555" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::resetCurrentActiveItem</definition>
+        <argsstring>()</argsstring>
+        <name>resetCurrentActiveItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1d54b4a43ac09334b500c3ab73668879f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::findCurrentActiveItem</definition>
+        <argsstring>()</argsstring>
+        <name>findCurrentActiveItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_151afa779d7c758cb47e4ad120b43cf6b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t MyGUI::ItemBox::_getContainerIndex</definition>
+        <argsstring>(const IntPoint &amp;_point)</argsstring>
+        <name>_getContainerIndex</name>
+        <param>
+          <type>const IntPoint &amp;</type>
+          <declname>_point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1c0e201fd68f3aa8ffd2b3edc340d3554" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::setPropertyOverride</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setPropertyOverride</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="262"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1564bc75b56b8deaa8748e9942d590bb8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ItemBox::calcIndexByWidget</definition>
+        <argsstring>(Widget *_widget)</argsstring>
+        <name>calcIndexByWidget</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1c366454ce02c61ebcdad93611bf9f189" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ItemBox::requestItemSize</definition>
+        <argsstring>()</argsstring>
+        <name>requestItemSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1d8e2bf7c269945fda33de0b8206c8844" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IntSize</type>
+        <definition>virtual IntSize MyGUI::ItemBox::getContentSize</definition>
+        <argsstring>()</argsstring>
+        <name>getContentSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_150fc32c1eccc8dc0e033e729ee2d9908" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IntPoint</type>
+        <definition>virtual IntPoint MyGUI::ItemBox::getContentPosition</definition>
+        <argsstring>()</argsstring>
+        <name>getContentPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1b70d42c2a4841a637740e8269757b0b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IntSize</type>
+        <definition>virtual IntSize MyGUI::ItemBox::getViewSize</definition>
+        <argsstring>()</argsstring>
+        <name>getViewSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1e6cc5af57d9eeeda524ae79c6e923f5b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::eraseContent</definition>
+        <argsstring>()</argsstring>
+        <name>eraseContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1625bbd64dfcd92ff22cd999c573ab40b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t MyGUI::ItemBox::getHScrollPage</definition>
+        <argsstring>()</argsstring>
+        <name>getHScrollPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_13b073a60c2ae40b915cc0bc31eb0c8a9" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t MyGUI::ItemBox::getVScrollPage</definition>
+        <argsstring>()</argsstring>
+        <name>getVScrollPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1b9a498ba9b0776a2ae32b812f50f2392" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Align</type>
+        <definition>virtual Align MyGUI::ItemBox::getContentAlign</definition>
+        <argsstring>()</argsstring>
+        <name>getContentAlign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_16ca6e869e076fa8c6793631271d83200" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ItemBox::setContentPosition</definition>
+        <argsstring>(const IntPoint &amp;_point)</argsstring>
+        <name>setContentPosition</name>
+        <param>
+          <type>const IntPoint &amp;</type>
+          <declname>_point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1e62ca12a4755858134f255dbc7c6eb9d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntRect</type>
+        <definition>IntRect MyGUI::ItemBox::_getClientAbsoluteRect</definition>
+        <argsstring>()</argsstring>
+        <name>_getClientAbsoluteRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ItemBox_1377ef056215adc699cd81cb5ff8b6073" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::ItemBox::_getClientWidget</definition>
+        <argsstring>()</argsstring>
+        <name>_getClientWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="279"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_1fa6c5ca42a227a54f3e7474f15e908f4" prot="private" static="no" mutable="no">
+        <type>VectorWidgetPtr</type>
+        <definition>VectorWidgetPtr MyGUI::ItemBox::mVectorItems</definition>
+        <argsstring></argsstring>
+        <name>mVectorItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="283" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_11360b60e01b996969ab5b2600a4c2952" prot="private" static="no" mutable="no">
+        <type>IntSize</type>
+        <definition>IntSize MyGUI::ItemBox::mSizeItem</definition>
+        <argsstring></argsstring>
+        <name>mSizeItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="286" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_1e23d808045f44f71ca22496a4daf9a3b" prot="private" static="no" mutable="no">
+        <type>IntSize</type>
+        <definition>IntSize MyGUI::ItemBox::mContentSize</definition>
+        <argsstring></argsstring>
+        <name>mContentSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="289" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_1fc691cdebea1ef118b9b3153cdc72228" prot="private" static="no" mutable="no">
+        <type>IntPoint</type>
+        <definition>IntPoint MyGUI::ItemBox::mContentPosition</definition>
+        <argsstring></argsstring>
+        <name>mContentPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="291" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_1bccf4f04e63940ae74599f5c2e29243e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyGUI::ItemBox::mCountItemInLine</definition>
+        <argsstring></argsstring>
+        <name>mCountItemInLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="294" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_17dad5b6f578a85137053fef856f34ceb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyGUI::ItemBox::mCountLines</definition>
+        <argsstring></argsstring>
+        <name>mCountLines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="296" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_148a77f8eb7db3928b907f7772f02d639" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyGUI::ItemBox::mFirstVisibleIndex</definition>
+        <argsstring></argsstring>
+        <name>mFirstVisibleIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="299" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_186dedc20224b027f87036bae1bc2cfe7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyGUI::ItemBox::mFirstOffsetIndex</definition>
+        <argsstring></argsstring>
+        <name>mFirstOffsetIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="302" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_197d876c6f0ef70a944a42a77e4171acf" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ItemBox::mIndexSelect</definition>
+        <argsstring></argsstring>
+        <name>mIndexSelect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="305" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_11d132b7e6793b30679fc6d379f6e622c" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ItemBox::mIndexActive</definition>
+        <argsstring></argsstring>
+        <name>mIndexActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="307" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_1bb8cfe3eb8c7ab10acbbb68380db6d98" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ItemBox::mIndexAccept</definition>
+        <argsstring></argsstring>
+        <name>mIndexAccept</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="309" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_181110324a832ea9dcf6134514c25a116" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MyGUI::ItemBox::mIndexRefuse</definition>
+        <argsstring></argsstring>
+        <name>mIndexRefuse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="311" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_10349bee93fa2355df266ec97e4eb5010" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::ItemBox::mIsFocus</definition>
+        <argsstring></argsstring>
+        <name>mIsFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="314" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_154aa944e8584e9c10ae967fbf7abcc80" prot="private" static="no" mutable="no">
+        <type>VectorItemInfo</type>
+        <definition>VectorItemInfo MyGUI::ItemBox::mItemsInfo</definition>
+        <argsstring></argsstring>
+        <name>mItemsInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="317" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_1a191f3cf2e49af65a838c831fad15be8" prot="private" static="no" mutable="no">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::ItemBox::mItemDrag</definition>
+        <argsstring></argsstring>
+        <name>mItemDrag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="319" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_13fe1403467d939b9bb8e50321802121d" prot="private" static="no" mutable="no">
+        <type>IntPoint</type>
+        <definition>IntPoint MyGUI::ItemBox::mPointDragOffset</definition>
+        <argsstring></argsstring>
+        <name>mPointDragOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="320" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_1435a7dbec019d3a844378c15881447de" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::ItemBox::mAlignVert</definition>
+        <argsstring></argsstring>
+        <name>mAlignVert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="322" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ItemBox_13019fc157446c3293427a66e4122f30a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::ItemBox::mDragLayer</definition>
+        <argsstring></argsstring>
+        <name>mDragLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="324" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" line="45" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ItemBox.h" bodystart="41" bodyend="325"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1ItemBox_1e62ca12a4755858134f255dbc7c6eb9d" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>_getClientAbsoluteRect</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1377ef056215adc699cd81cb5ff8b6073" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>_getClientWidget</name></member>
+      <member refid="classMyGUI_1_1ItemBox_151afa779d7c758cb47e4ad120b43cf6b" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>_getContainerIndex</name></member>
+      <member refid="classMyGUI_1_1ItemBox_18379968cbf30f845fd2f1a9efdf7c5c2" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>_getItemIndex</name></member>
+      <member refid="classMyGUI_1_1ItemBox_17b6ead4ea746751f13d11709f62749aa" prot="public" virt="virtual"><scope>MyGUI::ItemBox</scope><name>_resetContainer</name></member>
+      <member refid="classMyGUI_1_1ItemBox_15e08fb07196eb4e12d971de720b010f6" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>_setContainerItemInfo</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1a4326ab4166b05552e5411586f898374" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>_updateAllVisible</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1386f8552faff5b62f6a8b3b95e17356d" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>addItem</name></member>
+      <member refid="classMyGUI_1_1ItemBox_15f135edccf121e08fa10cf95e9d0fd4d" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1564bc75b56b8deaa8748e9942d590bb8" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>calcIndexByWidget</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1edf54761a8c43c531b98275cebd77211" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>clearIndexSelected</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1099e8005038a189c6cc092cf8a1feac2" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>clearItemDataAt</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1e6cc5af57d9eeeda524ae79c6e923f5b" prot="private" virt="virtual"><scope>MyGUI::ItemBox</scope><name>eraseContent</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1f3d42219a8ffdb9e62b705af6b297380" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>eventChangeItemPosition</name></member>
+      <member refid="classMyGUI_1_1ItemBox_18aa3c46ee7cd889f74c8c78ff262784b" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>eventMouseItemActivate</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1f2bd3b4be6e0c2591f707920a2523fa5" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>eventNotifyItem</name></member>
+      <member refid="classMyGUI_1_1ItemBox_193cb4ac3843c6a4eafcc543e964beece" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>eventSelectItemAccept</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1d54b4a43ac09334b500c3ab73668879f" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>findCurrentActiveItem</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1e781d566b970b50ef1d1ec0a76830d08" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1b9a498ba9b0776a2ae32b812f50f2392" prot="private" virt="virtual"><scope>MyGUI::ItemBox</scope><name>getContentAlign</name></member>
+      <member refid="classMyGUI_1_1ItemBox_150fc32c1eccc8dc0e033e729ee2d9908" prot="private" virt="virtual"><scope>MyGUI::ItemBox</scope><name>getContentPosition</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1d8e2bf7c269945fda33de0b8206c8844" prot="private" virt="virtual"><scope>MyGUI::ItemBox</scope><name>getContentSize</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1625bbd64dfcd92ff22cd999c573ab40b" prot="private" virt="virtual"><scope>MyGUI::ItemBox</scope><name>getHScrollPage</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1bbe6884ce223a8d92857c1c1b62c3def" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>getIndexByWidget</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1cf2a448cb226935e5e50637c20f1c304" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>getIndexSelected</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1f77cee6c347c1e333a8c67890f2c9da0" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>getItemCount</name></member>
+      <member refid="classMyGUI_1_1ItemBox_100c5bdecf036ae3b374a367091716f05" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>getItemDataAt</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1018db71e63c89195eaf01cbb94893179" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>getItemWidget</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1c9023eec6d63c1ba9049b1da4c3568ef" prot="public" virt="virtual"><scope>MyGUI::ItemBox</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1f2f811ad036a01c16a845bf7427e9062" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>getVerticalAlignment</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1b70d42c2a4841a637740e8269757b0b8" prot="private" virt="virtual"><scope>MyGUI::ItemBox</scope><name>getViewSize</name></member>
+      <member refid="classMyGUI_1_1ItemBox_13b073a60c2ae40b915cc0bc31eb0c8a9" prot="private" virt="virtual"><scope>MyGUI::ItemBox</scope><name>getVScrollPage</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1137b99ae3d2361e1b321b3bfeaed5242" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>getWidgetByIndex</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1d7bec89e9462da229e01009c70a19512" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>getWidgetDrag</name></member>
+      <member refid="classMyGUI_1_1ItemBox_148af132732961b2a29ade20f17afa156" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>initialiseOverride</name></member>
+      <member refid="classMyGUI_1_1ItemBox_175edc5cec54b629f6cfdcb4ad2b9db19" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>insertItemAt</name></member>
+      <member refid="classMyGUI_1_1ItemBox_19c1f59fed6bf8ac759241fcab3fa1e0e" prot="public" virt="virtual"><scope>MyGUI::ItemBox</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1ItemBox_13558ffdf7f4111801ccf33796e64490e" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1ItemBox_16a5a5eea9718d77e60b5e7cf5601d4a3" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>ItemBox</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1435a7dbec019d3a844378c15881447de" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mAlignVert</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1fc691cdebea1ef118b9b3153cdc72228" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mContentPosition</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1e23d808045f44f71ca22496a4daf9a3b" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mContentSize</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1bccf4f04e63940ae74599f5c2e29243e" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mCountItemInLine</name></member>
+      <member refid="classMyGUI_1_1ItemBox_17dad5b6f578a85137053fef856f34ceb" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mCountLines</name></member>
+      <member refid="classMyGUI_1_1ItemBox_13019fc157446c3293427a66e4122f30a" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mDragLayer</name></member>
+      <member refid="classMyGUI_1_1ItemBox_186dedc20224b027f87036bae1bc2cfe7" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mFirstOffsetIndex</name></member>
+      <member refid="classMyGUI_1_1ItemBox_148a77f8eb7db3928b907f7772f02d639" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mFirstVisibleIndex</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1bb8cfe3eb8c7ab10acbbb68380db6d98" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mIndexAccept</name></member>
+      <member refid="classMyGUI_1_1ItemBox_11d132b7e6793b30679fc6d379f6e622c" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mIndexActive</name></member>
+      <member refid="classMyGUI_1_1ItemBox_181110324a832ea9dcf6134514c25a116" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mIndexRefuse</name></member>
+      <member refid="classMyGUI_1_1ItemBox_197d876c6f0ef70a944a42a77e4171acf" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mIndexSelect</name></member>
+      <member refid="classMyGUI_1_1ItemBox_10349bee93fa2355df266ec97e4eb5010" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mIsFocus</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1a191f3cf2e49af65a838c831fad15be8" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mItemDrag</name></member>
+      <member refid="classMyGUI_1_1ItemBox_154aa944e8584e9c10ae967fbf7abcc80" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mItemsInfo</name></member>
+      <member refid="classMyGUI_1_1ItemBox_13fe1403467d939b9bb8e50321802121d" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mPointDragOffset</name></member>
+      <member refid="classMyGUI_1_1ItemBox_11360b60e01b996969ab5b2600a4c2952" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mSizeItem</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1fa6c5ca42a227a54f3e7474f15e908f4" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>mVectorItems</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1ddc9fed82e2a198085e102c457140990" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>notifyKeyButtonPressed</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1942fb2f5492380784b0b0b2246b83a9b" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>notifyKeyButtonReleased</name></member>
+      <member refid="classMyGUI_1_1ItemBox_144d59f88b2def3b8b0b0ff28f7968e55" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>notifyMouseButtonDoubleClick</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1868b9a5d304dac8e9e7fa547f6a06ce6" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>notifyMouseButtonPressed</name></member>
+      <member refid="classMyGUI_1_1ItemBox_11a67a631236821ab418a32b438877b8d" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>notifyMouseButtonReleased</name></member>
+      <member refid="classMyGUI_1_1ItemBox_115c80dbc110a26bc72e371e82262de43" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>notifyMouseDrag</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1360dbcb9f36541caca9f748acb7ffd20" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>notifyMouseWheel</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1cd066f8a0e516e65dfe8bcafe516abaf" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>notifyRootMouseChangeFocus</name></member>
+      <member refid="classMyGUI_1_1ItemBox_165bcff29f51361d84af5045de851c83d" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>notifyScrollChangePosition</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1e35998c084138e9d268ccd9f503ebb9e" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>onKeyLostFocus</name></member>
+      <member refid="classMyGUI_1_1ItemBox_19069119e32e9c860ddef3915b9a706ea" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>onKeySetFocus</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1ff5e3c225c2e07731fb8b2fac4ded384" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>onMouseButtonPressed</name></member>
+      <member refid="classMyGUI_1_1ItemBox_12eb4ebd594bfd79566e06e48c672219d" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>onMouseButtonReleased</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1c8e7076dafe89b35ad9a7b61413a95a1" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>onMouseDrag</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1c9b0c5a41146a807ded247ca5310a9b8" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>onMouseWheel</name></member>
+      <member refid="classMyGUI_1_1ItemBox_173936ae127b361e42996abb614362afb" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>redrawAllItems</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1530a5909007462fb0a6276a4b8757f9c" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>redrawItemAt</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1dac004f948b9c4477e5407fbc5d6ca61" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>removeAllItems</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1a49a32bd02eb1c9bf2fdf4f68af0e31f" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>removeDropItems</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1df85d9c086c303371d1abb81123076ae" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>removeItemAt</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1f1ec2e439efbf0a1f6258e159093f8d5" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>requestCoordItem</name></member>
+      <member refid="classMyGUI_1_1ItemBox_18e4aa4f8f71195b5985f6b7c9366d65b" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>requestCreateWidgetItem</name></member>
+      <member refid="classMyGUI_1_1ItemBox_11e994bea6beb50c7a37d8f35c7368342" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>requestDrawItem</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1c366454ce02c61ebcdad93611bf9f189" prot="private" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>requestItemSize</name></member>
+      <member refid="classMyGUI_1_1ItemBox_177863afcd36c28f328b9f1d3225ff555" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>resetCurrentActiveItem</name></member>
+      <member refid="classMyGUI_1_1ItemBox_190d078086258a558bdcdd193e3ad661e" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>resetDrag</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1cf5b8e917e6af0f644a68a79f6aabe3f" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1ItemBox_16ca6e869e076fa8c6793631271d83200" prot="private" virt="virtual"><scope>MyGUI::ItemBox</scope><name>setContentPosition</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1953ec48af5e221367250922d1d87cf7a" prot="public" virt="virtual"><scope>MyGUI::ItemBox</scope><name>setCoord</name></member>
+      <member refid="classMyGUI_1_1ItemBox_10ee3cfe241f4b1c7ef9cb93b685e2949" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>setCoord</name></member>
+      <member refid="classMyGUI_1_1ItemBox_16caa58e735962ac3fe84a861c11471ee" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>setIndexSelected</name></member>
+      <member refid="classMyGUI_1_1ItemBox_19bff2dcac334f6a65d849357040a1b58" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>setItemDataAt</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1e41548885cc310719779509ed8628241" prot="public" virt="virtual"><scope>MyGUI::ItemBox</scope><name>setPosition</name></member>
+      <member refid="classMyGUI_1_1ItemBox_18e8aca523e8d55bd6b1003e7166de730" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>setPosition</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1c0e201fd68f3aa8ffd2b3edc340d3554" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>setPropertyOverride</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1649762c6568f007ac190023e17f4fe34" prot="public" virt="virtual"><scope>MyGUI::ItemBox</scope><name>setSize</name></member>
+      <member refid="classMyGUI_1_1ItemBox_126432b7a477a11642612566a8947900e" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>setSize</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1ae082cba51c6867b39615dd5d2e19a08" prot="public" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>setVerticalAlignment</name></member>
+      <member refid="classMyGUI_1_1ItemBox_11e036f4483e4b1ec8a8427e2ac150d3d" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>shutdownOverride</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1aa4c1890e0ce1161929e90b4dc7f3c34" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>updateDropItems</name></member>
+      <member refid="classMyGUI_1_1ItemBox_19c319cdbbff0ca904985c9d2682fb272" prot="protected" virt="virtual"><scope>MyGUI::ItemBox</scope><name>updateDropItemsState</name></member>
+      <member refid="classMyGUI_1_1ItemBox_1382270aa5f09cad3ee337958651b94e3" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>updateFromResize</name></member>
+      <member refid="classMyGUI_1_1ItemBox_18d810c1c65a6114edc9ad1f06e5f05c0" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>updateMetrics</name></member>
+      <member refid="classMyGUI_1_1ItemBox_125a3743cab1cf7aa99f769bc24f2732f" prot="protected" virt="non-virtual"><scope>MyGUI::ItemBox</scope><name>VectorItemInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

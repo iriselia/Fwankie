@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1ResourceTrueTypeFont" kind="class" prot="public">
+    <compoundname>MyGUI::ResourceTrueTypeFont</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1ResourceTrueTypeFont_11ef78972203e0ffe571be923059a4394" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::ResourceTrueTypeFont::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1ResourceTrueTypeFont_1c06eb21cdf52c96ecb66f28d7757118f" prot="public" static="no">
+        <type>ResourceTrueTypeFont</type>
+        <definition>typedef ResourceTrueTypeFont MyGUI::ResourceTrueTypeFont::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_17746f409fa560c130b34f938e127f833" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::ResourceTrueTypeFont::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_180d3a9ad5ea71587bf6b14d66e9b7a9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::ResourceTrueTypeFont::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_1514aefb41bae7c2de5bfd04559916e04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::ResourceTrueTypeFont::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_1130ef0a75a9f9a6161d96a6a538ced25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::ResourceTrueTypeFont::ResourceTrueTypeFont</definition>
+        <argsstring>()</argsstring>
+        <name>ResourceTrueTypeFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_1b8c65fa76777b60189a09135715ea665" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>virtual</type>
+        <definition>virtual MyGUI::ResourceTrueTypeFont::~ResourceTrueTypeFont</definition>
+        <argsstring>()</argsstring>
+        <name>~ResourceTrueTypeFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_19157509983933da0b4f7d8b45cb3ecf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ResourceTrueTypeFont::deserialization</definition>
+        <argsstring>(xml::ElementPtr _node, Version _version)</argsstring>
+        <name>deserialization</name>
+        <param>
+          <type>xml::ElementPtr</type>
+          <declname>_node</declname>
+        </param>
+        <param>
+          <type>Version</type>
+          <declname>_version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_19906f8fc3d2e5bd90a2309cf3e95fad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>GlyphInfo *</type>
+        <definition>virtual GlyphInfo* MyGUI::ResourceTrueTypeFont::getGlyphInfo</definition>
+        <argsstring>(Char _id)</argsstring>
+        <name>getGlyphInfo</name>
+        <param>
+          <type>Char</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_1599ed4a6f807e280e279b68ff1200729" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ITexture *</type>
+        <definition>virtual ITexture* MyGUI::ResourceTrueTypeFont::getTextureFont</definition>
+        <argsstring>()</argsstring>
+        <name>getTextureFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_1ad8a4e435a0cf1c013ca34f3bd55262d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int MyGUI::ResourceTrueTypeFont::getDefaultHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_1f02ac64049ded1b192908fb7c99f320f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; Char, Char &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;Char, Char&gt; &gt; MyGUI::ResourceTrueTypeFont::getCodePointRanges</definition>
+        <argsstring>() const </argsstring>
+        <name>getCodePointRanges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_1b9ec88cbff9e5a4f0fd02a0e0babe5ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Char</type>
+        <definition>Char MyGUI::ResourceTrueTypeFont::getSubstituteCodePoint</definition>
+        <argsstring>() const </argsstring>
+        <name>getSubstituteCodePoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="63"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_1c036d6bb4a6c2c7895cc0baeb9a8f482" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::ResourceTrueTypeFont::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="40" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_1fa8cbe07c972c5c92843424cc8c1dc91" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ResourceTrueTypeFont::addCodePoint</definition>
+        <argsstring>(Char _codePoint)</argsstring>
+        <name>addCodePoint</name>
+        <param>
+          <type>Char</type>
+          <declname>_codePoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_1a916b2d4656ac4013fb555fd25d4df03" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ResourceTrueTypeFont::removeCodePoint</definition>
+        <argsstring>(Char _codePoint)</argsstring>
+        <name>removeCodePoint</name>
+        <param>
+          <type>Char</type>
+          <declname>_codePoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_187aa276ffda96c6a5bcc75a6ddbecbed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ResourceTrueTypeFont::addCodePointRange</definition>
+        <argsstring>(Char _first, Char _second)</argsstring>
+        <name>addCodePointRange</name>
+        <param>
+          <type>Char</type>
+          <declname>_first</declname>
+        </param>
+        <param>
+          <type>Char</type>
+          <declname>_second</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_1786c8ffb99938dcc1a791f17b7ec8335" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ResourceTrueTypeFont::removeCodePointRange</definition>
+        <argsstring>(Char _first, Char _second)</argsstring>
+        <name>removeCodePointRange</name>
+        <param>
+          <type>Char</type>
+          <declname>_first</declname>
+        </param>
+        <param>
+          <type>Char</type>
+          <declname>_second</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_195a72d5a9206c72bf86511aa210492ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ResourceTrueTypeFont::clearCodePoints</definition>
+        <argsstring>()</argsstring>
+        <name>clearCodePoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ResourceTrueTypeFont_15ac921d9521e8bcbf85397e989ebed05" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ResourceTrueTypeFont::initialise</definition>
+        <argsstring>()</argsstring>
+        <name>initialise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_1004df27b656e34847bb6231b161caaec" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MyGUI::ResourceTrueTypeFont::mSource</definition>
+        <argsstring></argsstring>
+        <name>mSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="77" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_18205ab383230549678cbcced03e5b60e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyGUI::ResourceTrueTypeFont::mSize</definition>
+        <argsstring></argsstring>
+        <name>mSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="78" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_10f128ff3033826eb2c9b4bbdb19b74a2" prot="private" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint MyGUI::ResourceTrueTypeFont::mResolution</definition>
+        <argsstring></argsstring>
+        <name>mResolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="79" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_1c574ca6b9e8e3f8f4523dce7c517852b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyGUI::ResourceTrueTypeFont::mAntialias</definition>
+        <argsstring></argsstring>
+        <name>mAntialias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="80" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_1e37676dc22fb9395bab5890c8b5d3107" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyGUI::ResourceTrueTypeFont::mSpaceWidth</definition>
+        <argsstring></argsstring>
+        <name>mSpaceWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="81" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_14300713b0daf2e5530c21df6f79507b8" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyGUI::ResourceTrueTypeFont::mTabWidth</definition>
+        <argsstring></argsstring>
+        <name>mTabWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="82" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_1365ae0c8cc7a43fa3e2fc98fabff5342" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyGUI::ResourceTrueTypeFont::mOffsetHeight</definition>
+        <argsstring></argsstring>
+        <name>mOffsetHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="83" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_1b9d3aa058a13b6e1ee6f6f009312cf0e" prot="private" static="no" mutable="no">
+        <type>Char</type>
+        <definition>Char MyGUI::ResourceTrueTypeFont::mSubstituteCodePoint</definition>
+        <argsstring></argsstring>
+        <name>mSubstituteCodePoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="84" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_17efb4a9450eb362e989712a31e8c01e4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyGUI::ResourceTrueTypeFont::mDefaultHeight</definition>
+        <argsstring></argsstring>
+        <name>mDefaultHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="87" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_11e78d8b7523ac7e6ce06d5026168d895" prot="private" static="no" mutable="no">
+        <type>GlyphInfo *</type>
+        <definition>GlyphInfo* MyGUI::ResourceTrueTypeFont::mSubstituteGlyphInfo</definition>
+        <argsstring></argsstring>
+        <name>mSubstituteGlyphInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="88" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_1af31ca59f9a1bfd679bab5f2023b5608" prot="private" static="no" mutable="no">
+        <type>MyGUI::ITexture *</type>
+        <definition>MyGUI::ITexture* MyGUI::ResourceTrueTypeFont::mTexture</definition>
+        <argsstring></argsstring>
+        <name>mTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="89" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_15f2ed95ccae2c6ce69844ab6e51c3597" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int MyGUI::ResourceTrueTypeFont::mGlyphSpacing</definition>
+        <argsstring></argsstring>
+        <name>mGlyphSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="92" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_1fbef0037ec58e1bab56e535105e983eb" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float MyGUI::ResourceTrueTypeFont::mSelectedWidth</definition>
+        <argsstring></argsstring>
+        <name>mSelectedWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="93" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ResourceTrueTypeFont_173463eed9b22cb3c79cc05bfa3164558" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float MyGUI::ResourceTrueTypeFont::mCursorWidth</definition>
+        <argsstring></argsstring>
+        <name>mCursorWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="94" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" line="39" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ResourceTrueTypeFont.h" bodystart="37" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1fa8cbe07c972c5c92843424cc8c1dc91" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>addCodePoint</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_187aa276ffda96c6a5bcc75a6ddbecbed" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>addCodePointRange</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_11ef78972203e0ffe571be923059a4394" prot="public" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_195a72d5a9206c72bf86511aa210492ba" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>clearCodePoints</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_19157509983933da0b4f7d8b45cb3ecf6" prot="public" virt="virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>deserialization</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1c036d6bb4a6c2c7895cc0baeb9a8f482" prot="public" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1f02ac64049ded1b192908fb7c99f320f" prot="public" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>getCodePointRanges</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1ad8a4e435a0cf1c013ca34f3bd55262d" prot="public" virt="virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>getDefaultHeight</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_19906f8fc3d2e5bd90a2309cf3e95fad3" prot="public" virt="virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>getGlyphInfo</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1b9ec88cbff9e5a4f0fd02a0e0babe5ed" prot="public" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>getSubstituteCodePoint</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1599ed4a6f807e280e279b68ff1200729" prot="public" virt="virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>getTextureFont</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_17746f409fa560c130b34f938e127f833" prot="public" virt="virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_15ac921d9521e8bcbf85397e989ebed05" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>initialise</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_180d3a9ad5ea71587bf6b14d66e9b7a9c" prot="public" virt="virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1514aefb41bae7c2de5bfd04559916e04" prot="public" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1c574ca6b9e8e3f8f4523dce7c517852b" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mAntialias</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_173463eed9b22cb3c79cc05bfa3164558" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mCursorWidth</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_17efb4a9450eb362e989712a31e8c01e4" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mDefaultHeight</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_15f2ed95ccae2c6ce69844ab6e51c3597" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mGlyphSpacing</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1365ae0c8cc7a43fa3e2fc98fabff5342" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mOffsetHeight</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_10f128ff3033826eb2c9b4bbdb19b74a2" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mResolution</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1fbef0037ec58e1bab56e535105e983eb" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mSelectedWidth</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_18205ab383230549678cbcced03e5b60e" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mSize</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1004df27b656e34847bb6231b161caaec" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mSource</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1e37676dc22fb9395bab5890c8b5d3107" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mSpaceWidth</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1b9d3aa058a13b6e1ee6f6f009312cf0e" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mSubstituteCodePoint</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_11e78d8b7523ac7e6ce06d5026168d895" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mSubstituteGlyphInfo</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_14300713b0daf2e5530c21df6f79507b8" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mTabWidth</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1af31ca59f9a1bfd679bab5f2023b5608" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>mTexture</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1a916b2d4656ac4013fb555fd25d4df03" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>removeCodePoint</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1786c8ffb99938dcc1a791f17b7ec8335" prot="private" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>removeCodePointRange</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1130ef0a75a9f9a6161d96a6a538ced25" prot="public" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>ResourceTrueTypeFont</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1c06eb21cdf52c96ecb66f28d7757118f" prot="public" virt="non-virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1ResourceTrueTypeFont_1b8c65fa76777b60189a09135715ea665" prot="public" virt="virtual"><scope>MyGUI::ResourceTrueTypeFont</scope><name>~ResourceTrueTypeFont</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

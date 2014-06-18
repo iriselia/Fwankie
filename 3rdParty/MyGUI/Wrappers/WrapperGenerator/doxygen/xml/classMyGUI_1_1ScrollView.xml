@@ -1,0 +1,776 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.6-NO">
+  <compounddef id="classMyGUI_1_1ScrollView" kind="class" prot="public">
+    <compoundname>MyGUI::ScrollView</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classMyGUI_1_1ScrollView_10cf5cb11b2cf9151a435c549db1b7013" prot="public" static="no">
+        <type>RTTIBase</type>
+        <definition>typedef RTTIBase MyGUI::ScrollView::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMyGUI_1_1ScrollView_1739ece6274510039036e89f825e41851" prot="public" static="no">
+        <type>ScrollView</type>
+        <definition>typedef ScrollView MyGUI::ScrollView::RTTIBase</definition>
+        <argsstring></argsstring>
+        <name>RTTIBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1ed8fdeb0f1d4ec72255e04d75c8a8cd4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; MyGUI::ScrollView::getTypeName</definition>
+        <argsstring>() const </argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get type name as string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1fb4aa3d7470f51f8c4e8cc351087e7c5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool MyGUI::ScrollView::isType</definition>
+        <argsstring>(const std::type_info &amp;_type) const </argsstring>
+        <name>isType</name>
+        <param>
+          <type>const std::type_info &amp;</type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1a7ba9d169ee8386adb351880afa4b268" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>Type</declname>
+            <defname>Type</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool MyGUI::ScrollView::isType</definition>
+        <argsstring>() const </argsstring>
+        <name>isType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compare with selected type </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_19c6f2d7d7261c4e58073015b4bccafb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyGUI::ScrollView::ScrollView</definition>
+        <argsstring>()</argsstring>
+        <name>ScrollView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1004058a996986f40a00d5c3f35067a7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ScrollView::setPosition</definition>
+        <argsstring>(const IntPoint &amp;_value)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>const IntPoint &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para><copydoc link="Widget::setPosition(const IntPoint& _value)"></copydoc>
+ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_167553289e7d9170529dc85fc1c757114" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ScrollView::setSize</definition>
+        <argsstring>(const IntSize &amp;_value)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para><copydoc link="Widget::setSize(const IntSize& _value)"></copydoc>
+ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1f3c3a7fb54d3bf73045da4d6b4101eda" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ScrollView::setCoord</definition>
+        <argsstring>(const IntCoord &amp;_value)</argsstring>
+        <name>setCoord</name>
+        <param>
+          <type>const IntCoord &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para><copydoc link="Widget::setCoord(const IntCoord& _value)"></copydoc>
+ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_19e3e61c4d8370c658017304a18539435" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::setPosition</definition>
+        <argsstring>(int _left, int _top)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setPosition(int _left, int _top)"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1215513ce93d043ff4a592023919f07d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::setSize</definition>
+        <argsstring>(int _width, int _height)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setSize(int _width, int _height)"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1136283b4e248d33306ee9c4fad2c348a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::setCoord</definition>
+        <argsstring>(int _left, int _top, int _width, int _height)</argsstring>
+        <name>setCoord</name>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><copydoc link="Widget::setCoord(int _left, int _top, int _width, int _height)"></copydoc>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_135707581d4a45602b54ab804c83f5c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::setVisibleVScroll</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setVisibleVScroll</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Show VScroll when text size larger than Edit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_184223fb26294895b75731ac21a618baa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::ScrollView::isVisibleVScroll</definition>
+        <argsstring>() const </argsstring>
+        <name>isVisibleVScroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Show VScroll flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_104f0c6e7a88d9f766a3d4733e673891a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::setVisibleHScroll</definition>
+        <argsstring>(bool _value)</argsstring>
+        <name>setVisibleHScroll</name>
+        <param>
+          <type>bool</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Show HScroll when text size larger than Edit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1caff4d4f28d33c1e572aaaa76f76b623" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyGUI::ScrollView::isVisibleHScroll</definition>
+        <argsstring>() const </argsstring>
+        <name>isVisibleHScroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Show HScroll flag </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1a1e980d0424f5aec85982c52b5ff5959" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::setCanvasAlign</definition>
+        <argsstring>(Align _value)</argsstring>
+        <name>setCanvasAlign</name>
+        <param>
+          <type>Align</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set canvas align </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1ce731cd12c47fcc3407a5cd088c54e67" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Align</type>
+        <definition>Align MyGUI::ScrollView::getCanvasAlign</definition>
+        <argsstring>() const </argsstring>
+        <name>getCanvasAlign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get canvas align </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1ecf41323ee8dc65b6035a38015f826f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::setCanvasSize</definition>
+        <argsstring>(const IntSize &amp;_value)</argsstring>
+        <name>setCanvasSize</name>
+        <param>
+          <type>const IntSize &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set canvas size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1ec604cbb229758a5c0351ab3fe3f73c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::setCanvasSize</definition>
+        <argsstring>(int _width, int _height)</argsstring>
+        <name>setCanvasSize</name>
+        <param>
+          <type>int</type>
+          <declname>_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set canvas size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1e81579eaea603256b9c55707dde2c902" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IntSize</type>
+        <definition>IntSize MyGUI::ScrollView::getCanvasSize</definition>
+        <argsstring>()</argsstring>
+        <name>getCanvasSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get canvas size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_15b17c898182676a6d3ce17a3c0446a41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IntCoord</type>
+        <definition>IntCoord MyGUI::ScrollView::getViewCoord</definition>
+        <argsstring>() const </argsstring>
+        <name>getViewCoord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get view area coordinates. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1415263da69a377bd1b3252ddfbbb61a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::setViewOffset</definition>
+        <argsstring>(const IntPoint &amp;_value)</argsstring>
+        <name>setViewOffset</name>
+        <param>
+          <type>const IntPoint &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set view area offset. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_16cf5759748de055e51d1482bf4e783cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IntPoint</type>
+        <definition>IntPoint MyGUI::ScrollView::getViewOffset</definition>
+        <argsstring>() const </argsstring>
+        <name>getViewOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get view area offset. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_129a282a907b55e7437984038f9d516d9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>static const std::string&amp; MyGUI::ScrollView::getClassTypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="37" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1a145b65160acb4f2b847a4eec77d49a8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ScrollView::initialiseOverride</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1fbdc41b7469a20be6c11582a65623952" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ScrollView::shutdownOverride</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1f989c2bf2258c4c16a2344d7b1713688" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::notifyMousePressed</definition>
+        <argsstring>(Widget *_sender, int _left, int _top, MouseButton _id)</argsstring>
+        <name>notifyMousePressed</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_16408ef2ffb053f2ceb28688b88e882f3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::notifyMouseReleased</definition>
+        <argsstring>(Widget *_sender, int _left, int _top, MouseButton _id)</argsstring>
+        <name>notifyMouseReleased</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_top</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1f786f61626597a528e9a91bea41eb3a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::notifyScrollChangePosition</definition>
+        <argsstring>(ScrollBar *_sender, size_t _position)</argsstring>
+        <name>notifyScrollChangePosition</name>
+        <param>
+          <type>ScrollBar *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1f61bb50eb2083829690d4b28d402c4f2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::notifyMouseWheel</definition>
+        <argsstring>(Widget *_sender, int _rel)</argsstring>
+        <name>notifyMouseWheel</name>
+        <param>
+          <type>Widget *</type>
+          <declname>_sender</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_rel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1c5772de7febc155be77d59e9b111d0b8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyGUI::ScrollView::updateView</definition>
+        <argsstring>()</argsstring>
+        <name>updateView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_126a149295f8a8cdc88c2bd7764d4134e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ScrollView::setPropertyOverride</definition>
+        <argsstring>(const std::string &amp;_key, const std::string &amp;_value)</argsstring>
+        <name>setPropertyOverride</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_131a8a4a18fe1f73ecb4c4b74b4a649d4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ScrollBar *</type>
+        <definition>ScrollBar* MyGUI::ScrollView::getVScroll</definition>
+        <argsstring>()</argsstring>
+        <name>getVScroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="100"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMyGUI_1_1ScrollView_1e359c9016f30f5340ddb9494eacc5c63" prot="protected" static="no" mutable="no">
+        <type>Align</type>
+        <definition>Align MyGUI::ScrollView::mContentAlign</definition>
+        <argsstring></argsstring>
+        <name>mContentAlign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="117" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMyGUI_1_1ScrollView_1d108d88549ccaa1e53160aeea5a45b8e" prot="protected" static="no" mutable="no">
+        <type>Widget *</type>
+        <definition>Widget* MyGUI::ScrollView::mRealClient</definition>
+        <argsstring></argsstring>
+        <name>mRealClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="118" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1a8e00b3479f7e064faa8adfa1f9f2875" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IntSize</type>
+        <definition>virtual IntSize MyGUI::ScrollView::getContentSize</definition>
+        <argsstring>()</argsstring>
+        <name>getContentSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1b4c7b6cd485c4346426599bbc7a0c727" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IntPoint</type>
+        <definition>virtual IntPoint MyGUI::ScrollView::getContentPosition</definition>
+        <argsstring>()</argsstring>
+        <name>getContentPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_179d7547c8054118a47079be14c35a5dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IntSize</type>
+        <definition>virtual IntSize MyGUI::ScrollView::getViewSize</definition>
+        <argsstring>()</argsstring>
+        <name>getViewSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1e9639125c89f1c3792ba94c0b4918602" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MyGUI::ScrollView::setContentPosition</definition>
+        <argsstring>(const IntPoint &amp;_point)</argsstring>
+        <name>setContentPosition</name>
+        <param>
+          <type>const IntPoint &amp;</type>
+          <declname>_point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_15121f03d29cce8c113c2534d11981c17" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t MyGUI::ScrollView::getVScrollPage</definition>
+        <argsstring>()</argsstring>
+        <name>getVScrollPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_151995c1ecfdc8cb2f227362a7227d0f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t MyGUI::ScrollView::getHScrollPage</definition>
+        <argsstring>()</argsstring>
+        <name>getHScrollPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyGUI_1_1ScrollView_1a93066fc00f37ff9b5012814b62d387d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Align</type>
+        <definition>virtual Align MyGUI::ScrollView::getContentAlign</definition>
+        <argsstring>()</argsstring>
+        <name>getContentAlign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" line="36" bodyfile="C:/Users/piaoa_000/Documents/GitHub/Fwankie/3rdParty/MyGUI/MyGUIEngine/include/MyGUI_ScrollView.h" bodystart="32" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classMyGUI_1_1ScrollView_10cf5cb11b2cf9151a435c549db1b7013" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>Base</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1ce731cd12c47fcc3407a5cd088c54e67" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>getCanvasAlign</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1e81579eaea603256b9c55707dde2c902" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>getCanvasSize</name></member>
+      <member refid="classMyGUI_1_1ScrollView_129a282a907b55e7437984038f9d516d9" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>getClassTypeName</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1a93066fc00f37ff9b5012814b62d387d" prot="private" virt="virtual"><scope>MyGUI::ScrollView</scope><name>getContentAlign</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1b4c7b6cd485c4346426599bbc7a0c727" prot="private" virt="virtual"><scope>MyGUI::ScrollView</scope><name>getContentPosition</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1a8e00b3479f7e064faa8adfa1f9f2875" prot="private" virt="virtual"><scope>MyGUI::ScrollView</scope><name>getContentSize</name></member>
+      <member refid="classMyGUI_1_1ScrollView_151995c1ecfdc8cb2f227362a7227d0f4" prot="private" virt="virtual"><scope>MyGUI::ScrollView</scope><name>getHScrollPage</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1ed8fdeb0f1d4ec72255e04d75c8a8cd4" prot="public" virt="virtual"><scope>MyGUI::ScrollView</scope><name>getTypeName</name></member>
+      <member refid="classMyGUI_1_1ScrollView_15b17c898182676a6d3ce17a3c0446a41" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>getViewCoord</name></member>
+      <member refid="classMyGUI_1_1ScrollView_16cf5759748de055e51d1482bf4e783cf" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>getViewOffset</name></member>
+      <member refid="classMyGUI_1_1ScrollView_179d7547c8054118a47079be14c35a5dd" prot="private" virt="virtual"><scope>MyGUI::ScrollView</scope><name>getViewSize</name></member>
+      <member refid="classMyGUI_1_1ScrollView_131a8a4a18fe1f73ecb4c4b74b4a649d4" prot="protected" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>getVScroll</name></member>
+      <member refid="classMyGUI_1_1ScrollView_15121f03d29cce8c113c2534d11981c17" prot="private" virt="virtual"><scope>MyGUI::ScrollView</scope><name>getVScrollPage</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1a145b65160acb4f2b847a4eec77d49a8" prot="protected" virt="virtual"><scope>MyGUI::ScrollView</scope><name>initialiseOverride</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1fb4aa3d7470f51f8c4e8cc351087e7c5" prot="public" virt="virtual"><scope>MyGUI::ScrollView</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1a7ba9d169ee8386adb351880afa4b268" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>isType</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1caff4d4f28d33c1e572aaaa76f76b623" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>isVisibleHScroll</name></member>
+      <member refid="classMyGUI_1_1ScrollView_184223fb26294895b75731ac21a618baa" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>isVisibleVScroll</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1e359c9016f30f5340ddb9494eacc5c63" prot="protected" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>mContentAlign</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1d108d88549ccaa1e53160aeea5a45b8e" prot="protected" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>mRealClient</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1f989c2bf2258c4c16a2344d7b1713688" prot="protected" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>notifyMousePressed</name></member>
+      <member refid="classMyGUI_1_1ScrollView_16408ef2ffb053f2ceb28688b88e882f3" prot="protected" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>notifyMouseReleased</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1f61bb50eb2083829690d4b28d402c4f2" prot="protected" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>notifyMouseWheel</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1f786f61626597a528e9a91bea41eb3a2" prot="protected" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>notifyScrollChangePosition</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1739ece6274510039036e89f825e41851" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>RTTIBase</name></member>
+      <member refid="classMyGUI_1_1ScrollView_19c6f2d7d7261c4e58073015b4bccafb6" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>ScrollView</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1a1e980d0424f5aec85982c52b5ff5959" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>setCanvasAlign</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1ecf41323ee8dc65b6035a38015f826f6" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>setCanvasSize</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1ec604cbb229758a5c0351ab3fe3f73c1" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>setCanvasSize</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1e9639125c89f1c3792ba94c0b4918602" prot="private" virt="virtual"><scope>MyGUI::ScrollView</scope><name>setContentPosition</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1f3c3a7fb54d3bf73045da4d6b4101eda" prot="public" virt="virtual"><scope>MyGUI::ScrollView</scope><name>setCoord</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1136283b4e248d33306ee9c4fad2c348a" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>setCoord</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1004058a996986f40a00d5c3f35067a7e" prot="public" virt="virtual"><scope>MyGUI::ScrollView</scope><name>setPosition</name></member>
+      <member refid="classMyGUI_1_1ScrollView_19e3e61c4d8370c658017304a18539435" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>setPosition</name></member>
+      <member refid="classMyGUI_1_1ScrollView_126a149295f8a8cdc88c2bd7764d4134e" prot="protected" virt="virtual"><scope>MyGUI::ScrollView</scope><name>setPropertyOverride</name></member>
+      <member refid="classMyGUI_1_1ScrollView_167553289e7d9170529dc85fc1c757114" prot="public" virt="virtual"><scope>MyGUI::ScrollView</scope><name>setSize</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1215513ce93d043ff4a592023919f07d2" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>setSize</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1415263da69a377bd1b3252ddfbbb61a0" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>setViewOffset</name></member>
+      <member refid="classMyGUI_1_1ScrollView_104f0c6e7a88d9f766a3d4733e673891a" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>setVisibleHScroll</name></member>
+      <member refid="classMyGUI_1_1ScrollView_135707581d4a45602b54ab804c83f5c46" prot="public" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>setVisibleVScroll</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1fbdc41b7469a20be6c11582a65623952" prot="protected" virt="virtual"><scope>MyGUI::ScrollView</scope><name>shutdownOverride</name></member>
+      <member refid="classMyGUI_1_1ScrollView_1c5772de7febc155be77d59e9b111d0b8" prot="protected" virt="non-virtual"><scope>MyGUI::ScrollView</scope><name>updateView</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

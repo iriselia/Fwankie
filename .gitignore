@@ -3,6 +3,7 @@
 Debug/
 CMakeFiles/
 lib/
+build/
 CMakeCache.txt
 *.log
 

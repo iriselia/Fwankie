@@ -2,7 +2,7 @@
 *.dir/
 Debug/
 CMakeFiles/
-lib/
+.lib/
 build/
 CMakeCache.txt
 *.log

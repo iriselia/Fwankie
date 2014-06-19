@@ -12,6 +12,5 @@ CMakeCache.txt
 *.sdf
 *.suo
 *.sln
-*.cmake
 *.dll
 *.ilk

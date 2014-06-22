@@ -1,10 +1,10 @@
 #include "hge.h"
 #include "Map.h"
 
+
 const char* resourcePath = "resources/";
 std::string filePath;
-HGE* hge = hgeCreate(HGE_VERSION);
-
+HGE* hge = 0;
 /* @TODO: Reduce std map to 1 dimensional
 */
 Map::Map(const char* file_name) {
@@ -19,10 +19,11 @@ Map::Map(const char* file_name) {
 }
 
 Map::~Map() {
-
+	Destroy();
 }
 
 void Map::Load() {
+	hge = hgeCreate(HGE_VERSION);
 	// get number of tilesets
 	for (int t = 0; t < map_info->GetNumTilesets(); t++) {
 		// get attributes of tileset t
@@ -62,15 +63,19 @@ void Map::Load() {
 	m_bIsLoaded = true;
 }
 
-void Map::Unload() {
+void Map::Destroy() {
 	for (int t = 0; t < map_info->GetNumTilesets(); t++) {
 		std::map<int, hgeSprite*> a = sprite_maps[t];
 		for (auto pair : a) {
-			free(pair.second);
+			delete pair.second;
 		}
+		//a.clear();
 	}
+	if (m_bIsLoaded)
+		hge->Release();
+	
 	m_bIsLoaded = false;
-
+	delete map_info;
 }
 
 // Default rendering function at position (0, 0). Only use for debugging, do not use for gameplay!!!

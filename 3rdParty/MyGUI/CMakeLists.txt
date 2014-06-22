@@ -141,7 +141,7 @@ option(MYGUI_STANDALONE_BUILD "Generate build files that do not reference CMake 
 MARK_AS_ADVANCED(MYGUI_STANDALONE_BUILD)
 
 if (WIN32)
-	set(MYGUI_SAMPLES_INPUT 1 CACHE STRING
+	set(MYGUI_SAMPLES_INPUT 2 CACHE STRING
 	"Specify the Input Manager for samples. Possible values:
 	  1 - OIS
 	  2 - Win32

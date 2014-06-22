@@ -14,13 +14,17 @@
 #include "InputManager.h"
 #include "PointerManager.h"
 
+#include "hge.h"
+
 namespace MyGUI
 {
-	class DirectXPlatform;
+	class HGEPlatform;
 }
 
+/*
 struct IDirect3D9;
 struct IDirect3DDevice9;
+*/
 struct HWND__;
 typedef HWND__* HWND;
 struct HINSTANCE__;
@@ -40,9 +44,11 @@ namespace base
 		virtual void prepare(); // инициализация коммандной строки
 		bool create(); // создаем начальную точки каркаса приложения
 		void destroy(); // очищаем все параметры каркаса приложения
+		void shutdown(); // the destroy func without HGE state management
 		void run();
 		void quit();
 
+		void registerWindow(HWND _hWnd, HGE* _mpHGE, bool _isWindowed);
 		void setWindowCaption(const std::wstring& _text);
 		void createDefaultScene() { }
 		void makeScreenShot() { }
@@ -56,6 +62,7 @@ namespace base
 
 	/*internal:*/
 		void _windowResized();
+		bool HgeFrameFunc();
 
 	protected:
 		virtual void createScene() { }
@@ -83,13 +90,16 @@ namespace base
 
 	private:
 		MyGUI::Gui* mGUI;
-		MyGUI::DirectXPlatform* mPlatform;
+		MyGUI::HGEPlatform* mPlatform;
 		diagnostic::StatisticInfo* mInfo;
 		diagnostic::InputFocusInfo* mFocusInfo;
 
 		HWND hWnd;
+		HGE* mpHGE;
+		/*
 		IDirect3D9* mD3d;
 		IDirect3DDevice9* mDevice;
+		*/
 		HINSTANCE hInstance;
 
 		bool mExit;

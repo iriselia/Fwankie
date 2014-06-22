@@ -1,0 +1,35 @@
+set (HEADER_FILES
+  include/MyGUI_HGEDataManager.h
+  include/MyGUI_HGEDiagnostic.h
+  include/MyGUI_HGEPlatform.h
+  include/MyGUI_HGERenderManager.h
+  include/MyGUI_HGETexture.h
+  include/MyGUI_HGERTTexture.h
+  include/MyGUI_HGEVertexBuffer.h
+)
+set (SOURCE_FILES
+  src/MyGUI_HGEDataManager.cpp
+  src/MyGUI_HGERenderManager.cpp
+  src/MyGUI_HGETexture.cpp
+  src/MyGUI_HGERTTexture.cpp
+  src/MyGUI_HGEVertexBuffer.cpp
+)
+SOURCE_GROUP("Source Files" FILES
+  src/MyGUI_HGEDataManager.cpp
+  src/MyGUI_HGERenderManager.cpp
+  src/MyGUI_HGETexture.cpp
+  src/MyGUI_HGERTTexture.cpp
+  src/MyGUI_HGEVertexBuffer.cpp
+)
+SOURCE_GROUP("Header Files" FILES
+  include/MyGUI_HGEDataManager.h
+  include/MyGUI_HGEDiagnostic.h
+  include/MyGUI_HGEPlatform.h
+  include/MyGUI_HGERenderManager.h
+  include/MyGUI_HGETexture.h
+  include/MyGUI_HGERTTexture.h
+  include/MyGUI_HGEVertexBuffer.h
+)
+SOURCE_GROUP("" FILES
+  CMakeLists.txt
+)

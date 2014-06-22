@@ -8,6 +8,7 @@ Trigger<Entity_Type>::Trigger(unsigned int id) {
 
 template <class Entity_Type>
 Trigger<Entity_Type>::~Trigger() {
+	delete m_pRegionOfInfluence;
 }
 
 template <class Entity_Type>

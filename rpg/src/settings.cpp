@@ -16,6 +16,7 @@ bool Settings::load(const std::string& file_name) {
 		hge->System_SetState(HGE_SCREENHEIGHT, (int)y);
 		settingsdata.close();
 	}
+	hge->Release();
 	return 0;
 }
 bool Settings::save(const std::string& file_name) { return 0; }

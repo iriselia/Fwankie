@@ -16,10 +16,12 @@
 #include <stdlib.h>
 
 #include "Map.h"
+#include <cassert>
 //#include "Box2D.h"
 
 #include "Trigger_Portal.h"
-
+#include "BaseManager.h"
+#include "GUI.h"
 
 namespace RPG {
 
@@ -35,6 +37,8 @@ namespace RPG {
 	//gcn::Gui				*gui;
 
 	HGE *hge = 0;
+	//base::BaseManager* gui = 0;
+	GUI* gui = 0;
 
 	Tmx::Map *map;
 	std::map<std::string, Map*> world;
@@ -46,7 +50,9 @@ namespace RPG {
 	HTEXTURE			hMouseTexture;
 	hgeSprite			*mouseSprite;
 	HTEXTURE			hPortal;
+	HTEXTURE			anitex;
 	hgeSprite			*portalSprite;
+	hgeAnimation*		ani;
 
 	hgeFont					*fnt;
 	HEFFECT					snd;
@@ -56,7 +62,7 @@ namespace RPG {
 	hgeQuad				quad;
 
 	// Pointers to the HGE objects we will use
-	hgeGUI				*gui;
+	//hgeGUI				*gui;
 
 
 	float mouseX, mouseY;
@@ -179,6 +185,10 @@ namespace RPG {
 		fnt->printf(5, 130, HGETEXT_LEFT, "camera xposn %d, yposn %d.", int(camera->GetXPosition()), int(camera->GetYPosition()));
 		fnt->printf(5, 165, HGETEXT_LEFT, "poring xposn %d, yposn %d.", int(myPlayer->GetXPosition()), int(myPlayer->GetYPosition()));
 		fnt->printf(5, 210, HGETEXT_LEFT, "speed %d.", int(myPlayer->GetAcceleration()));
+
+		//Render GUI
+		gui->HgeFrameFunc();
+
 		// Finally we end the scene causing the screen to be updated.
 		hge->Gfx_EndScene();
 
@@ -189,22 +199,22 @@ namespace RPG {
 
 #pragma region init
 		hge = hgeCreate(HGE_VERSION);
-
 		// Load settings
 		Settings::load("config.txt");
+		bool b_windowed = true;
 		hge->System_SetState(HGE_LOGFILE, "resources/game.log");
 		hge->System_SetState(HGE_FRAMEFUNC, FrameFunc);
 		hge->System_SetState(HGE_RENDERFUNC, RenderFunc);
 		hge->System_SetState(HGE_TITLE, "Project 3: basic animation and map loading");
-		hge->System_SetState(HGE_WINDOWED, true);
+		hge->System_SetState(HGE_WINDOWED, b_windowed);
 		hge->System_SetState(HGE_SCREENBPP, 32);
 		hge->System_SetState(HGE_FPS, 60);
 
-		if (!hge->System_Initiate())
-		{
+		assert(hge->System_Initiate());
 			//throw GCN_EXCEPTION("Unable to initialize HGE: " + std::string(hge->System_GetErrorMessage()));
-		}
 
+		gui = new GUI();
+		gui->registerWindow(hge->System_GetState(HGE_HWND), hge, b_windowed);
 		// Load savedata
 		myPlayer = new Player();
 		std::ifstream savedata("resources/savedata.txt");
@@ -291,8 +301,8 @@ namespace RPG {
 
 		mouseSprite = new hgeSprite(hMouseTexture, 0, 0, 32, 32);
 		
-		HTEXTURE anitex = hge->Texture_Load("resources/aninew.png");
-		hgeAnimation* ani = new hgeAnimation(anitex, 6, 6, 0, 0, 38, 46);
+		anitex = hge->Texture_Load("resources/aninew.png");
+		ani = new hgeAnimation(anitex, 6, 6, 0, 0, 38, 46);
 		ani->SetHotSpot(16, 16);
 		ani->Play();
 
@@ -315,15 +325,84 @@ namespace RPG {
 			savedata.close();
 		}
 
+		delete fnt;
+		delete mouseSprite;
+		delete ani;
+		delete camera;
+		delete portal;
+		delete portalSprite;
+		delete myPlayer;
+		hge->Texture_Free(hPortal);
+		hge->Texture_Free(hMouseTexture);
+		hge->Texture_Free(quad.tex);
+		hge->Effect_Free(snd);
+
+		delete world["desert"];
+		delete world["little"];
+		
+
+
 		//delete gui;
 		//delete imageLoader;
 		//delete input;
 		//delete graphics;
-
-		hge->System_Shutdown();
+		gui->shutdown();
+		delete gui;
+		gui = nullptr;
+		//hge->System_Shutdown();
 		hge->Release();
 	}
 
+	void Debug_Init() {
+		hge = hgeCreate(HGE_VERSION);
+		
+		Settings::load("config.txt");
+		bool b_windowed = true;
+
+		hge->System_SetState(HGE_LOGFILE, "resources/game.log");
+		hge->System_SetState(HGE_FRAMEFUNC, Debug_FrameFunc);
+		hge->System_SetState(HGE_RENDERFUNC, Debug_RenderFunc);
+		hge->System_SetState(HGE_TITLE, "Project 3: basic animation and map loading");
+		hge->System_SetState(HGE_WINDOWED, b_windowed);
+		hge->System_SetState(HGE_SCREENBPP, 32);
+		hge->System_SetState(HGE_FPS, 60);
+
+		assert(hge->System_Initiate());
+
+		gui = new GUI();
+		//gui_impl = new MyGUI_Impl;
+		//gui->registerWindow(hge->System_GetState(HGE_HWND), hge, b_windowed);
+
+	}
+
+	void Debug_Run() {
+		hge->System_Start();
+	}
+
+	void Debug_Halt() {
+		/*
+		gui_impl->shutdown();
+		delete gui_impl;
+		gui_impl = nullptr;
+		//*/
+		///*
+		gui->shutdown();
+		delete gui;
+		gui = nullptr;
+		//*/
+		hge->Release();
+	}
+
+	bool Debug_FrameFunc() {
+		if (hge->Input_GetKeyState(HGEK_ESCAPE)) {
+			return true;
+		}
+		return false;
+	}
+
+	bool Debug_RenderFunc() {
+		return false;
+	}
 	bool MenuFrameFunc() {
 		float dt = hge->Timer_GetDelta();
 		static float t = 0.0f;

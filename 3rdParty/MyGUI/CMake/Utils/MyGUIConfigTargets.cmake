@@ -113,9 +113,9 @@ function(mygui_app PROJECTNAME SOLUTIONFOLDER)
 	# Set up dependencies
 	if(MYGUI_RENDERSYSTEM EQUAL 1)
 		include_directories(../../Common/Base/DirectX)
-		add_definitions("-DMYGUI_DIRECTX_PLATFORM")
+		add_definitions("-DMYGUI_HGE_PLATFORM")
 		include_directories(
-			${MYGUI_SOURCE_DIR}/Platforms/DirectX/DirectXPlatform/include
+			${MYGUI_SOURCE_DIR}/Platforms/DirectX/HGEPlatform/include
 			${DirectX_INCLUDE_DIR}
 		)
 		link_directories(${DIRECTX_LIB_DIR})
@@ -181,8 +181,8 @@ function(mygui_app PROJECTNAME SOLUTIONFOLDER)
 		Common
 	)
 	if(MYGUI_RENDERSYSTEM EQUAL 1)
-		add_dependencies(${PROJECTNAME} MyGUI.DirectXPlatform)
-		target_link_libraries(${PROJECTNAME} MyGUI.DirectXPlatform)
+		add_dependencies(${PROJECTNAME} MyGUI.HGEPlatform)
+		target_link_libraries(${PROJECTNAME} MyGUI.HGEPlatform)
 	elseif(MYGUI_RENDERSYSTEM EQUAL 2)
 		add_dependencies(${PROJECTNAME} MyGUI.OgrePlatform)
 		target_link_libraries(${PROJECTNAME} MyGUI.OgrePlatform)
@@ -212,7 +212,9 @@ function(mygui_demo PROJECTNAME)
 	if (MYGUI_INSTALL_SAMPLES)
 		mygui_install_app(${PROJECTNAME})
 	endif ()
-	
+	include_directories( ${FWANKIE_SOURCE_DIR}/hge/helpers/include )
+	link_libraries( ${DirectX_D3DX9_LIBRARY} ${DirectX_LIBRARY} )
+	link_libraries( hge hgehelpers)
 	if( MSVC )
 	SET_PROPERTY(GLOBAL PROPERTY USE_FOLDERS ON)
 	SET_PROPERTY(TARGET ${PROJECTNAME}		PROPERTY FOLDER "3rd Party/MyGUI/Demos")

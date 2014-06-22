@@ -32,6 +32,7 @@ include_directories(
 	.
 	${MYGUI_SOURCE_DIR}/Common
 	${MYGUI_SOURCE_DIR}/MyGUIEngine/include
+	${FWANKIE_SOURCE_DIR}/hge/helpers/include
 )
 
 set (HEADER_FILES "")
@@ -39,12 +40,12 @@ set (SOURCE_FILES "")
 
 if(MYGUI_RENDERSYSTEM EQUAL 1)
 	mygui_add_base_manager_source(DirectX)
-	add_definitions("-DMYGUI_DIRECTX_PLATFORM")
+	add_definitions("-DMYGUI_HGE_PLATFORM")
 	include_directories(
-		${MYGUI_SOURCE_DIR}/Platforms/DirectX/DirectXPlatform/include
+		${MYGUI_SOURCE_DIR}/Platforms/DirectX/HGEPlatform/include
 		${DirectX_INCLUDE_DIR}
 	)
-	link_directories(${DIRECTX_LIB_DIR})
+	link_directories( ${DIRECTX_SDK_DIR}/lib ${DIRECTX_SDK_DIR}/lib/x64 ${DIRECTX_SDK_DIR}/lib/x86 )
 elseif(MYGUI_RENDERSYSTEM EQUAL 2)
 	mygui_add_base_manager_source(Ogre)
 	add_definitions("-DMYGUI_OGRE_PLATFORM")
@@ -81,11 +82,12 @@ elseif(MYGUI_SAMPLES_INPUT EQUAL 3)
 	mygui_add_input_source(Win32_OIS)
 endif()
 
-add_library(${PROJECTNAME} ${HEADER_FILES} ${SOURCE_FILES})
+add_library(${PROJECTNAME} STATIC ${HEADER_FILES} ${SOURCE_FILES})
 
 if(MYGUI_RENDERSYSTEM EQUAL 1)
-	add_dependencies(${PROJECTNAME} MyGUI.DirectXPlatform)
-	target_link_libraries(${PROJECTNAME} MyGUI.DirectXPlatform)
+	add_dependencies(${PROJECTNAME} MyGUI.HGEPlatform)
+	target_link_libraries(${PROJECTNAME} MyGUI.HGEPlatform)
+	target_link_libraries(${PROJECTNAME} hge hgehelpers)
 elseif(MYGUI_RENDERSYSTEM EQUAL 2)
 	add_dependencies(${PROJECTNAME} MyGUI.OgrePlatform)
 	target_link_libraries(${PROJECTNAME} MyGUI.OgrePlatform)

@@ -1,5 +1,5 @@
 if(MYGUI_RENDERSYSTEM EQUAL 1)
-  add_subdirectory(DirectX/DirectXPlatform)
+  add_subdirectory(DirectX/HGEPlatform)
 elseif(MYGUI_RENDERSYSTEM EQUAL 2)
   add_subdirectory(Ogre/OgrePlatform)
 elseif(MYGUI_RENDERSYSTEM EQUAL 3)

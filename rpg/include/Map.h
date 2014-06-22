@@ -11,7 +11,7 @@ public:
 	Map(const char* file_name);
 	~Map();
 	void Load();
-	void Unload();
+	void Destroy();
 	bool isLoaded() { return m_bIsLoaded; }
 	void Render();
 	void Render(int width_2, int height_2, int x, int y);

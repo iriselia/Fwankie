@@ -41,6 +41,7 @@ add_subdirectory( 3rdParty/tinyxml )
 add_subdirectory( 3rdParty/base64 )
 add_subdirectory( 3rdParty/TmxParser )
 add_subdirectory( 3rdParty/MyGUI )
+#add_subdirectory( 3rdParty/OIS )
 
 #--- HGE core library and helpers ---
 add_subdirectory( hge/helpers )

@@ -28,6 +28,15 @@
 template <class AppClass>
 int startApp()
 {
+	AllocConsole();
+	HANDLE hConsole = GetStdHandle(STD_INPUT_HANDLE);
+	DWORD mode;
+	GetConsoleMode(hConsole, &mode);
+	SetConsoleMode(hConsole, mode & ~ENABLE_MOUSE_INPUT | ENABLE_PROCESSED_INPUT);
+	freopen("CONIN$", "r", stdin);
+	freopen("CONOUT$", "w", stdout);
+	freopen("CONOUT$", "w", stderr);
+
 	try
 	{
 		AppClass* app = new AppClass();
@@ -49,6 +58,7 @@ int startApp()
 #endif
 		throw;
 	}
+
 	return 0;
 }
 

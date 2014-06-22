@@ -14,3 +14,4 @@ CMakeCache.txt
 *.sln
 *.dll
 *.ilk
+*.exe

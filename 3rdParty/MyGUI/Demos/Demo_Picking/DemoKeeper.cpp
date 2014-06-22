@@ -6,6 +6,7 @@
 #include "Precompiled.h"
 #include "DemoKeeper.h"
 #include "Base/Main.h"
+#include "vld.h"
 
 namespace demo
 {
@@ -31,7 +32,8 @@ namespace demo
 
 	void DemoKeeper::createScene()
 	{
-		MyGUI::LayoutManager::getInstance().loadLayout("Wallpaper.layout");
+		MyGUI::VectorWidgetPtr& wallpaper = MyGUI::LayoutManager::getInstance().loadLayout("Wallpaper.layout");
+		/*
 		const MyGUI::VectorWidgetPtr& root = MyGUI::LayoutManager::getInstance().loadLayout("HelpPanel.layout");
 		root.at(0)->findWidget("Text")->castType<MyGUI::TextBox>()->setCaption("Sample of picking mask for widget.");
 
@@ -49,6 +51,8 @@ namespace demo
 		image->eventMouseLostFocus += MyGUI::newDelegate(notifyMouseLostFocus);
 
 		image->setMaskPick("Crystal_Clear_Butterfly_Pick.png");
+		//*/
+		//MyGUI::LayoutManager::getInstance().unloadLayout(wallpaper);
 	}
 
 	void DemoKeeper::destroyScene()

@@ -1,6 +1,4 @@
-#ifndef GUI_h__
-#define GUI_h__
-
+#pragma once
 #include "BaseManager.h"
 
 class GUI :
@@ -13,5 +11,3 @@ class GUI :
 	private:
 		virtual void setupResources();
 	};
-
-#endif // GUI_h__

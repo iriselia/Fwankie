@@ -46,7 +46,7 @@ link_libraries( zlib hgehelpers )
 
 #------ target (for creating HGE.DLL) -----
 add_library( hge SHARED ${HGECORE_SOURCES} ${HGECORE_HEADERS})
-add_dependencies( hge hgezlib )
+add_dependencies( hge hgehelpers zlib )
 
 
 

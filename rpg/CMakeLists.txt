@@ -14,14 +14,18 @@ include_directories( ${RPG_INCLUDE_DIRS} )
 
 #------ additional includes ------
 include_directories(
+${FWANKIE_SOURCE_DIR}/hge/core/include
+${FWANKIE_SOURCE_DIR}/hge/helpers/include
+${FWANKIE_SOURCE_DIR}/hge/hgeb2draw/include
 ${FWANKIE_SOURCE_DIR}/3rdParty/TmxParser/include
 ${FWANKIE_SOURCE_DIR}/3rdParty/libPNG 
 ${FWANKIE_SOURCE_DIR}/3rdParty/zlib-1.2.5
+${FWANKIE_SOURCE_DIR}/3rdParty/Box2D
 #${FWANKIE_SOURCE_DIR}/3rdParty/OIS/include
 )
 
-include_directories( ${HGEHELPERS_SOURCE_DIR}/include )
 include_directories( ${DIRECTX_SDK_DIR}/include )
+
 include_directories(
 	${MYGUI_SOURCE_DIR}/Platforms/DirectX/HGEPlatform/include
 	${MYGUI_SOURCE_DIR}/MyGUIEngine/include
@@ -30,15 +34,20 @@ include_directories(
 	${MYGUI_SOURCE_DIR}/Common
 )
 #------ link directories listed ------
-link_directories( ${HGE_SOURCE_DIR}/lib )
+#link_directories( ${HGE_SOURCE_DIR}/lib )
 link_directories( ${DIRECTX_SDK_DIR}/lib ${DIRECTX_SDK_DIR}/lib/x64 ${DIRECTX_SDK_DIR}/lib/x86 )
 link_libraries( ${DirectX_D3DX9_LIBRARY} ${DirectX_LIBRARY} )
 link_libraries( Common )
 link_libraries( hge )
+link_libraries( hgeb2draw )
 link_libraries( tmxparser )
+link_libraries( Box2D )
 
 #------ target -----
 add_executable (RPG WIN32 ${RPG_SOURCES} ${RPG_HEADERS})
+
+install (TARGETS RPG
+         RUNTIME DESTINATION ${FWANKIE_SOURCE_DIR}/bin) #${PROJECT_BINARY_DIR}/bin)
 
 if( MSVC )
     SET_TARGET_PROPERTIES( RPG PROPERTIES LINK_FLAGS "/NODEFAULTLIB:libci" )

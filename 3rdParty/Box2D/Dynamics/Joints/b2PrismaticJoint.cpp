@@ -16,9 +16,9 @@
 * 3. This notice may not be removed or altered from any source distribution.
 */
 
-#include <Box2D/Dynamics/Joints/b2PrismaticJoint.h>
-#include <Box2D/Dynamics/b2Body.h>
-#include <Box2D/Dynamics/b2TimeStep.h>
+#include <Dynamics/Joints/b2PrismaticJoint.h>
+#include <Dynamics/b2Body.h>
+#include <Dynamics/b2TimeStep.h>
 
 // Linear constraint (point-to-line)
 // d = p2 - p1 = x2 + r2 - x1 - r1
@@ -173,6 +173,9 @@ void b2PrismaticJoint::InitVelocityConstraints(const b2SolverData& data)
 
 		m_s1 = b2Cross(d + rA, m_perp);
 		m_s2 = b2Cross(rB, m_perp);
+
+        float32 s1test;
+        s1test = b2Cross(rA, m_perp);
 
 		float32 k11 = mA + mB + iA * m_s1 * m_s1 + iB * m_s2 * m_s2;
 		float32 k12 = iA * m_s1 + iB * m_s2;

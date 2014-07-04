@@ -1,3 +1,4 @@
+#pragma once
 #include "TriggerRegion.h"
 
 template <class Entity_Type>

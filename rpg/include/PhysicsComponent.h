@@ -1,5 +1,5 @@
 #include "IComponent.h"
-#include "GameObject.h"
+#include "GameEntity.h"
 
 class PhysicsComponent : IComponent {
 

@@ -26,7 +26,7 @@
 	{
 		const MyGUI::VectorWidgetPtr& root = MyGUI::LayoutManager::getInstance().loadLayout("HelpPanel.layout");
 		root.at(0)->findWidget("Text")->castType<MyGUI::TextBox>()->setCaption("Sample of picking mask for widget.");
-
+		root.at(0)->setAlpha(0.5);
 
 		//MyGUI::VectorWidgetPtr& wallpaper = MyGUI::LayoutManager::getInstance().loadLayout("Wallpaper.layout");
 		/*

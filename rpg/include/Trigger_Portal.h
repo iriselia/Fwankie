@@ -1,3 +1,4 @@
+#pragma once
 #include "Trigger.h"
 #include "Player.h"
 

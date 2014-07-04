@@ -1,31 +1,31 @@
-#include "Tmx.h"
-#include "hgeSprite.h"
-#include <stdlib.h>
-
 #pragma once
-#ifndef MAP_H
-#define MAP_H
+#include <map>
+#include <vector>
+#include <list>
+#include "TileMap.h"
+#include "CollisionMap.h"
+#include "Camera.h"
+#include "hgesprite.h"
 
-class Map {
+class Map
+{
 public:
-	Map(const char* file_name);
+	Map(TileMap* _tileMap, CollisionMap* _collisionMap);
 	~Map();
-	void Load();
-	void Destroy();
+	void Update();
+	void Render(Camera* _camera);
+	void LoadResource();
+	void UnloadResource();
 	bool isLoaded() { return m_bIsLoaded; }
-	void Render();
-	void Render(int width_2, int height_2, int x, int y);
-	int Get_Width() { return width; }
-	int Get_Height() { return height; }
+	//void AddCamera(Camera* _camera);
+	int Get_Width();
+	int Get_Height();
+
 private:
 	bool m_bIsLoaded = false;
-	int width;
-	int height;
-	Tmx::Map *map_info;
-	HTEXTURE *raw_textures;
-	// We use a map of sprite maps because different tilesets
-	// have their own gid and can overlap with each other.
-	std::map<int, std::map<int, hgeSprite*>> sprite_maps;
+	//std::vector<Camera*> m_cameras;
+	TileMap* m_pTileMap;
+	CollisionMap* m_pCollisionMap;
+
 };
 
-#endif

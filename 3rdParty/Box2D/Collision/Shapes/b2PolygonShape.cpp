@@ -16,7 +16,7 @@
 * 3. This notice may not be removed or altered from any source distribution.
 */
 
-#include <Box2D/Collision/Shapes/b2PolygonShape.h>
+#include <Collision/Shapes/b2PolygonShape.h>
 #include <new>
 
 b2Shape* b2PolygonShape::Clone(b2BlockAllocator* allocator) const
@@ -217,6 +217,14 @@ void b2PolygonShape::Set(const b2Vec2* vertices, int32 count)
 		}
 	}
 	
+	if (m < 3)
+	{
+		// Polygon is degenerate.
+		b2Assert(false);
+		SetAsBox(1.0f, 1.0f);
+		return;
+	}
+
 	m_count = m;
 
 	// Copy vertices.

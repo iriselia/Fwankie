@@ -40,12 +40,15 @@ add_subdirectory( 3rdParty/libPNG )
 add_subdirectory( 3rdParty/tinyxml )
 add_subdirectory( 3rdParty/base64 )
 add_subdirectory( 3rdParty/TmxParser )
+add_subdirectory( 3rdParty/TmxParser_Test )
 add_subdirectory( 3rdParty/MyGUI )
+add_subdirectory( 3rdParty/Box2D )
 #add_subdirectory( 3rdParty/OIS )
 
 #--- HGE core library and helpers ---
 add_subdirectory( hge/helpers )
 add_subdirectory( hge/core )
+add_subdirectory( hge/hgeb2draw )
 
 #--- HGE TOOLS - comment out if not needed ---
 #add_subdirectory( hge/tools/fontconv )

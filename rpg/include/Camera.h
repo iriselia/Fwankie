@@ -1,12 +1,16 @@
+#pragma once
 #include "GameEntity.h"
 #include "Map.h"
 
-class Camera : public GameEntity {
+class Map;
+
+class Camera : public GameEntity
+{
 public:
 	Camera();
 	Camera(float _x_position, float _y_position);
 	~Camera();
-
+	
 	void Update(float _dt);
 	void RenderScene();
 	void Render(float _x_position, float _y_position);
@@ -14,28 +18,26 @@ public:
 	void SetDisplayLocation(int _display_x_position, int _display_y_position) { display_x = _display_x_position; display_y = _display_y_position; }
 	void SetDisplaySize_1(float _display_width, float _display_height) { display_width_2 = static_cast<int>(_display_width / 2); display_height_2 = static_cast<int>(_display_height / 2); }
 	void SetDisplaySize_2(float _display_width_2, float _display_height_2) { display_width_2 = static_cast<int>(_display_width_2); display_height_2 = static_cast<int>(_display_height_2); }
-	void SetFollowee(GameEntity* _followee) { followee = _followee; }
+	void SetTarget(GameEntity* _target) { target = _target; }
 	void SetZone(std::string _zone) { currentZone = _zone; }
-	void SetWorld(std::map<std::string, Map*> _world) { world = _world; }
-	void SetMap(Map* _map) { map = _map; }
+	void Enter(Map* _map);
 
 	int Get_Display_Width_2() { return display_width_2; }
 	int Get_Display_Height_2() { return display_height_2; }
 
-	GameEntity* GetFollowee() { return followee; }
-	Map* GetMap() { return map; }
+	GameEntity* GetFollowee() { return target; }
+	Map* getMap();
 	std::string GetZone() { return currentZone; }
 
-	bool willCollideEast(float _x_displacement) { return (followee->GetXPosition() + display_width_2 + _x_displacement) >= map->Get_Width(); }
-	bool willCollideNorth(float _y_displacement) { return (followee->GetYPosition() - display_height_2 + _y_displacement) <= 0; }
-	bool willCollideSouth(float _x_displacement) { return (followee->GetYPosition() + display_height_2 + _x_displacement) >= map->Get_Height(); }
-	bool willCollideWest(float _y_displacement) { return (followee->GetXPosition() - display_width_2 + _y_displacement) <= 0; }
+	bool willCollideEast(float _x_displacement);
+	bool willCollideNorth(float _y_displacement);
+	bool willCollideSouth(float _x_displacement);
+	bool willCollideWest(float _y_displacement);
 private:
 	// object of reference for camera movement
-	GameEntity* followee;
-	// the Map of the current world to render
-	Map* map;
-	std::map<std::string, Map*> world;
+	GameEntity* target;
+	Map* m_pMap;
+	
 	// string name of zone
 	std::string currentZone;
 	// size of the camera

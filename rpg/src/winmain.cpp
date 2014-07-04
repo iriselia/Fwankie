@@ -7,13 +7,14 @@
 
 #include "windows.h"
 #include "MyGUI_Exception.h"
-//#include "guichan.hpp"
 #include "RPG.h"
+#include "RPG_Debug.h"
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
-	// Create out debug console window
-	// and redirect the iostreams
+	// Create our debug console window
+	// redirect the iostreams
+	// and enable mouse scrolling
 	AllocConsole();
 	HANDLE hConsole = GetStdHandle(STD_INPUT_HANDLE);
 	DWORD mode;
@@ -25,11 +26,11 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
 	try
 	{
-//#define _DEBUGGAME
+#define _DEBUGGAME
 #ifdef _DEBUGGAME
-		RPG::Debug_Init();
-		RPG::Debug_Run();
-		RPG::Debug_Halt();
+		RPG_Debug::init();
+		RPG_Debug::run();
+		RPG_Debug::halt();
 #else
 		RPG::init();
 		RPG::run();
@@ -48,27 +49,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 		//throw;
 	}
 
-	// Catch all Guichan exceptions.
-	/*
-	catch (gcn::Exception e)
-	{
-		MessageBox(NULL,
-			e.getMessage().c_str(),
-			"Guichan exception",
-			MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
-		return 1;
-	}
-
-	// Catch all Std exceptions.
-	catch (std::exception e)
-	{
-		MessageBox(NULL,
-			e.what(),
-			"Std exception",
-			MB_OK | MB_ICONERROR | MB_SYSTEMMODAL);
-		return 1;
-	}
-	*/
+	//Use vld instead
 	//_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 	//assert(!_CrtDumpMemoryLeaks());
 	return 0;

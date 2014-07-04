@@ -16,6 +16,10 @@ void Camera::Update(float _dt) {
 
 }
 
+void Camera::Enter(Map* _map) { m_pMap = _map; }
+
+Map* Camera::getMap() { return m_pMap; }
+
 void Camera::RenderScene() {
 	// translate camera position to screen top left corner
 	float x, y;
@@ -24,17 +28,17 @@ void Camera::RenderScene() {
 
 	// translate camera position again if map is smaller than screen
 	// center the content.
-	Map* temp = world[currentZone];
+	Map* temp = m_pMap;
 	if (temp->Get_Width() < display_width_2 * 2)
-		x = static_cast<float>((display_width_2 * 2 - temp->Get_Width()) / 2);
+		x = (float)(display_width_2 * 2 - temp->Get_Width()) / 2;
 	if (temp->Get_Height() < display_height_2 * 2)
-		y = static_cast<float>((display_height_2 * 2 - temp->Get_Height()) / 2);
+		y = (float)(display_height_2 * 2 - temp->Get_Height()) / 2;
 
-	world[currentZone]->Render(0, 0, static_cast<int>(x), static_cast<int>(y));
+	m_pMap->Render(this);// (0, 0, (int)x, (int)y);
 	
 
-	float x1 = followee->GetXPosition(), y1 = followee->GetYPosition();
-	followee->Render(x1 + x, y1 + y);
+	float x1 = target->GetXPosition(), y1 = target->GetYPosition();
+	target->Render(x1 + x, y1 + y);
 
 	/*
 	// If camera is colliding horizontally
@@ -55,4 +59,24 @@ void Camera::RenderScene() {
 
 // Usually will do nothing because camera usually doesn't have a sprite
 void Camera::Render(float _x_position, float _y_position) {
+}
+
+bool Camera::willCollideEast(float _x_displacement)
+{
+	return (target->GetXPosition() + display_width_2 + _x_displacement) >= m_pMap->Get_Width();
+}
+
+bool Camera::willCollideNorth(float _y_displacement)
+{
+	return (target->GetYPosition() - display_height_2 + _y_displacement) <= 0;
+}
+
+bool Camera::willCollideSouth(float _x_displacement)
+{
+	return (target->GetYPosition() + display_height_2 + _x_displacement) >= m_pMap->Get_Height();
+}
+
+bool Camera::willCollideWest(float _y_displacement)
+{
+	return (target->GetXPosition() - display_width_2 + _y_displacement) <= 0;
 }

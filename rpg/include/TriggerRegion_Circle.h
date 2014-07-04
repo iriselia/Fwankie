@@ -1,8 +1,7 @@
+#pragma once
+
 #include "TriggerRegion.h"
 #include <math.h>
-
-#ifndef TRIGGERREGION_CIRCLE_H
-#define TRIGGERREGION_CIRCLE_H
 
 class TriggerRegion_Circle : public TriggerRegion {
 private:
@@ -23,5 +22,3 @@ public:
 	}
 	 
 };
-
-#endif

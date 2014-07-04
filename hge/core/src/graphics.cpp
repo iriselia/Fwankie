@@ -71,6 +71,7 @@ void HGE_CALL HGE_Impl::Gfx_SetClipping(int x, int y, int w, int h)
     _render_batch();
     pD3DDevice->SetViewport(&vp);
 
+	//Adjust scaling and orthogonal arguments accordingly.
     D3DXMATRIX tmp;
     D3DXMatrixScaling(&matProj, 1.0f, -1.0f, 1.0f);
     D3DXMatrixTranslation(&tmp, -0.5f, +0.5f, 0.0f);

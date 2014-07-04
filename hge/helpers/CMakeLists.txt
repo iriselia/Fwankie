@@ -13,6 +13,7 @@ list(REMOVE_DUPLICATES HGEHELPERS_INCLUDE_DIRS)
 
 #------ additional includes ------
 include_directories( ${HGEHELPERS_INCLUDE_DIRS} )
+include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/Box2D )
 
 #------ link directories listed ------
 link_directories( ${FWANKIE_SOURCE_DIR}/lib )

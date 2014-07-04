@@ -15,7 +15,7 @@
 #include <cstdio>
 #include <stdlib.h>
 
-#include "Map.h"
+#include "TileMap.h"
 #include <cassert>
 //#include "Box2D.h"
 
@@ -41,7 +41,7 @@ namespace RPG {
 	GUI* gui = 0;
 
 	Tmx::Map *map;
-	std::map<std::string, Map*> world;
+	std::map<std::string, TileMap*> world;
 	Trigger_Portal* portal;
 	//b2World *b2World = NULL;
 
@@ -238,9 +238,9 @@ namespace RPG {
 
 
 		std::cout << "Loading Map \"desert\"\n";
-		world["desert"] = new Map("map1.tmx");
-		world["little"] = new Map("map2.tmx");
-		world["desert"]->Load();
+// 		world["desert"] = new TileMap("map1.tmx");
+// 		world["little"] = new TileMap("map2.tmx");
+// 		world["desert"]->Load();
 
 		myPlayer->setZone("desert");
 
@@ -251,15 +251,15 @@ namespace RPG {
 
 
 
-		camera = new Camera();
-		camera->SetXPosition(myPlayer->GetXPosition());
-		camera->SetYPosition(myPlayer->GetYPosition());
-		camera->SetDisplayLocation(0, 0);
-		camera->SetDisplaySize_1(800, 600);
-		camera->SetFollowee(myPlayer);
-		camera->SetMap(world["desert"]);
-		camera->SetWorld(world);
-		camera->SetZone("desert");
+// 		camera = new Camera();
+// 		camera->SetXPosition(myPlayer->GetXPosition());
+// 		camera->SetYPosition(myPlayer->GetYPosition());
+// 		camera->SetDisplayLocation(0, 0);
+// 		camera->SetDisplaySize_1(800, 600);
+// 		camera->SetTarget(myPlayer);
+// 		camera->Enter(world["desert"]);
+// 		camera->SetWorld(world);
+// 		camera->SetZone("desert");
 
 		/*
 		if (tileset->GetTiles().size() > 0) {
@@ -334,6 +334,7 @@ namespace RPG {
 		delete myPlayer;
 		hge->Texture_Free(hPortal);
 		hge->Texture_Free(hMouseTexture);
+		hge->Texture_Free(anitex);
 		hge->Texture_Free(quad.tex);
 		hge->Effect_Free(snd);
 
@@ -352,57 +353,7 @@ namespace RPG {
 		//hge->System_Shutdown();
 		hge->Release();
 	}
-
-	void Debug_Init() {
-		hge = hgeCreate(HGE_VERSION);
-		
-		Settings::load("config.txt");
-		bool b_windowed = true;
-
-		hge->System_SetState(HGE_LOGFILE, "resources/game.log");
-		hge->System_SetState(HGE_FRAMEFUNC, Debug_FrameFunc);
-		hge->System_SetState(HGE_RENDERFUNC, Debug_RenderFunc);
-		hge->System_SetState(HGE_TITLE, "Project 3: basic animation and map loading");
-		hge->System_SetState(HGE_WINDOWED, b_windowed);
-		hge->System_SetState(HGE_SCREENBPP, 32);
-		hge->System_SetState(HGE_FPS, 60);
-
-		assert(hge->System_Initiate());
-
-		gui = new GUI();
-		//gui_impl = new MyGUI_Impl;
-		//gui->registerWindow(hge->System_GetState(HGE_HWND), hge, b_windowed);
-
-	}
-
-	void Debug_Run() {
-		hge->System_Start();
-	}
-
-	void Debug_Halt() {
-		/*
-		gui_impl->shutdown();
-		delete gui_impl;
-		gui_impl = nullptr;
-		//*/
-		///*
-		gui->shutdown();
-		delete gui;
-		gui = nullptr;
-		//*/
-		hge->Release();
-	}
-
-	bool Debug_FrameFunc() {
-		if (hge->Input_GetKeyState(HGEK_ESCAPE)) {
-			return true;
-		}
-		return false;
-	}
-
-	bool Debug_RenderFunc() {
-		return false;
-	}
+	
 	bool MenuFrameFunc() {
 		float dt = hge->Timer_GetDelta();
 		static float t = 0.0f;

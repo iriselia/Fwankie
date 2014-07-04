@@ -1,10 +1,8 @@
+#pragma once
 #include "hge.h"
 #include "hgeanim.h"
 #include "GameEntity.h"
 #include <string>
-
-#ifndef PLAYER_H
-#define PLAYER_H
 
 class Player : public GameEntity{
 public:
@@ -36,5 +34,3 @@ private:
 
 	hgeAnimation *anim;
 };
-
-#endif

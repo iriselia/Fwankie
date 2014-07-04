@@ -16,3 +16,4 @@ CMakeCache.txt
 *.dll
 *.ilk
 *.exe
+*.bsc

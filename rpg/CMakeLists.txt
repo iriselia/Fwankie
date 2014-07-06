@@ -1,16 +1,19 @@
 project( RPG )
 cmake_minimum_required( VERSION 2.8 )
 
-file(GLOB_RECURSE RPG_SOURCES ${RPG_SOURCE_DIR}/src/*.cpp)
-file(GLOB_RECURSE RPG_HEADERS ${RPG_SOURCE_DIR}/include/*.h)
+file(GLOB_RECURSE MY_SRC ${CMAKE_CURRENT_SOURCE_DIR}/src *.cpp)
+#file(GLOB_RECURSE SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp *.h)
+create_source_group("Source Files" "${CMAKE_CURRENT_SOURCE_DIR}/src" ${MY_SRC})
+file(GLOB_RECURSE MY_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/include/*.h)
+create_source_group("Header Files" "${CMAKE_CURRENT_SOURCE_DIR}/include" ${MY_HEADERS})
 
-set (RPG_INCLUDE_DIRS "")
-foreach (_headerFile ${RPG_HEADERS})
+set (MY_INCLUDE_DIRS "")
+foreach (_headerFile ${MY_HEADERS})
     get_filename_component(_dir ${_headerFile} PATH)
-    list (APPEND RPG_INCLUDE_DIRS ${_dir})
+    list (APPEND MY_INCLUDE_DIRS ${_dir})
 endforeach()
-list(REMOVE_DUPLICATES RPG_INCLUDE_DIRS)
-include_directories( ${RPG_INCLUDE_DIRS} )
+list(REMOVE_DUPLICATES MY_INCLUDE_DIRS)
+include_directories( ${MY_INCLUDE_DIRS} )
 
 #------ additional includes ------
 include_directories(
@@ -44,7 +47,8 @@ link_libraries( tmxparser )
 link_libraries( Box2D )
 
 #------ target -----
-add_executable (RPG WIN32 ${RPG_SOURCES} ${RPG_HEADERS})
+#add_executable (RPG WIN32 ${RPG_SOURCES} ${RPG_HEADERS})
+add_executable (RPG WIN32 ${MY_SRC} ${MY_HEADERS})
 
 install (TARGETS RPG
          RUNTIME DESTINATION ${FWANKIE_SOURCE_DIR}/bin) #${PROJECT_BINARY_DIR}/bin)

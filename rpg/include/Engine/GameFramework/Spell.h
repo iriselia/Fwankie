@@ -90,3 +90,13 @@ class Spell : public GameEntity {
 		//Environment variables
 		std::vector<float> m_actual_amount_change;
 };
+
+class SpellScript : public AIController {
+	public:
+	    SpellScript();
+
+
+	private:
+	    SpellEffectCategory
+
+};

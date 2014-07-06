@@ -79,7 +79,7 @@ SET( CMAKE_INCLUDE_CURRENT_DIR ON )
     #
 	
     function(create_source_group sourceGroupName relativeSourcePath sourceFiles)
-        FOREACH(currentSourceFile ${ARGN})
+	    FOREACH(currentSourceFile ${ARGN})
             FILE(RELATIVE_PATH folder ${relativeSourcePath} ${currentSourceFile})
             get_filename_component(filename ${folder} NAME)
             string(REPLACE ${filename} "" folder ${folder})
@@ -89,6 +89,21 @@ SET( CMAKE_INCLUDE_CURRENT_DIR ON )
                 SOURCE_GROUP("${sourceGroupName}\\${folderlast}" FILES ${currentSourceFile})
             endif(NOT folder STREQUAL "")
         ENDFOREACH(currentSourceFile ${ARGN})
+		
+        FOREACH(currentSourceFile ${sourceFiles})
+            FILE(RELATIVE_PATH folder ${relativeSourcePath} ${currentSourceFile})
+            get_filename_component(filename ${folder} NAME)
+            string(REPLACE ${filename} "" folder ${folder})
+            if(NOT folder STREQUAL "")
+                string(REGEX REPLACE "/+$" "" folderlast ${folder})
+                string(REPLACE "/" "\\" folderlast ${folderlast})
+                SOURCE_GROUP("${sourceGroupName}\\${folderlast}" FILES ${currentSourceFile})
+            endif(NOT folder STREQUAL "")
+        ENDFOREACH(currentSourceFile ${sourceFiles})
+		
+		
+		
+		
     endfunction(create_source_group)
 
 #--- 3rd Party library ---

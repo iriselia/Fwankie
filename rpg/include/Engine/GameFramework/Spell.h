@@ -1,6 +1,6 @@
 #include "SpellDefines.h"
-#include "Actor.h"
-#include "GameEntity.h"
+#include "Pawn.h"
+#include "AIController.h"
 #include <cstdint>
 #include <vector>
 #include <string>
@@ -62,7 +62,7 @@ struct SpellInfo {
 		//spell visual, hgeanim stuff
 };
 
-class Spell : public GameEntity {
+class Spell : public Pawn {
 	public:
 	    Spell();
 
@@ -91,9 +91,9 @@ class Spell : public GameEntity {
 		std::vector<float> m_actual_amount_change;
 };
 
-class SpellScript : public AIController {
+class SpellController : public AIController {
 	public:
-	    SpellScript();
+	    SpellController();
 
 
 	private:

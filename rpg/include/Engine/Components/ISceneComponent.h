@@ -1,7 +1,7 @@
 #pragma once
 #include "IActorComponent.h"
 
-class ISceneComponent : IActorComponent {
+class ISceneComponent : public IActorComponent {
 	public:
 	ISceneComponent();
 	~ISceneComponent();

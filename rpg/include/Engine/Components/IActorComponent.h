@@ -45,6 +45,7 @@ public:
 
 	virtual void MarkPhysicsStateClear() = 0;
 
+	//Tick
 	virtual void Tick(float deltaTime, IActorComponentTickFunction* tickFunc) = 0;
 		
 	virtual void TickComponent(float DeltaTime) = 0;

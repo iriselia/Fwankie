@@ -1,7 +1,7 @@
 #include "IComponent.h"
 #include "GameEntity.h"
 
-class PhysicsComponent : IComponent {
+class PhysicsComponent : IActorComponent {
 
 public:
 	PhysicsComponent();

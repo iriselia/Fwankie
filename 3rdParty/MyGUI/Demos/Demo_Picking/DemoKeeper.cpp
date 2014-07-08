@@ -33,7 +33,7 @@ namespace demo
 	void DemoKeeper::createScene()
 	{
 		MyGUI::VectorWidgetPtr& wallpaper = MyGUI::LayoutManager::getInstance().loadLayout("Wallpaper.layout");
-		/*
+		///*
 		const MyGUI::VectorWidgetPtr& root = MyGUI::LayoutManager::getInstance().loadLayout("HelpPanel.layout");
 		root.at(0)->findWidget("Text")->castType<MyGUI::TextBox>()->setCaption("Sample of picking mask for widget.");
 

@@ -40,6 +40,8 @@ namespace RPG_Debug {
 	hgeSprite			*mouseSprite;
 	HTEXTURE			hPortal;
 	HTEXTURE			anitex;
+	HTEXTURE			specialtex;
+	hgeSprite*			specialSprite;
 	hgeSprite			*portalSprite;
 	hgeAnimation*		ani;
 	hgeFont					*fnt;
@@ -62,6 +64,7 @@ namespace RPG_Debug {
 		hge->System_SetState(HGE_WINDOWED, b_windowed);
 		hge->System_SetState(HGE_SCREENBPP, 32);
 		hge->System_SetState(HGE_FPS, 60);
+		hge->System_SetState(HGE_USETRANSPARENTCOLOR, true);
 
 		assert(hge->System_Initiate());
 
@@ -182,6 +185,14 @@ namespace RPG_Debug {
 		// Add the shape to the body.
 		//body->CreateFixture(&fixtureDef);
 		*/
+
+		hMouseTexture = hge->Texture_Load("resources/cursor.png");
+		mouseSprite = new hgeSprite(hMouseTexture, 0, 0, 32, 32);
+
+		specialtex = hge->Texture_Load("resources/specialtex.png");
+		int w = hge->Texture_GetWidth(specialtex, false);
+		int h = hge->Texture_GetHeight(specialtex, false);
+		specialSprite = new hgeSprite(specialtex, 0, 0, w, h);
 	}
 
 	void run() {
@@ -211,6 +222,16 @@ namespace RPG_Debug {
 		}
 
 		float dt = hge->Timer_GetDelta();
+
+		HTEXTURE hi = specialSprite->GetTexture();
+		int w = hge->Texture_GetWidth(hi, true);
+		int h = hge->Texture_GetHeight(hi, true);
+
+		float xx, yy;
+		hge->Input_GetMousePos(&xx, &yy);
+		if (specialSprite->isHoveringXY(xx, yy)) {
+			printf("is hovering!! x: %f, y: %f\n", xx, yy);
+		}
 
 		// player move
 		float x = myPlayer->GetXPosition(), y = myPlayer->GetYPosition();
@@ -287,7 +308,10 @@ namespace RPG_Debug {
 		hge->Gfx_Clear(0);
 		//hge->Gfx_SetClipping(0, 0, 300, 300);
 		camera->RenderScene();
-
+		specialSprite->Render(0, 0);
+		float x, y;
+		hge->Input_GetMousePos(&x, &y);
+		mouseSprite->Render(x, y);
 		//Render GUI
 		gui->HgeFrameFunc();
 

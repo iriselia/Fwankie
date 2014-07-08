@@ -237,6 +237,7 @@ public:
     int                 nHGEFPS;
     bool                bHideMouse;
     bool                bDontSuspend;
+	bool				bUseTransparentColor;
     HWND                hwndParent;
 
     #ifdef HGE_SPLASH_ENABLE

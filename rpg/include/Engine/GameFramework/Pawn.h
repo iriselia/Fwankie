@@ -1,7 +1,7 @@
 #pragma once
 #include "Actor.h"
 
-class Pawn : public Actor {
+class Pawn : public IActor {
 public:
 	Pawn();
 
@@ -26,5 +26,5 @@ private:
 	//statusType
 
 	//Controlling logic
-	Actor* controller;
+	IActor* controller;
 };

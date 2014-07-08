@@ -10,23 +10,23 @@ class IActorComponent;
 class Map;
 
 //ComponentTickScript
-class FActorComponentTickScript;
+class FActorComponentTickFunc;
 
 
-class Actor : public Object
+class IActor : public Object
 {
 public:
-	virtual ~Actor();
+	virtual ~IActor();
 
 	//Tick Functions
 	//default tick
 	virtual void Tick();
 
 	//tick with given script(functor)
-	virtual void Tick(std::map<IActorComponent*, FActorComponentTickScript*>& _tickScript);
+	virtual void Tick(std::map<IActorComponent*, FActorComponentTickFunc*>& _tickScript);
 
 	//tick script(functor)
-	virtual void registerTickScript(std::map<IActorComponent*, FActorComponentTickScript*>& _tickScript);
+	virtual void registerTickScript(std::map<IActorComponent*, FActorComponentTickFunc*>& _tickScript);
 
 	virtual void unregisterTickScript(IActorComponent* _unregisterTarget);
 
@@ -83,7 +83,7 @@ private:
 	float m_birthTime;
 
 	//default tick script(functor)
-	std::map<IActorComponent*, FActorComponentTickScript*> m_tickScript;
+	std::map<IActorComponent*, FActorComponentTickFunc*> m_tickScript;
 
 	//Environment: level
 	Map* m_map;

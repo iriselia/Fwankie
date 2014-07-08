@@ -135,6 +135,8 @@ enum hgeBoolState
 
     HGE_SHOWSPLASH      = 7,    // bool     hide system cursor? (default: true)
 
+	HGE_USETRANSPARENTCOLOR = 8,// bool		use RGB(255, 0, 255) as transparent color? (default: true)
+
     HGEBOOLSTATE_FORCE_DWORD = 0x7FFFFFFF
 };
 

@@ -52,15 +52,22 @@ public:
 	hgeRect*	GetBoundingBox(float x, float y, hgeRect *rect) const { rect->Set(x-hotX, y-hotY, x-hotX+width, y-hotY+height); return rect; }
 	hgeRect*	GetBoundingBoxEx(float x, float y, float rot, float hscale, float vscale,  hgeRect *rect) const;
 
+	bool		isHoveringXY(float x, float y);
 protected:
 	hgeSprite();
 	static HGE	*hge;
 
-	hgeQuad		quad;
+	hgeQuad		quad; // contains HTEXTURE
 	float		tx, ty, width, height;
 	float		tex_width, tex_height;
 	float		hotX, hotY;
 	bool		bXFlip, bYFlip, bHSFlip;
+
+	bool*		m_pAlphaMap;
+	int			m_AlphaMapSize;
+
+private:
+	void		SetupQuadAlphaChannel(hgeQuad _quad);
 };
 
 

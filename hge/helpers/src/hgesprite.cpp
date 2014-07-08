@@ -62,6 +62,10 @@ hgeSprite::hgeSprite(HTEXTURE texture, float texx, float texy, float w, float h)
 	quad.v[3].col = 0xffffffff;
 
 	quad.blend=BLEND_DEFAULT;
+
+	m_pAlphaMap = NULL;
+	// Customized function to initiate alpha map for per-pixel collision detection.
+	SetupQuadAlphaChannel(quad);
 }
 
 hgeSprite::hgeSprite(const hgeSprite &spr)
@@ -299,4 +303,43 @@ void hgeSprite::SetZ(float z, int i)
 		quad.v[i].z = z;
 	else
 		quad.v[0].z = quad.v[1].z = quad.v[2].z = quad.v[3].z = z;
+}
+
+void hgeSprite::SetupQuadAlphaChannel(hgeQuad _quad) {
+	if (m_pAlphaMap != NULL) {
+		delete m_pAlphaMap;
+	}
+
+	HTEXTURE pTex = _quad.tex;
+
+		DWORD *pLockPtr = (DWORD*)hge->Texture_Lock((HTEXTURE)pTex);
+
+		int orgW = hge->Texture_GetWidth((HTEXTURE)pTex, true);
+		int orgH = hge->Texture_GetHeight((HTEXTURE)pTex, true);
+		int orgEnd = orgW * orgH;
+		m_AlphaMapSize = orgEnd;
+		int d3dW = hge->Texture_GetWidth((HTEXTURE)pTex, false);
+		int d3dH = hge->Texture_GetHeight((HTEXTURE)pTex, false);
+		int d3dEnd = d3dW * d3dH;
+
+		//Allocated memory for alpha map.
+		m_pAlphaMap = (bool*)malloc(sizeof(bool)* orgEnd);
+		memset(m_pAlphaMap, true, sizeof(bool)* orgEnd);
+		for (int i = 0; i < orgEnd; i++)
+		{
+			int d3dPos = i % orgW + i / orgW * d3dW;
+			DWORD color = pLockPtr[d3dPos];
+
+			if (pLockPtr[d3dPos] == ARGB(0x00, 0x00, 0x00, 0x00))
+			{
+				m_pAlphaMap[i] = false;
+			}
+		}
+		hge->Texture_Unlock((HTEXTURE)pTex);
+}
+
+bool hgeSprite::isHoveringXY(float x, float y)
+{
+	int idx = (int)x + (int)y * hge->Texture_GetWidth(quad.tex, true);
+	return idx < m_AlphaMapSize ? m_pAlphaMap[idx] : false;
 }

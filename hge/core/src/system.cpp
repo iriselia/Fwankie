@@ -412,6 +412,9 @@ void HGE_CALL HGE_Impl::System_SetStateBool(hgeBoolState state, bool value)
 
         case HGE_DONTSUSPEND:   bDontSuspend=value; break;
 
+		case HGE_USETRANSPARENTCOLOR:
+			bUseTransparentColor = value; break;
+
         #ifdef HGE_SPLASH_ENABLE
         case HGE_SHOWSPLASH:    bDMO=value; break;
         #endif
@@ -732,6 +735,7 @@ HGE_Impl::HGE_Impl()
     nFixedDelta=0;
     bHideMouse=true;
     bDontSuspend=false;
+	bUseTransparentColor = false;
     hwndParent=0;
 
     nPowerStatus=HGEPWR_UNSUPPORTED;

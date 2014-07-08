@@ -190,8 +190,8 @@ namespace RPG_Debug {
 		mouseSprite = new hgeSprite(hMouseTexture, 0, 0, 32, 32);
 
 		specialtex = hge->Texture_Load("resources/specialtex.png");
-		int w = hge->Texture_GetWidth(specialtex, false);
-		int h = hge->Texture_GetHeight(specialtex, false);
+		int w = hge->Texture_GetWidth(specialtex, true);
+		int h = hge->Texture_GetHeight(specialtex, true);
 		specialSprite = new hgeSprite(specialtex, 0, 0, w, h);
 	}
 
@@ -230,9 +230,16 @@ namespace RPG_Debug {
 		float xx, yy;
 		hge->Input_GetMousePos(&xx, &yy);
 		if (specialSprite->isHoveringXY(xx, yy)) {
-			printf("is hovering!! x: %f, y: %f\n", xx, yy);
+			//printf("is hovering black box!! x: %f, y: %f\n", xx, yy);
 		}
 
+		float a = max(xx - myPlayer->GetXPosition(), 0);
+		float b = max(yy - myPlayer->GetYPosition(), 0);
+		if (a && b) {
+			if (ani->isHoveringXY((float)a, (float)b)) {
+				printf("is hovering player!! x: %f, y: %f, frame: %d\n", xx, yy, ani->GetFrame());
+			}
+		}
 		// player move
 		float x = myPlayer->GetXPosition(), y = myPlayer->GetYPosition();
 		float dx_dt = myPlayer->Get_dx_dt(), dy_dt = myPlayer->Get_dy_dt();
@@ -308,10 +315,11 @@ namespace RPG_Debug {
 		hge->Gfx_Clear(0);
 		//hge->Gfx_SetClipping(0, 0, 300, 300);
 		camera->RenderScene();
-		specialSprite->Render(0, 0);
+		//specialSprite->Render(0, 0);
 		float x, y;
 		hge->Input_GetMousePos(&x, &y);
 		mouseSprite->Render(x, y);
+		mouseSprite->Render(0, 0);
 		//Render GUI
 		gui->HgeFrameFunc();
 

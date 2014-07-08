@@ -1,11 +1,11 @@
 #pragma once
 #include "Actor.h"
 
-class Controller : Actor {
+class Controller : public Actor {
 	public:
-	Controller();
-	~Controller();
+	virtual ~Controller();
 
+	virtual void TickActor();
 	private:
 
 };

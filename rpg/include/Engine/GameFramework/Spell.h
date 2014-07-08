@@ -5,6 +5,17 @@
 #include <vector>
 #include <string>
 
+class SpellEffectScript {
+	public:
+
+	    void operator() (Actor*) {
+
+	    }
+
+	private:
+	SpellEffectCategory
+};
+
 struct SpellInfo {
 	    //spell category info
 	    SpellCategory m_spell_category;
@@ -21,7 +32,7 @@ struct SpellInfo {
 		bool m_isPeriodic;                                 //whether the spell effect comes periodically
 		float m_secPerTick;                                //tick frequency
 
-		float m_base_amount_change;                        //the type of amount change depends on the spell category
+		float m_base_damage;                               //the type of amount change depends on the spell category
 		                                                   //if this is damage spell, target's health pool will be decreased by amount_change
 		                                                   //if this is slow spell, target's speed will be decreased by amount_change, etc.
 		                                                   //Note: this is only a base_amount_change, SpellModifier will calculate the actual change

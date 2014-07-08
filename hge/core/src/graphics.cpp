@@ -412,7 +412,7 @@ HTEXTURE HGE_CALL HGE_Impl::Texture_Load(const char *filename, hgeU32 size, bool
 
 //  if( FAILED( D3DXCreateTextureFromFileInMemory( pD3DDevice, data, _size, &pTex ) ) ) pTex=NULL;
     if( FAILED( D3DXCreateTextureFromFileInMemoryEx( pD3DDevice, data, _size,
-                                        0, 0,
+										D3DX_DEFAULT, D3DX_DEFAULT,
                                         bMipmap ? 0:1,      // Mip levels
                                         0,                  // Usage
                                         fmt1,               // Format
@@ -424,7 +424,7 @@ HTEXTURE HGE_CALL HGE_Impl::Texture_Load(const char *filename, hgeU32 size, bool
                                         &pTex ) ) )
 
     if( FAILED( D3DXCreateTextureFromFileInMemoryEx( pD3DDevice, data, _size,
-                                        0, 0,
+										D3DX_DEFAULT, D3DX_DEFAULT,
                                         bMipmap ? 0:1,      // Mip levels
                                         0,                  // Usage
                                         fmt2,               // Format

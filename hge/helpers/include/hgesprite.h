@@ -52,7 +52,7 @@ public:
 	hgeRect*	GetBoundingBox(float x, float y, hgeRect *rect) const { rect->Set(x-hotX, y-hotY, x-hotX+width, y-hotY+height); return rect; }
 	hgeRect*	GetBoundingBoxEx(float x, float y, float rot, float hscale, float vscale,  hgeRect *rect) const;
 
-	bool		isHoveringXY(float x, float y);
+	virtual bool		isHoveringXY(float x, float y);
 protected:
 	hgeSprite();
 	static HGE	*hge;

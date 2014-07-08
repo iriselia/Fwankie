@@ -163,3 +163,21 @@ void hgeAnimation::SetFrame(int n)
 	SetFlip(bX,bY,bHS);
 }
 
+bool hgeAnimation::isHoveringXY(float x, float y)
+{
+	x += hotX;
+	y += hotY;
+	//AABB
+	if (x < 0 || x > width || y < 0 || y > height)
+		return false;
+
+	int idx = (int)x + (int)y * width;
+	int currFrameIdx = (int)x + width * nCurFrame + (int)y * orig_width;
+	bool a = idx < width * height;
+	if (a && m_pAlphaMap[currFrameIdx]) {
+		int a  = 0;
+	}
+	return  currFrameIdx < m_AlphaMapSize ? m_pAlphaMap[currFrameIdx] : false;
+}
+
+

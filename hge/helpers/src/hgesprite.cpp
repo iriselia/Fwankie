@@ -340,6 +340,6 @@ void hgeSprite::SetupQuadAlphaChannel(hgeQuad _quad) {
 
 bool hgeSprite::isHoveringXY(float x, float y)
 {
-	int idx = (int)x + (int)y * hge->Texture_GetWidth(quad.tex, true);
+	int idx = (int)x + (int)y * width;
 	return idx < m_AlphaMapSize ? m_pAlphaMap[idx] : false;
 }

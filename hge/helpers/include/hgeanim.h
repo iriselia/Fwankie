@@ -49,6 +49,8 @@ public:
 	int			GetFrame() const { return nCurFrame; }
 	int			GetFrames() const { return nFrames; }
 
+	virtual bool		isHoveringXY(float x, float y);
+
 private:
 	hgeAnimation();
 

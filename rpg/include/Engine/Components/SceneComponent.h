@@ -24,24 +24,23 @@ private:
 
 class ISceneComponent : public IActorComponent {
 public:
+    //default constructor
+    ISceneComponent();
+
+	//customize with initial position
+	ISceneComponent(float _x_in, float _y_in);
+
 	virtual ~ISceneComponent();
 
 	virtual void Tick(float _deltaTime, FSceneComponentTickFunc* _tickScript);
 
-	virtual void getX();
+	float getX();
 
-	virtual void getY();
+	float getY();
 
-	virtual void setX(float _x_in);
+	void setX(float _x_in);
 
-	virtual void setY(float _y_in);
-
-protected:
-	//default constructor
-	ISceneComponent();
-
-	//customize with initial position
-	ISceneComponent(float _x_in, float _y_in) : x(_x_in), y(_y_in) {}
+	void setY(float _y_in);
 
 private:
     friend class FSceneComponentTickFunc;

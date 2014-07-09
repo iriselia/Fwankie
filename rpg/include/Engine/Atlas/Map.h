@@ -10,6 +10,35 @@
 
 class AActor;
 
+class Map;
+
+class FMapActorSpawningFunc {
+	private:
+	//random mode or customized mode
+	//TODO random actor factory
+	//TODO customized actor factory
+};
+
+class FMapTickFunc {
+	public:
+	FMapTickFunc();
+
+	FMapTickFunc(Map* _map_in) : m_map(_map_in) {}
+
+	//step 1: spawn actor (according to the current map info)
+	//step 2: other update
+	//step 3: finish tick
+	void run();
+
+	private:
+	//current map info
+	Map* m_map;
+	//step 1, helper function: how many actor should be spawned in this tick
+	int spawningNum();
+
+
+};
+
 class Map
 {
 public:
@@ -34,6 +63,7 @@ public:
 	void destroyActor(AActor* _actor);
 
 private:
+    friend class FMapTickFunc;
 	bool m_bIsLoaded = false;
 	//std::vector<Camera*> m_cameras;
 	TileMap* m_pTileMap;

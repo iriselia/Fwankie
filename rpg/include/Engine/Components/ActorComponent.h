@@ -17,21 +17,19 @@ public:
 
 class IActorComponent : public Object {
 public:
+    IActorComponent();
+
+	IActorComponent(AActor* _owner_in, bool _bNeverTick, bool _bCanTick);
+
 	virtual ~IActorComponent();
 
-    //register methods
-    virtual void RegisterWithMap(Map* _map);
+	void registerWithOwner(AActor* _owner);
 
-	virtual void UnregisterWithMap();
+	void unregisterWithOwner();
 
-	virtual void RegisterWithOwner(AActor* _owner);
+	bool isRegisteredWithOwner();
 
-	virtual bool isRegisteredWithMap();
-
-	//get environment methods
-	virtual AActor* getOwner();
-
-	virtual Map* getMap();
+	AActor* getOwner();
 
 	//activation status methods
 	virtual void Activate();
@@ -48,18 +46,14 @@ public:
 	virtual void DisableTick();
 
 	//Tick
-	virtual void Tick(float _deltaTime, FActorComponentTickFunc* _tickScript) = 0;
+	virtual void Tick(float _deltaTime, FActorComponentTickFunc* _tickScript);
 
 private:
-    //register status flag
-    bool m_bRegisteredWithMap;
 	//active status
-	bool m_bActive;
+	bool m_bActive = false;
 	//environment
-	AActor* m_owner;
-	Map* m_map;
+	AActor* m_owner = nullptr;
 	//tick status flag
-	bool m_bNeverTick;
-	bool m_bCanTick;
-	
+	bool m_bNeverTick = false;
+	bool m_bCanTick = false;
 };

@@ -26,7 +26,7 @@ public:
 
 	virtual void RegisterWithOwner(AActor* _owner);
 
-	virtual bool isRegisteredWithWorld();
+	virtual bool isRegisteredWithMap();
 
 	//get environment methods
 	virtual AActor* getOwner();
@@ -51,6 +51,8 @@ public:
 	virtual void Tick(float _deltaTime, FActorComponentTickFunc* _tickScript) = 0;
 
 private:
+    //register status flag
+    bool m_bRegisteredWithMap;
 	//active status
 	bool m_bActive;
 	//environment

@@ -6,7 +6,7 @@ class ISceneComponent;
 
 class FSceneComponentTickFunc : FActorComponentTickFunc {
 public:
-    //default script, this script will update SceneComponent according to its current status
+    //default functor, this functor will tick SceneComponent according to its current status
     FSceneComponentTickFunc();
 
 	//customized script, will alter SceneComponent's movement status
@@ -27,6 +27,14 @@ public:
 	virtual ~ISceneComponent();
 
 	virtual void Tick(float _deltaTime, FSceneComponentTickFunc* _tickScript);
+
+	virtual void getX();
+
+	virtual void getY();
+
+	virtual void setX(float _x_in);
+
+	virtual void setY(float _y_in);
 
 protected:
 	//default constructor

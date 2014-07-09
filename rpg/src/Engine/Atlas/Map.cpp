@@ -1,4 +1,5 @@
 #include "Map.h"
+#include "Actor.h"
 
 Map::Map(TileMap* _tileMap, CollisionMap* _collisionMap)
 {
@@ -49,3 +50,12 @@ int Map::Get_Height()
 // void Map::AddCamera(Camera* _camera) {
 // 	m_cameras.push_back(_camera);
 // }
+
+void Map::addActor(AActor* _actor) {
+	m_ActorList.push_back(_actor);
+}
+
+AActor* Map::spawnActor() {
+	AActor* spawn = new AActor();
+	return spawn;
+}

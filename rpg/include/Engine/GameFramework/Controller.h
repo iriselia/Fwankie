@@ -1,7 +1,7 @@
 #pragma once
 #include "Actor.h"
 
-class Controller : public IActor {
+class Controller : public AActor {
 	public:
 	virtual ~Controller();
 

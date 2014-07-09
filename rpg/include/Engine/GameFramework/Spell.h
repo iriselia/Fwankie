@@ -8,7 +8,7 @@
 class SpellEffectScript {
 	public:
 
-	    void operator() (IActor*) {
+	    void operator() (AActor*) {
 
 	    }
 
@@ -77,7 +77,7 @@ class Spell : public Pawn {
 	public:
 	    Spell();
 
-		Spell(IActor* caster, SpellInfo* spell_info)
+		Spell(AActor* caster, SpellInfo* spell_info)
 			: m_caster(caster), m_spell_info(spell_info) {}
 
 		void calculateTargets();
@@ -95,8 +95,8 @@ class Spell : public Pawn {
 		void Render(float, float);
 
 	private:
-	    IActor* m_caster;
-		std::vector<IActor*> m_targets;
+	    AActor* m_caster;
+		std::vector<AActor*> m_targets;
 		SpellInfo* m_spell_info;
 		//Environment variables
 		std::vector<float> m_actual_amount_change;

@@ -1,14 +1,9 @@
+#pragma once
 class Object {
 	public:
 	Object();
-	~Object();
+	virtual ~Object();
 
 	private:
 
 };
-
-Object::Object() {
-}
-
-Object::~Object() {
-}

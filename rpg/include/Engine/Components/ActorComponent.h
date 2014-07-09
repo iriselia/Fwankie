@@ -1,7 +1,7 @@
 #pragma once
 #include "Object.h"
 
-class IActor;
+class AActor;
 
 class Map;
 
@@ -12,6 +12,7 @@ public:
     virtual ~FActorComponentTickFunc();
 
 	virtual void run(IActorComponent* _sceneComponent, float _deltaTime) = 0;
+
 };
 
 class IActorComponent : public Object {
@@ -23,12 +24,14 @@ public:
 
 	virtual void UnregisterWithMap();
 
-	virtual void RegisterWithOwner(IActor* _owner);
+	virtual void RegisterWithOwner(AActor* _owner);
+
+	virtual bool isRegisteredWithWorld();
 
 	//get environment methods
-	virtual IActor* getOwner();
+	virtual AActor* getOwner();
 
-	virtual Map* getWorld();
+	virtual Map* getMap();
 
 	//activation status methods
 	virtual void Activate();
@@ -51,8 +54,8 @@ private:
 	//active status
 	bool m_bActive;
 	//environment
-	IActor* m_owner;
-	Map* m_world;
+	AActor* m_owner;
+	Map* m_map;
 	//tick status flag
 	bool m_bNeverTick;
 	bool m_bCanTick;

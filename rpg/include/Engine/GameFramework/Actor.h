@@ -13,10 +13,11 @@ class Map;
 class FActorComponentTickFunc;
 
 
-class IActor : public Object
+class AActor : public Object
 {
 public:
-	virtual ~IActor();
+    AActor();
+	virtual ~AActor() {}
 
 	//Tick Functions
 	//default tick
@@ -50,10 +51,10 @@ public:
 
 	//get specific component
 	template<class T>
-	virtual void getComponent(std::vector<T*>& _outComponent);
+	void getComponent(std::vector<T*>& _outComponent);
 
 	template<class T>
-	virtual void getComponent(T* _component);
+	void getComponent(T* _component);
 
 	virtual void getRootComponent();
 
@@ -66,25 +67,28 @@ public:
 
 	virtual void clearComponent();
 
+	AActor(IActorComponent* _rootComponent, float _lifeSpan, Map* _map) :
+		m_RootComponent(_rootComponent), m_lifeSpan(_lifeSpan), m_map(_map) {}
+
 private:
     //actor flags
-    bool m_bEnableCollision;
-	bool m_bEnableRender;
-	bool m_bBlockUserInput;
-	bool m_bDestructible;
+    bool m_bEnableCollision = false;
+	bool m_bEnableRender = false;
+	bool m_bBlockUserInput = false;
+	bool m_bDestructible = false;
 
 	//component
-	IActorComponent* m_RootComponent;
+	IActorComponent* m_RootComponent = nullptr;
 	std::vector<IActorComponent*> m_OwnedComponents;
 
 	//lifespan, if destructible
 	//if lifespan is set to 0, this Actor will be destroyed when certain circumstance happens
-	float m_lifeSpan;
-	float m_birthTime;
+	float m_lifeSpan = 0;
+	float m_birthTime = 0;
 
 	//default tick script(functor)
 	std::map<IActorComponent*, FActorComponentTickFunc*> m_tickScript;
 
 	//Environment: level
-	Map* m_map;
+	Map* m_map = nullptr;
 };

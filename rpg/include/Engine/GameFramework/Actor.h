@@ -9,7 +9,7 @@ class IActorComponent;
 //Level
 class Map;
 
-//ComponentTickScript
+//ComponentTickFunc
 class FActorComponentTickFunc;
 
 
@@ -17,14 +17,19 @@ class AActor : public Object
 {
 public:
     AActor();
-	virtual ~AActor() {}
+
+	AActor(IActorComponent* _rootComponent, float _lifeSpan, Map* _map);
+
+	virtual ~AActor();
 
 	//Tick Functions
 	//default tick
-	virtual void Tick();
+	void Tick(float _deltaTime);
 
-	//tick with given script(functor)
-	virtual void Tick(std::map<IActorComponent*, FActorComponentTickFunc*>& _tickScript);
+	//tick with given functor
+	virtual void Tick(std::map<IActorComponent*, FActorComponentTickFunc*>& _tickFunc) {
+
+	}
 
 	//tick script(functor)
 	virtual void registerTickScript(std::map<IActorComponent*, FActorComponentTickFunc*>& _tickScript);
@@ -67,9 +72,6 @@ public:
 
 	virtual void clearComponent();
 
-	AActor(IActorComponent* _rootComponent, float _lifeSpan, Map* _map) :
-		m_RootComponent(_rootComponent), m_lifeSpan(_lifeSpan), m_map(_map) {}
-
 private:
     //actor flags
     bool m_bEnableCollision = false;
@@ -86,8 +88,8 @@ private:
 	float m_lifeSpan = 0;
 	float m_birthTime = 0;
 
-	//default tick script(functor)
-	std::map<IActorComponent*, FActorComponentTickFunc*> m_tickScript;
+	//default tick functor
+	std::map<IActorComponent*, FActorComponentTickFunc*> m_tickFunc;
 
 	//Environment: level
 	Map* m_map = nullptr;

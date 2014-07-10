@@ -27,6 +27,16 @@ bool IActorComponent::isRegisteredWithOwner() {
 	return m_owner;
 }
 
+void IActorComponent::registerTickFunc(FActorComponentTickFunc* _tickFunc) {
+	if (m_tickFunc)
+		unregisterTickFunc();
+	m_tickFunc = _tickFunc;
+}
+
+void IActorComponent::unregisterTickFunc() {
+	m_tickFunc = nullptr;
+}
+
 AActor* IActorComponent::getOwner() {
 	return m_owner;
 }
@@ -57,7 +67,11 @@ void IActorComponent::DisableTick() {
 		m_bCanTick = false;
 }
 
-void IActorComponent::Tick(float _deltaTime, FActorComponentTickFunc* _tickScript) {
+bool IActorComponent::canTick() {
+	return m_bCanTick;
+}
+
+void IActorComponent::Tick(float _deltaTime) {
 
 }
 

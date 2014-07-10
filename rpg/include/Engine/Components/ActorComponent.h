@@ -11,7 +11,10 @@ class FActorComponentTickFunc {
 public:
     virtual ~FActorComponentTickFunc();
 
-	virtual void run(IActorComponent* _sceneComponent, float _deltaTime) = 0;
+	virtual void run(float _deltaTime) = 0;
+
+protected:
+	IActorComponent* m_target;
 
 };
 
@@ -23,11 +26,17 @@ public:
 
 	virtual ~IActorComponent();
 
+	//register with owner
 	void registerWithOwner(AActor* _owner);
 
 	void unregisterWithOwner();
 
 	bool isRegisteredWithOwner();
+
+	//register a tickFunc
+	void registerTickFunc(FActorComponentTickFunc* _tickFunc);
+
+	void unregisterTickFunc();
 
 	AActor* getOwner();
 
@@ -38,15 +47,17 @@ public:
 
 	virtual void ToggleActive();
 
-	virtual bool isActive();
+	bool isActive();
 
 	//Tick status methods
 	virtual void EnableTick();
 
 	virtual void DisableTick();
 
+	bool canTick();
+
 	//Tick
-	virtual void Tick(float _deltaTime, FActorComponentTickFunc* _tickScript);
+	virtual void Tick(float _deltaTime);
 
 private:
 	//active status
@@ -56,4 +67,8 @@ private:
 	//tick status flag
 	bool m_bNeverTick = false;
 	bool m_bCanTick = false;
+
+protected:
+	//tick Func
+	FActorComponentTickFunc* m_tickFunc = nullptr;
 };

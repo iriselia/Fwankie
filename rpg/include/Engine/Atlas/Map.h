@@ -12,6 +12,8 @@ class AActor;
 
 class Map;
 
+class FActorComponentTickFunc;
+
 class FMapActorSpawningFunc {
 	private:
 	//random mode or customized mode
@@ -61,6 +63,9 @@ public:
 	AActor* removeActor(AActor* _actor);
 	//destroy and remove an actor from the level
 	void destroyActor(AActor* _actor);
+	//add tickFunc
+	void addTickFunc(FActorComponentTickFunc* _tickFunc);
+	//
 
 private:
     friend class FMapTickFunc;
@@ -69,6 +74,7 @@ private:
 	TileMap* m_pTileMap;
 	CollisionMap* m_pCollisionMap;
 	std::vector<AActor*> m_ActorList;
+	std::vector<FActorComponentTickFunc*> m_tickFuncList;
 
 };
 

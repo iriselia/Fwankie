@@ -9,12 +9,24 @@ class IActorComponent;
 
 class FActorComponentTickFunc {
 public:
-    virtual ~FActorComponentTickFunc();
+    FActorComponentTickFunc();
 
-	virtual void run(float _deltaTime) = 0;
+	FActorComponentTickFunc(IActorComponent* _target);
+
+	void registerWithTarget(IActorComponent* _target);
+
+	void unregisterWithTarget();
+
+	void registerWithLevel(Map* _map);
+
+	void unregisterWithLevel();
+
+	virtual ~FActorComponentTickFunc();
+
+	virtual void run(float _deltaTime);
 
 protected:
-	IActorComponent* m_target;
+	IActorComponent* m_target = nullptr;
 
 };
 

@@ -1,6 +1,36 @@
 #include "ActorComponent.h"
 #include "Actor.h"
 
+void FActorComponentTickFunc::run(float _deltaTime) {
+
+}
+
+FActorComponentTickFunc::FActorComponentTickFunc(IActorComponent* _target) : m_target(_target) {
+
+}
+
+void FActorComponentTickFunc::registerWithTarget(IActorComponent* _target) {
+	if (m_target)
+		unregisterWithTarget();
+	m_target = _target;
+}
+
+void FActorComponentTickFunc::unregisterWithTarget() {
+	m_target = nullptr;
+}
+
+void FActorComponentTickFunc::registerWithLevel(Map* _map) {
+
+}
+
+void FActorComponentTickFunc::unregisterWithLevel() {
+
+}
+
+FActorComponentTickFunc::~FActorComponentTickFunc() {
+
+}
+
 IActorComponent::IActorComponent() {
 
 }

@@ -26,29 +26,19 @@ public:
 	//default tick
 	void Tick(float _deltaTime);
 
-	//tick with given functor
-	virtual void Tick(std::map<IActorComponent*, FActorComponentTickFunc*>& _tickFunc) {
-
-	}
-
-	//tick script(functor)
-	virtual void registerTickScript(std::map<IActorComponent*, FActorComponentTickFunc*>& _tickScript);
-
-	virtual void unregisterTickScript(IActorComponent* _unregisterTarget);
-
 	//Life Spans
-	virtual float getBirthTime();
+	float getBirthTime();
 
-	virtual void setBirthTime(float _birthTime);
+	void setBirthTime(float _birthTime);
 
-	virtual float getLifeSpan();
+	float getLifeSpan();
 
-	virtual void setLifeSpan(float _lifeSpan);
+	void setLifeSpan(float _lifeSpan);
 
 	//register with level
-	virtual void registerWithMap();
+	void registerWithLevel();
 
-	virtual void unregisterWithMap();
+	void unregisterWithMap();
 
 	virtual void registerComponentsWithMap(IActorComponent* _component);
 
@@ -61,16 +51,16 @@ public:
 	template<class T>
 	void getComponent(T* _component);
 
-	virtual void getRootComponent();
+	IActorComponent* getRootComponent();
 
-	virtual void getAllComponent(std::vector<IActorComponent*>& _outComponent);
+	std::vector<IActorComponent*>* getAllComponent();
 
 	//modify component
-	virtual void addComponent(IActorComponent* _component);
+	void addComponent(IActorComponent* _component);
 
-	virtual void removeComponent(IActorComponent* _component);
+	void removeComponent(IActorComponent* _component);
 
-	virtual void clearComponent();
+	void clearComponent();
 
 private:
     //actor flags
@@ -87,9 +77,6 @@ private:
 	//if lifespan is set to 0, this Actor will be destroyed when certain circumstance happens
 	float m_lifeSpan = 0;
 	float m_birthTime = 0;
-
-	//default tick functor
-	std::map<IActorComponent*, FActorComponentTickFunc*> m_tickFunc;
 
 	//Environment: level
 	Map* m_map = nullptr;

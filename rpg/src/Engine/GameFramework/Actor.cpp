@@ -16,6 +16,4 @@ AActor::~AActor() {
 }
 
 void AActor::Tick(float _deltaTime) {
-	for (auto& i : m_tickFunc)
-		i.first->Tick(_deltaTime, i.second);
 }

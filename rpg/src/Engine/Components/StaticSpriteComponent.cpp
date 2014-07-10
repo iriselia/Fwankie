@@ -17,7 +17,7 @@ bool StaticSpriteComponent::setStaticSprite(hgeSprite* _staticSprite)
 	// Don't allow changing static meshes if "static" and registered
 	AActor* Owner = getOwner();
 	if (//Mobility == EComponentMobility::Static &&
-		isRegistered() && Owner)
+		isRegisteredWithOwner() && Owner)
 	{
 
 		printf("mesh changed failed because it is a static mesh or because it is already registered.\n");

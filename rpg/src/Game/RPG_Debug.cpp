@@ -91,7 +91,7 @@ namespace RPG_Debug {
 		}
 		anitex = hge->Texture_Load("resources/aninew.png");
 		ani = new hgeAnimation(anitex, 6, 6, 0, 0, 38, 46);
-		ani->SetHotSpot(16, 16);
+		ani->SetHotSpot(19, 17);
 		ani->Play();
 
 		myPlayer->setAnimation(ani);
@@ -232,13 +232,10 @@ namespace RPG_Debug {
 		if (specialSprite->isHoveringXY(xx, yy)) {
 			//printf("is hovering black box!! x: %f, y: %f\n", xx, yy);
 		}
-
-		float a = max(xx - myPlayer->GetXPosition(), 0);
-		float b = max(yy - myPlayer->GetYPosition(), 0);
-		if (a && b) {
-			if (ani->isHoveringXY((float)a, (float)b)) {
-				printf("is hovering player!! x: %f, y: %f, frame: %d\n", xx, yy, ani->GetFrame());
-			}
+		float a = xx - myPlayer->GetXPosition();
+		float b = yy - myPlayer->GetYPosition();
+		if (ani->isHoveringXY((float)a, (float)b)) {
+			printf("is hovering player!! x: %f, y: %f, frame: %d\n", xx, yy, ani->GetFrame());
 		}
 		// player move
 		float x = myPlayer->GetXPosition(), y = myPlayer->GetYPosition();

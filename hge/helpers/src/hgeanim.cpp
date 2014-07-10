@@ -167,6 +167,7 @@ bool hgeAnimation::isHoveringXY(float x, float y)
 {
 	x += hotX;
 	y += hotY;
+	
 	//AABB
 	if (x < 0 || x > width || y < 0 || y > height)
 		return false;

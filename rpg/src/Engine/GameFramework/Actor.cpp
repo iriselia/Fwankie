@@ -6,7 +6,7 @@ AActor::AActor() {
 	//m_birthTime = GetSystemTime();
 }
 
-AActor::AActor(ISceneComponent* _rootComponent, float _lifeSpan, Map* _map) :
+AActor::AActor(ISceneComponent* _rootComponent, float _lifeSpan, TileMap* _map) :
 m_RootComponent(_rootComponent), m_lifeSpan(_lifeSpan), m_map(_map) {
 	//m_birthTime = GetSystemTime();
 }

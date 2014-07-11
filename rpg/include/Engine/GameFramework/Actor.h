@@ -9,7 +9,7 @@ class IActorComponent;
 class ISceneComponent;
 
 //Level
-class Map;
+class TileMap;
 
 //ComponentTickFunc
 class FActorComponentTickFunc;
@@ -20,7 +20,7 @@ class AActor : public Object
 public:
     AActor();
 
-	AActor(ISceneComponent* _rootComponent, float _lifeSpan, Map* _map);
+	AActor(ISceneComponent* _rootComponent, float _lifeSpan, TileMap* _map);
 
 	virtual ~AActor();
 
@@ -81,5 +81,5 @@ protected:
 	float m_birthTime = 0;
 
 	//Environment: level
-	Map* m_map = nullptr;
+	TileMap* m_map = nullptr;
 };

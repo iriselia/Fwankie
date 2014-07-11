@@ -8,9 +8,9 @@ public:
 	~Scene();
 
 	void RenderAtPosition(float x, float y);
-	void AddStaticSprite(class StaticSpriteComponent* _StaticSpriteComponent);
+	void AddStaticSprite(class SpriteComponent* _StaticSpriteComponent);
 
 private:
 	HGE* m_pHGE;
-	std::vector<StaticSpriteComponent*> m_staticSpriteDrawList;
+	std::vector<SpriteComponent*> m_staticSpriteDrawList;
 };

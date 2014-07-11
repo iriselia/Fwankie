@@ -1,14 +1,14 @@
 #include "Atlas.h"
 
 void Atlas::AddMap(const char* _mapName) {
-	TileMap* tileMap = new TileMap(_mapName);
+	MapParser* tileMap = new MapParser(_mapName);
 	CollisionMap* collisionMap = new CollisionMap(_mapName);
-	Map* temp = new Map(tileMap, collisionMap);
+	TileMap* temp = new TileMap(tileMap, collisionMap);
 	assert(temp);
 	m_atlas[_mapName] = temp;
 }
 
-Map* Atlas::queryByName(const char* _mapName) {
+TileMap* Atlas::queryByName(const char* _mapName) {
 	return m_atlas[_mapName] ?
 		m_atlas[_mapName] : nullptr;
 }

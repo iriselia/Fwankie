@@ -1,8 +1,8 @@
 #pragma once
 #include "GameEntity.h"
-#include "Map.h"
+#include "TileMap.h"
 
-class Map;
+class TileMap;
 
 class Camera : public GameEntity
 {
@@ -20,13 +20,13 @@ public:
 	void SetDisplaySize_2(float _display_width_2, float _display_height_2) { display_width_2 = static_cast<int>(_display_width_2); display_height_2 = static_cast<int>(_display_height_2); }
 	void SetTarget(GameEntity* _target) { target = _target; }
 	void SetZone(std::string _zone) { currentZone = _zone; }
-	void Enter(Map* _map);
+	void Enter(TileMap* _map);
 
 	int Get_Display_Width_2() { return display_width_2; }
 	int Get_Display_Height_2() { return display_height_2; }
 
 	GameEntity* GetFollowee() { return target; }
-	Map* getMap();
+	TileMap* getMap();
 	std::string GetZone() { return currentZone; }
 
 	bool willCollideEast(float _x_displacement);
@@ -36,7 +36,7 @@ public:
 private:
 	// object of reference for camera movement
 	GameEntity* target;
-	Map* m_pMap;
+	TileMap* m_pMap;
 	
 	// string name of zone
 	std::string currentZone;

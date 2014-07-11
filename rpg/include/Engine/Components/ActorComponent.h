@@ -3,7 +3,7 @@
 
 class AActor;
 
-class Map;
+class TileMap;
 
 class IActorComponent;
 
@@ -17,7 +17,7 @@ public:
 
 	void unregisterWithTarget();
 
-	void registerWithLevel(Map* _map);
+	void registerWithLevel(TileMap* _map);
 
 	void unregisterWithLevel();
 
@@ -28,7 +28,7 @@ public:
 protected:
 	IActorComponent* m_target = nullptr;
 
-	Map* m_map = nullptr;
+	TileMap* m_map = nullptr;
 
 };
 

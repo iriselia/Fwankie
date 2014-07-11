@@ -15,7 +15,7 @@
 #include <cstdio>
 #include <stdlib.h>
 
-#include "TileMap.h"
+#include "MapParser.h"
 #include <cassert>
 //#include "Box2D.h"
 
@@ -41,7 +41,7 @@ namespace RPG {
 	GUI* gui = 0;
 
 	Tmx::Map *map;
-	std::map<std::string, TileMap*> world;
+	std::map<std::string, MapParser*> world;
 	Trigger_Portal* portal;
 	//b2World *b2World = NULL;
 

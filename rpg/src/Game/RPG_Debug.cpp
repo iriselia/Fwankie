@@ -21,15 +21,15 @@
 #include "GUI.h"
 
 
-#include "TileMap.h"
+#include "MapParser.h"
 #include "CollisionMap.h"
 #include "Atlas.h"
-#include "Map.h"
+#include "TileMap.h"
 
 #include "ScenePrivate.h"
-#include "StaticSpriteComponent.h"
+#include "SpriteComponent.h"
 
-std::map<std::string, Map*> Atlas::m_atlas;
+std::map<std::string, TileMap*> Atlas::m_atlas;
 
 namespace RPG_Debug {
 
@@ -51,7 +51,7 @@ namespace RPG_Debug {
 	HEFFECT					snd;
 
 	//experimental 
-	StaticSpriteComponent* sprcomp;
+	SpriteComponent* sprcomp;
 	Scene*				scene;
 
 
@@ -105,14 +105,6 @@ namespace RPG_Debug {
 		myPlayer->setAnimation(ani);
 
 		std::cout << "Loading Map \"desert\"\n";
-
-// 		TileMap* a = new TileMap("map1.tmx");
-// 		a->Load();
-// 		delete a;
-// 
-// 		CollisionMap* b = new CollisionMap("map1.tmx");
-// 		b->Load();
-// 		delete b;
 
 		Atlas::AddMap("map1.tmx");
 		Atlas::LoadResource("map1.tmx");
@@ -202,7 +194,7 @@ namespace RPG_Debug {
 		int h = hge->Texture_GetHeight(specialtex, true);
 		specialSprite = new hgeSprite(specialtex, 0, 0, w, h);
 
-		sprcomp = new StaticSpriteComponent();
+		sprcomp = new SpriteComponent();
 		sprcomp->setStaticSprite(ani);
 		scene = new Scene();
 		scene->AddStaticSprite(sprcomp);

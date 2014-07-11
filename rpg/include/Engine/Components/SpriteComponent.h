@@ -5,15 +5,15 @@
 class hgeSprite;
 class AActor;
 
-class StaticSpriteComponent : public IPrimitiveComponent
+class SpriteComponent : public IPrimitiveComponent
 {
 public:
-	StaticSpriteComponent();
-	~StaticSpriteComponent();
+	SpriteComponent();
+	~SpriteComponent();
 	AActor* getOwner() { return m_pOwner; }
 	void UpdateBounds();
 	bool setStaticSprite(hgeSprite* _staticSprite);
-	StaticSpriteSceneProxy* StaticSpriteComponent::Create_SceneProxy();
+	StaticSpriteSceneProxy* SpriteComponent::Create_SceneProxy();
 	void Update(float _DeltaTime);
 	void Render(float x, float y);
 

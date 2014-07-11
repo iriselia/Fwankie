@@ -16,9 +16,9 @@ void Camera::Update(float _dt) {
 
 }
 
-void Camera::Enter(Map* _map) { m_pMap = _map; }
+void Camera::Enter(TileMap* _map) { m_pMap = _map; }
 
-Map* Camera::getMap() { return m_pMap; }
+TileMap* Camera::getMap() { return m_pMap; }
 
 void Camera::RenderScene() {
 	// translate camera position to screen top left corner
@@ -28,7 +28,7 @@ void Camera::RenderScene() {
 
 	// translate camera position again if map is smaller than screen
 	// center the content.
-	Map* temp = m_pMap;
+	TileMap* temp = m_pMap;
 	if (temp->Get_Width() < display_width_2 * 2)
 		x = (float)(display_width_2 * 2 - temp->Get_Width()) / 2;
 	if (temp->Get_Height() < display_height_2 * 2)

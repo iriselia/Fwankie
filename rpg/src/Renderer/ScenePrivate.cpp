@@ -1,5 +1,5 @@
 #include "ScenePrivate.h"
-#include "StaticSpriteComponent.h"
+#include "SpriteComponent.h"
 
 void Scene::RenderAtPosition(float x, float y)
 {
@@ -8,7 +8,7 @@ void Scene::RenderAtPosition(float x, float y)
 	}
 }
 
-void Scene::AddStaticSprite(StaticSpriteComponent* _StaticSpriteComponent)
+void Scene::AddStaticSprite(SpriteComponent* _StaticSpriteComponent)
 {
 	m_staticSpriteDrawList.push_back(_StaticSpriteComponent);
 }

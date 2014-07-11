@@ -1,10 +1,10 @@
-#include "StaticSpriteComponent.h"
+#include "SpriteComponent.h"
 
-void StaticSpriteComponent::UpdateBounds() {
+void SpriteComponent::UpdateBounds() {
 
 }
 
-bool StaticSpriteComponent::setStaticSprite(hgeSprite* _staticSprite)
+bool SpriteComponent::setStaticSprite(hgeSprite* _staticSprite)
 {
 	// Do nothing if we are already using the supplied static mesh
 	if (_staticSprite == m_pStaticSprite)
@@ -34,27 +34,27 @@ bool StaticSpriteComponent::setStaticSprite(hgeSprite* _staticSprite)
 	return true;
 }
 
-StaticSpriteComponent::StaticSpriteComponent()
+SpriteComponent::SpriteComponent()
 {
 
 }
 
-StaticSpriteComponent::~StaticSpriteComponent()
+SpriteComponent::~SpriteComponent()
 {
 
 }
 
-void StaticSpriteComponent::Render(float x, float y)
+void SpriteComponent::Render(float x, float y)
 {
 	m_pStaticSprite->Render(x, y);
 }
 
-StaticSpriteSceneProxy* StaticSpriteComponent::Create_SceneProxy()
+StaticSpriteSceneProxy* SpriteComponent::Create_SceneProxy()
 {
 	return NULL;
 }
 
-void StaticSpriteComponent::Update(float _DeltaTime)
+void SpriteComponent::Update(float _DeltaTime)
 {
 	m_pStaticSprite->Update(_DeltaTime);
 }

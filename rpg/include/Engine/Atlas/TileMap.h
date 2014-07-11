@@ -1,40 +1,81 @@
 #pragma once
-#include "Tmx.h"
-#include "hgeSprite.h"
-#include "Box2D.h"
-#include "hgeb2draw.h"
-#include <stdlib.h>
+#include <map>
+#include <vector>
+#include <list>
+#include "MapParser.h"
+#include "CollisionMap.h"
+#include "Camera.h"
+#include "hgesprite.h"
+#include <vector>
 
-enum{ BACKGROUND, MIDGROUND, FOREGROUND };
+class AActor;
 
-class Camera;
+class TileMap;
 
-class TileMap {
+class FActorComponentTickFunc;
+
+class FMapActorSpawningFunc {
+	private:
+	//random mode or customized mode
+	//TODO random actor factory
+	//TODO customized actor factory
+};
+
+class FMapTickFunc {
+	public:
+	FMapTickFunc();
+
+	FMapTickFunc(TileMap* _map_in) : m_map(_map_in) {}
+
+	//step 1: spawn actor (according to the current map info)
+	//step 2: other update
+	//step 3: finish tick
+	void run();
+
+	private:
+	//current map info
+	TileMap* m_map;
+	//step 1, helper function: how many actor should be spawned in this tick
+	int spawningNum();
+
+
+};
+
+class TileMap
+{
 public:
-	TileMap(const char* file_name);
+	TileMap(MapParser* _tileMap, CollisionMap* _collisionMap);
 	~TileMap();
-	void Load();
-	void Unload(); 
+	void Update();
+	void Render(Camera* _camera);
+	void LoadResource();
+	void UnloadResource();
 	bool isLoaded() { return m_bIsLoaded; }
-	void Render();
-	void RenderLayer(Camera* _camera, int _layer);
-	void Render(int width_2, int height_2, int x, int y);
-	int Get_Width() { return m_width; }
-	int Get_Height() { return m_height; }
-	void SetCamera(Camera* _pCamera) { m_pCamera = _pCamera; }
+	//void AddCamera(Camera* _camera);
+	int Get_Width();
+	int Get_Height();
+	//modify ActorList
+	//add an existing actor
+	void addActor(AActor* _actor);
+	//create and add an actor, then return its ptr
+	AActor* spawnActor();
+	//remove an actor from the level, but will not destroy it, returns its ptr
+	AActor* removeActor(AActor* _actor);
+	//destroy and remove an actor from the level
+	void destroyActor(AActor* _actor);
+	//add tickFunc
+	void addTickFunc(FActorComponentTickFunc* _tickFunc);
+	//remove tickFunc
+	void removeTickFunc(FActorComponentTickFunc* _tickFunc);
 
 private:
-	HGE* m_pHGE;
+    friend class FMapTickFunc;
 	bool m_bIsLoaded = false;
-	int m_width;
-	int m_height;
-	Tmx::Map *m_pMap_info; 
-	const Tmx::Layer* m_pLayer_BG;
-	const Tmx::Layer* m_pLayer_MG;
-	const Tmx::Layer* m_pLayer_FG;
-	// We use a map of sprite maps because different tilesets
-	// have their own gid and can overlap with each other.
-	std::map<int, std::map<int, hgeSprite*>> m_tiles;
+	//std::vector<Camera*> m_cameras;
+	MapParser* m_pTileMap;
+	CollisionMap* m_pCollisionMap;
+	std::vector<AActor*> m_ActorList;
+	std::vector<FActorComponentTickFunc*> m_tickFuncList;
 
-	Camera* m_pCamera;
 };
+

@@ -1,6 +1,6 @@
 #include "ActorComponent.h"
 #include "Actor.h"
-#include "Map.h"
+#include "TileMap.h"
 
 FActorComponentTickFunc::~FActorComponentTickFunc() {
 
@@ -20,7 +20,7 @@ void FActorComponentTickFunc::unregisterWithTarget() {
 	m_target = nullptr;
 }
 
-void FActorComponentTickFunc::registerWithLevel(Map* _map) {
+void FActorComponentTickFunc::registerWithLevel(TileMap* _map) {
 	if (_map) {
 		_map->addTickFunc(this);
 		m_map = _map;

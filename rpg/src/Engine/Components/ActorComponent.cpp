@@ -1,7 +1,8 @@
 #include "ActorComponent.h"
 #include "Actor.h"
+#include "Map.h"
 
-void FActorComponentTickFunc::run(float _deltaTime) {
+FActorComponentTickFunc::~FActorComponentTickFunc() {
 
 }
 
@@ -20,14 +21,17 @@ void FActorComponentTickFunc::unregisterWithTarget() {
 }
 
 void FActorComponentTickFunc::registerWithLevel(Map* _map) {
-
+	if (_map) {
+		_map->addTickFunc(this);
+		m_map = _map;
+	}
 }
 
 void FActorComponentTickFunc::unregisterWithLevel() {
 
 }
 
-FActorComponentTickFunc::~FActorComponentTickFunc() {
+void FActorComponentTickFunc::run(float _deltaTime) {
 
 }
 

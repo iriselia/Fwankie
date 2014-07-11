@@ -9,17 +9,7 @@ public:
     //default functor, this functor will tick SceneComponent according to its current status
     FSceneComponentTickFunc();
 
-	//customized script, will alter SceneComponent's movement status
-	FSceneComponentTickFunc(bool _ResetX_in, bool _ResetY_in, float _xReset_in, float _yReset_in) :
-		m_bResetX(_ResetX_in), m_bResetY(_ResetY_in), m_xReset(_xReset_in), m_yReset(_yReset_in) {}
-
     virtual void run(float _deltaTime);
-
-private:
-    bool m_bResetX = false;
-	bool m_bResetY = false;
-	float m_xReset = 0;
-	float m_yReset = 0;
 };
 
 class ISceneComponent : public IActorComponent {

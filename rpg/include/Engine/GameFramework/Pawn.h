@@ -18,6 +18,7 @@ public:
 
 	virtual void disableControl(Controller* _controller);
 
+	//Movement
 
 private:
 

@@ -28,6 +28,8 @@ public:
 protected:
 	IActorComponent* m_target = nullptr;
 
+	Map* m_map = nullptr;
+
 };
 
 class IActorComponent : public Object {

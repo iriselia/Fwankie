@@ -65,7 +65,8 @@ public:
 	void destroyActor(AActor* _actor);
 	//add tickFunc
 	void addTickFunc(FActorComponentTickFunc* _tickFunc);
-	//
+	//remove tickFunc
+	void removeTickFunc(FActorComponentTickFunc* _tickFunc);
 
 private:
     friend class FMapTickFunc;

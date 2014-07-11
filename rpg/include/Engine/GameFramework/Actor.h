@@ -6,6 +6,8 @@
 //Component
 class IActorComponent;
 
+class ISceneComponent;
+
 //Level
 class Map;
 
@@ -18,7 +20,7 @@ class AActor : public Object
 public:
     AActor();
 
-	AActor(IActorComponent* _rootComponent, float _lifeSpan, Map* _map);
+	AActor(ISceneComponent* _rootComponent, float _lifeSpan, Map* _map);
 
 	virtual ~AActor();
 
@@ -62,7 +64,7 @@ public:
 
 	void clearComponent();
 
-private:
+protected:
     //actor flags
     bool m_bEnableCollision = false;
 	bool m_bEnableRender = false;
@@ -70,7 +72,7 @@ private:
 	bool m_bDestructible = false;
 
 	//component
-	IActorComponent* m_RootComponent = nullptr;
+	ISceneComponent* m_RootComponent = nullptr;
 	std::vector<IActorComponent*> m_OwnedComponents;
 
 	//lifespan, if destructible

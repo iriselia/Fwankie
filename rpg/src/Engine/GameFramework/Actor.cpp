@@ -1,12 +1,12 @@
 #include "Actor.h"
-#include "ActorComponent.h"
+#include "SceneComponent.h"
 
 
 AActor::AActor() {
 	//m_birthTime = GetSystemTime();
 }
 
-AActor::AActor(IActorComponent* _rootComponent, float _lifeSpan, Map* _map) :
+AActor::AActor(ISceneComponent* _rootComponent, float _lifeSpan, Map* _map) :
 m_RootComponent(_rootComponent), m_lifeSpan(_lifeSpan), m_map(_map) {
 	//m_birthTime = GetSystemTime();
 }
@@ -53,12 +53,34 @@ void AActor::unregisterComponentWithMap(IActorComponent* _component) {
 
 template<class T>
 void AActor::getComponent(std::vector<T*>& _outComponent) {
-
+	//check root component
+	T* testComponent = dynamic_cast<T*>(m_RootComponent);
+	if (testComponent)
+		_outComponent.push_back(testComponent);
+	//check other components
+	for (auto& i : m_OwnedComponents) {
+		testComponent = dynamic_cast<T*>(i);
+		if (testComponent)
+			_outComponent.push_back(testComponent);
+	}
 }
 
 template<class T>
 void AActor::getComponent(T* _component) {
-
+	//check root component
+	T* testComponent = dynamic_cast<T*>(m_RootComponent);
+	if (testComponent) {
+		_component = testComponent;
+		return
+	}
+	//check other components
+	for (auto& i : m_OwnedComponents) {
+		testComponent = dynamic_cast<T*>(i);
+		if (testComponent) {
+			_component = testComponent;
+			return;
+		}
+	}
 }
 
 IActorComponent* AActor::getRootComponent() {

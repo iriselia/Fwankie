@@ -59,3 +59,13 @@ AActor* Map::spawnActor() {
 	AActor* spawn = new AActor();
 	return spawn;
 }
+
+void Map::addTickFunc(FActorComponentTickFunc* _tickFunc) {
+	if (_tickFunc)
+		m_tickFuncList.push_back(_tickFunc);
+}
+
+void Map::removeTickFunc(FActorComponentTickFunc* _tickFunc) {
+	if (_tickFunc)
+		m_tickFuncList.erase(std::find(m_tickFuncList.begin(), m_tickFuncList.end(), _tickFunc));
+}

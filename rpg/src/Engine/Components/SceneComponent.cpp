@@ -1,19 +1,11 @@
 #include "SceneComponent.h"
 
-void FSceneComponentTickFunc::run(float _deltaTime) {
-	ISceneComponent* target = dynamic_cast<ISceneComponent*>(m_target);
-	if (target) {
-		if (m_bResetX) target->x = m_xReset;
-		if (m_bResetY) target->y = m_yReset;
-    }
-}
-
 ISceneComponent::ISceneComponent() {
 	x = 0;
 	y = 0;
 }
 
-ISceneComponent::ISceneComponent(float _x_in, float _y_in) : x(_x_in), y(_y_in) {
+void FSceneComponentTickFunc::run(float _deltaTime) {
 
 }
 

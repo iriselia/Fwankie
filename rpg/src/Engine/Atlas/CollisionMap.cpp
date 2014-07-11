@@ -1,5 +1,6 @@
 #include "CollisionMap.h"
 #include "Camera.h"
+#include "BoxComponent.h"
 
 //Flags use to manage Drawing in Box2D
 uint32 drawFlags = hgeB2Draw::e_shapeBit | hgeB2Draw::e_jointBit | hgeB2Draw::e_aabbBit;
@@ -29,6 +30,12 @@ CollisionMap::CollisionMap(const char* file_name)
 	m_pIhgeB2Draw->SetFlags(drawFlags);
 	m_pIhgeB2Draw->SetMapHeight(m_width);
 	m_pB2World->SetDebugDraw(m_pIhgeB2Draw);
+
+	BoxComponent* tempBox = new BoxComponent();
+	tempBox->setX(P2M(200));
+	tempBox->setY(P2M(1500));
+	tempBox->SetBoxTextent(1, 1);
+	tempBox->RegisterWithBox2D(m_pB2World);
 }
 
 CollisionMap::~CollisionMap()
@@ -50,7 +57,7 @@ void CollisionMap::Render(Camera* _camera) {
 	if (m_height < _camera->Get_Display_Height_2() * 2)
 		y = (_camera->Get_Display_Height_2() * 2 - m_height) / 2;
 
-	m_pIhgeB2Draw->SetPosition(x, y);
+	m_pIhgeB2Draw->SetDrawPosition(x, y);
 	m_pB2World->DrawDebugData();
 }
 

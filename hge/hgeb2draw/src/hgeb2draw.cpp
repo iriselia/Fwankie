@@ -48,7 +48,13 @@ void hgeB2Draw::DrawSolidPolygon(const b2Vec2* vertices, int32 vertexCount, cons
 	{
 		//glVertex2f(vertices[i].x, vertices[i].y);
 		j = (j>=vertexCount)?0:j;
-		hge->Gfx_RenderLine(adjustW + M2P(vertices[i].x), adjustH - M2P(vertices[i].y), adjustW + M2P(vertices[j].x), adjustH - M2P(vertices[j].y), ARGB(200,color.r*128,color.g*128,color.b*128));
+
+		hge->Gfx_RenderLine(m_x + M2P(vertices[i].x),
+							m_y + M2P(P2M(m_map_height) - vertices[i].y),
+							m_x + M2P(vertices[j].x),
+							m_y + M2P(P2M(m_map_height) - vertices[j].y),
+							ARGB(200, color.r * 128, color.g * 128, color.b * 128));
+
 	}
 	//hge->Gfx_EndScene();
 }

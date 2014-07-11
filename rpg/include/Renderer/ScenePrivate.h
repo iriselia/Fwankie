@@ -1,24 +1,16 @@
 #pragma once
 #include <vector>
+#include "hge.h"
 class Scene
 {
 public:
 	Scene();
 	~Scene();
 
-	void AddStaticSprite(class StaticSpriteComponent* _StaticSpriteComponent) {
-		//FStaticSpriteSceneProxy* StaticSpriteSceneProxy = _StaticSpriteComponent->CreateSceneProxy();
-		//_StaticSpriteComponent->SceneProxy = StaticSpriteSceneProxy;
-	}
+	void RenderAtPosition(float x, float y);
+	void AddStaticSprite(class StaticSpriteComponent* _StaticSpriteComponent);
 
 private:
-	std::vector<StaticSpriteComponent> m_staticSpriteDrawList;
+	HGE* m_pHGE;
+	std::vector<StaticSpriteComponent*> m_staticSpriteDrawList;
 };
-
-Scene::Scene()
-{
-}
-
-Scene::~Scene()
-{
-}

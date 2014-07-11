@@ -30,7 +30,32 @@ bool StaticSpriteComponent::setStaticSprite(hgeSprite* _staticSprite)
 	// TODO: add streaming?
 
 	// Since we have new mesh, we need to update bounds
-	UpdateBounds();
+	//UpdateBounds();
 	return true;
+}
+
+StaticSpriteComponent::StaticSpriteComponent()
+{
+
+}
+
+StaticSpriteComponent::~StaticSpriteComponent()
+{
+
+}
+
+void StaticSpriteComponent::Render(float x, float y)
+{
+	m_pStaticSprite->Render(x, y);
+}
+
+StaticSpriteSceneProxy* StaticSpriteComponent::Create_SceneProxy()
+{
+	return NULL;
+}
+
+void StaticSpriteComponent::Update(float _DeltaTime)
+{
+	m_pStaticSprite->Update(_DeltaTime);
 }
 

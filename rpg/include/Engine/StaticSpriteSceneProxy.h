@@ -1,19 +1,13 @@
 #pragma once
+#include "PrimitiveSceneProxy.h"
 
-class StaticSpriteSceneProxy
+class StaticSpriteSceneProxy : public PrimitiveSceneProxy
 {
 public:
 	StaticSpriteSceneProxy();
 	~StaticSpriteSceneProxy();
 
+	virtual void Render(float x, float y);
 private:
 
 };
-
-StaticSpriteSceneProxy::StaticSpriteSceneProxy()
-{
-}
-
-StaticSpriteSceneProxy::~StaticSpriteSceneProxy()
-{
-}

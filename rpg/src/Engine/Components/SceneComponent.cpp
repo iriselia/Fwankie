@@ -9,7 +9,8 @@ void FSceneComponentTickFunc::run(float _deltaTime) {
 }
 
 ISceneComponent::ISceneComponent() {
-
+	x = 0;
+	y = 0;
 }
 
 ISceneComponent::ISceneComponent(float _x_in, float _y_in) : x(_x_in), y(_y_in) {

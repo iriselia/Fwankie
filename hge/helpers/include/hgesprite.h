@@ -53,6 +53,7 @@ public:
 	hgeRect*	GetBoundingBoxEx(float x, float y, float rot, float hscale, float vscale,  hgeRect *rect) const;
 
 	virtual bool		isHoveringXY(float x, float y);
+	virtual void		Update(float fDeltaTime);
 protected:
 	hgeSprite();
 	static HGE	*hge;

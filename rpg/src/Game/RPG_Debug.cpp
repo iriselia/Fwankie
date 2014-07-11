@@ -26,6 +26,9 @@
 #include "Atlas.h"
 #include "Map.h"
 
+#include "ScenePrivate.h"
+#include "StaticSpriteComponent.h"
+
 std::map<std::string, Map*> Atlas::m_atlas;
 
 namespace RPG_Debug {
@@ -46,6 +49,11 @@ namespace RPG_Debug {
 	hgeAnimation*		ani;
 	hgeFont					*fnt;
 	HEFFECT					snd;
+
+	//experimental 
+	StaticSpriteComponent* sprcomp;
+	Scene*				scene;
+
 
 	// Some resource handles
 
@@ -193,6 +201,11 @@ namespace RPG_Debug {
 		int w = hge->Texture_GetWidth(specialtex, true);
 		int h = hge->Texture_GetHeight(specialtex, true);
 		specialSprite = new hgeSprite(specialtex, 0, 0, w, h);
+
+		sprcomp = new StaticSpriteComponent();
+		sprcomp->setStaticSprite(ani);
+		scene = new Scene();
+		scene->AddStaticSprite(sprcomp);
 	}
 
 	void run() {
@@ -222,6 +235,8 @@ namespace RPG_Debug {
 		}
 
 		float dt = hge->Timer_GetDelta();
+
+		sprcomp->Update(dt);
 
 		HTEXTURE hi = specialSprite->GetTexture();
 		int w = hge->Texture_GetWidth(hi, true);
@@ -300,7 +315,7 @@ namespace RPG_Debug {
 		else camera->SetYPosition(cam_y + v_displacement);
 
 		//myPlayer->setPosition(x + dx_dt, y + dy_dt);
-		myPlayer->getAnimation()->Update(dt);
+		//myPlayer->getAnimation()->Update(dt);
 
 		//camera->GetMap()->StepB2World();
 
@@ -312,7 +327,7 @@ namespace RPG_Debug {
 		hge->Gfx_Clear(0);
 		//hge->Gfx_SetClipping(0, 0, 300, 300);
 		camera->RenderScene();
-		//specialSprite->Render(0, 0);
+		scene->RenderAtPosition(50, 50);
 		float x, y;
 		hge->Input_GetMousePos(&x, &y);
 		mouseSprite->Render(x, y);

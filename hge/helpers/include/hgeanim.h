@@ -34,7 +34,7 @@ public:
 	void		Play();
 	void		Stop() { bPlaying=false; }
 	void		Resume() { bPlaying=true; }
-	void		Update(float fDeltaTime);
+	virtual void		Update(float fDeltaTime);
 	bool		IsPlaying() const { return bPlaying; }
 
 	void		SetTexture(HTEXTURE tex) { hgeSprite::SetTexture(tex); orig_width = hge->Texture_GetWidth(tex, true); }

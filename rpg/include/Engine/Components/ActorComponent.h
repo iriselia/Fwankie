@@ -73,7 +73,7 @@ public:
 	//Tick
 	virtual void Tick(float _deltaTime);
 
-private:
+protected:
 	//active status
 	bool m_bActive = false;
 	//environment
@@ -81,8 +81,6 @@ private:
 	//tick status flag
 	bool m_bNeverTick = false;
 	bool m_bCanTick = false;
-
-protected:
 	//tick Func
 	FActorComponentTickFunc* m_tickFunc = nullptr;
 };

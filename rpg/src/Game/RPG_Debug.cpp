@@ -206,6 +206,10 @@ namespace RPG_Debug {
 		sprcomp->setStaticSprite(ani);
 		scene = new Scene();
 		scene->AddStaticSprite(sprcomp);
+
+		// Make GUI mouse & key focus visible to the game.
+		diagnostic::InputFocusInfo* diag = gui->getFocusInput();
+		diag->setFocusVisible(true);
 	}
 
 	void run() {
@@ -236,6 +240,7 @@ namespace RPG_Debug {
 
 		float dt = hge->Timer_GetDelta();
 
+
 		sprcomp->Update(dt);
 
 		HTEXTURE hi = specialSprite->GetTexture();
@@ -249,9 +254,18 @@ namespace RPG_Debug {
 		}
 		float a = xx - myPlayer->GetXPosition();
 		float b = yy - myPlayer->GetYPosition();
-		if (ani->isHoveringXY((float)a, (float)b)) {
-			printf("is hovering player!! x: %f, y: %f, frame: %d\n", xx, yy, ani->GetFrame());
+
+
+		diagnostic::InputFocusInfo* diag = gui->getFocusInput();
+		if (diag->doesMouseHaveFocus()) {
+			printf("Mouse is on GUI, abort collision check on actors.\n");
 		}
+		else {
+			if (ani->isHoveringXY((float)a, (float)b)) {
+				printf("is hovering player!! x: %f, y: %f, frame: %d\n", xx, yy, ani->GetFrame());
+			}
+		}
+
 		// player move
 		float x = myPlayer->GetXPosition(), y = myPlayer->GetYPosition();
 		float dx_dt = myPlayer->Get_dx_dt(), dy_dt = myPlayer->Get_dy_dt();

@@ -59,6 +59,10 @@ namespace diagnostic
 			}
 		}
 
+		bool doesMouseHaveFocus() const {
+			return mWidgetMouseFocus ? true : false;
+		}
+
 	private:
 		void notifyChangeMouseFocus(MyGUI::Widget* _widget)
 		{

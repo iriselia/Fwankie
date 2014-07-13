@@ -1,4 +1,5 @@
 #include "BoxComponent.h"
+#include "hgeb2draw.h"
 
 BoxComponent::BoxComponent()
 {
@@ -10,11 +11,11 @@ BoxComponent::~BoxComponent()
 
 }
 
-void BoxComponent::RegisterWithBox2D(b2World* _b2World)
+void BoxComponent::RegisterWithBox2D(hgeB2World* _hgeB2World)
 {
 	// Define the polyline body.
 	b2BodyDef bodyDef;
-	bodyDef.position.Set(getX(), getY());
+	bodyDef.position.Set(getX(), _hgeB2World->GetMapHeight() - getY());
 
 	b2FixtureDef fixtureDef;
 
@@ -25,7 +26,7 @@ void BoxComponent::RegisterWithBox2D(b2World* _b2World)
 
 	p_polygonShape->SetAsBox(x, y);
 
-	b2Body* p_body = _b2World->CreateBody(&bodyDef);
+	b2Body* p_body = _hgeB2World->CreateBody(&bodyDef);
 
 	// Add the ground fixture to the ground body.
 	m_pB2Fixture = p_body->CreateFixture(&fixtureDef);

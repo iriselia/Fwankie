@@ -25,17 +25,18 @@ CollisionMap::CollisionMap(const char* file_name)
 
 	//Init Box2D
 	b2Vec2 gravity(0.0f, 0.0f);
-	m_pB2World = new b2World(gravity);
+	m_pHgeB2World = new hgeB2World(gravity);
+	m_pHgeB2World->SetMapSize(m_width, m_height);
 	m_pIhgeB2Draw = new hgeB2Draw(m_pHGE);
 	m_pIhgeB2Draw->SetFlags(drawFlags);
 	m_pIhgeB2Draw->SetMapHeight(m_width);
-	m_pB2World->SetDebugDraw(m_pIhgeB2Draw);
+	m_pHgeB2World->SetDebugDraw(m_pIhgeB2Draw);
 
 	BoxComponent* tempBox = new BoxComponent();
 	tempBox->setX(P2M(200));
-	tempBox->setY(P2M(1500));
+	tempBox->setY(P2M(100));
 	tempBox->SetBoxTextent(1, 1);
-	tempBox->RegisterWithBox2D(m_pB2World);
+	tempBox->RegisterWithBox2D(m_pHgeB2World);
 }
 
 CollisionMap::~CollisionMap()
@@ -58,7 +59,7 @@ void CollisionMap::Render(Camera* _camera) {
 		y = (_camera->Get_Display_Height_2() * 2 - m_height) / 2;
 
 	m_pIhgeB2Draw->SetDrawPosition(x, y);
-	m_pB2World->DrawDebugData();
+	m_pHgeB2World->DrawDebugData();
 }
 
 void CollisionMap::Load() {
@@ -91,7 +92,7 @@ void CollisionMap::Load() {
 				// Define the polyline body.
 				b2BodyDef bodyDef;
 				bodyDef.position.Set(P2M(obj->GetX()), P2M(m_pMap_info->GetHeight() * m_pMap_info->GetTileHeight() - obj->GetY()));
-				b2Body* p_body = m_pB2World->CreateBody(&bodyDef);
+				b2Body* p_body = m_pHgeB2World->CreateBody(&bodyDef);
 				b2FixtureDef fixtureDef;
 
 				// Define a chain shape.
@@ -118,6 +119,6 @@ void CollisionMap::Load() {
 	}
 }
 void CollisionMap::Unload() {
-	delete m_pB2World;
+	delete m_pHgeB2World;
 	delete m_pIhgeB2Draw;
 }

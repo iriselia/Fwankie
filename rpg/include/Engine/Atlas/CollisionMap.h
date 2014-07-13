@@ -2,7 +2,7 @@
 #include "hge.h"
 #include "hgeb2draw.h"
 #include "Tmx.h"
-#include "Box2D.h"
+#include "hgeb2world.h"
 
 class Camera;
 class CollisionMap
@@ -21,6 +21,6 @@ private:
 	int				m_height;
 	HGE*			m_pHGE;
 	Tmx::Map*		m_pMap_info;
-	b2World*		m_pB2World;
+	hgeB2World*		m_pHgeB2World;
 	hgeB2Draw*		m_pIhgeB2Draw;
 };

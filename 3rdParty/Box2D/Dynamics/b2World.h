@@ -65,6 +65,8 @@ public:
 	/// inside with b2World::DrawDebugData method. The debug draw object is owned
 	/// by you and must remain in scope.
 	void SetDebugDraw(b2Draw* debugDraw);
+	// Getter
+	b2Draw* GetDebugDraw();
 
 	/// Create a rigid body given a definition. No reference to the definition
 	/// is retained.

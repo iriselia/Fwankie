@@ -28,13 +28,18 @@
 
 #include "ScenePrivate.h"
 #include "SpriteComponent.h"
+#include "InputComponent.h"
+#include "Character.h"
 
 std::map<std::string, TileMap*> Atlas::m_atlas;
+
 
 namespace RPG_Debug {
 
 	HGE *hge = nullptr;
 	GUI* gui = nullptr;
+	InputComponent inputComponent;
+	Character character;
 
 	Trigger_Portal* portal;
 	Player*					myPlayer;
@@ -202,6 +207,12 @@ namespace RPG_Debug {
 		// Make GUI mouse & key focus visible to the game.
 		diagnostic::InputFocusInfo* diag = gui->getFocusInput();
 		diag->setFocusVisible(true);
+
+		//set up input component
+		inputComponent.addKeyBinding(HGEK_W, BIND_MEM_CB(&Character::moveUp, &character));
+		inputComponent.addKeyBinding(HGEK_A, BIND_MEM_CB(&Character::moveLeft, &character));
+		inputComponent.addKeyBinding(HGEK_S, BIND_MEM_CB(&Character::moveDown, &character));
+		inputComponent.addKeyBinding(HGEK_D, BIND_MEM_CB(&Character::moveRight, &character));
 	}
 
 	void run() {
@@ -259,6 +270,7 @@ namespace RPG_Debug {
 			}
 		}
 
+		inputComponent.executeKeyAction(hge);
 		// player move
 		float x = myPlayer->GetXPosition(), y = myPlayer->GetYPosition();
 		float dx_dt = myPlayer->Get_dx_dt(), dy_dt = myPlayer->Get_dy_dt();

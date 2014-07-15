@@ -18,8 +18,6 @@ public:
 
 	virtual void disableControl(Controller* _controller);
 
-	//Movement
-
 private:
 
     struct PawnAttributes* m_attributes;

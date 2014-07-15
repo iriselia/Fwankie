@@ -33,10 +33,20 @@ CollisionMap::CollisionMap(const char* file_name)
 	m_pHgeB2World->SetDebugDraw(m_pIhgeB2Draw);
 
 	BoxComponent* tempBox = new BoxComponent();
-	tempBox->setX(P2M(200));
+	tempBox->setX(P2M(500));
 	tempBox->setY(P2M(100));
 	tempBox->SetBoxTextent(1, 1);
 	tempBox->RegisterWithBox2D(m_pHgeB2World);
+	b2Vec2 vel = tempBox->m_pB2Body->GetLinearVelocity();
+	vel.x -= 5;
+	tempBox->m_pB2Body->SetType(b2_dynamicBody);
+	tempBox->m_pB2Body->SetLinearVelocity(vel);
+
+	BoxComponent* tempBox1 = new BoxComponent();
+	tempBox1->setX(P2M(200));
+	tempBox1->setY(P2M(100));
+	tempBox1->SetBoxTextent(1, 1);
+	tempBox1->RegisterWithBox2D(m_pHgeB2World);
 }
 
 CollisionMap::~CollisionMap()
@@ -44,6 +54,10 @@ CollisionMap::~CollisionMap()
 	Unload();
 	delete m_pMap_info;
 	m_pHGE->Release();
+}
+
+void CollisionMap::Update(float _dt) {
+	m_pHgeB2World->Step(_dt, velocityIterations, positionIterations);
 }
 
 void CollisionMap::Render(Camera* _camera) {

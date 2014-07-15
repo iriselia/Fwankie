@@ -232,7 +232,8 @@ namespace RPG_Debug {
 
 		float dt = hge->Timer_GetDelta();
 
-
+		Atlas::queryByName("map1.tmx")->Update(dt);
+		
 		sprcomp->Update(dt);
 
 		HTEXTURE hi = specialSprite->GetTexture();

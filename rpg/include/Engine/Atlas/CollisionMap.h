@@ -10,7 +10,7 @@ class CollisionMap
 public:
 	CollisionMap(const char* file_name);
 	~CollisionMap();
-	void Update();
+	void Update(float _dt);
 	void Render(Camera* _camera);
 
 	void Load();

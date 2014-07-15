@@ -13,9 +13,9 @@ TileMap::~TileMap()
 	delete m_pCollisionMap;
 }
 
-void TileMap::Update()
+void TileMap::Update(float _dt)
 {
-
+	m_pCollisionMap->Update(_dt);
 }
 
 void TileMap::Render(Camera* _camera) {

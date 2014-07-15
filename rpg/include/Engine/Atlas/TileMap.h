@@ -46,7 +46,7 @@ class TileMap
 public:
 	TileMap(MapParser* _tileMap, CollisionMap* _collisionMap);
 	~TileMap();
-	void Update();
+	void Update(float _dt);
 	void Render(Camera* _camera);
 	void LoadResource();
 	void UnloadResource();

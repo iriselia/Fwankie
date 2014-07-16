@@ -14,7 +14,7 @@ public:
 	void UpdateBounds();
 	bool setStaticSprite(hgeSprite* _staticSprite);
 	StaticSpriteSceneProxy* SpriteComponent::Create_SceneProxy();
-	void Update(float _DeltaTime);
+	virtual void Tick(float _DeltaTime);
 	void Render(float x, float y);
 
 private:

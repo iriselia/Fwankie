@@ -7,7 +7,7 @@ InputComponent::InputComponent() {
 
 InputComponent::InputComponent(Character* _owner) {
 	m_bActive = true;
-	m_owner = _owner;
+	m_pOwner = _owner;
 }
 
 void InputComponent::addKeyBinding(hgeKeyCode_t _key, Callback<void()> _delegate) {

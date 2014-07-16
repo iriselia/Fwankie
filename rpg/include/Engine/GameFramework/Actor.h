@@ -12,7 +12,7 @@ class ISceneComponent;
 class TileMap;
 
 //ComponentTickFunc
-class FActorComponentTickFunc;
+struct FActorComponentTickFunc;
 
 
 class AActor : public Object
@@ -42,7 +42,7 @@ public:
 
 	void unregisterWithMap();
 
-	virtual void registerComponentsWithMap(IActorComponent* _component);
+	virtual void RegisterAllComponents();
 
 	virtual void unregisterComponentWithMap(IActorComponent* _component);
 
@@ -55,7 +55,7 @@ public:
 
 	IActorComponent* getRootComponent();
 
-	std::vector<IActorComponent*>* getAllComponent();
+	std::vector<IActorComponent*>* getAllComponents();
 
 	//modify component
 	void addComponent(IActorComponent* _component);
@@ -72,7 +72,7 @@ protected:
 	bool m_bDestructible = false;
 
 	//component
-	ISceneComponent* m_RootComponent = nullptr;
+	ISceneComponent* m_pRootComponent = nullptr;
 	std::vector<IActorComponent*> m_OwnedComponents;
 
 	//lifespan, if destructible

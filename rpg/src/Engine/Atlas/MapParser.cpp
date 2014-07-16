@@ -68,10 +68,10 @@ void MapParser::Load() {
 				m_tiles[t][tileset->GetTile(h*numW + w)->GetId()] =
 					new hgeSprite(
 					newTileset,
-					(w + 1)*spacing + w*tileW,
-					(h + 1)*spacing + h*tileH,
-					tileW,
-					tileH);
+					(float)((w + 1)*spacing + w*tileW),
+					(float)((h + 1)*spacing + h*tileH),
+					(float)tileW,
+					(float)tileH);
 			}
 		}
 		// end of map parsing
@@ -112,7 +112,7 @@ void MapParser::Render() {
 			int tileID = layer->GetTileId(w, h);
 				if (tileID > 0) {
 					int tilesetID = layer->GetTile(w, h).tilesetId;
-					m_tiles[1][tileID]->Render(w * tileW, h * tileH);
+					m_tiles[1][tileID]->Render((float)w * tileW, (float)h * tileH);
 				}
 
 		}
@@ -133,7 +133,7 @@ void MapParser::Render(int width, int height, int x, int y) {
 			int tileID = layer->GetTileId(w, h);
 			if (tileID > 0) {
 				int tilesetID = layer->GetTile(w, h).tilesetId;
-				m_tiles[tilesetID][tileID]->Render(w * tileW + x, h * tileH + y);
+				m_tiles[tilesetID][tileID]->Render((float)(w * tileW + x), (float)(h * tileH + y));
 			}
 
 		}
@@ -143,8 +143,8 @@ void MapParser::Render(int width, int height, int x, int y) {
 void MapParser::RenderLayer(Camera* _camera, int _layer) {
 	// translate camera position to screen top left corner
 	int x, y;
-	x = _camera->Get_Display_Width_2() - _camera->GetXPosition();
-	y = _camera->Get_Display_Height_2() - _camera->GetYPosition();
+	x = _camera->Get_Display_Width_2() - (int)_camera->GetXPosition();
+	y = _camera->Get_Display_Height_2() - (int)_camera->GetYPosition();
 	// translate camera position again if map is smaller than screen
 	// center the content.
 	if (m_width < _camera->Get_Display_Width_2() * 2)
@@ -178,7 +178,7 @@ void MapParser::RenderLayer(Camera* _camera, int _layer) {
 		int tileID = layer->GetTileId(w, h);
 		if (tileID > 0) {
 			int tilesetID = layer->GetTile(w, h).tilesetId;
-			m_tiles[tilesetID][tileID]->Render(w * tileW + x, h * tileH + y);
+			m_tiles[tilesetID][tileID]->Render((float)(w * tileW + x), (float)(h * tileH + y));
 		}
 	}
 

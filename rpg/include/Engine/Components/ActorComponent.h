@@ -7,9 +7,9 @@ class TileMap;
 
 class IActorComponent;
 
-class FActorComponentTickFunc {
-public:
-    FActorComponentTickFunc();
+struct FActorComponentTickFunc {
+
+	FActorComponentTickFunc();
 
 	FActorComponentTickFunc(IActorComponent* _target);
 
@@ -17,7 +17,7 @@ public:
 
 	void unregisterWithTarget();
 
-	void registerWithLevel(TileMap* _map);
+	void RegisterWithTileMap(TileMap* _map);
 
 	void unregisterWithLevel();
 
@@ -25,10 +25,8 @@ public:
 
 	virtual void run(float _deltaTime);
 
-protected:
-	IActorComponent* m_target = nullptr;
-
-	TileMap* m_map = nullptr;
+	IActorComponent* m_target;
+	TileMap* m_map;
 
 };
 
@@ -40,19 +38,23 @@ public:
 
 	virtual ~IActorComponent();
 
+	//customize component register behaviors here.
+	virtual void OnRegister();
+
 	//register with owner
-	void registerWithOwner(AActor* _owner);
+	void RegisterTickFuncWithTileMap(TileMap* _pTileMap);
 
 	void unregisterWithOwner();
 
 	bool isRegisteredWithOwner();
 
 	//register a tickFunc
-	void registerTickFunc(FActorComponentTickFunc* _tickFunc);
+	void registerTickFunc(FActorComponentTickFunc _tickFunc);
 
 	void unregisterTickFunc();
 
 	AActor* getOwner();
+	void SetOwner(AActor* _pOwner);
 
 	//activation status methods
 	virtual void Activate();
@@ -75,12 +77,13 @@ public:
 
 protected:
 	//active status
-	bool m_bActive = false;
+	bool m_bActive : 1;
+	bool m_bRegistered : 1;
 	//environment
-	AActor* m_owner = nullptr;
+	AActor* m_pOwner = nullptr;
 	//tick status flag
-	bool m_bNeverTick = false;
-	bool m_bCanTick = false;
+	bool m_bNeverTick : 1;
+	bool m_bCanTick : 1;
 	//tick Func
-	FActorComponentTickFunc* m_tickFunc = nullptr;
+	FActorComponentTickFunc m_tickFunc = nullptr;
 };

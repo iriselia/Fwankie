@@ -83,6 +83,9 @@ namespace RPG_Debug {
 
 		gui = new GUI();
 		gui->registerWindow(hge->System_GetState(HGE_HWND), hge, b_windowed);
+		// Make GUI mouse & key focus visible to the game.
+		diagnostic::InputFocusInfo* diag = gui->getFocusInput();
+		diag->setFocusVisible(true);
 
 		myPlayer = new Player();
 		std::ifstream savedata("resources/savedata.txt");
@@ -102,6 +105,7 @@ namespace RPG_Debug {
 		else {
 			perror("load savedata messed up!");
 		}
+
 		anitex = hge->Texture_Load("resources/aninew.png");
 		ani = new hgeAnimation(anitex, 6, 6, 0, 0, 38, 46);
 		ani->SetHotSpot(19, 17);
@@ -197,16 +201,16 @@ namespace RPG_Debug {
 		specialtex = hge->Texture_Load("resources/specialtex.png");
 		int w = hge->Texture_GetWidth(specialtex, true);
 		int h = hge->Texture_GetHeight(specialtex, true);
-		specialSprite = new hgeSprite(specialtex, 0, 0, w, h);
+		specialSprite = new hgeSprite(specialtex, 0, 0, (float)w, (float)h);
 
 		sprcomp = new SpriteComponent();
 		sprcomp->setStaticSprite(ani);
+		sprcomp->SetOwner(&character);
 		scene = new Scene();
 		scene->AddStaticSprite(sprcomp);
 
-		// Make GUI mouse & key focus visible to the game.
-		diagnostic::InputFocusInfo* diag = gui->getFocusInput();
-		diag->setFocusVisible(true);
+		character.SetSprite(sprcomp);
+		character.RegisterWithTileMap(Atlas::queryByName("map1.tmx"));
 
 		//set up input component
 		inputComponent.addKeyBinding(HGEK_W, BIND_MEM_CB(&Character::moveUp, &character));
@@ -245,7 +249,7 @@ namespace RPG_Debug {
 
 		Atlas::queryByName("map1.tmx")->Update(dt);
 		
-		sprcomp->Update(dt);
+		//sprcomp->Tick(dt);
 
 		HTEXTURE hi = specialSprite->GetTexture();
 		int w = hge->Texture_GetWidth(hi, true);
@@ -328,10 +332,10 @@ namespace RPG_Debug {
 
 		// resolve camera movement on y axis
 		if (camera->willCollideSouth(v_displacement))
-			camera->SetYPosition(map_height - cam_height_2);
-		else if (camera->willCollideNorth(v_displacement))
-			camera->SetYPosition(0 + cam_height_2);
-		else camera->SetYPosition(cam_y + v_displacement);
+			camera->SetYPosition((float)(map_height - cam_height_2));
+		else if (camera->willCollideNorth((float)(v_displacement)))
+			camera->SetYPosition((float)(0 + cam_height_2));
+		else camera->SetYPosition((float)(cam_y + v_displacement));
 
 		//myPlayer->setPosition(x + dx_dt, y + dy_dt);
 		//myPlayer->getAnimation()->Update(dt);

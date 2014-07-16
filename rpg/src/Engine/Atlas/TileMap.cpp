@@ -1,5 +1,6 @@
 #include "TileMap.h"
 #include "Actor.h"
+#include "ActorComponent.h"
 
 TileMap::TileMap(MapParser* _tileMap, CollisionMap* _collisionMap)
 {
@@ -15,6 +16,10 @@ TileMap::~TileMap()
 
 void TileMap::Update(float _dt)
 {
+	for (auto& tickFunc : m_tickFuncs)
+	{
+		tickFunc->run(_dt);
+	}
 	m_pCollisionMap->Update(_dt);
 }
 
@@ -52,7 +57,7 @@ int TileMap::Get_Height()
 // }
 
 void TileMap::addActor(AActor* _actor) {
-	m_ActorList.push_back(_actor);
+	m_Actors.push_back(_actor);
 }
 
 AActor* TileMap::spawnActor() {
@@ -62,10 +67,10 @@ AActor* TileMap::spawnActor() {
 
 void TileMap::addTickFunc(FActorComponentTickFunc* _tickFunc) {
 	if (_tickFunc)
-		m_tickFuncList.push_back(_tickFunc);
+		m_tickFuncs.push_back(_tickFunc);
 }
 
 void TileMap::removeTickFunc(FActorComponentTickFunc* _tickFunc) {
 	if (_tickFunc)
-		m_tickFuncList.erase(std::find(m_tickFuncList.begin(), m_tickFuncList.end(), _tickFunc));
+		m_tickFuncs.erase(std::find(m_tickFuncs.begin(), m_tickFuncs.end(), _tickFunc));
 }

@@ -26,7 +26,7 @@ void ISceneComponent::setY(float _y_in) {
 }
 
 void ISceneComponent::Tick(float _deltaTime) {
-	FSceneComponentTickFunc* tickFunc = dynamic_cast<FSceneComponentTickFunc*>(m_tickFunc);
+	FSceneComponentTickFunc* tickFunc = dynamic_cast<FSceneComponentTickFunc*>(&m_tickFunc);
 	if (tickFunc)
 		tickFunc->run(0);
 }

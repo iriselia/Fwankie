@@ -63,8 +63,8 @@ void CollisionMap::Update(float _dt) {
 void CollisionMap::Render(Camera* _camera) {
 	// translate camera position to screen top left corner
 	int x, y;
-	x = _camera->Get_Display_Width_2() - _camera->GetXPosition();
-	y = _camera->Get_Display_Height_2() - _camera->GetYPosition();
+	x = _camera->Get_Display_Width_2() - (int)_camera->GetXPosition();
+	y = _camera->Get_Display_Height_2() - (int)_camera->GetYPosition();
 	// translate camera position again if map is smaller than screen
 	// center the content.
 	if (m_width < _camera->Get_Display_Width_2() * 2)

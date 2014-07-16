@@ -54,8 +54,7 @@ StaticSpriteSceneProxy* SpriteComponent::Create_SceneProxy()
 	return NULL;
 }
 
-void SpriteComponent::Update(float _DeltaTime)
+void SpriteComponent::Tick(float _DeltaTime)
 {
 	m_pStaticSprite->Update(_DeltaTime);
 }
-

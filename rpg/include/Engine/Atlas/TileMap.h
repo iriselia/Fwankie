@@ -12,7 +12,7 @@ class AActor;
 
 class TileMap;
 
-class FActorComponentTickFunc;
+struct FActorComponentTickFunc;
 
 class FMapActorSpawningFunc {
 	private:
@@ -74,8 +74,8 @@ private:
 	//std::vector<Camera*> m_cameras;
 	MapParser* m_pTileMap;
 	CollisionMap* m_pCollisionMap;
-	std::vector<AActor*> m_ActorList;
-	std::vector<FActorComponentTickFunc*> m_tickFuncList;
+	std::vector<AActor*> m_Actors;
+	std::vector<FActorComponentTickFunc*> m_tickFuncs;
 
 };
 

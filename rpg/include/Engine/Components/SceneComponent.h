@@ -4,7 +4,7 @@
 
 class ISceneComponent;
 
-class FSceneComponentTickFunc : FActorComponentTickFunc {
+struct FSceneComponentTickFunc : FActorComponentTickFunc {
 public:
     //default functor, this functor will tick SceneComponent according to its current status
     FSceneComponentTickFunc();
@@ -33,7 +33,7 @@ public:
 	void setY(float _y_in);
 
 private:
-    friend class FSceneComponentTickFunc;
+    friend struct FSceneComponentTickFunc;
 
 	//Transform data
 	float x;

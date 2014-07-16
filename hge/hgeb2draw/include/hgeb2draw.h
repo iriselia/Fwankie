@@ -36,7 +36,7 @@ public:
 	void SetHGE(HGE* draw){ hge = draw;};
 	//In Pixels.
 	void SetMapHeight(int _height) { m_map_height = _height; }
-	void SetDrawPosition(float _x, float _y) { m_x = _x; m_y = _y; }
+	void SetDrawPosition(int _x, int _y) { m_x = _x; m_y = _y; }
 	void DrawPolygon(const b2Vec2* vertices, int32 vertexCount, const b2Color& color);
 
 	void DrawSolidPolygon(const b2Vec2* vertices, int32 vertexCount, const b2Color& color);

@@ -9,10 +9,10 @@ public:
 	~hgeB2World();
 
 	void SetMapSize(int _width, int _height) { m_map_width = P2M(_width); m_map_height = P2M(_height); }
-	int GetMapWidth() { return m_map_width; } // In meters
-	int GetMapHeight() { return m_map_height; } // In meters
+	float GetMapWidth() { return m_map_width; } // In meters
+	float GetMapHeight() { return m_map_height; } // In meters
 
 private:
-	int m_map_width;
-	int m_map_height;
+	float m_map_width;
+	float m_map_height;
 };

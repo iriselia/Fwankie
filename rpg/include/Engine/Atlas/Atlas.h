@@ -15,4 +15,13 @@ public:
 private:
 	static std::map<std::string, TileMap*> m_atlas;
 
+
+// new Altas
+
+public:
+
+private:
+	// controllers
+	// pawns
+	// phx scene
 };

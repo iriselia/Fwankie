@@ -68,6 +68,7 @@ namespace input
 		}
 		else if ((uMsg >= WM_MOUSEFIRST) && (uMsg <= __WM_REALMOUSELAST))
 		{
+#pragma region mouse input
 			switch (uMsg)
 			{
 			case WM_MOUSEMOVE:
@@ -144,6 +145,7 @@ namespace input
 				msInputManager->mouseRelease(old_x, old_y, MyGUI::MouseButton::Middle);
 				break;
 			}
+#pragma endregion mouse input
 		}
 		else if (WM_KEYDOWN == uMsg)
 		{
@@ -158,6 +160,17 @@ namespace input
 				MyGUI::MYGUI_OUT("VirtKey : ", VirtualKeyToName(wParam), " to ScanCode : ", ScanCodeToName(scan_code));
 #endif
 			}
+		}
+		else if (WM_KEYUP == uMsg)
+		{
+			int scan_code = VirtualKeyToScanCode(wParam);
+			MyGUI::KeyCode code = MyGUI::KeyCode::Enum(scan_code);
+
+			// принтскрин приходит только отжатие
+			if (code == MyGUI::KeyCode::SysRq)
+				msInputManager->injectKeyPress(code, (MyGUI::Char)0);
+
+			msInputManager->injectKeyRelease(code);
 		}
 		else if (WM_IME_CHAR == uMsg)
 		{
@@ -186,18 +199,6 @@ namespace input
 #endif // _UNICODE
 			msInputManager->injectKeyPress(MyGUI::KeyCode::None, (MyGUI::Char)text);
 		}
-		else if (WM_KEYUP == uMsg)
-		{
-			int scan_code = VirtualKeyToScanCode(wParam);
-			MyGUI::KeyCode code = MyGUI::KeyCode::Enum(scan_code);
-
-			// принтскрин приходит только отжатие
-			if (code == MyGUI::KeyCode::SysRq)
-				msInputManager->injectKeyPress(code, (MyGUI::Char)0);
-
-			msInputManager->injectKeyRelease(code);
-		}
-
 		// вызываем полюбому
 		return CallWindowProc((WNDPROC)msOldWindowProc, hWnd, uMsg, wParam, lParam);
 	}

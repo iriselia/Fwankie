@@ -40,9 +40,11 @@ public:
 	//register with level
 	void registerWithLevel();
 
+	void RegisterWithTileMap(TileMap* _pTileMap);
+
 	void unregisterWithMap();
 
-	virtual void RegisterAllComponents();
+	void RegisterAllComponents();
 
 	virtual void unregisterComponentWithMap(IActorComponent* _component);
 
@@ -53,17 +55,19 @@ public:
 	template<class T>
 	void getComponent(T* _component);
 
+	void AddRootComponent(ISceneComponent* _pRootComponent);
 	IActorComponent* getRootComponent();
 
 	std::vector<IActorComponent*>* getAllComponents();
 
 	//modify component
-	void addComponent(IActorComponent* _component);
+	void AddComponent(IActorComponent* _component);
 
-	void removeComponent(IActorComponent* _component);
+	void RemoveComponent(IActorComponent* _component);
 
 	void clearComponents();
 
+	TileMap* getCurrMap();
 protected:
     //actor flags
     bool m_bEnableCollision = false;
@@ -81,5 +85,5 @@ protected:
 	float m_birthTime = 0;
 
 	//Environment: level
-	TileMap* m_map = nullptr;
+	TileMap* m_pCurrMap;
 };

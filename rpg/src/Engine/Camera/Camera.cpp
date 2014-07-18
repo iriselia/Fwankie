@@ -38,7 +38,7 @@ void Camera::RenderScene() {
 	
 
 	float x1 = target->GetXPosition(), y1 = target->GetYPosition();
-	target->Render(x1 + x, y1 + y);
+	target->Render((int)(x1 + x), (int)(y1 + y));
 
 	/*
 	// If camera is colliding horizontally

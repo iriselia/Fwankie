@@ -53,6 +53,9 @@ public:
 
 	void unregisterTickFunc();
 
+	bool isRegistered();
+	void SetRegistered(bool _isRegistered);
+
 	AActor* getOwner();
 	void SetOwner(AActor* _pOwner);
 

@@ -39,7 +39,7 @@ namespace RPG_Debug {
 	HGE *hge = nullptr;
 	GUI* gui = nullptr;
 	InputComponent inputComponent;
-	Character character;
+	Character* pCharacter;
 
 	Trigger_Portal* portal;
 	Player*					myPlayer;
@@ -48,16 +48,12 @@ namespace RPG_Debug {
 	hgeSprite			*mouseSprite;
 	HTEXTURE			hPortal;
 	HTEXTURE			anitex;
-	HTEXTURE			specialtex;
-	hgeSprite*			specialSprite;
 	hgeSprite			*portalSprite;
 	hgeAnimation*		ani;
 	hgeFont					*fnt;
 	HEFFECT					snd;
 
 	//experimental 
-	SpriteComponent* sprcomp;
-	Scene*				scene;
 
 
 	// Some resource handles
@@ -198,25 +194,15 @@ namespace RPG_Debug {
 		hMouseTexture = hge->Texture_Load("resources/cursor.png");
 		mouseSprite = new hgeSprite(hMouseTexture, 0, 0, 32, 32);
 
-		specialtex = hge->Texture_Load("resources/specialtex.png");
-		int w = hge->Texture_GetWidth(specialtex, true);
-		int h = hge->Texture_GetHeight(specialtex, true);
-		specialSprite = new hgeSprite(specialtex, 0, 0, (float)w, (float)h);
-
-		sprcomp = new SpriteComponent();
-		sprcomp->setStaticSprite(ani);
-		sprcomp->SetOwner(&character);
-		scene = new Scene();
-		scene->AddStaticSprite(sprcomp);
-
-		character.SetSprite(sprcomp);
-		character.RegisterWithTileMap(Atlas::queryByName("map1.tmx"));
+		pCharacter = new Character(Atlas::queryByName("map1.tmx"));
+		pCharacter->SetSprite(ani);
+		pCharacter->RegisterWithTileMap(Atlas::queryByName("map1.tmx"));
 
 		//set up input component
-		inputComponent.addKeyBinding(HGEK_W, BIND_MEM_CB(&Character::moveUp, &character));
-		inputComponent.addKeyBinding(HGEK_A, BIND_MEM_CB(&Character::moveLeft, &character));
-		inputComponent.addKeyBinding(HGEK_S, BIND_MEM_CB(&Character::moveDown, &character));
-		inputComponent.addKeyBinding(HGEK_D, BIND_MEM_CB(&Character::moveRight, &character));
+		inputComponent.addKeyBinding(HGEK_W, BIND_MEM_CB(&Character::moveUp, pCharacter));
+		inputComponent.addKeyBinding(HGEK_A, BIND_MEM_CB(&Character::moveLeft, pCharacter));
+		inputComponent.addKeyBinding(HGEK_S, BIND_MEM_CB(&Character::moveDown, pCharacter));
+		inputComponent.addKeyBinding(HGEK_D, BIND_MEM_CB(&Character::moveRight, pCharacter));
 	}
 
 	void run() {
@@ -246,31 +232,25 @@ namespace RPG_Debug {
 		}
 
 		float dt = hge->Timer_GetDelta();
+		float mouseX, mouseY;
+		hge->Input_GetMousePos(&mouseX, &mouseY);
 
+		// check mouse hover
+		bool isMouseOnGUI = gui->getFocusInput()->doesMouseHaveFocus();
+
+		//Update Map
 		Atlas::queryByName("map1.tmx")->Update(dt);
-		
-		//sprcomp->Tick(dt);
 
-		HTEXTURE hi = specialSprite->GetTexture();
-		int w = hge->Texture_GetWidth(hi, true);
-		int h = hge->Texture_GetHeight(hi, true);
-
-		float xx, yy;
-		hge->Input_GetMousePos(&xx, &yy);
-		if (specialSprite->isHoveringXY(xx, yy)) {
-			//printf("is hovering black box!! x: %f, y: %f\n", xx, yy);
-		}
-		float a = xx - myPlayer->GetXPosition();
-		float b = yy - myPlayer->GetYPosition();
-
-
-		diagnostic::InputFocusInfo* diag = gui->getFocusInput();
-		if (diag->doesMouseHaveFocus()) {
+		// Do mouse hover logic
+		if (isMouseOnGUI) {
 			printf("Mouse is on GUI, abort collision check on actors.\n");
 		}
 		else {
+			// x/y difference between mouse and sprite
+			float a = mouseX - myPlayer->GetXPosition();
+			float b = mouseY - myPlayer->GetYPosition();
 			if (ani->isHoveringXY((float)a, (float)b)) {
-				printf("is hovering player!! x: %f, y: %f, frame: %d\n", xx, yy, ani->GetFrame());
+				printf("is hovering player!! x: %f, y: %f, frame: %d\n", mouseX, mouseY, ani->GetFrame());
 			}
 		}
 
@@ -350,7 +330,6 @@ namespace RPG_Debug {
 		hge->Gfx_Clear(0);
 		//hge->Gfx_SetClipping(0, 0, 300, 300);
 		camera->RenderScene();
-		scene->RenderAtPosition(50, 50);
 		float x, y;
 		hge->Input_GetMousePos(&x, &y);
 		mouseSprite->Render(x, y);

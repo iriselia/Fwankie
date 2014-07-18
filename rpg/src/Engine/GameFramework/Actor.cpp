@@ -7,7 +7,7 @@ AActor::AActor() {
 }
 
 AActor::AActor(ISceneComponent* _rootComponent, float _lifeSpan, TileMap* _map) :
-m_pRootComponent(_rootComponent), m_lifeSpan(_lifeSpan), m_map(_map) {
+m_pRootComponent(_rootComponent), m_lifeSpan(_lifeSpan), m_pCurrMap(_map) {
 	//m_birthTime = GetSystemTime();
 }
 
@@ -44,7 +44,13 @@ void AActor::unregisterWithMap() {
 }
 
 void AActor::RegisterAllComponents() {
-
+	for (auto& component : m_OwnedComponents)
+	{
+		//Must set component to be registered first before calling OnRegister.
+		component->SetRegistered(true);
+		component->OnRegister();
+		component->RegisterTickFuncWithTileMap(m_pCurrMap);
+	}
 }
 
 void AActor::unregisterComponentWithMap(IActorComponent* _component) {
@@ -91,16 +97,39 @@ std::vector<IActorComponent*>* AActor::getAllComponents() {
 	return &m_OwnedComponents;
 }
 
-void AActor::addComponent(IActorComponent* _component) {
-	if (_component != NULL)
+void AActor::AddComponent(IActorComponent* _component) {
+	if (_component != NULL) {
 		m_OwnedComponents.push_back(_component);
+		_component->SetOwner(this);
+	}
 }
 
-void AActor::removeComponent(IActorComponent* _component) {
-	if (_component != NULL)
+void AActor::RemoveComponent(IActorComponent* _component) {
+	if (_component != NULL) {
 		m_OwnedComponents.erase(std::find(m_OwnedComponents.begin(), m_OwnedComponents.end(), _component));
+		_component->SetOwner(NULL);
+	}
 }
 
 void AActor::clearComponents() {
 	m_OwnedComponents.clear();
+}
+
+void AActor::RegisterWithTileMap(TileMap* _pTileMap)
+{
+	assert(_pTileMap);
+
+	m_pCurrMap = _pTileMap;
+	RegisterAllComponents();
+}
+
+TileMap* AActor::getCurrMap()
+{
+	return m_pCurrMap;
+}
+
+void AActor::AddRootComponent(ISceneComponent* _pRootComponent)
+{
+	m_pRootComponent = _pRootComponent;
+	AddComponent(_pRootComponent);
 }

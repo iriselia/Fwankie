@@ -11,7 +11,9 @@ public:
 	SpriteComponent();
 	~SpriteComponent();
 	AActor* getOwner() { return m_pOwner; }
+	virtual void OnRegister();
 	void UpdateBounds();
+	void initWithSpriteName(const char* _name);
 	bool setStaticSprite(hgeSprite* _staticSprite);
 	StaticSpriteSceneProxy* SpriteComponent::Create_SceneProxy();
 	virtual void Tick(float _DeltaTime);
@@ -19,5 +21,4 @@ public:
 
 private:
 	hgeSprite*		m_pStaticSprite;
-	AActor*			m_pOwner;
 };

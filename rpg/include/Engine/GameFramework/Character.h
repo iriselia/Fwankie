@@ -8,12 +8,10 @@ class TileMap;
 class Character : public Pawn
 {
 public:
-	Character();
+	Character(TileMap* _TileMapToSpawnIn);
 	~Character();
 	
-	virtual void RegisterAllComponents();
-	void SetSprite(SpriteComponent* _pSpr);
-	void RegisterWithTileMap(TileMap* _pTileMap);
+	void SetSprite(class hgeSprite* _pSpr);
 	
 	//movement
 	void moveUp();
@@ -23,7 +21,6 @@ public:
 	void moveLeft();
 
 	void moveRight();
-
 
 private:
 	TileMap* m_pCurrMap;

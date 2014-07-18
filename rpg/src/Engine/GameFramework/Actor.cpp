@@ -101,6 +101,6 @@ void AActor::removeComponent(IActorComponent* _component) {
 		m_OwnedComponents.erase(std::find(m_OwnedComponents.begin(), m_OwnedComponents.end(), _component));
 }
 
-void AActor::clearComponent() {
+void AActor::clearComponents() {
 	m_OwnedComponents.clear();
 }

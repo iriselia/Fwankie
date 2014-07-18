@@ -62,7 +62,7 @@ public:
 
 	void removeComponent(IActorComponent* _component);
 
-	void clearComponent();
+	void clearComponents();
 
 protected:
     //actor flags

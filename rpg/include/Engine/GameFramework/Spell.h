@@ -1,3 +1,4 @@
+#pragma once
 #include "SpellDefines.h"
 #include "Pawn.h"
 #include "AIController.h"

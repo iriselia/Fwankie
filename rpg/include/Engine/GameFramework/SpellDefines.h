@@ -1,4 +1,5 @@
 //common defines
+#pragma once
 
 enum SpellCategory {
 	//magical

@@ -15,8 +15,3 @@ InputUnit::~InputUnit() {
 InputUnit::InputUnit() {
 
 }
-
-void InputUnit::setDispatchTarget(InputComponent* _dispatchTarget) {
-	if (_dispatchTarget)
-		m_dispatchTarget = _dispatchTarget;
-}

@@ -1,5 +1,5 @@
 #include "hge.h"
-#include "Delegate.h"
+#include "VarArgDelegate.h"
 #include "ActorComponent.h"
 #include <map>
 
@@ -18,6 +18,6 @@ public:
 	void executeKeyAction(HGE* _gameSession);
 
 private:
-	std::map<hgeKeyCode_t, Callback<void()> > m_keymapping;
+	std::map<hgeKeyCode_t, Callback<void()> > m_movementKeyMapping;
 
 };

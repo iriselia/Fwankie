@@ -3,10 +3,14 @@
 #include "SpriteComponent.h"
 #include <iostream>
 
-Character::Character() : Pawn() {
+Character::Character(TileMap* _TileMapToSpawnIn) : Pawn() {
+	m_pCurrMap = _TileMapToSpawnIn;
+
 	m_pBox = new BoxComponent();
-	m_pRootComponent = m_pBox;
-	m_pRootComponent->SetOwner(this);
+	m_pSpr = new SpriteComponent();
+
+	AddRootComponent(m_pBox);
+	AddComponent(m_pSpr);
 }
 
 Character::~Character() {
@@ -29,23 +33,7 @@ void Character::moveRight() {
 	std::cout << "character move right.\n";
 }
 
-void Character::SetSprite(SpriteComponent* _pSpr)
+void Character::SetSprite(hgeSprite* _pSpr)
 {
-	addComponent(_pSpr);
+	m_pSpr->setStaticSprite(_pSpr);
 }
-
-void Character::RegisterWithTileMap(TileMap* _pTileMap)
-{
-	m_pCurrMap = _pTileMap;
-	RegisterAllComponents();
-}
-
-void Character::RegisterAllComponents()
-{
-	for (auto& component : m_OwnedComponents)
-	{
-		component->OnRegister();
-		component->RegisterTickFuncWithTileMap(m_pCurrMap);
-	}
-}
-

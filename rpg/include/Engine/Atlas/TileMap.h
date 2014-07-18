@@ -9,9 +9,8 @@
 #include <vector>
 
 class AActor;
-
 class TileMap;
-
+class Scene;
 struct FActorComponentTickFunc;
 
 class FMapActorSpawningFunc {
@@ -44,7 +43,7 @@ class FMapTickFunc {
 class TileMap
 {
 public:
-	TileMap(MapParser* _tileMap, CollisionMap* _collisionMap);
+	TileMap(MapParser* _tileMap, CollisionMap* _collisionMap, Scene* _scene);
 	~TileMap();
 	void Update(float _dt);
 	void Render(Camera* _camera);
@@ -68,12 +67,15 @@ public:
 	//remove tickFunc
 	void removeTickFunc(FActorComponentTickFunc* _tickFunc);
 
+	Scene* getScene();
+
 private:
     friend class FMapTickFunc;
 	bool m_bIsLoaded = false;
 	//std::vector<Camera*> m_cameras;
 	MapParser* m_pTileMap;
 	CollisionMap* m_pCollisionMap;
+	Scene* m_pScene;
 	std::vector<AActor*> m_Actors;
 	std::vector<FActorComponentTickFunc*> m_tickFuncs;
 

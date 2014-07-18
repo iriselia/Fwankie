@@ -1,9 +1,11 @@
 #include "Atlas.h"
+#include "ScenePrivate.h"
 
 void Atlas::AddMap(const char* _mapName) {
 	MapParser* tileMap = new MapParser(_mapName);
 	CollisionMap* collisionMap = new CollisionMap(_mapName);
-	TileMap* temp = new TileMap(tileMap, collisionMap);
+	Scene* scene = new Scene(_mapName);
+	TileMap* temp = new TileMap(tileMap, collisionMap, scene);
 	assert(temp);
 	m_atlas[_mapName] = temp;
 }

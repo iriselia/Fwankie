@@ -36,7 +36,7 @@ void FActorComponentTickFunc::run(float _deltaTime) {
 }
 
 IActorComponent::IActorComponent() {
-
+	m_bRegistered = false;
 }
 
 IActorComponent::IActorComponent(AActor* _owner_in, bool _bNeverTick, bool _bCanTick) : m_bNeverTick(_bNeverTick), m_bCanTick(_bCanTick) {
@@ -54,7 +54,7 @@ void IActorComponent::RegisterTickFuncWithTileMap(TileMap* _pTileMap) {
 }
 
 void IActorComponent::unregisterWithOwner() {
-	m_pOwner->removeComponent(this);
+	m_pOwner->RemoveComponent(this);
 	m_pOwner = nullptr;
 }
 
@@ -116,10 +116,19 @@ IActorComponent::~IActorComponent() {
 
 void IActorComponent::OnRegister()
 {
-	m_bRegistered = true;
 }
 
 void IActorComponent::SetOwner(AActor* _pOwner)
 {
 	m_pOwner = _pOwner;
+}
+
+void IActorComponent::SetRegistered(bool _isRegistered)
+{
+	m_bRegistered = _isRegistered;
+}
+
+bool IActorComponent::isRegistered()
+{
+	return m_bRegistered;
 }

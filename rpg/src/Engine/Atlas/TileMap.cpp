@@ -2,16 +2,18 @@
 #include "Actor.h"
 #include "ActorComponent.h"
 
-TileMap::TileMap(MapParser* _tileMap, CollisionMap* _collisionMap)
+TileMap::TileMap(MapParser* _tileMap, CollisionMap* _collisionMap, Scene* _scene)
 {
 	m_pTileMap = _tileMap;
 	m_pCollisionMap = _collisionMap;
+	m_pScene = _scene;
 }
 
 TileMap::~TileMap()
 {
 	delete m_pTileMap;
 	delete m_pCollisionMap;
+	delete m_pScene;
 }
 
 void TileMap::Update(float _dt)
@@ -73,4 +75,9 @@ void TileMap::addTickFunc(FActorComponentTickFunc* _tickFunc) {
 void TileMap::removeTickFunc(FActorComponentTickFunc* _tickFunc) {
 	if (_tickFunc)
 		m_tickFuncs.erase(std::find(m_tickFuncs.begin(), m_tickFuncs.end(), _tickFunc));
+}
+
+Scene* TileMap::getScene()
+{
+	return m_pScene;
 }

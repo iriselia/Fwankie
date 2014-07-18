@@ -1,3 +1,6 @@
+#include "Actor.h"
+#include "TileMap.h"
+#include "ScenePrivate.h"
 #include "SpriteComponent.h"
 
 void SpriteComponent::UpdateBounds() {
@@ -16,10 +19,8 @@ bool SpriteComponent::setStaticSprite(hgeSprite* _staticSprite)
 
 	// Don't allow changing static meshes if "static" and registered
 	AActor* Owner = getOwner();
-	if (//Mobility == EComponentMobility::Static &&
-		isRegisteredWithOwner() && Owner)
+	if (Owner != NULL && isRegistered())
 	{
-
 		printf("mesh changed failed because it is a static mesh or because it is already registered.\n");
 		return false;
 	}
@@ -57,4 +58,15 @@ StaticSpriteSceneProxy* SpriteComponent::Create_SceneProxy()
 void SpriteComponent::Tick(float _DeltaTime)
 {
 	m_pStaticSprite->Update(_DeltaTime);
+}
+
+void SpriteComponent::initWithSpriteName(const char* _name)
+{
+
+}
+
+void SpriteComponent::OnRegister()
+{
+	assert(m_pOwner && m_pOwner->getCurrMap());
+	m_pOwner->getCurrMap()->getScene()->AddStaticSprite(this);
 }

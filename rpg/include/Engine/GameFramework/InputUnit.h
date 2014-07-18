@@ -1,10 +1,13 @@
 #pragma once
 #include "Object.h"
 #include "hge.h"
+#include <queue>
 
 class InputComponent;
 
-enum PawnAction {
+class SpellInfo;
+
+enum InputType {
 	//game related
 	INPUT_MOVE_UP,
 	INPUT_MOVE_DOWN,
@@ -19,6 +22,12 @@ enum PawnAction {
 	INPUT_OPEN_CHARACTER_MENU
 };
 
+struct InputCommand {
+	InputCommand(InputType _type, SpellInfo* _spell) : type(_type), spell(_spell) {}
+	InputType type;
+	SpellInfo* spell = nullptr;
+};
+
 class InputUnit : public Object {
 public:
 	InputUnit();
@@ -29,9 +38,6 @@ public:
 
 	virtual void dispatchMessage();
 
-	void setDispatchTarget(InputComponent* _dispatchTarget);
-
 protected:
-	InputComponent* m_dispatchTarget = nullptr;
-	PawnAction m_action;
+	std::queue<InputCommand> m_messageQueue;
 };

@@ -7,9 +7,9 @@ class BoxComponent : public IPrimitiveComponent
 public:
 	BoxComponent();
 	~BoxComponent();
-	void SetBoxTextent(float _x, float _y) {
-		x = _x;
-		y = _y;
+	void SetBoxTextent(Vector2D _extent) {
+		assert(_extent > Vector2D::ZeroVector);
+		m_extent = _extent;
 	}
 	void RegisterWithBox2D(hgeB2World* _hgeB2World);
 	void UnregisterFromBox2D(hgeB2World* _hgeB2World);
@@ -18,7 +18,7 @@ public:
 	b2Fixture* m_pB2Fixture;
 	b2Body* m_pB2Body;
 private:
-	float x, y;
-
+	float x_DEPRECATED, y_DEPRECATED;
+	Vector2D m_extent;
 
 };

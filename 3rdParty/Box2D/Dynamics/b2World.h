@@ -46,7 +46,7 @@ public:
 	b2World(const b2Vec2& gravity);
 
 	/// Destruct the world. All physics entities are destroyed and all heap memory is released.
-	~b2World();
+	virtual ~b2World();
 
 	/// Register a destruction listener. The listener is owned by you and must
 	/// remain in scope.

@@ -24,18 +24,25 @@ public:
 
 	virtual void Tick(float _deltaTime) override;
 
-	float getX();
+	float getX_DEPRECATED();
 
-	float getY();
+	float getY_DEPRECATED();
 
-	void setX(float _x_in);
+	Vector2D getPosition();
+	void setPosition(Vector2D _newPosition);
 
-	void setY(float _y_in);
+	void setX_DEPRECATED(float _x_in);
 
-private:
-    friend struct FSceneComponentTickFunc;
+	void setY_DEPRECATED(float _y_in);
+
+protected:
+
 
 	//Transform data
-	float x;
-	float y;
+	float x_DEPRECATED;
+	float y_DEPRECATED;
+	Vector2D m_pos;
+
+private:
+	friend struct FSceneComponentTickFunc;
 };

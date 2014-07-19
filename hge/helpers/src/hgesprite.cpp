@@ -74,6 +74,12 @@ hgeSprite::hgeSprite(const hgeSprite &spr)
 	hge=hgeCreate(HGE_VERSION);
 }
 
+hgeSprite::~hgeSprite()
+{
+	hge->Release();
+	delete m_pAlphaMap;
+}
+
 void hgeSprite::Render(float x, float y)
 {
 	float tempx1, tempy1, tempx2, tempy2;
@@ -348,3 +354,4 @@ void hgeSprite::Update(float fDeltaTime)
 {
 
 }
+

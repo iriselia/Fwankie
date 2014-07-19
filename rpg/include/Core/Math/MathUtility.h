@@ -450,12 +450,6 @@ struct MathUtil : public PlatformMath
 		return Lerp<T>(A, B, ModifiedAlpha);
 	}
 
-	/**
-	 * In the case of quaternions, we use a bezier like approach.
-	 * T - Actual 'control' orientations.
-	 */
-	template< class U > static FQuat CubicInterp( const FQuat& P0, const FQuat& T0, const FQuat& P1, const FQuat& T1, const U& A);
-
 	/*
 	 *	Cubic Catmull-Rom Spline interpolation. Based on http://www.cemyuksel.com/research/catmullrom_param/catmullrom.pdf 
 	 *	Curves are guaranteed to pass through the control points and are easily chained together.

@@ -20,22 +20,22 @@ Character::~Character() {
 
 void Character::moveUp() {
 	std::cout << "Character Move Up.\n";
-	m_pRootComponent->setY(m_pRootComponent->getY() - 1);
+	m_pRootComponent->setY_DEPRECATED(m_pRootComponent->getY_DEPRECATED() - 1);
 }
 
 void Character::moveDown() {
 	std::cout << "Character move down.\n";
-	m_pRootComponent->setY(m_pRootComponent->getY() + 1);
+	m_pRootComponent->setY_DEPRECATED(m_pRootComponent->getY_DEPRECATED() + 1);
 }
 
 void Character::moveLeft() {
 	std::cout << "character move left.\n";
-	m_pRootComponent->setX(m_pRootComponent->getX() - 1);
+	m_pRootComponent->setX_DEPRECATED(m_pRootComponent->getX_DEPRECATED() - 1);
 }
 
 void Character::moveRight() {
 	std::cout << "character move right.\n";
-	m_pRootComponent->setX(m_pRootComponent->getX() + 1);
+	m_pRootComponent->setX_DEPRECATED(m_pRootComponent->getX_DEPRECATED() + 1);
 }
 
 void Character::SetSprite(hgeSprite* _pSpr)

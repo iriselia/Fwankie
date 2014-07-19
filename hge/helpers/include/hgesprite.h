@@ -23,7 +23,7 @@ class hgeSprite
 public:
 	hgeSprite(HTEXTURE tex, float x, float y, float w, float h);
 	hgeSprite(const hgeSprite &spr);
-	~hgeSprite() { hge->Release(); }
+	~hgeSprite();
 	
 	
 	void		Render(float x, float y);

@@ -1,28 +1,29 @@
 #include "SceneComponent.h"
 
 ISceneComponent::ISceneComponent() {
-	x = 0;
-	y = 0;
+	m_pos = Vector2D::ZeroVector;
+	x_DEPRECATED = 0;
+	y_DEPRECATED = 0;
 }
 
 void FSceneComponentTickFunc::run(float _deltaTime) {
 
 }
 
-float ISceneComponent::getX() {
-	return x;
+float ISceneComponent::getX_DEPRECATED() {
+	return x_DEPRECATED;
 }
 
-float ISceneComponent::getY() {
-	return y;
+float ISceneComponent::getY_DEPRECATED() {
+	return y_DEPRECATED;
 }
 
-void ISceneComponent::setX(float _x_in) {
-	x = _x_in;
+void ISceneComponent::setX_DEPRECATED(float _x_in) {
+	x_DEPRECATED = _x_in;
 }
 
-void ISceneComponent::setY(float _y_in) {
-	y = _y_in;
+void ISceneComponent::setY_DEPRECATED(float _y_in) {
+	y_DEPRECATED = _y_in;
 }
 
 void ISceneComponent::Tick(float _deltaTime) {
@@ -33,4 +34,10 @@ void ISceneComponent::Tick(float _deltaTime) {
 
 ISceneComponent::~ISceneComponent() {
 
+}
+
+void ISceneComponent::setPosition(Vector2D _newPosition)
+{
+	assert(_newPosition > Vector2D::ZeroVector);
+	m_pos = _newPosition;
 }

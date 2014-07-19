@@ -5,7 +5,7 @@ void Scene::RenderAtPosition(float x, float y)
 {
 	assert(!m_staticSpriteDrawList.empty());
 	for (auto& i : m_staticSpriteDrawList) {
-		i->Render(i->getX(), i->getY());
+		i->Render(i->getX_DEPRECATED(), i->getY_DEPRECATED());
 	}
 }
 

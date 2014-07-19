@@ -15,6 +15,10 @@ SET( DIRECTX_SDK_DIR "C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)" 
 
 SET( HGE_UNICODE "1" )
 
+if(WIN32)
+add_definitions( "-DPLATFORM_WINDOWS" )
+endif(WIN32)
+
 ##----------------------------------------
 ## End of manual configuration section
 ## try to minimize tampering with code below unless you know how CMake works

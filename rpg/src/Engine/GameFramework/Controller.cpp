@@ -14,7 +14,7 @@ bool Controller::movetoTransform(float x, float y) {
 }
 
 bool Controller::isControllingCharacter() {
-	return dynamic_cast<Character*>(m_controlTarget);
+	return dynamic_cast<Character*>(m_controlTarget) != nullptr;
 }
 
 void Controller::unpossess() {

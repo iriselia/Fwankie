@@ -213,6 +213,10 @@ namespace RPG_Debug {
 		delete myPlayer;
 		delete camera;
 		delete ani;
+
+		delete mouseSprite;
+		delete pCharacter;
+
 		Atlas::DestroyAll();
 
 
@@ -261,16 +265,20 @@ namespace RPG_Debug {
 		float acceleration = myPlayer->GetAcceleration();
 		float friction = myPlayer->GetFriction();
 
-		if (hge->Input_GetKeyState(HGEK_LEFT)) {
+		if (hge->Input_GetKeyState(HGEK_LEFT) ||
+			hge->Input_GetKeyState(HGEK_A)) {
 			dx_dt = -acceleration;
 		}
-		if (hge->Input_GetKeyState(HGEK_RIGHT)) {
+		if (hge->Input_GetKeyState(HGEK_RIGHT) ||
+			hge->Input_GetKeyState(HGEK_D)) {
 			dx_dt = acceleration;
 		}
-		if (hge->Input_GetKeyState(HGEK_UP)) {
+		if (hge->Input_GetKeyState(HGEK_UP) ||
+			hge->Input_GetKeyState(HGEK_W)) {
 			dy_dt = -acceleration;
 		}
-		if (hge->Input_GetKeyState(HGEK_DOWN)) {
+		if (hge->Input_GetKeyState(HGEK_DOWN) ||
+			hge->Input_GetKeyState(HGEK_S)) {
 			dy_dt = acceleration;
 		}
 
@@ -330,6 +338,9 @@ namespace RPG_Debug {
 		hge->Gfx_Clear(0);
 		//hge->Gfx_SetClipping(0, 0, 300, 300);
 		camera->RenderScene();
+
+		Atlas::queryByName("map1.tmx")->Render();
+		//Render Mouse
 		float x, y;
 		hge->Input_GetMousePos(&x, &y);
 		mouseSprite->Render(x, y);

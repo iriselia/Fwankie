@@ -1,4 +1,5 @@
 #include "TileMap.h"
+#include "ScenePrivate.h"
 #include "Actor.h"
 #include "ActorComponent.h"
 
@@ -30,6 +31,11 @@ void TileMap::Render(Camera* _camera) {
 	m_pTileMap->RenderLayer(_camera, MIDGROUND);
 	m_pTileMap->RenderLayer(_camera, FOREGROUND);
 	m_pCollisionMap->Render(_camera);
+}
+
+void TileMap::Render()
+{
+	m_pScene->RenderAtPosition(0, 0);
 }
 
 void TileMap::LoadResource()

@@ -47,6 +47,7 @@ public:
 	~TileMap();
 	void Update(float _dt);
 	void Render(Camera* _camera);
+	void Render();
 	void LoadResource();
 	void UnloadResource();
 	bool isLoaded() { return m_bIsLoaded; }

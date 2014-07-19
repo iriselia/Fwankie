@@ -1,6 +1,7 @@
 #include "Character.h"
 #include "BoxComponent.h"
 #include "SpriteComponent.h"
+#include "Spell.h"
 #include <iostream>
 
 Character::Character(TileMap* _TileMapToSpawnIn) : Pawn() {
@@ -41,4 +42,8 @@ void Character::moveRight() {
 void Character::SetSprite(hgeSprite* _pSpr)
 {
 	m_pSpr->setStaticSprite(_pSpr);
+}
+
+void Character::castSpell(SpellInfo* _spell) {
+	std::cout << "Character Cast Spell.\n";
 }

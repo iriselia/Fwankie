@@ -4,6 +4,7 @@
 class BoxComponent;
 class SpriteComponent;
 class TileMap;
+class SpellInfo;
 
 class Character : public Pawn
 {
@@ -21,6 +22,9 @@ public:
 	void moveLeft();
 
 	void moveRight();
+
+	//cast spell
+	void castSpell(SpellInfo* _spell);
 
 private:
 	TileMap* m_pCurrMap;

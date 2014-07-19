@@ -2,29 +2,28 @@
 #include "Object.h"
 #include "hge.h"
 #include <queue>
+#include <string>
 
 class InputComponent;
 
 class SpellInfo;
 
-enum InputType {
-	//game related
-	INPUT_MOVE_UP,
-	INPUT_MOVE_DOWN,
-	INPUT_MOVE_LEFT,
-	INPUT_MOVE_RIGHT,
-	INPUT_CAST_SPELL,
-	INPUT_INTERACTE_WITH,
-	//gui related
-	INPUT_OPEN_MAP,
-	INPUT_OPEN_BAG,
-	INPUT_OPEN_OPTIONS,
-	INPUT_OPEN_CHARACTER_MENU
-};
-
 struct InputCommand {
-	InputCommand(InputType _type, SpellInfo* _spell) : type(_type), spell(_spell) {}
-	InputType type;
+	InputCommand(std::string _type, SpellInfo* _spell) : type(_type), spell(_spell) {}
+
+	bool isInGameCommand() {
+		return type[0] == 'C';
+	}
+
+	bool operator==(const InputCommand& other) {
+		return this->type == other.type && this->spell == other.spell;
+	}
+
+	bool operator!=(const InputCommand& other) {
+		return this->type != other.type || this->spell != other.spell;
+	}
+
+	std::string type;
 	SpellInfo* spell = nullptr;
 };
 

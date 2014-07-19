@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 
+/*
 class SpellEffectScript {
 	public:
 
@@ -112,3 +113,4 @@ class SpellController : public AIController {
 	    SpellEffectCategory
 
 };
+//*/

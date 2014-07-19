@@ -1,0 +1,9 @@
+Key             Action                  Modifier(s)
+W               CHAR_MOVE_UP            None
+A               CHAR_MOVE_LEFT          None
+S               CHAR_MOVE_DOWN          None
+D               CHAR_MOVE_RIGHT         None
+1               CHAR_CAST_SPELL01       None
+1               CHAR_CAST_SPELL11       Ctrl
+B               GUI_OPEN_BAG            None
+

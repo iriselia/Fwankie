@@ -4,8 +4,10 @@
 #include <queue>
 #include <string>
 
+
 class InputComponent;
 
+/*
 class SpellInfo;
 
 struct InputCommand {
@@ -26,6 +28,7 @@ struct InputCommand {
 	std::string type;
 	SpellInfo* spell = nullptr;
 };
+*/
 
 class InputUnit : public Object {
 public:
@@ -33,10 +36,10 @@ public:
 
 	virtual ~InputUnit();
 
-	virtual void translateInput(HGE* _gameSession);
+	virtual void translateInput();
 
 	virtual void dispatchMessage();
 
 protected:
-	std::queue<InputCommand> m_messageQueue;
+	std::queue<std::string> m_messageQueue;
 };

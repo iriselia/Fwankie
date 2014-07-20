@@ -30,6 +30,8 @@
 #include "SpriteComponent.h"
 #include "InputComponent.h"
 #include "Character.h"
+#include "UserSetting.h"
+#include "PlayerInput.h"
 
 std::map<std::string, TileMap*> Atlas::m_atlas;
 
@@ -40,6 +42,8 @@ namespace RPG_Debug {
 	GUI* gui = nullptr;
 	InputComponent inputComponent;
 	Character* pCharacter;
+	UserSetting userSetting;
+	PlayerInput playerInput(&userSetting, &inputComponent);
 
 	Trigger_Portal* portal;
 	Player*					myPlayer;
@@ -199,10 +203,12 @@ namespace RPG_Debug {
 		pCharacter->RegisterWithTileMap(Atlas::queryByName("map1.tmx"));
 
 		//set up input component
-		inputComponent.addKeyBinding(HGEK_W, BIND_MEM_CB(&Character::moveUp, pCharacter));
-		inputComponent.addKeyBinding(HGEK_A, BIND_MEM_CB(&Character::moveLeft, pCharacter));
-		inputComponent.addKeyBinding(HGEK_S, BIND_MEM_CB(&Character::moveDown, pCharacter));
-		inputComponent.addKeyBinding(HGEK_D, BIND_MEM_CB(&Character::moveRight, pCharacter));
+		inputComponent.addKeyBinding("CHAR_MOVE_UP", BIND_MEM_CB(&Character::moveUp, pCharacter));
+		inputComponent.addKeyBinding("CHAR_MOVE_LEFT", BIND_MEM_CB(&Character::moveLeft, pCharacter));
+		inputComponent.addKeyBinding("CHAR_MOVE_DOWN", BIND_MEM_CB(&Character::moveDown, pCharacter));
+		inputComponent.addKeyBinding("CHAR_MOVE_RIGHT", BIND_MEM_CB(&Character::moveRight, pCharacter));
+
+		userSetting.setKeyBindingMap("./config/UserKeySetting.txt");
 	}
 
 	void run() {
@@ -258,7 +264,9 @@ namespace RPG_Debug {
 			}
 		}
 
-		inputComponent.executeKeyAction(hge);
+		playerInput.translateInput();
+		playerInput.dispatchMessage();
+		inputComponent.executeAction();
 		// player move
 		float x = myPlayer->GetXPosition(), y = myPlayer->GetYPosition();
 		float dx_dt = myPlayer->Get_dx_dt(), dy_dt = myPlayer->Get_dy_dt();

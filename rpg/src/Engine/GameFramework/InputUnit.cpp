@@ -4,7 +4,7 @@ void InputUnit::dispatchMessage() {
 
 }
 
-void InputUnit::translateInput(HGE* _gameSession) {
+void InputUnit::translateInput() {
 
 }
 

@@ -2,6 +2,7 @@
 #include "VarArgDelegate.h"
 #include "ActorComponent.h"
 #include <map>
+#include <queue>
 
 class Character;
 
@@ -13,11 +14,15 @@ public:
 
 	InputComponent(Character* _owner);
 
-	void addKeyBinding(hgeKeyCode_t _key, Callback<void()> _delegate);
+	void addKeyBinding(std::string _command, Callback<void()> _delegate);
 
-	void executeKeyAction(HGE* _gameSession);
+	void addCommand(std::string _command) {
+		m_commandQueue.push(_command);
+	}
+
+	void executeAction();
 
 private:
-	std::map<hgeKeyCode_t, Callback<void()> > m_movementKeyMapping;
-
+	std::map<std::string, Callback<void()> > m_movementKeyMapping;
+	std::queue<std::string> m_commandQueue;
 };

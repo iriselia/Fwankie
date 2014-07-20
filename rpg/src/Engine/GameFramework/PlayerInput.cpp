@@ -1,6 +1,8 @@
 #include "PlayerInput.h"
 #include "InputComponent.h"
 #include "Spell.h"
+#include "UserSetting.h"
+
 
 static const std::map<std::string, hgeKeyCode_t> keyNameCodeMapping = { 
 	{ "Left Mouse Button", HGEK_LBUTTON }, { "Right Mouse Button", HGEK_RBUTTON }, { "Middle Mouse Button", HGEK_MBUTTON }, { "Backspace", HGEK_BACKSPACE },
@@ -19,9 +21,10 @@ static const std::map<std::string, hgeKeyCode_t> keyNameCodeMapping = {
 	{ "Left bracket", HGEK_LBRACKET }, { "Backslash", HGEK_BACKSLASH }, { "Right bracket", HGEK_RBRACKET }, { "Apostrophe", HGEK_APOSTROPHE }
 };
 
+/*
 std::map<std::string, keyMappingUnit> PlayerInput::m_skeyBindingMap;
 
-/*
+/ *
 void PlayerInput::dispatchMessage() {
 	while (!m_messageQueue.empty()) {
 		if (m_messageQueue.front().isInGameCommand())
@@ -30,14 +33,14 @@ void PlayerInput::dispatchMessage() {
 			m_guiCommand->addCommand(m_messageQueue.front());
 		m_messageQueue.pop();
 	}
-}*/
+}* /
 
 void PlayerInput::translateInput(HGE* _gameSession) {
 	for (auto& i : m_skeyBindingMap) {
 		if (!_gameSession->Input_GetKeyState(keyNameCodeMapping.at(i.first)))
 			continue;
 		else {
-			for (auto& j : i.second.m_sameCenterkeyBindings) {
+			for (auto& j : i.second.m_sameCenterKeyBindings) {
 				//logic to determine whether the current key combination (j) is pressed
 				if (j.m_bShiftModifier && !_gameSession->Input_GetKeyState(HGEK_SHIFT)
 					|| !j.m_bShiftModifier && !i.second.m_bIgnoreShift && _gameSession->Input_GetKeyState(HGEK_SHIFT)
@@ -62,13 +65,13 @@ void PlayerInput::readKeyBinding(std::fstream _userKeySetting) {
 	std::string ModifierKey;
 	while (_userKeySetting >> KeyName >> EventName) {
 		std::getline(_userKeySetting, ModifierKey);
-		m_skeyBindingMap[KeyName].m_sameCenterkeyBindings
+		m_skeyBindingMap[KeyName].m_sameCenterKeyBindings
 			.push_back(KeyBinding(keyNameCodeMapping.at(KeyName), ModifierKey.find("Shift") != std::string::npos,
 			ModifierKey.find("Ctrl") != std::string::npos, ModifierKey.find("Alt") != std::string::npos, InputCommand(EventName, nullptr)));
 	}
 	//set ignore flag
 	for (auto& i : m_skeyBindingMap) {
-		for (auto& j : i.second.m_sameCenterkeyBindings) {
+		for (auto& j : i.second.m_sameCenterKeyBindings) {
 			if (j.m_bShiftModifier)
 				i.second.m_bIgnoreShift = false;
 			if (j.m_bCtrlModifier)
@@ -76,5 +79,40 @@ void PlayerInput::readKeyBinding(std::fstream _userKeySetting) {
 			if (j.m_bAltModifier)
 				i.second.m_bIgnoreAlt = false;
 		}
+	}
+}
+*/
+
+PlayerInput::PlayerInput(UserSetting* _userSetting, InputComponent* _targetCharacter) : m_keySetting(_userSetting), m_targetCharacterInputComponent(_targetCharacter) {
+
+}
+
+void PlayerInput::translateInput() {
+	HGE* hge = hgeCreate(HGE_VERSION);
+	for (auto& i : m_keySetting->getKeyBindingMap()) {
+		if (!hge->Input_GetKeyState(keyNameCodeMapping.at(i.first)))
+			continue;
+		else {
+			for (auto& j : i.second.m_sameCenterKeyBindings) {
+				//logic to determine whether the current key combination (j) is pressed
+				if (j->m_bShiftModifier && !hge->Input_GetKeyState(HGEK_SHIFT)
+					|| !j->m_bShiftModifier && !i.second.m_bIgnoreShift && hge->Input_GetKeyState(HGEK_SHIFT)
+					|| j->m_bCtrlModifier && !hge->Input_GetKeyState(HGEK_CTRL)
+					|| !j->m_bCtrlModifier && !i.second.m_bIgnoreCtrl && hge->Input_GetKeyState(HGEK_CTRL)
+					|| j->m_bAltModifier && !hge->Input_GetKeyState(HGEK_ALT)
+					|| !j->m_bAltModifier && !i.second.m_bIgnoreAlt && hge->Input_GetKeyState(HGEK_ALT))
+					continue;
+				else
+					m_messageQueue.push(j->m_bindedCommand);
+			}
+		}
+	}
+	hge->Release();
+}
+
+void PlayerInput::dispatchMessage() {
+	while (!m_messageQueue.empty()) {
+		m_targetCharacterInputComponent->addCommand(m_messageQueue.front());
+		m_messageQueue.pop();
 	}
 }

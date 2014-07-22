@@ -1,4 +1,4 @@
-
+#pragma once
 
 //#include <guichan.hpp>
 //#include <guichan/hge.hpp>

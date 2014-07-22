@@ -137,6 +137,7 @@ add_subdirectory( hge/hgeb2draw )
 #add_subdirectory( Box2D )
 
 #--- Game Project ---
+add_subdirectory( engine )
 add_subdirectory( rpg )
 
 if( ${HGE_DIRECTX_VER} MATCHES "9" )

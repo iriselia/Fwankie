@@ -40,3 +40,7 @@ typedef PlatformTypes::PTRINT			PTRINT;		///< A signed integer the same size as 
 
 typedef PlatformTypes::TYPE_OF_NULL		TYPE_OF_NULL;	///< The type of the NULL constant.
 typedef PlatformTypes::TYPE_OF_NULLPTR	TYPE_OF_NULLPTR; ///< The type of the C++ nullptr keyword.
+
+
+/* Miscellaneous*/
+#define MAX_SPRINTF 1024

@@ -1,4 +1,4 @@
-project( RPG )
+project( ENGINE )
 cmake_minimum_required( VERSION 2.8 )
 
 file(GLOB_RECURSE MY_SRC ${CMAKE_CURRENT_SOURCE_DIR}/src *.cpp)
@@ -13,17 +13,13 @@ foreach (_headerFile ${MY_HEADERS})
 endforeach()
 list(REMOVE_DUPLICATES MY_INCLUDE_DIRS)
 include_directories( ${MY_INCLUDE_DIRS} )
-set(RPG_INCLUDE_DIRS ${MY_INCLUDE_DIRS})
-#message(STATUS "YOLO: " ${RPG_INCLUDE_DIRS})
+set(ENGINE_INCLUDE_DIRS ${MY_INCLUDE_DIRS})
 #------ additional includes ------
 include_directories(
 ${FWANKIE_SOURCE_DIR}/hge/core/include
 ${FWANKIE_SOURCE_DIR}/hge/helpers/include
-${FWANKIE_SOURCE_DIR}/hge/hgeb2draw/include
-${FWANKIE_SOURCE_DIR}/3rdParty/TmxParser/include
-${FWANKIE_SOURCE_DIR}/3rdParty/libPNG 
-${FWANKIE_SOURCE_DIR}/3rdParty/zlib-1.2.5
-${FWANKIE_SOURCE_DIR}/3rdParty/Box2D
+${FWANKIE_SOURCE_DIR}/rpg/include
+${RPG_INCLUDE_DIRS}
 #${FWANKIE_SOURCE_DIR}/3rdParty/OIS/include
 )
 
@@ -41,18 +37,13 @@ include_directories(
 link_directories( ${DIRECTX_SDK_DIR}/lib ${DIRECTX_SDK_DIR}/lib/x64 ${DIRECTX_SDK_DIR}/lib/x86 )
 link_libraries( ${DirectX_D3DX9_LIBRARY} ${DirectX_LIBRARY} )
 link_libraries( Common )
-link_libraries( hge )
 link_libraries( hgeb2draw )
-link_libraries( tmxparser )
-link_libraries( Box2D )
 
 #------ target -----
-#add_executable (RPG WIN32 ${RPG_SOURCES} ${RPG_HEADERS})
-add_executable (RPG WIN32 ${MY_SRC} ${MY_HEADERS})
-
-install (TARGETS RPG
-         RUNTIME DESTINATION ${FWANKIE_SOURCE_DIR}/bin) #${PROJECT_BINARY_DIR}/bin)
+add_library (ENGINE SHARED ${MY_SRC} ${MY_HEADERS})
+#install (TARGETS ENGINE
+#         RUNTIME DESTINATION ${FWANKIE_SOURCE_DIR}/bin) #${PROJECT_BINARY_DIR}/bin)
 
 if( MSVC )
-    SET_TARGET_PROPERTIES( RPG PROPERTIES LINK_FLAGS "/NODEFAULTLIB:libci" )
+    SET_TARGET_PROPERTIES( ENGINE PROPERTIES LINK_FLAGS "/NODEFAULTLIB:libci" )
 endif()

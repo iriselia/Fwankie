@@ -139,6 +139,7 @@ add_subdirectory( hge/hgeb2draw )
 #--- Game Project ---
 add_subdirectory( engine )
 add_subdirectory( server )
+add_subdirectory( testclient )
 add_subdirectory( rpg )
 
 if( ${HGE_DIRECTX_VER} MATCHES "9" )

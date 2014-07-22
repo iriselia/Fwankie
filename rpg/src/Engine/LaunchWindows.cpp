@@ -9,7 +9,7 @@
 #include "RPG_Debug.h"
 #include "MyGUI_Exception.h"
 
-#define USE_HGE_MAIN
+//#define USE_HGE_MAIN
 
 extern int32 GuardedMain(const TCHAR* CmdLine, HINSTANCE hInInstance, HINSTANCE hPrevInstance, int32 nCmdShow);
 
@@ -84,7 +84,7 @@ void SetupWindowsDebugConsole(void)
 
 #ifdef USE_HGE_MAIN
 
-int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nShowCmd)
+int32 WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nShowCmd)
 {
 	// Create our debug console window
 	// redirect the iostreams
@@ -147,7 +147,7 @@ int32 WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance,
 	GIsFirstInstance = MakeNamedMutex(CmdLine);
 
 	// Run the guarded code.
-	ErrorLevel = GuardedMain(CmdLine, hInInstance, hPrevInstance, nCmdShow);
+	ErrorLevel = GuardedMain(CmdLine, hInstance, hPrevInstance, nShowCmd);
 
 	// Final shut down.
 	//EngineLoop::AppExit();

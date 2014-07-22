@@ -44,3 +44,5 @@ typedef PlatformTypes::TYPE_OF_NULLPTR	TYPE_OF_NULLPTR; ///< The type of the C++
 
 /* Miscellaneous*/
 #define MAX_SPRINTF 1024
+#undef WINVER
+#define WINVER 0x603

@@ -11,6 +11,7 @@ public:
 	~Engine();
 
 	GameUserSettings* GetGameUserSettings();
+	void CreateGameWindow();
 
 	void Init(EngineLoop* _pEngineLoop);
 

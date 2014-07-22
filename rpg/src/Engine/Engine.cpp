@@ -1,5 +1,8 @@
+#include <cassert>
 #include "Core.h"
 #include "Engine.h"
+#include "hge.h"
+#include "settings.h"
 
 Engine* GEngine = NULL;
 
@@ -102,4 +105,23 @@ void Engine::Init(EngineLoop* _pEngineLoop)
 
 	// for IsInitialized()
 	m_bIsInitialized = true;
+}
+
+void Engine::CreateGameWindow()
+{
+	HGE* hge = hgeCreate(HGE_VERSION);
+
+	Settings::load("config.txt");
+	bool b_windowed = true;
+
+	hge->System_SetState(HGE_LOGFILE, "resources/game.log");
+	//hge->System_SetState(HGE_FRAMEFUNC, FrameFunc);
+	//hge->System_SetState(HGE_RENDERFUNC, RenderFunc);
+	hge->System_SetState(HGE_TITLE, "Project 3: basic animation and map loading");
+	hge->System_SetState(HGE_WINDOWED, b_windowed);
+	hge->System_SetState(HGE_SCREENBPP, 32);
+	hge->System_SetState(HGE_FPS, 60);
+	hge->System_SetState(HGE_USETRANSPARENTCOLOR, true);
+
+	assert(hge->System_Initiate());
 }

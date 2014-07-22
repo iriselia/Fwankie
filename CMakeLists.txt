@@ -30,8 +30,10 @@ add_definitions( "-D_CRT_SECURE_NO_WARNINGS" "-D_CRT_NONSTDC_NO_WARNINGS" "-D_SC
 ## add_definitions( /MDd )
 
 SET( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${FWANKIE_SOURCE_DIR}/bin CACHE PATH "Single Directory for all executables." )
+SET( CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${FWANKIE_SOURCE_DIR}/bin CACHE PATH "Single Directory for all executables." )
 SET( CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${FWANKIE_SOURCE_DIR}/bin_debug CACHE PATH "Single Directory for all executables." )
 SET( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${FWANKIE_SOURCE_DIR}/lib CACHE PATH "Single Directory for all static libraries." )
+SET( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${FWANKIE_SOURCE_DIR}/lib CACHE PATH "Single Directory for all static libraries." )
 SET( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${FWANKIE_SOURCE_DIR}/lib CACHE PATH "Single Directory for all static libraries." )
 SET( CMAKE_PDB_OUTPUT_DIRECTORY ${FWANKIE_SOURCE_DIR}/bin_debug/pdb CACHE PATH "Single Directory for all static libraries." )
 

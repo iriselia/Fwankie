@@ -11,7 +11,22 @@
    eJzt11sLgkAQBeB5q4fC3rqBbVh0j/7/r2uhhEWG0ZZtdxzOw/cio5zjqGBNRLUha28Taasgf2vvHbzrj45eoyC/C3pIeV5C/4a5Xsl9xNzX2PNy9tgxc91jGnvcSX6HuW/BQ1mPC/Hv8c2rvqSZ0vn7PIMepbNIzgO0PaSZU0fuHpMe86DHbMD8tNA+qsQW9HkWc/dYJrYqtA8AAIAYLtEM/Bf3L2iRU5DBYlYAAAAAAACIY/l/3HI3zf205gJ5Z2PZ21hyct5gMCNh
   </data>
  </layer>
- <objectgroup name="Objects" width="50" height="50" visible="0">
-  <object name="SpawnPoint" x="191" y="369"/>
+ <layer name="Midground" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <layer name="Foreground" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <objectgroup name="GameObjects" width="50" height="50">
+  <object name="SpawnPoint" type="SpawnPoint" x="191" y="369"/>
+ </objectgroup>
+ <objectgroup name="Physics" width="50" height="50">
+  <object x="20" y="120">
+   <polyline points="0,0 639,2 379,50 218,49 248,136 663,235"/>
+  </object>
  </objectgroup>
 </map>

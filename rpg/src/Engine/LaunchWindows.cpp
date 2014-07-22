@@ -84,7 +84,7 @@ void SetupWindowsDebugConsole(void)
 
 #ifdef USE_HGE_MAIN
 
-int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
+int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nShowCmd)
 {
 	// Create our debug console window
 	// redirect the iostreams
@@ -134,7 +134,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
 #ifndef USE_HGE_MAIN
 
-int32 WINAPI WinMain(HINSTANCE hInInstance, HINSTANCE hPrevInstance, char*, int32 nCmdShow)
+int32 WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nShowCmd)
 {
 	// Setup Windows debug settings
 	SetupWindowsDebugConsole();

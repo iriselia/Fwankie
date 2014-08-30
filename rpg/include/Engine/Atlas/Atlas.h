@@ -6,14 +6,14 @@
 class Atlas
 {
 public:
-	static void AddMap(const char* _mapName);
-	static TileMap* queryByName(const char* _mapName);
-	static void LoadResource(const char* _mapName);
-	static void UnloadResource(const char* _mapName);
+	static void AddMap(const TCHAR* _mapName);
+	static TileMap* queryByName(const TCHAR* _mapName);
+	static void LoadResource(const TCHAR* _mapName);
+	static void UnloadResource(const TCHAR* _mapName);
 
 	static void DestroyAll();
 private:
-	static std::map<std::string, TileMap*> m_atlas;
+	static std::map<std::tstring, TileMap*> m_atlas;
 
 
 // new Altas

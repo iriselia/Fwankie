@@ -23,7 +23,7 @@ struct SpellInfo {
 	    SpellCategory m_spell_category;
 		SpellEffectCategory m_spell_effect_category;
 
-		std::string m_spell_name;
+		std::tstring m_spell_name;
 		uint64_t m_spell_ID;
 
 #pragma region spell_attributes

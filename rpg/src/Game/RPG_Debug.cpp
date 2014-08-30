@@ -33,7 +33,7 @@
 #include "UserSetting.h"
 #include "PlayerInput.h"
 
-std::map<std::string, TileMap*> Atlas::m_atlas;
+std::map<std::tstring, TileMap*> Atlas::m_atlas;
 
 
 namespace RPG_Debug {
@@ -67,7 +67,7 @@ namespace RPG_Debug {
 	void init() {
 		hge = hgeCreate(HGE_VERSION);
 
-		Settings::load("config.txt");
+		Settings::load(TEXT("config.txt"));
 		bool b_windowed = true;
 
 		hge->System_SetState(HGE_LOGFILE, "resources/game.log");
@@ -115,9 +115,9 @@ namespace RPG_Debug {
 
 		std::cout << "Loading Map \"desert\"\n";
 
-		Atlas::AddMap("map1.tmx");
-		Atlas::LoadResource("map1.tmx");
-		Atlas::AddMap("map2.tmx");
+		Atlas::AddMap(TEXT("map1.tmx"));
+		Atlas::LoadResource(TEXT("map1.tmx"));
+		Atlas::AddMap(TEXT("map2.tmx"));
 
 		camera = new Camera();
 		camera->SetXPosition(myPlayer->GetXPosition());
@@ -125,8 +125,8 @@ namespace RPG_Debug {
 		camera->SetDisplayLocation(0, 0);
 		camera->SetDisplaySize_1(800, 600);
 		camera->SetTarget(myPlayer);
-		camera->Enter(Atlas::queryByName("map1.tmx"));
-		camera->SetZone("desert");
+		camera->Enter(Atlas::queryByName(TEXT("map1.tmx")));
+		camera->SetZone(TEXT("desert"));
 
 		/*
 		b2AABB worldAABB;
@@ -198,17 +198,17 @@ namespace RPG_Debug {
 		hMouseTexture = hge->Texture_Load("resources/cursor.png");
 		mouseSprite = new hgeSprite(hMouseTexture, 0, 0, 32, 32);
 
-		pCharacter = new Character(Atlas::queryByName("map1.tmx"));
+		pCharacter = new Character(Atlas::queryByName(TEXT("map1.tmx")));
 		pCharacter->SetSprite(ani);
-		pCharacter->RegisterWithTileMap(Atlas::queryByName("map1.tmx"));
+		pCharacter->RegisterWithTileMap(Atlas::queryByName(TEXT("map1.tmx")));
 
 		//set up input component
-		inputComponent.addKeyBinding("CHAR_MOVE_UP", BIND_MEM_CB(&Character::moveUp, pCharacter));
-		inputComponent.addKeyBinding("CHAR_MOVE_LEFT", BIND_MEM_CB(&Character::moveLeft, pCharacter));
-		inputComponent.addKeyBinding("CHAR_MOVE_DOWN", BIND_MEM_CB(&Character::moveDown, pCharacter));
-		inputComponent.addKeyBinding("CHAR_MOVE_RIGHT", BIND_MEM_CB(&Character::moveRight, pCharacter));
+		inputComponent.addKeyBinding(TEXT("CHAR_MOVE_UP"), BIND_MEM_CB(&Character::moveUp, pCharacter));
+		inputComponent.addKeyBinding(TEXT("CHAR_MOVE_LEFT"), BIND_MEM_CB(&Character::moveLeft, pCharacter));
+		inputComponent.addKeyBinding(TEXT("CHAR_MOVE_DOWN"), BIND_MEM_CB(&Character::moveDown, pCharacter));
+		inputComponent.addKeyBinding(TEXT("CHAR_MOVE_RIGHT"), BIND_MEM_CB(&Character::moveRight, pCharacter));
 
-		userSetting.setKeyBindingMap("./config/UserKeySetting.txt");
+		userSetting.setKeyBindingMap(TEXT("./config/UserKeySetting.txt"));
 	}
 
 	void run() {
@@ -249,7 +249,7 @@ namespace RPG_Debug {
 		bool isMouseOnGUI = gui->getFocusInput()->doesMouseHaveFocus();
 
 		//Update Map
-		Atlas::queryByName("map1.tmx")->Update(dt);
+		Atlas::queryByName(TEXT("map1.tmx"))->Update(dt);
 
 		// Do mouse hover logic
 		if (isMouseOnGUI) {
@@ -347,7 +347,7 @@ namespace RPG_Debug {
 		//hge->Gfx_SetClipping(0, 0, 300, 300);
 		camera->RenderScene();
 
-		Atlas::queryByName("map1.tmx")->Render();
+		Atlas::queryByName(TEXT("map1.tmx"))->Render();
 		//Render Mouse
 		float x, y;
 		hge->Input_GetMousePos(&x, &y);

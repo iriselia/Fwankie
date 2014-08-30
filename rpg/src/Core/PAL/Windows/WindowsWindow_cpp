@@ -24,14 +24,14 @@ const TCHAR WindowsWindow::AppWindowClass[] = TEXT("UnrealWindow");
 static int32 WindowsAeroBorderSize = 8;
 static int32 WindowsStandardBorderSize = 4;
 
-// WindowsWindow WindowsWindow::Make()
-// {
-// 	// First, allocate the new native window object.  This doesn't actually create a native window or anything,
-// 	// we're simply instantiating the object so that we can keep shared references to it.
-// 	return MakeShareable(new WindowsWindow());
-// }
+std::shared_ptr<WindowsWindow> WindowsWindow::Make()
+{
+	// First, allocate the new native window object.  This doesn't actually create a native window or anything,
+	// we're simply instantiating the object so that we can keep shared references to it.
+	return std::shared_ptr<WindowsWindow>(new WindowsWindow());
+}
 
-void WindowsWindow::Initialize(/*FWindowsApplication* const Application, */const std::shared_ptr<GenericWindowDefinition> InDefinition, HINSTANCE InHInstance, const std::shared_ptr< WindowsWindow >& InParent, const bool bShowImmediately)
+void WindowsWindow::Initialize(FWindowsApplication* const Application, const std::shared_ptr<GenericWindowDefinition> InDefinition, HINSTANCE InHInstance, const std::shared_ptr< WindowsWindow >& InParent, const bool bShowImmediately)
 {
 	Definition = InDefinition;
 	//OwningApplication = Application;
@@ -739,7 +739,7 @@ DragDropOLEData DecipherOLEData(IDataObject* DataObjectPointer)
 	{
 		OLEResourceGuard ResourceGuard(StorageMedium);
 		OLEData.Type = DragDropOLEData::Text;
-		OLEData.OperationText = static_cast<ANSICHAR*>(ResourceGuard.DataPointer);
+		OLEData.OperationText = static_cast<TCHAR*>(ResourceGuard.DataPointer);
 	}
 	else if (bHaveFiles && S_OK == DataObjectPointer->GetData(&FormatEtc_File, &StorageMedium))
 	{
@@ -758,7 +758,7 @@ DragDropOLEData DecipherOLEData(IDataObject* DataObjectPointer)
 			TCHAR* Pos = static_cast<TCHAR*>(FileListStart);
 			while (Pos[0] != 0)
 			{
-				const std::string ListElement = std::string(Pos);
+				const std::tstring ListElement = std::tstring(Pos);
 				OLEData.OperationFilenames.push_back(ListElement);
 				Pos += ListElement.length() + 1;
 			}
@@ -770,7 +770,9 @@ DragDropOLEData DecipherOLEData(IDataObject* DataObjectPointer)
 			ANSICHAR* Pos = static_cast<ANSICHAR*>(FileListStart);
 			while (Pos[0] != 0)
 			{
-				const std::string ListElement = std::string(Pos);
+				TCHAR a [100];
+				mbstotcs(a, Pos, 100);
+				const std::tstring ListElement = std::tstring(a);
 				OLEData.OperationFilenames.push_back(ListElement);
 				Pos += ListElement.length() + 1;
 			}
@@ -783,7 +785,7 @@ DragDropOLEData DecipherOLEData(IDataObject* DataObjectPointer)
 HRESULT STDCALL WindowsWindow::DragEnter(__RPC__in_opt IDataObject *DataObjectPointer, ::DWORD KeyState, POINTL CursorPosition, __RPC__inout::DWORD *CursorEffect)
 {
 	// Decipher the OLE data
-	const DragDropOLEData& OLEData = DecipherOLEData(DataObjectPointer);
+	//const DragDropOLEData& OLEData = DecipherOLEData(DataObjectPointer);
 
 // 	if (IsInGameThread())
 // 	{

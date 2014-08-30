@@ -1,4 +1,5 @@
 #pragma once
+#include "Core.h"
 #include <fstream>
 #include <hge.h>
 #include <map>
@@ -9,7 +10,7 @@
 struct KeyBinding {
 
 	KeyBinding(hgeKeyCode_t _inputKey, bool _shiftModifier, bool _ctrlModifier, bool _altModifier,
-			   std::string _command)
+			   std::tstring _command)
 			   : m_centerKey(_inputKey), m_bShiftModifier(_shiftModifier), m_bCtrlModifier(_ctrlModifier), m_bAltModifier(_altModifier), m_bindedCommand(_command) {
 	}
 
@@ -19,7 +20,7 @@ struct KeyBinding {
 	bool m_bCtrlModifier;
 	bool m_bAltModifier;
 	//event related
-	std::string m_bindedCommand;
+	std::tstring m_bindedCommand;
 };
 
 struct keyMappingUnit {
@@ -33,11 +34,11 @@ class UserSetting {
 public:
 	UserSetting();
 
-	void setKeyBindingMap(std::string _userSettingFile);
+	void setKeyBindingMap(std::tstring _userSettingFile);
 
-	void modifyKeyBinding(std::string _userSettingFile, KeyBinding* _newKeyBinding, KeyBinding* _oldKeyBinding, HGE* _gameSession);
+	void modifyKeyBinding(std::tstring _userSettingFile, KeyBinding* _newKeyBinding, KeyBinding* _oldKeyBinding, HGE* _gameSession);
 
-	std::map<std::string, keyMappingUnit>& getKeyBindingMap();
+	std::map<std::tstring, keyMappingUnit>& getKeyBindingMap();
 
 	~UserSetting() {
 		for (auto& i : m_keyBindingMap) {
@@ -49,7 +50,7 @@ public:
 	}
 
 private:
-	std::map<std::string, keyMappingUnit> m_keyBindingMap;
+	std::map<std::tstring, keyMappingUnit> m_keyBindingMap;
 
 	bool m_ignoreModifiers;
 		

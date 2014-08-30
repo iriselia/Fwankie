@@ -41,7 +41,7 @@ namespace RPG {
 	GUI* gui = 0;
 
 	Tmx::Map *map;
-	std::map<std::string, MapParser*> world;
+	std::map<std::tstring, MapParser*> world;
 	Trigger_Portal* portal;
 	//b2World *b2World = NULL;
 
@@ -200,7 +200,7 @@ namespace RPG {
 #pragma region init
 		hge = hgeCreate(HGE_VERSION);
 		// Load settings
-		Settings::load("config.txt");
+		Settings::load(TEXT("config.txt"));
 		bool b_windowed = true;
 		hge->System_SetState(HGE_LOGFILE, "resources/game.log");
 		hge->System_SetState(HGE_FRAMEFUNC, FrameFunc);
@@ -211,7 +211,7 @@ namespace RPG {
 		hge->System_SetState(HGE_FPS, 60);
 
 		assert(hge->System_Initiate());
-			//throw GCN_EXCEPTION("Unable to initialize HGE: " + std::string(hge->System_GetErrorMessage()));
+			//throw GCN_EXCEPTION("Unable to initialize HGE: " + std::tstring(hge->System_GetErrorMessage()));
 
 		gui = new GUI();
 		gui->registerWindow(hge->System_GetState(HGE_HWND), hge, b_windowed);
@@ -242,7 +242,7 @@ namespace RPG {
 // 		world["little"] = new TileMap("map2.tmx");
 // 		world["desert"]->Load();
 
-		myPlayer->setZone("desert");
+		myPlayer->setZone(TEXT("desert"));
 
 
 		hPortal = hge->Texture_Load("resources/gems.png");
@@ -267,8 +267,8 @@ namespace RPG {
 			const Tmx::Tile *tile = *(tileset->GetTiles().begin());
 
 			// Print the properties of a tile.
-			std::map< std::string, std::string > list = tile->GetProperties().GetList();
-			std::map< std::string, std::string >::iterator iter;
+			std::map< std::tstring, std::tstring > list = tile->GetProperties().GetList();
+			std::map< std::tstring, std::tstring >::iterator iter;
 			for (iter = list.begin(); iter != list.end(); ++iter) {
 				printf("%s = %s\n", iter->first.c_str(), iter->second.c_str());
 			}
@@ -338,8 +338,8 @@ namespace RPG {
 		hge->Texture_Free(quad.tex);
 		hge->Effect_Free(snd);
 
-		delete world["desert"];
-		delete world["little"];
+		delete world[TEXT("desert")];
+		delete world[TEXT("little")];
 		
 
 

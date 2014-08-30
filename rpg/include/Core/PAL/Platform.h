@@ -28,7 +28,7 @@ typedef PlatformTypes::int64			int64;		///< A 64-bit signed integer.
 // Character types.
 typedef PlatformTypes::ANSICHAR			ANSICHAR;	///< An ANSI character. Normally a signed type.
 typedef PlatformTypes::WIDECHAR			WIDECHAR;	///< A wide character. Normally a signed type.
-//typedef PlatformTypes::TCHAR			TCHAR;		///< Either ANSICHAR or WIDECHAR, depending on whether the platform supports wide characters or the requirements of the licensee.
+typedef PlatformTypes::TCHAR			TCHAR;		///< Either ANSICHAR or WIDECHAR, depending on whether the platform supports wide characters or the requirements of the licensee.
 typedef PlatformTypes::CHAR8			UTF8CHAR;	///< An 8-bit character containing a UTF8 (Unicode, 8-bit, variable-width) code unit.
 typedef PlatformTypes::CHAR16			UCS2CHAR;	///< A 16-bit character containing a UCS2 (Unicode, 16-bit, fixed-width) code unit, used for compatibility with 'Windows TCHAR' across multiple platforms.
 typedef PlatformTypes::CHAR16			UTF16CHAR;	///< A 16-bit character containing a UTF16 (Unicode, 16-bit, variable-width) code unit.

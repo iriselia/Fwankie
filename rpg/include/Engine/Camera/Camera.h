@@ -1,4 +1,5 @@
 #pragma once
+#include "Core.h"
 #include "GameEntity.h"
 #include "TileMap.h"
 
@@ -19,7 +20,7 @@ public:
 	void SetDisplaySize_1(float _display_width, float _display_height) { display_width_2 = static_cast<int>(_display_width / 2); display_height_2 = static_cast<int>(_display_height / 2); }
 	void SetDisplaySize_2(float _display_width_2, float _display_height_2) { display_width_2 = static_cast<int>(_display_width_2); display_height_2 = static_cast<int>(_display_height_2); }
 	void SetTarget(GameEntity* _target) { target = _target; }
-	void SetZone(std::string _zone) { currentZone = _zone; }
+	void SetZone(std::tstring _zone) { currentZone = _zone; }
 	void Enter(TileMap* _map);
 
 	int Get_Display_Width_2() { return display_width_2; }
@@ -27,7 +28,7 @@ public:
 
 	GameEntity* GetFollowee() { return target; }
 	TileMap* getMap();
-	std::string GetZone() { return currentZone; }
+	std::tstring GetZone() { return currentZone; }
 
 	bool willCollideEast(float _x_displacement);
 	bool willCollideNorth(float _y_displacement);
@@ -39,7 +40,7 @@ private:
 	TileMap* m_pMap;
 	
 	// string name of zone
-	std::string currentZone;
+	std::tstring currentZone;
 	// size of the camera
 	int display_width_2;
 	int display_height_2;

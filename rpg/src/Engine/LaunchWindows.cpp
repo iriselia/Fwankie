@@ -3,13 +3,10 @@
 #include <vld.h> 
 #endif
 
-#include <windows.h>
-#include "EngineLoop.h"
+#include "Core.h"
 #include "RPG.h"
 #include "RPG_Debug.h"
 #include "MyGUI_Exception.h"
-
-//#define USE_HGE_MAIN
 
 extern int32 GuardedMain(const TCHAR* CmdLine, HINSTANCE hInInstance, HINSTANCE hPrevInstance, int32 nCmdShow);
 
@@ -82,21 +79,14 @@ void SetupWindowsDebugConsole(void)
 #endif
 }
 
+//#define USE_HGE_MAIN
+
 #ifdef USE_HGE_MAIN
 
 int32 WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nShowCmd)
 {
-	// Create our debug console window
-	// redirect the iostreams
-	// and enable mouse scrolling
-	AllocConsole();
-	HANDLE hConsole = GetStdHandle(STD_INPUT_HANDLE);
-	DWORD mode;
-	GetConsoleMode(hConsole, &mode);
-	SetConsoleMode(hConsole, mode & ~ENABLE_MOUSE_INPUT | ENABLE_PROCESSED_INPUT);
-	freopen("CONIN$", "r", stdin);
-	freopen("CONOUT$", "w", stdout);
-	freopen("CONOUT$", "w", stderr);
+	// Setup Windows debug settings
+	SetupWindowsDebugConsole();
 
 #define _DEBUGGAME
 

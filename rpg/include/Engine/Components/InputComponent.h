@@ -14,15 +14,15 @@ public:
 
 	InputComponent(Character* _owner);
 
-	void addKeyBinding(std::string _command, Callback<void()> _delegate);
+	void addKeyBinding(std::tstring _command, Callback<void()> _delegate);
 
-	void addCommand(std::string _command) {
+	void addCommand(std::tstring _command) {
 		m_commandQueue.push(_command);
 	}
 
 	void executeAction();
 
 private:
-	std::map<std::string, Callback<void()> > m_movementKeyMapping;
-	std::queue<std::string> m_commandQueue;
+	std::map<std::tstring, Callback<void()> > m_movementKeyMapping;
+	std::queue<std::tstring> m_commandQueue;
 };

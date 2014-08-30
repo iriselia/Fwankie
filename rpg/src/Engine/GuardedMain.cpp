@@ -1,4 +1,3 @@
-#include <windows.h>
 #include "EngineLoop.h"
 #include "Core.h"
 
@@ -43,4 +42,4 @@ int32 GuardedMain(const TCHAR* CmdLine, HINSTANCE hInInstance, HINSTANCE hPrevIn
 	}
 
 	return ErrorLevel;
-}
+}         

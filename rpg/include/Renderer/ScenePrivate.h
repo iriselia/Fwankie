@@ -7,7 +7,7 @@
 class Scene
 {
 public:
-	Scene(const std::string _mapName);
+	Scene(const std::tstring _mapName);
 	~Scene();
 
 	void RenderAtPosition(float x, float y);
@@ -15,6 +15,6 @@ public:
 
 private:
 	HGE* m_pHGE;
-	std::string m_mapName;
+	std::tstring m_mapName;
 	std::vector<SpriteComponent*> m_staticSpriteDrawList;
 };

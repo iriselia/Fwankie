@@ -1,4 +1,5 @@
 #pragma once
+#include "Core.h"
 #include "hge.h"
 #include "hgeanim.h"
 #include "GameEntity.h"
@@ -15,8 +16,8 @@ public:
 
 	hgeAnimation* getAnimation();
 
-	void setZone(std::string str) { currentZone = str; }
-	std::string getZone() { return currentZone; }
+	void setZone(std::tstring str) { currentZone = str; }
+	std::tstring getZone() { return currentZone; }
 
 	void setVelocity(float, float);
 	void setAcceleration(float);
@@ -26,7 +27,7 @@ public:
 	void Render(float _x_position, float _y_position);
 
 private:
-	std::string currentZone;
+	std::tstring currentZone;
 	float dx_dt;
 	float dy_dt;
 	float acceleration;

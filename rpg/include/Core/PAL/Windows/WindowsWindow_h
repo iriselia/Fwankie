@@ -1,11 +1,14 @@
 #pragma once
-#include <windows.h>
-#include "GenericWindow.h"
 #include "Core.h"
+
+#include "GenericWindow.h"
+	#include "Ole2.h"
+	//#include "OleIdl.h"
 
 class WindowsWindow : public GenericWindow, public IDropTarget
 {
 public:
+	//Constructor is private
 	//WindowsWindow();
 	~WindowsWindow();
 
@@ -21,11 +24,11 @@ public:
 	* @param InParent			Parent Win32 window; usually NULL.
 	* @param bShowImmediately	True to show this window as soon as its initialized
 	*/
-	//static TSharedRef< FWindowsWindow > Make();
+	static std::shared_ptr< WindowsWindow > Make();
 
 	HWND GetHWnd() const;
 
-	void Initialize(/*class FWindowsApplication* const Application, */const std::shared_ptr<GenericWindowDefinition> InDefinition, HINSTANCE InHInstance, const std::shared_ptr< WindowsWindow >& InParent, const bool bShowImmediately);
+	void Initialize(class FWindowsApplication* const Application, const std::shared_ptr<class GenericWindowDefinition> InDefinition, HINSTANCE InHInstance, const std::shared_ptr< WindowsWindow >& InParent, const bool bShowImmediately);
 
 
 public:

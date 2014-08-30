@@ -60,7 +60,7 @@ void SpriteComponent::Tick(float _DeltaTime)
 	m_pStaticSprite->Update(_DeltaTime);
 }
 
-void SpriteComponent::initWithSpriteName(const char* _name)
+void SpriteComponent::initWithSpriteName(const TCHAR* _name)
 {
 
 }

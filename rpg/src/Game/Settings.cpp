@@ -1,9 +1,9 @@
 #include "settings.h"
 #include <fstream>
 
-bool Settings::load(const std::string& file_name) {
+bool Settings::load(const std::tstring& file_name) {
 	HGE* hge = hgeCreate(HGE_VERSION);
-	std::fstream settingsdata("resources\\" + file_name);
+	std::fstream settingsdata(TEXT("resources\\") + file_name);
 	if (settingsdata.is_open()) {
 		char yolo[100];
 		char *yololine = yolo;
@@ -19,4 +19,4 @@ bool Settings::load(const std::string& file_name) {
 	hge->Release();
 	return 0;
 }
-bool Settings::save(const std::string& file_name) { return 0; }
+bool Settings::save(const std::tstring& file_name) { return 0; }

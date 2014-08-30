@@ -1,4 +1,5 @@
 #pragma once
+#include "Core.h"
 #include "IntPoint.h"
 
 /**
@@ -393,7 +394,7 @@ struct Vector2D
 	 *
 	 * @return Text describing the vector.
 	 */
-	std::string ToString() const;
+	std::tstring ToString() const;
 
 	/**
 	 * Initialize this Vector based on an FString. The String is expected to contain X=, Y=.
@@ -403,7 +404,7 @@ struct Vector2D
 	 *
 	 * @return true if the X,Y values were read successfully; false otherwise.
 	 */
-	bool InitFromString( const std::string & InSourceString );
+	bool InitFromString( const std::tstring & InSourceString );
 
 	/**
 	 * Serialize a vector.

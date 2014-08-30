@@ -55,7 +55,15 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 	sConnect = socket(AF_INET, SOCK_STREAM, NULL);
 
-	addr.sin_addr.s_addr = inet_addr("192.168.1.103");
+	hostent* host = gethostbyname("fwankie.wicp.net");
+	if (host == NULL)
+	{
+		WSACleanup();
+		return FALSE;
+	}
+
+
+	addr.sin_addr.s_addr = inet_addr("98.158.123.180");
 	addr.sin_port = htons(8000);
 	addr.sin_family = AF_INET;
 

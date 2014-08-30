@@ -1,8 +1,10 @@
 #pragma once
 #include "Platform.h"
-#include "Engine.h"
+#include "GameEngine.h"
+//#include "GenericApplication.h"
 
-extern Engine* GEngine;
+extern GameEngine* GEngine;
+//extern GenericApplication* GApplication;
 
 class EngineLoop
 {

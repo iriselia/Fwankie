@@ -1,5 +1,4 @@
 #pragma once
-#include "Core.h"
 
 /*=============================================================================================
 	GenericPlatformMath.h: Generic platform Math classes, mostly implemented with ANSI C++

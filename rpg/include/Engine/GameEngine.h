@@ -1,22 +1,24 @@
 #pragma once
+#include "Core.h"
 #include "GameUserSettings.h"
-#include "GameViewportClient.h"
+//#include "GameViewportClient.h"
 
 class EngineLoop;
 
-class Engine
+class GameEngine
 {
 public:
-	Engine();
-	~Engine();
+	GameEngine();
+	~GameEngine();
 
 	GameUserSettings* GetGameUserSettings();
-	void CreateGameWindow();
+	std::shared_ptr<class GenericWindow> CreateGameWindow();
 
 	void Init(EngineLoop* _pEngineLoop);
 
 private:
-	GameViewportClient* GameViewport;
+	//GameViewportClient* GameViewport;
 	//GameViewportWindow;
 	bool m_bIsInitialized;
 };
+

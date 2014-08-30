@@ -1,8 +1,10 @@
-#include <winsock.h>
+#include <WS2tcpip.h>
 #include <iostream>
 #include <windows.h>
 
 #pragma comment (lib, "ws2_32.lib")
+#pragma comment(lib,"wininet.lib")
+#pragma comment(lib,"ws2_32.lib")
 
 //the max sockets to store in server buffer
 #define DEFAULT_SOCKET_ARRAY_SIZE 64
@@ -53,6 +55,126 @@ int ServerThread(int ID) {
 	return 0;
 }
 
+#define DEFAULT_BUFLEN 512
+#define DEFAULT_PORT "8000"
+
+#include <wininet.h>
+
+namespace IPuR
+{
+	//download file from WWW in a buffer
+	bool WWWFileBuffer(char *host, char *path, char *outBuffer, int outBufferSize)
+	{
+		bool retval = false;
+		LPTSTR AcceptTypes[2] = { TEXT("*/*"), NULL };
+		DWORD dwSize = outBufferSize - 1, dwFlags = INTERNET_FLAG_RELOAD | INTERNET_FLAG_NO_CACHE_WRITE;
+		HINTERNET opn = NULL, con = NULL, req = NULL;
+		opn = InternetOpen(TEXT("Evilzone.org"), INTERNET_OPEN_TYPE_DIRECT, NULL, NULL, 0);
+		if (!opn)
+			return retval;
+		con = InternetConnect(opn, host, INTERNET_DEFAULT_HTTP_PORT, NULL, NULL, INTERNET_SERVICE_HTTP, 0, 0);
+		if (!con)
+			return retval;
+		req = HttpOpenRequest(con, TEXT("GET"), path, HTTP_VERSION, NULL, (LPCTSTR*)AcceptTypes, dwFlags, 0);
+		if (!req)
+			return retval;
+		if (HttpSendRequest(req, NULL, 0, NULL, 0))
+		{
+			DWORD statCodeLen = sizeof(DWORD);
+			DWORD statCode;
+			if (HttpQueryInfo(req,
+				HTTP_QUERY_STATUS_CODE | HTTP_QUERY_FLAG_NUMBER,
+				&statCode, &statCodeLen, NULL))
+			{
+				if (statCode == 200 && InternetReadFile(req, (LPVOID)outBuffer, outBufferSize - 1, &dwSize))
+				{
+					retval = TRUE;
+				}
+			}
+		}
+		InternetCloseHandle(req);
+		InternetCloseHandle(con);
+		InternetCloseHandle(opn);
+		return retval;
+	}
+
+
+	BOOL GetWanIP(char *ip, int size)
+	{
+		bool retval = false;
+		char *tmpip = new char[150];
+		memset(ip, 0, size);
+
+		//www.whatismyip.org
+		if (!retval)
+		{
+			memset(tmpip, 0, 150);
+			WWWFileBuffer("www.whatismyip.org", NULL, tmpip, 150);
+			if (strlen(tmpip) > 0 && inet_addr(tmpip) != INADDR_NONE)
+			{
+				retval = true;
+			}
+		}
+
+		//automation.whatismyip.com/n09230945.asp
+		if (!retval)
+		{
+			memset(tmpip, 0, 150);
+			WWWFileBuffer("automation.whatismyip.com", "/n09230945.asp", tmpip, 150);
+			if (strlen(tmpip) > 0 && inet_addr(tmpip) != INADDR_NONE)
+			{
+				retval = true;
+			}
+		}
+
+		//www.showmyip.com/simple
+		if (!retval)
+		{
+			memset(tmpip, 0, 150);
+			WWWFileBuffer("www.showmyip.com", "/simple", tmpip, 150);
+			if (strlen(tmpip) > 0 && inet_addr(tmpip) != INADDR_NONE)
+			{
+				retval = true;
+			}
+		}
+
+		//myip.dnsomatic.com
+		if (!retval)
+		{
+			memset(tmpip, 0, 150);
+			WWWFileBuffer("myip.dnsomatic.com", NULL, tmpip, 150);
+			if (strlen(tmpip) > 0 && inet_addr(tmpip) != INADDR_NONE)
+			{
+				retval = true;
+			}
+		}
+
+		//checkip.dyndns.org
+		if (!retval)
+		{
+			memset(tmpip, 0, 150);
+			WWWFileBuffer("checkip.dyndns.org", NULL, tmpip, 150);
+			if (strlen(tmpip) > 0)
+			{
+				strcpy_s(tmpip, 150, (strstr(tmpip, ":") + 2));
+				int res = (int)(strstr(tmpip, "<") - tmpip);
+				tmpip[res] = '\0';
+				if (inet_addr(tmpip) != INADDR_NONE)
+				{
+					retval = true;
+				}
+				else
+					retval = false;
+			}
+		}
+
+		if (retval)
+			strcpy_s(ip, size, tmpip);
+		delete[] tmpip;
+		return retval;
+	}
+}
+
 int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nShowCmd) {
 
 	AllocConsole();
@@ -66,46 +188,144 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 	std::cout << "Sever initilized.\n";
 
-	int Val = InitWinSock();
-	//if Val is not zero, init fails
-	if (Val) {
-		MessageBox(NULL, "Winsock Init Error", "Error", MB_OK | MB_ICONERROR);
-		exit(1);
+	WSADATA wsaData;
+	int iResult;
+
+	SOCKET ListenSocket = INVALID_SOCKET;
+	SOCKET ClientSocket = INVALID_SOCKET;
+
+	struct addrinfo *result = NULL;
+	struct addrinfo hints;
+
+	int iSendResult;
+	char recvbuf[DEFAULT_BUFLEN];
+	int recvbuflen = DEFAULT_BUFLEN;
+
+	// Initialize Winsock
+	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
+	if (iResult != 0) {
+		printf("WSAStartup failed with error: %d\n", iResult);
+		return 1;
 	}
 
-	//mem alloc
-	Connects = new SOCKET[DEFAULT_SOCKET_ARRAY_SIZE];
+	ZeroMemory(&hints, sizeof(hints));
+	hints.ai_family = AF_INET;
+	hints.ai_socktype = SOCK_STREAM;
+	hints.ai_protocol = IPPROTO_TCP;
+	hints.ai_flags = AI_PASSIVE;
 
-	//create listen socket and connect socket
-	sListen = socket(AF_INET, SOCK_STREAM, NULL);
-	sConnect = socket(AF_INET, SOCK_STREAM, NULL);
+	// Resolve the server address and port
+	iResult = getaddrinfo(NULL, DEFAULT_PORT, &hints, &result);
+	if (iResult != 0) {
+		printf("getaddrinfo failed with error: %d\n", iResult);
+		WSACleanup();
+		return 1;
+	}
 
-	//set local host
-	addr.sin_addr.s_addr = inet_addr("192.168.1.103");
-	//set port to 8000
-	addr.sin_port = htons(8000);
-	//type of connection
-	addr.sin_family = AF_INET;
+	hostent* host = gethostbyname("fwankie.wicp.net");
+	if (host == NULL)
+	{
+		WSACleanup();
+		return FALSE;
+	}
 
-	//bind listen socket to the address struct
-	bind(sListen, (SOCKADDR*)&addr, sizeof(addr));
+	char* pszIP = (char *)inet_ntoa(*(struct in_addr *)(host->h_addr));
+	printf("host IP Address: %s\n", pszIP);
 
-	//listen to incoming connection; max server storage size is set to DEFAULT_SOCKET_ARRAY_SIZE
-	listen(sListen, DEFAULT_SOCKET_ARRAY_SIZE);
 
-	while (true) {
-		if (sConnect = accept(sListen, (SOCKADDR*)&addr, &addrlen)) {
-			std::cout << "New incoming connection.\n";
-			//the server will assign the new coming client an unique ID
-			char* client_ID = new char[DEFAULT_CLIENT_ID_SIZE];
-			ZeroMemory(client_ID, DEFAULT_CLIENT_ID_SIZE);
-			sprintf_s(client_ID, DEFAULT_CLIENT_ID_SIZE, "%d", socket_counter);
-			//send it to client through its socket
-			send(sConnect, client_ID, DEFAULT_CLIENT_ID_SIZE, NULL);
-			Connects[socket_counter++] = sConnect;
-			CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)ServerThread, (LPVOID)(socket_counter - 1), NULL, NULL);
+	struct sockaddr_in* saddr_in = (struct sockaddr_in*)result->ai_addr;
+	printf("hostname: %s\n", inet_ntoa(saddr_in->sin_addr));
+	//printf("sockaddr_in size is: %d\n", (int)sizeof(in_addr));
+	saddr_in->sin_addr.S_un.S_addr = inet_addr(pszIP);
+
+	//char ip[16];
+	//IPuR::GetWanIP(ip, 16);
+	//getchar();
+	//printf("hostname: %s\n", ip);
+
+
+
+	// Create a SOCKET for connecting to server
+	ListenSocket = socket(result->ai_family, result->ai_socktype, result->ai_protocol);
+	if (ListenSocket == INVALID_SOCKET) {
+		printf("socket failed with error: %ld\n", WSAGetLastError());
+		freeaddrinfo(result);
+		WSACleanup();
+		return 1;
+	}
+
+	// Setup the TCP listening socket
+	iResult = bind(ListenSocket, result->ai_addr, (int)result->ai_addrlen);
+	if (iResult == SOCKET_ERROR) {
+		printf("bind failed with error: %d\n", WSAGetLastError());
+		freeaddrinfo(result);
+		closesocket(ListenSocket);
+		WSACleanup();
+		return 1;
+	}
+
+	freeaddrinfo(result);
+
+	iResult = listen(ListenSocket, SOMAXCONN);
+	if (iResult == SOCKET_ERROR) {
+		printf("listen failed with error: %d\n", WSAGetLastError());
+		closesocket(ListenSocket);
+		WSACleanup();
+		return 1;
+	}
+
+	// Accept a client socket
+	ClientSocket = accept(ListenSocket, NULL, NULL);
+	if (ClientSocket == INVALID_SOCKET) {
+		printf("accept failed with error: %d\n", WSAGetLastError());
+		closesocket(ListenSocket);
+		WSACleanup();
+		return 1;
+	}
+
+	// No longer need server socket
+	closesocket(ListenSocket);
+
+	// Receive until the peer shuts down the connection
+	do {
+
+		iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
+		if (iResult > 0) {
+			printf("Bytes received: %d\n", iResult);
+
+			// Echo the buffer back to the sender
+			iSendResult = send(ClientSocket, recvbuf, iResult, 0);
+			if (iSendResult == SOCKET_ERROR) {
+				printf("send failed with error: %d\n", WSAGetLastError());
+				closesocket(ClientSocket);
+				WSACleanup();
+				return 1;
+			}
+			printf("Bytes sent: %d\n", iSendResult);
 		}
-		Sleep(DEFAULT_ACCEPT_INTERVAL);
+		else if (iResult == 0)
+			printf("Connection closing...\n");
+		else  {
+			printf("recv failed with error: %d\n", WSAGetLastError());
+			closesocket(ClientSocket);
+			WSACleanup();
+			return 1;
+		}
+
+	} while (iResult > 0);
+
+	// shutdown the connection since we're done
+	iResult = shutdown(ClientSocket, SD_SEND);
+	if (iResult == SOCKET_ERROR) {
+		printf("shutdown failed with error: %d\n", WSAGetLastError());
+		closesocket(ClientSocket);
+		WSACleanup();
+		return 1;
 	}
 
+	// cleanup
+	closesocket(ClientSocket);
+	WSACleanup();
+
+	return 0;
 }

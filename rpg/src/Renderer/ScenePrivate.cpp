@@ -14,7 +14,7 @@ void Scene::AddStaticSprite(SpriteComponent* _StaticSpriteComponent)
 	m_staticSpriteDrawList.push_back(_StaticSpriteComponent);
 }
 
-Scene::Scene(const std::string _mapName)
+Scene::Scene(const std::tstring _mapName)
 {
 	m_pHGE = hgeCreate(HGE_VERSION);
 	m_mapName = _mapName;

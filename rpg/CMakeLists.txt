@@ -46,6 +46,9 @@ link_libraries( hgeb2draw )
 link_libraries( tmxparser )
 link_libraries( Box2D )
 
+#----- Enable Unicode -----
+add_definitions(-DUNICODE -D_UNICODE)
+
 #------ target -----
 #add_executable (RPG WIN32 ${RPG_SOURCES} ${RPG_HEADERS})
 add_executable (RPG WIN32 ${MY_SRC} ${MY_HEADERS})

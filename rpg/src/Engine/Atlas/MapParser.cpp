@@ -4,14 +4,18 @@
 
 /* TODO: Reduce std map to 1 dimensional
 */
-MapParser::MapParser(const char* file_name) {
+MapParser::MapParser(const TCHAR* file_name) {
 	// parse map information from .tmx file.
 	m_pHGE = hgeCreate(HGE_VERSION);
-	const char* resourcePath = "resources/";
-	std::string filePath = resourcePath;
+	const TCHAR* resourcePath = TEXT("resources/");
+	std::tstring filePath = resourcePath;
 	filePath.append(file_name);
 	m_pMap_info = new Tmx::Map();
-	m_pMap_info->ParseFile(filePath.c_str());
+
+	ANSICHAR tempFilePath[100];
+	wcstombs(tempFilePath, filePath.c_str(), 100);
+
+	m_pMap_info->ParseFile(tempFilePath);
 	m_width = m_pMap_info->GetWidth() * m_pMap_info->GetTileWidth();
 	m_height = m_pMap_info->GetHeight() * m_pMap_info->GetTileHeight();
 }
@@ -54,10 +58,10 @@ void MapParser::Load() {
 		int numH = (imgH - spacing) / (tileH + spacing);
 		int numW = (imgW - spacing) / (tileW + spacing);
 		// generate texture path and load texture
-		const char* resourcePath = "resources/";
+		const ANSICHAR* resourcePath = "resources/";
 		std::string imgDir = resourcePath;
-		imgDir.append((img->GetSource()).c_str());
-		HTEXTURE newTileset = m_pHGE->Texture_Load(imgDir.c_str());
+		imgDir.append(img->GetSource().c_str());
+	 	HTEXTURE newTileset = m_pHGE->Texture_Load(imgDir.c_str());
 		// allocate std::map at index t for tileset textures
 		m_tiles[tileset->GetFirstGid()] = std::map<int, hgeSprite*>();
 		// parse & store

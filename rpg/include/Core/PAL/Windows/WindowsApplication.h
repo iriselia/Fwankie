@@ -9,12 +9,12 @@
 //#include "IForceFeedbackSystem.h"
 //#include "WindowsTextInputMethodSystem.h"
 
-class FWindowsWindow;
+class WindowsWindow;
 class FGenericApplicationMessageHandler;
 
 struct FDeferredWindowsMessage
 {
-	FDeferredWindowsMessage(const std::shared_ptr<FWindowsWindow>& InNativeWindow, HWND InHWnd, uint32 InMessage, WPARAM InWParam, LPARAM InLParam, int32 InX = 0, int32 InY = 0, uint32 InRawInputFlags = 0)
+	FDeferredWindowsMessage(const std::shared_ptr<WindowsWindow>& InNativeWindow, HWND InHWnd, uint32 InMessage, WPARAM InWParam, LPARAM InLParam, int32 InX = 0, int32 InY = 0, uint32 InRawInputFlags = 0)
 	: NativeWindow(InNativeWindow)
 	, hWND(InHWnd)
 	, Message(InMessage)
@@ -25,7 +25,7 @@ struct FDeferredWindowsMessage
 	, RawInputFlags(InRawInputFlags)
 	{}
 	/** Native window that received the message */
-	std::weak_ptr<FWindowsWindow> NativeWindow;
+	std::weak_ptr<WindowsWindow> NativeWindow;
 	/** Window handle */
 	HWND hWND;
 	/** Message code */
@@ -63,8 +63,8 @@ struct DragDropOLEData
 		: Type(None)
 	{}
 
-	std::string OperationText;
-	std::vector<std::string> OperationFilenames;
+	std::tstring OperationText;
+	std::vector<std::tstring> OperationFilenames;
 	EWindowsOLEDataType Type;
 };
 
@@ -157,7 +157,7 @@ public:
 
 public:
 
-	//virtual void SetMessageHandler(const TSharedRef< class FGenericApplicationMessageHandler >& InMessageHandler) OVERRIDE;
+	virtual void SetMessageHandler(const std::shared_ptr < class FGenericApplicationMessageHandler >& InMessageHandler) OVERRIDE;
 
 	virtual void PollGameDeviceState(const float TimeDelta) OVERRIDE;
 
@@ -165,15 +165,15 @@ public:
 
 	virtual void ProcessDeferredEvents(const float TimeDelta) OVERRIDE;
 
-	//virtual TSharedRef< FGenericWindow > MakeWindow() OVERRIDE;
+	virtual std::shared_ptr < GenericWindow > MakeWindow() OVERRIDE;
 
-	//virtual void InitializeWindow(const TSharedRef< FGenericWindow >& Window, const TSharedRef< FGenericWindowDefinition >& InDefinition, const std::shared_ptr< FGenericWindow >& InParent, const bool bShowImmediately) OVERRIDE;
+	virtual void FWindowsApplication::InitializeWindow(const std::shared_ptr < GenericWindow >& InWindow, const std::shared_ptr < GenericWindowDefinition >& InDefinition, const std::shared_ptr < GenericWindow >& InParent, const bool bShowImmediately);
 
-	virtual void SetCapture(const std::shared_ptr< FGenericWindow >& InWindow) OVERRIDE;
+	virtual void SetCapture(const std::shared_ptr< GenericWindow >& InWindow) OVERRIDE;
 
 	virtual void* GetCapture(void) const OVERRIDE;
 
-	virtual void SetHighPrecisionMouseMode(const bool Enable, const std::shared_ptr< FGenericWindow >& InWindow) OVERRIDE;
+	virtual void SetHighPrecisionMouseMode(const bool Enable, const std::shared_ptr< GenericWindow >& InWindow) OVERRIDE;
 
 	virtual bool IsUsingHighPrecisionMouseMode() const OVERRIDE{ return bUsingHighPrecisionMouseInput; }
 
@@ -181,7 +181,7 @@ public:
 
 	virtual FPlatformRect GetWorkArea(const FPlatformRect& CurrentWindow) const OVERRIDE;
 
-	virtual bool TryCalculatePopupWindowPosition(const FPlatformRect& InAnchor, const Vector2D& InSize, const EPopUpOrientationType Orientation, /*OUT*/ Vector2D* const CalculatedPopUpPosition) const OVERRIDE;
+	//virtual bool TryCalculatePopupWindowPosition(const FPlatformRect& InAnchor, const Vector2D& InSize, const EPopUpOrientationType Orientation, /*OUT*/ Vector2D* const CalculatedPopUpPosition) const OVERRIDE;
 
 	virtual void GetDisplayMetrics(FDisplayMetrics& OutDisplayMetrics) const OVERRIDE;
 
@@ -239,7 +239,7 @@ private:
 	/**  @return  True if a windows message is related to user input (mouse, keyboard) */
 	static bool IsInputMessage(uint32 msg);
 
-	void DeferMessage(std::shared_ptr<FWindowsWindow>& NativeWindow, HWND InHWnd, uint32 InMessage, WPARAM InWParam, LPARAM InLParam, int32 MouseX = 0, int32 MouseY = 0, uint32 RawInputFlags = 0);
+	void DeferMessage(std::shared_ptr<WindowsWindow>& NativeWindow, HWND InHWnd, uint32 InMessage, WPARAM InWParam, LPARAM InLParam, int32 MouseX = 0, int32 MouseY = 0, uint32 RawInputFlags = 0);
 
 	void CheckForShiftUpEvents(const int32 KeyCode);
 
@@ -255,7 +255,7 @@ private:
 
 	std::vector< FDeferredWindowsDragDropOperation > DeferredDragDropOperations;
 
-	std::vector< std::shared_ptr<FWindowsWindow> > Windows;
+	std::vector< std::shared_ptr<WindowsWindow> > Windows;
 
 	std::shared_ptr< class XInputInterface > XInput;
 

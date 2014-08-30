@@ -4,7 +4,7 @@
 void Trigger_Portal::Try(Player* _pPlayer) {
 	if (isActive() && isTouchingTrigger(_pPlayer->GetXPosition(), _pPlayer->GetYPosition(), 5.0)) {
 		std::cout << "Touching Portal\n";
-		_pPlayer->setZone("little");
+		_pPlayer->setZone(TEXT("little"));
 	}
 
 	//else std::cout << "Not Touching Portal\n";

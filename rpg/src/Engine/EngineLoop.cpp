@@ -1,5 +1,6 @@
 #pragma once
 #include "EngineLoop.h"
+#include "GameEngine.h"
 
 int32 EngineLoop::Init()
 {
@@ -9,8 +10,8 @@ int32 EngineLoop::Init()
 	//UClass* EngineClass = NULL;
 
 	// We're the game.
-	GEngine = new Engine;
-
+	GEngine = new GameEngine;
+	
 	//check(GEngine);
 
 	//GEngine->ParseCommandline();

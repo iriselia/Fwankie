@@ -11,7 +11,7 @@ class Camera;
 
 class MapParser {
 public:
-	MapParser(const char* file_name);
+	MapParser(const TCHAR* file_name);
 	~MapParser();
 	void Load();
 	void Unload(); 

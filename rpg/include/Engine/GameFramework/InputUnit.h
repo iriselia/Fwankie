@@ -11,7 +11,7 @@ class InputComponent;
 class SpellInfo;
 
 struct InputCommand {
-	InputCommand(std::string _type, SpellInfo* _spell) : type(_type), spell(_spell) {}
+	InputCommand(std::tstring _type, SpellInfo* _spell) : type(_type), spell(_spell) {}
 
 	bool isInGameCommand() {
 		return type[0] == 'C';
@@ -25,7 +25,7 @@ struct InputCommand {
 		return this->type != other.type || this->spell != other.spell;
 	}
 
-	std::string type;
+	std::tstring type;
 	SpellInfo* spell = nullptr;
 };
 */
@@ -41,5 +41,5 @@ public:
 	virtual void dispatchMessage();
 
 protected:
-	std::queue<std::string> m_messageQueue;
+	std::queue<std::tstring> m_messageQueue;
 };

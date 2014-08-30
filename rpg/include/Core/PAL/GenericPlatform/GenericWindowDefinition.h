@@ -26,7 +26,7 @@ struct GenericWindowDefinition
 	int32 ExpectedMaxWidth;
 	int32 ExpectedMaxHeight;
 
-	std::string Title;
+	std::tstring Title;
 	float Opacity;
 	int32 CornerRadius;
 };

@@ -3,7 +3,7 @@
 //#include "SharedPointer.h"
 
 class FGenericApplicationMessageHandler;
-class FGenericWindow;
+class GenericWindow;
 class ICursor;
 //class ITextInputMethodSystem;
 //class IForceFeedbackSystem;
@@ -174,8 +174,8 @@ struct FPlatformRect
 */
 struct FMonitorInfo
 {
-	std::string Name;
-	std::string ID;
+	std::tstring Name;
+	std::tstring ID;
 	int32 NativeWidth;
 	int32 NativeHeight;
 	bool bIsPrimary;
@@ -195,7 +195,7 @@ struct FDisplayMetrics
 	int32 PrimaryDisplayHeight;
 
 	/** Info on connected physical monitors. Only available on platforms where this information is accessible (PC currently) */
-	//TArray<FMonitorInfo> MonitorInfo;
+	std::vector<FMonitorInfo> MonitorInfo;
 
 	/** Area of the primary display not covered by task bars or other docked widgets */
 	FPlatformRect PrimaryDisplayWorkAreaRect;
@@ -217,8 +217,8 @@ class GenericApplication
 {
 public:
 
-	GenericApplication(const std::shared_ptr< ICursor >& InCursor)
-		: Cursor(InCursor)
+	GenericApplication()//const std::shared_ptr< ICursor >& InCursor)
+		//: Cursor(InCursor)
 		//, MessageHandler(MakeShareable(new FGenericApplicationMessageHandler()))
 	{
 
@@ -226,7 +226,7 @@ public:
 
 	virtual ~GenericApplication() {}
 
-	//virtual void SetMessageHandler(const TSharedRef< FGenericApplicationMessageHandler >& InMessageHandler) { MessageHandler = InMessageHandler; }
+	virtual void SetMessageHandler(const std::shared_ptr < FGenericApplicationMessageHandler >& InMessageHandler) { MessageHandler = InMessageHandler; }
 
 	virtual void PollGameDeviceState(const float TimeDelta) { }
 
@@ -236,17 +236,17 @@ public:
 
 	virtual void Tick(const float TimeDelta) { }
 
-	//virtual TSharedRef< FGenericWindow > MakeWindow() { return MakeShareable(new FGenericWindow()); }
+	virtual std::shared_ptr < GenericWindow > MakeWindow() { return std::shared_ptr<GenericWindow>(new GenericWindow()); }
 
-	//virtual void InitializeWindow(const TSharedRef< FGenericWindow >& Window, const TSharedRef< FGenericWindowDefinition >& InDefinition, const std::shared_ptr< FGenericWindow >& InParent, const bool bShowImmediately) { }
+	virtual void InitializeWindow(const GenericWindow& Window, const GenericWindowDefinition& InDefinition, const std::shared_ptr< GenericWindow >& InParent, const bool bShowImmediately) { }
 
-	virtual void SetCapture(const std::shared_ptr< FGenericWindow >& InWindow) { }
+	virtual void SetCapture(const std::shared_ptr< GenericWindow >& InWindow) { }
 
 	virtual void* GetCapture(void) const { return NULL; }
 
 	virtual FModifierKeysState GetModifierKeys() const  { return FModifierKeysState(false, false, false, false, false, false); }
 
-	virtual void SetHighPrecisionMouseMode(const bool Enable, const std::shared_ptr< FGenericWindow >& InWindow) { };
+	virtual void SetHighPrecisionMouseMode(const bool Enable, const std::shared_ptr< GenericWindow >& InWindow) { };
 
 	virtual bool IsUsingHighPrecisionMouseMode() const { return false; }
 
@@ -286,9 +286,9 @@ public:
 
 public:
 
-	const std::shared_ptr< ICursor > Cursor;
+	//const std::shared_ptr< ICursor > Cursor;
 
 protected:
 
-	//TSharedRef< class FGenericApplicationMessageHandler > MessageHandler;
+	std::shared_ptr < class FGenericApplicationMessageHandler > MessageHandler;
 };

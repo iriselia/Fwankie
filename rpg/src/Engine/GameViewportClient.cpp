@@ -1,11 +1,11 @@
-#include "GameViewportClient.h"
-
-GameViewportClient::~GameViewportClient()
-{
-
-}
-
-GameViewportClient::GameViewportClient()
-{
-
-}
+// #include "GameViewportClient.h"
+// 
+// GameViewportClient::~GameViewportClient()
+// {
+// 
+// }
+// 
+// GameViewportClient::GameViewportClient()
+// {
+// 
+// }

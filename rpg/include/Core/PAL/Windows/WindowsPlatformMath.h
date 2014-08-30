@@ -1,6 +1,5 @@
 #pragma once
-#include <windows.h>
-#include "Core.h"
+#include "GenericPlatformMath.h"
 /*=============================================================================================
 	WindowsPlatformMath.h: Windows platform Math functions
 ==============================================================================================*/

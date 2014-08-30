@@ -15,6 +15,19 @@ struct WindowsPlatformTypes : public GenericPlatformTypes
 
 typedef WindowsPlatformTypes PlatformTypes;
 
+// Base defines, must define these for the platform, there are no defaults
+#define PLATFORM_DESKTOP					1
+#if defined( _WIN64 )
+#define PLATFORM_64BITS					1
+#else
+#define PLATFORM_64BITS					0
+#endif
+#if defined( _MANAGED ) || defined( _M_CEE )
+#define PLATFORM_COMPILER_COMMON_LANGUAGE_RUNTIME_COMPILATION	1
+#endif
+
+#define PLATFORM_LITTLE_ENDIAN						1
+
 // Function type macros.
 #define VARARGS     __cdecl					/* Functions with variable arguments */
 #ifdef CDECL

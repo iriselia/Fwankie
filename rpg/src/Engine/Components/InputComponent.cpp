@@ -10,7 +10,7 @@ InputComponent::InputComponent(Character* _owner) {
 	m_pOwner = _owner;
 }
 
-void InputComponent::addKeyBinding(std::string _command, Callback<void()> _delegate) {
+void InputComponent::addKeyBinding(std::tstring _command, Callback<void()> _delegate) {
 	m_movementKeyMapping[_command] = _delegate;
 }
 

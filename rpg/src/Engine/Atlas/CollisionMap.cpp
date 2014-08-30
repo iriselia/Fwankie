@@ -11,15 +11,19 @@ float32 timeStep = 1.0f / 60.0f;
 int32 velocityIterations = 6;
 int32 positionIterations = 2;
 
-CollisionMap::CollisionMap(const char* file_name)
+CollisionMap::CollisionMap(const TCHAR* file_name)
 {
 	// parse map information from .tmx file.
 	m_pHGE = hgeCreate(HGE_VERSION);
-	const char* resourcePath = "resources/";
-	std::string filePath = resourcePath;
+	const TCHAR* resourcePath = TEXT("resources/");
+	std::tstring filePath = resourcePath;
 	filePath.append(file_name);
 	m_pMap_info = new Tmx::Map();
-	m_pMap_info->ParseFile(filePath.c_str());
+
+	ANSICHAR tempFilePath[100];
+	wcstombs(tempFilePath, filePath.c_str(), 100);
+	m_pMap_info->ParseFile(tempFilePath);
+
 	m_width = m_pMap_info->GetWidth() * m_pMap_info->GetTileWidth();
 	m_height = m_pMap_info->GetHeight() * m_pMap_info->GetTileHeight();
 

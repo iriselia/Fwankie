@@ -9,6 +9,8 @@ int32 EngineLoop::Init()
 	// Figure out which UEngine variant to use.
 	//UClass* EngineClass = NULL;
 
+	//Init graphics here
+
 	// We're the game.
 	GEngine = new GameEngine;
 	

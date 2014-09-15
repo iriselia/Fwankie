@@ -32,7 +32,8 @@ include_directories(
 	.
 	${MYGUI_SOURCE_DIR}/Common
 	${MYGUI_SOURCE_DIR}/MyGUIEngine/include
-	${FWANKIE_SOURCE_DIR}/hge/helpers/include
+	${CMAKE_SOURCE_DIR}/hge/core/include
+	${CMAKE_SOURCE_DIR}/hge/helpers/include
 )
 
 set (HEADER_FILES "")

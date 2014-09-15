@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Core.h"
-//#include "GenericWindowDefinition.h"
+#include "GenericWindowDefinition.h"
 
 /**
 * Modes that an GenericWindow can be in
@@ -137,7 +137,7 @@ public:
 	virtual void SetText(const TCHAR* const Text);
 
 	/** @return	The definition describing properties of the window */
-	virtual const class GenericWindowDefinition& GetDefinition() const;
+	virtual const struct GenericWindowDefinition& GetDefinition() const;
 
 	/** @return	Gives the native window a chance to adjust our stored window size before we cache it off */
 	virtual void AdjustCachedSize(Vector2D& Size) const;

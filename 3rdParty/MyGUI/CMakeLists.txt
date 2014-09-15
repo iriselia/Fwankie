@@ -85,11 +85,11 @@ test_big_endian(MYGUI_TEST_BIG_ENDIAN)
 set(MYGUI_LIBRARIES MyGUIEngine)
 
 # Specify build paths
-SET( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${FWANKIE_SOURCE_DIR}/bin CACHE PATH "Single Directory for all executables." )
-SET( CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${FWANKIE_SOURCE_DIR}/bin_debug CACHE PATH "Single Directory for all executables." )
-SET( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${FWANKIE_SOURCE_DIR}/lib CACHE PATH "Single Directory for all static libraries." )
-SET( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${FWANKIE_SOURCE_DIR}/lib CACHE PATH "Single Directory for all static libraries." )
-SET( CMAKE_PDB_OUTPUT_DIRECTORY ${FWANKIE_SOURCE_DIR}/bin_debug/pdb CACHE PATH "Single Directory for all static libraries." )
+SET( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin CACHE PATH "Single Directory for all executables." )
+SET( CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_SOURCE_DIR}/bin_debug CACHE PATH "Single Directory for all executables." )
+SET( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib CACHE PATH "Single Directory for all static libraries." )
+SET( CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG ${CMAKE_SOURCE_DIR}/lib CACHE PATH "Single Directory for all static libraries." )
+SET( CMAKE_PDB_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin_debug/pdb CACHE PATH "Single Directory for all static libraries." )
 
 if (WIN32 OR APPLE)
 	if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)

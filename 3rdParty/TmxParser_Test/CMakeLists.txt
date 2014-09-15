@@ -1,27 +1,32 @@
-project( TMXPARSER_TEST )
+set( PROJECT_NAME
+tmxparser_test
+)
 cmake_minimum_required( VERSION 2.8 )
+include( ScanSourceFiles )
 
-file(GLOB_RECURSE TMXPARSER_TEST_SOURCES ${TMXPARSER_TEST_SOURCE_DIR}/src/*.cpp)
-file(GLOB_RECURSE TMXPARSER_TEST_HEADERS ${TMXPARSER_TEST_SOURCE_DIR}/include/*.h)
+#----- Enable Unicode -----
+#add_definitions(-DUNICODE -D_UNICODE)
 
-set (TMXPARSER_TEST_INCLUDE_DIRS "")
-foreach (_headerFile ${TMXPARSER_TEST_HEADERS})
-    get_filename_component(_dir ${_headerFile} PATH)
-    list (APPEND TMXPARSER_TEST_INCLUDE_DIRS ${_dir})
-	#SET_PROPERTY(TARGET ${_headerFile}		PROPERTY FOLDER ${_dir})
-endforeach()
-list(REMOVE_DUPLICATES TMXPARSER_TEST_INCLUDE_DIRS)
-
-include_directories( ${TMXPARSER_TEST_INCLUDE_DIRS} )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/tmxparser/include )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/tinyxml/include )
+#------ additional includes ------
+include_directories(
+${CURRENT_INCLUDE_DIRS}
+${CMAKE_SOURCE_DIR}/3rdParty/tmxparser/include
+${CMAKE_SOURCE_DIR}/3rdParty/tinyxml/include
+)
 
 #------ link directories listed ------
-link_libraries( tmxparser tinyxml )
-
+link_libraries(
+tmxparser
+tinyxml
+)
 
 #------ target -----
-add_executable (TMXPARSER_TEST WIN32 ${TMXPARSER_TEST_SOURCES} ${TMXPARSER_TEST_HEADERS})
+add_executable (${PROJECT_NAME} WIN32 ${MY_SRC} ${MY_HEADERS})
+
+if( MSVC )
+	SET_PROPERTY(GLOBAL PROPERTY USE_FOLDERS ON)
+	SET_PROPERTY(TARGET ${PROJECT_NAME}		PROPERTY FOLDER "3rd Party")
+endif()
 
 if(WIN32)
    set_target_properties(TMXPARSER_TEST PROPERTIES LINK_FLAGS_DEBUG "/SUBSYSTEM:CONSOLE")
@@ -32,9 +37,4 @@ if(WIN32)
    set_target_properties(TMXPARSER_TEST PROPERTIES LINK_FLAGS_MINSIZEREL "/SUBSYSTEM:WINDOWS")
 endif(WIN32)
 
-if( MSVC )
 
-    SET_TARGET_PROPERTIES( TMXPARSER_TEST PROPERTIES LINK_FLAGS "/NODEFAULTLIB:libci" )
-	SET_PROPERTY(GLOBAL PROPERTY USE_FOLDERS ON)
-	SET_PROPERTY(TARGET TMXPARSER_TEST		PROPERTY FOLDER "3rd Party")
-endif()

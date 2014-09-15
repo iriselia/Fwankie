@@ -10,11 +10,11 @@ set( HGE_PNGOPT_SRC
 #------ additional includes ------
 include_directories( ${HGEHELPERS_SOURCE_DIR}/include )
 include_directories( ${HGECORE_SOURCE_DIR} )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/libPNG )
-include_directories( ${FWANKIE_SOURCE_DIR}/3tdParty/zlib-1.2.5 )
+include_directories( ${CMAKE_SOURCE_DIR}/3rdParty/libPNG )
+include_directories( ${CMAKE_SOURCE_DIR}/3tdParty/zlib-1.2.5 )
 
 #------ link directories listed ------
-link_directories( ${FWANKIE_SOURCE_DIR}/lib )
+link_directories( ${CMAKE_SOURCE_DIR}/lib )
 link_directories( ${DIRECTX_SDK_DIR}/lib ${DIRECTX_SDK_DIR}/lib/x64 ${DIRECTX_SDK_DIR}/lib/x86 )
 #if( ${HGE_DIRECTX_VER} MATCHES "8" )
 #    link_libraries( d3d8 d3dx8 )

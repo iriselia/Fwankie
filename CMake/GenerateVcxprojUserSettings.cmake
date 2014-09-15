@@ -1,0 +1,8 @@
+# Find user and system name
+SET(SYSTEM_NAME $ENV{USERDOMAIN} CACHE STRING SystemName)
+SET(USER_NAME $ENV{USERNAME} CACHE STRING UserName)
+
+# Configure the template file
+SET(USER_FILE ${PROJECT_NAME}.vcxproj.user)
+SET(OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR}/${USER_FILE})
+CONFIGURE_FILE(${CMAKE_MODULE_PATH}/UserTemplate.template ${USER_FILE} @ONLY)

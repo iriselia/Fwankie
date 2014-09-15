@@ -1,38 +1,60 @@
-project( HGECORE )
+set( PROJECT_NAME
+hge
+)
 cmake_minimum_required( VERSION 2.8 )
+include( ScanSourceFiles )
 
-file(GLOB_RECURSE HGECORE_SOURCES ${HGECORE_SOURCE_DIR}/src/*.cpp)
-file(GLOB_RECURSE HGECORE_HEADERS ${HGECORE_SOURCE_DIR}/include/*.h)
-
-set (HGECORE_INCLUDE_DIRS "")
-foreach (_headerFile ${HGECORE_HEADERS})
-    get_filename_component(_dir ${_headerFile} PATH)
-    list (APPEND HGECORE_INCLUDE_DIRS ${_dir})
-endforeach()
-list(REMOVE_DUPLICATES HGECORE_INCLUDE_DIRS)
+#----- Enable Unicode -----
+#add_definitions(-DUNICODE -D_UNICODE)
 
 #------ additional includes ------
-include_directories( ${HGECORE_INCLUDE_DIRS} )
-include_directories( ${FWANKIE_SOURCE_DIR}/hge/helpers/include )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/libPNG )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/zlib-1.2.5 )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/zlib-1.2.5/contrib/minizip )
-## include_directories( ${HGE_SOURCE_DIR}/src )
-
-include_directories( ${DIRECTX_SDK_DIR}/include )
+include_directories(
+${DIRECTX_SDK_DIR}/include
+${CURRENT_INCLUDE_DIRS}
+${CMAKE_SOURCE_DIR}/hge/helpers/include
+${CMAKE_SOURCE_DIR}/3rdParty
+${CMAKE_SOURCE_DIR}/3rdParty/libPNG
+${CMAKE_SOURCE_DIR}/3rdParty/zlib-1.2.5
+${CMAKE_SOURCE_DIR}/3rdParty/zlib-1.2.5/contrib/minizip
+)
 
 #------ link directories listed ------
-link_directories( ${FWANKIE_SOURCE_DIR}/lib )
-link_directories( ${DIRECTX_SDK_DIR}/lib ${DIRECTX_SDK_DIR}/lib/x86 ${DIRECTX_SDK_DIR}/lib/x64 )
+link_directories(
+${CMAKE_SOURCE_DIR}/lib
+${DIRECTX_SDK_DIR}/lib
+${DIRECTX_SDK_DIR}/lib/x86
+${DIRECTX_SDK_DIR}/lib/x64
+)
+link_libraries(
+winmm
+zlib
+hgehelpers
+)
+#------ directx version based link ------
 if( ${HGE_DIRECTX_VER} MATCHES "8" )
-    link_libraries( d3d8 d3dx8 )
+    link_libraries(
+	d3d8
+	d3dx8
+	)
 endif()
 if( ${HGE_DIRECTX_VER} MATCHES "9" )
-    link_libraries( ${DirectX_D3DX9_LIBRARY} ${DirectX_LIBRARY}  )
+    link_libraries(
+	${DirectX_D3DX9_LIBRARY}
+	${DirectX_LIBRARY}
+	)
 endif()
-link_libraries( winmm )
-link_libraries( zlib hgehelpers )
+
+#------ target -----
+add_library( ${PROJECT_NAME} SHARED ${MY_SRC} ${MY_HEADERS} )
+#add_dependencies( HGEHELPERS zlib )
+add_library (${PROJECT_NAME}-static STATIC ${MY_SRC} ${MY_HEADERS})
+
+if( MSVC )
+    SET_TARGET_PROPERTIES( ${PROJECT_NAME} PROPERTIES LINK_FLAGS "/NODEFAULTLIB:libci" )
+	SET_PROPERTY(GLOBAL PROPERTY USE_FOLDERS ON)
+	SET_PROPERTY(TARGET ${PROJECT_NAME}		PROPERTY FOLDER "HGE")
+	SET_PROPERTY(TARGET ${PROJECT_NAME}-static		PROPERTY FOLDER "HGE")
+endif()
 
 #------ precompiled headers support (not done for now) ------
 ## if (MSVC)
@@ -43,19 +65,3 @@ link_libraries( zlib hgehelpers )
 ##     endforeach( src_file ${HGECORE_SRC} )
 ##     list( APPEND HGECORE_SRC ${PRECOMP_FILENAME}.cpp ${PRECOMP_FILENAME}.h )
 ## endif (MSVC)
-
-#------ target (for creating HGE.DLL) -----
-add_library( hge SHARED ${HGECORE_SOURCES} ${HGECORE_HEADERS})
-add_dependencies( hge hgehelpers zlib )
-
-
-
-#------ target (for creating static HGE.LIB) -----
-add_library( hge-static STATIC ${HGECORE_SOURCES} ${HGECORE_HEADERS} )
-
-if( MSVC )
-    SET_TARGET_PROPERTIES( hge PROPERTIES LINK_FLAGS "/NODEFAULTLIB:libci" )
-	SET_PROPERTY(GLOBAL PROPERTY USE_FOLDERS ON)
-	SET_PROPERTY(TARGET hge		PROPERTY FOLDER "HGE")
-	SET_PROPERTY(TARGET hge-static		PROPERTY FOLDER "HGE")
-endif()

@@ -21,7 +21,7 @@ namespace std{ typedef string tstring; }
 
 
 /* Multi-Platform Support Includes */
-#include "Platform.h"
+#include "Platform.h" // Bit abstraction
 #include "PlatformIncludes.h"
 #include "PlatformMath.h"
 

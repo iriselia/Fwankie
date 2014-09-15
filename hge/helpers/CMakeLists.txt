@@ -1,22 +1,30 @@
-project( HGEHELPERS )
+set( PROJECT_NAME
+hgehelpers
+)
 cmake_minimum_required( VERSION 2.8 )
+include( ScanSourceFiles )
 
-file(GLOB_RECURSE HGEHELPERS_SOURCES ${HGEHELPERS_SOURCE_DIR}/src/*.cpp)
-file(GLOB_RECURSE HGEHELPERS_HEADERS ${HGEHELPERS_SOURCE_DIR}/include/*.h)
-
-set (HGEHELPERS_INCLUDE_DIRS "")
-foreach (_headerFile ${HGEHELPERS_HEADERS})
-    get_filename_component(_dir ${_headerFile} PATH)
-    list (APPEND HGEHELPERS_INCLUDE_DIRS ${_dir})
-endforeach()
-list(REMOVE_DUPLICATES HGEHELPERS_INCLUDE_DIRS)
+#----- Enable Unicode -----
+#add_definitions(-DUNICODE -D_UNICODE)
 
 #------ additional includes ------
-include_directories( ${HGEHELPERS_INCLUDE_DIRS} )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/Box2D )
+include_directories(
+${CURRENT_INCLUDE_DIRS}
+${CMAKE_SOURCE_DIR}/hge/core/include
+${CMAKE_SOURCE_DIR}/3rdParty/Box2D
+)
 
 #------ link directories listed ------
-link_directories( ${FWANKIE_SOURCE_DIR}/lib )
+link_directories( ${CMAKE_SOURCE_DIR}/lib )
+
+#------ target -----
+add_library (${PROJECT_NAME} STATIC ${MY_SRC} ${MY_HEADERS})
+
+if( MSVC )
+	SET_PROPERTY(GLOBAL PROPERTY USE_FOLDERS ON)
+	SET_PROPERTY(TARGET ${PROJECT_NAME}		PROPERTY FOLDER "HGE")
+endif()
+
 
 #------ precompiled headers support (not done for now) ------
 ## if (MSVC)
@@ -27,11 +35,3 @@ link_directories( ${FWANKIE_SOURCE_DIR}/lib )
 ##     endforeach( src_file ${HGEHELPERS_SRC} )
 ##     list( APPEND HGEHELPERS_SRC ${PRECOMP_FILENAME}.cpp ${PRECOMP_FILENAME}.h )
 ## endif (MSVC)
-
-#------ target -----
-add_library( hgehelpers STATIC ${HGEHELPERS_SOURCES} ${HGEHELPERS_HEADERS} )
-
-if( MSVC )
-	SET_PROPERTY(GLOBAL PROPERTY USE_FOLDERS ON)
-	SET_PROPERTY(TARGET hgehelpers		PROPERTY FOLDER "HGE")
-endif()

@@ -1,28 +1,26 @@
-project( TINYXML )
+set( PROJECT_NAME
+tinyxml
+)
 cmake_minimum_required( VERSION 2.8 )
+include( ScanSourceFiles )
 
-file(GLOB_RECURSE TINYXML_SOURCES ${TINYXML_SOURCE_DIR}/src/*.cpp)
-file(GLOB_RECURSE TINYXML_HEADERS ${TINYXML_SOURCE_DIR}/include/*.h)
+#----- Enable Unicode -----
+#add_definitions(-DUNICODE -D_UNICODE)
 
-set (TINYXML_INCLUDE_DIRS "")
-foreach (_headerFile ${TINYXML_HEADERS})
-    get_filename_component(_dir ${_headerFile} PATH)
-    list (APPEND TINYXML_INCLUDE_DIRS ${_dir})
-endforeach()
-list(REMOVE_DUPLICATES TINYXML_INCLUDE_DIRS)
-
-include_directories( ${TINYXML_INCLUDE_DIRS} )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/base64 )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/tinyxml )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/zlib-1.2.5 )
-
+#------ additional includes ------
+include_directories(
+${CURRENT_INCLUDE_DIRS}
+${CMAKE_SOURCE_DIR}/3rdParty/base64
+${CMAKE_SOURCE_DIR}/3rdParty/tinyxml
+${CMAKE_SOURCE_DIR}/3rdParty/zlib-1.2.5
+)
 
 #------ target -----
-add_library( tinyxml STATIC ${TINYXML_SOURCES} ${TINYXML_HEADERS} )
+add_library (${PROJECT_NAME} STATIC ${MY_SRC} ${MY_HEADERS})
 
 if( MSVC )
-
-    SET_TARGET_PROPERTIES( tinyxml PROPERTIES LINK_FLAGS "/NODEFAULTLIB:libci" )
 	SET_PROPERTY(GLOBAL PROPERTY USE_FOLDERS ON)
-	SET_PROPERTY(TARGET tinyxml		PROPERTY FOLDER "3rd Party")
+	SET_PROPERTY(TARGET ${PROJECT_NAME}		PROPERTY FOLDER "3rd Party")
 endif()
+
+

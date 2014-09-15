@@ -28,7 +28,7 @@ public:
 
 	HWND GetHWnd() const;
 
-	void Initialize(class FWindowsApplication* const Application, const std::shared_ptr<class GenericWindowDefinition> InDefinition, HINSTANCE InHInstance, const std::shared_ptr< WindowsWindow >& InParent, const bool bShowImmediately);
+	void Initialize(class WindowsApplication* const Application, const std::shared_ptr<class GenericWindowDefinition> InDefinition, HINSTANCE InHInstance, const std::shared_ptr< WindowsWindow >& InParent, const bool bShowImmediately);
 
 
 public:

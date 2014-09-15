@@ -44,7 +44,7 @@ using namespace vc_attributes;
 //#include "Windows/WindowsPlatformString.h"
 
 //REQUIRED!!!
-//#include "WindowsPlatformMisc.h"
+#include "WindowsPlatformMisc.h"
 
 
 //#include "Windows/WindowsPlatformStackWalk.h"

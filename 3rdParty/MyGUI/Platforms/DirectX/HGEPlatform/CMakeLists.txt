@@ -6,7 +6,8 @@ include_directories(
  ${DirectX_INCLUDE_DIR}
  ${MYGUI_SOURCE_DIR}/Common
  #${HGEHELPERS_INCLUDE_DIRS}
- ${FWANKIE_SOURCE_DIR}/hge/helpers/include
+ ${CMAKE_SOURCE_DIR}/hge/core/include
+ #${CMAKE_SOURCE_DIR}/hge/helpers/include
 )
 
 include(${PROJECTNAME}.list)

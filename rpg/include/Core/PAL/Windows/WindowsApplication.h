@@ -132,7 +132,7 @@ public:
 /**
 * Windows-specific application implementation.
 */
-class FWindowsApplication : public GenericApplication //, IForceFeedbackSystem
+class WindowsApplication : public GenericApplication //, IForceFeedbackSystem
 {
 
 public:
@@ -145,12 +145,12 @@ public:
 	*
 	* @return  New application object
 	*/
-	static FWindowsApplication* CreateWindowsApplication(const HINSTANCE InstanceHandle, const HICON IconHandle);
+	static WindowsApplication* CreateWindowsApplication(const HINSTANCE InstanceHandle, const HICON IconHandle);
 
 
 public:
 
-	virtual ~FWindowsApplication();
+	virtual ~WindowsApplication();
 
 	virtual void DestroyApplication() OVERRIDE;
 
@@ -167,7 +167,7 @@ public:
 
 	virtual std::shared_ptr < GenericWindow > MakeWindow() OVERRIDE;
 
-	virtual void FWindowsApplication::InitializeWindow(const std::shared_ptr < GenericWindow >& InWindow, const std::shared_ptr < GenericWindowDefinition >& InDefinition, const std::shared_ptr < GenericWindow >& InParent, const bool bShowImmediately);
+	virtual void WindowsApplication::InitializeWindow(const std::shared_ptr < GenericWindow >& InWindow, const std::shared_ptr < GenericWindowDefinition >& InDefinition, const std::shared_ptr < GenericWindow >& InParent, const bool bShowImmediately);
 
 	virtual void SetCapture(const std::shared_ptr< GenericWindow >& InWindow) OVERRIDE;
 
@@ -231,7 +231,7 @@ public:
 
 private:
 
-	FWindowsApplication(const HINSTANCE HInstance, const HICON IconHandle);
+	WindowsApplication(const HINSTANCE HInstance, const HICON IconHandle);
 
 	/** Registers the Windows class for windows and assigns the application instance and icon */
 	static bool RegisterClass(const HINSTANCE HInstance, const HICON HIcon);

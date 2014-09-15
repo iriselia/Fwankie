@@ -25,11 +25,11 @@ set( HGELIBPNG_SRC
 
 #------ additional includes ------
 include_directories( ${HGECORE_SOURCE_DIR}/include )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty )
-include_directories( ${FWANKIE_SOURCE_DIR}/3rdParty/zlib-1.2.5 )
+include_directories( ${CMAKE_SOURCE_DIR}/3rdParty )
+include_directories( ${CMAKE_SOURCE_DIR}/3rdParty/zlib-1.2.5 )
 
 #------ link directories listed ------
-link_directories( ${FWANKIE_SOURCE_DIR}/lib )
+link_directories( ${CMAKE_SOURCE_DIR}/lib )
 
 #------ target -----
 add_library( hgelibpng STATIC ${HGELIBPNG_SRC} )

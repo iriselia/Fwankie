@@ -31,7 +31,7 @@ std::shared_ptr<WindowsWindow> WindowsWindow::Make()
 	return std::shared_ptr<WindowsWindow>(new WindowsWindow());
 }
 
-void WindowsWindow::Initialize(FWindowsApplication* const Application, const std::shared_ptr<GenericWindowDefinition> InDefinition, HINSTANCE InHInstance, const std::shared_ptr< WindowsWindow >& InParent, const bool bShowImmediately)
+void WindowsWindow::Initialize(WindowsApplication* const Application, const std::shared_ptr<GenericWindowDefinition> InDefinition, HINSTANCE InHInstance, const std::shared_ptr< WindowsWindow >& InParent, const bool bShowImmediately)
 {
 	Definition = InDefinition;
 	//OwningApplication = Application;
@@ -112,6 +112,9 @@ void WindowsWindow::Initialize(FWindowsApplication* const Application, const std
 		X, Y, WindowWidth, WindowHeight,
 		(InParent.get()) ? static_cast<HWND>(InParent->HWnd) : NULL,
 		NULL, InHInstance, NULL);
+// 	hwnd = CreateWindowEx(0, WINDOW_CLASS_NAME, szWinTitle, styleW,
+// 		rectW.left, rectW.top, rectW.right - rectW.left, rectW.bottom - rectW.top,
+// 		hwndParent, NULL, hInstance, NULL);
 
 	VirtualWidth = ClientWidth;
 	VirtualHeight = ClientHeight;

@@ -247,7 +247,7 @@ GenericApplication* FWindowsPlatformMisc::CreateApplication()
 		AppIconHandle = LoadIcon( (HINSTANCE)NULL, IDI_APPLICATION ); 
 	}
 
-	return FWindowsApplication::CreateWindowsApplication( hInstance, AppIconHandle );
+	return WindowsApplication::CreateWindowsApplication( hInstance, AppIconHandle );
 }
 
 void FWindowsPlatformMisc::SetGracefulTerminationHandler()

@@ -5,6 +5,7 @@
 =============================================================================*/
 
 #include "Core.h"
+#include "GenericPlatformMisc.h"
 #include "GenericApplication.h"
 
 //#include "MallocAnsi.h"

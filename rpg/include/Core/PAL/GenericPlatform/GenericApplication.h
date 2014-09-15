@@ -1,9 +1,9 @@
 #pragma once
 #include "Core.h"
+#include "GenericWindow.h"
 //#include "SharedPointer.h"
 
 class FGenericApplicationMessageHandler;
-class GenericWindow;
 class ICursor;
 //class ITextInputMethodSystem;
 //class IForceFeedbackSystem;
@@ -238,7 +238,7 @@ public:
 
 	virtual std::shared_ptr < GenericWindow > MakeWindow() { return std::shared_ptr<GenericWindow>(new GenericWindow()); }
 
-	virtual void InitializeWindow(const GenericWindow& Window, const GenericWindowDefinition& InDefinition, const std::shared_ptr< GenericWindow >& InParent, const bool bShowImmediately) { }
+	virtual void InitializeWindow(const std::shared_ptr < GenericWindow >& Window, const std::shared_ptr < GenericWindowDefinition > & InDefinition, const std::shared_ptr< GenericWindow >& InParent, const bool bShowImmediately) { }
 
 	virtual void SetCapture(const std::shared_ptr< GenericWindow >& InWindow) { }
 

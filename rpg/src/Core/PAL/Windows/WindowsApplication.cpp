@@ -29,17 +29,17 @@
 #define WM_MOUSEHWHEEL                  0x020E
 #endif
 
-const IntPoint FWindowsApplication::MinimizedWindowPosition(-32000,-32000);
+const IntPoint WindowsApplication::MinimizedWindowPosition(-32000,-32000);
 
-FWindowsApplication* WindowApplication = NULL;
+WindowsApplication* WindowApplication = NULL;
 
-FWindowsApplication* FWindowsApplication::CreateWindowsApplication( const HINSTANCE InstanceHandle, const HICON IconHandle )
+WindowsApplication* WindowsApplication::CreateWindowsApplication( const HINSTANCE InstanceHandle, const HICON IconHandle )
 {
-	WindowApplication = new FWindowsApplication( InstanceHandle, IconHandle );
+	WindowApplication = new WindowsApplication( InstanceHandle, IconHandle );
 	return WindowApplication;
 }
 
-FWindowsApplication::FWindowsApplication( const HINSTANCE HInstance, const HICON IconHandle )
+WindowsApplication::WindowsApplication( const HINSTANCE HInstance, const HICON IconHandle )
 	: GenericApplication()// MakeShareable( new FWindowsCursor() ) )
 	, InstanceHandle( HInstance )
 	, bUsingHighPrecisionMouseInput( false )
@@ -75,7 +75,7 @@ FWindowsApplication::FWindowsApplication( const HINSTANCE HInstance, const HICON
 	GetDisplayMetrics(InitialDisplayMetrics);
 }
 
-bool FWindowsApplication::RegisterClass( const HINSTANCE HInstance, const HICON HIcon )
+bool WindowsApplication::RegisterClass( const HINSTANCE HInstance, const HICON HIcon )
 {
 	WNDCLASS wc;
 	memset( &wc, NULL, sizeof(wc) );
@@ -104,7 +104,7 @@ bool FWindowsApplication::RegisterClass( const HINSTANCE HInstance, const HICON 
 	return true;
 }
 
-FWindowsApplication::~FWindowsApplication()
+WindowsApplication::~WindowsApplication()
 {
 	//TODO: fix text input system
 	//TextInputMethodSystem->Terminate();
@@ -113,7 +113,7 @@ FWindowsApplication::~FWindowsApplication()
 	OleUninitialize();
 }
 
-std::shared_ptr< GenericWindow > FWindowsApplication::MakeWindow()
+std::shared_ptr< GenericWindow > WindowsApplication::MakeWindow()
 { 
 	std::shared_ptr<GenericWindow> NativeParent = NULL;
 // 	TSharedPtr<SWindow> ParentWindow = InSlateWindow->GetParentWindow();
@@ -134,11 +134,9 @@ std::shared_ptr< GenericWindow > FWindowsApplication::MakeWindow()
 // 	PlatformApplication->InitializeWindow(NewWindow, Definition, NativeParent, bShowImmediately);
 
 	return NewWindow;
-
-	return ; 
 }
 
-void FWindowsApplication::InitializeWindow(const std::shared_ptr < GenericWindow >& InWindow, const std::shared_ptr < GenericWindowDefinition >& InDefinition, const std::shared_ptr < GenericWindow >& InParent, const bool bShowImmediately)
+void WindowsApplication::InitializeWindow(const std::shared_ptr < GenericWindow >& InWindow, const std::shared_ptr < GenericWindowDefinition >& InDefinition, const std::shared_ptr < GenericWindow >& InParent, const bool bShowImmediately)
 {
 	const std::shared_ptr < WindowsWindow > Window = std::shared_ptr < WindowsWindow >(static_cast< WindowsWindow* >(InWindow.get()));
 	const std::shared_ptr < WindowsWindow > ParentWindow = std::shared_ptr < WindowsWindow >(static_cast< WindowsWindow* >(InParent.get()));
@@ -147,7 +145,7 @@ void FWindowsApplication::InitializeWindow(const std::shared_ptr < GenericWindow
 	Window->Initialize( this, InDefinition, InstanceHandle, ParentWindow, bShowImmediately );
 }
 
-void FWindowsApplication::SetMessageHandler(const std::shared_ptr < FGenericApplicationMessageHandler >& InMessageHandler)
+void WindowsApplication::SetMessageHandler(const std::shared_ptr < FGenericApplicationMessageHandler >& InMessageHandler)
 {
 	//TODO: fix set message handler. Figure out whether we still need a message handler
 // 	GenericApplication::SetMessageHandler(InMessageHandler);
@@ -161,7 +159,7 @@ void FWindowsApplication::SetMessageHandler(const std::shared_ptr < FGenericAppl
 
 }
 
-FModifierKeysState FWindowsApplication::GetModifierKeys() const
+FModifierKeysState WindowsApplication::GetModifierKeys() const
 {
 	const bool bIsLeftShiftDown = ( ::GetAsyncKeyState( VK_LSHIFT ) & 0x8000 ) != 0;
 	const bool bIsRightShiftDown = ( ::GetAsyncKeyState( VK_RSHIFT ) & 0x8000 ) != 0;
@@ -173,7 +171,7 @@ FModifierKeysState FWindowsApplication::GetModifierKeys() const
 	return FModifierKeysState( bIsLeftShiftDown, bIsRightShiftDown, bIsLeftControlDown, bIsRightControlDown, bIsLeftAltDown, bIsRightAltDown );
 }
 
-void FWindowsApplication::SetCapture(const std::shared_ptr< GenericWindow >& InWindow)
+void WindowsApplication::SetCapture(const std::shared_ptr< GenericWindow >& InWindow)
 {
 	if ( InWindow )
 	{
@@ -185,12 +183,12 @@ void FWindowsApplication::SetCapture(const std::shared_ptr< GenericWindow >& InW
 	}
 }
 
-void* FWindowsApplication::GetCapture( void ) const
+void* WindowsApplication::GetCapture( void ) const
 {
 	return ::GetCapture();
 }
 
-void FWindowsApplication::SetHighPrecisionMouseMode(const bool Enable, const std::shared_ptr< GenericWindow >& InWindow)
+void WindowsApplication::SetHighPrecisionMouseMode(const bool Enable, const std::shared_ptr< GenericWindow >& InWindow)
 {
 	HWND hwnd = NULL;
 	DWORD flags = RIDEV_REMOVE;
@@ -240,7 +238,7 @@ void FWindowsApplication::SetHighPrecisionMouseMode(const bool Enable, const std
 // #endif
 // }
 
-FPlatformRect FWindowsApplication::GetWorkArea( const FPlatformRect& CurrentWindow ) const
+FPlatformRect WindowsApplication::GetWorkArea( const FPlatformRect& CurrentWindow ) const
 {
 	RECT WindowsWindowDim;
 	WindowsWindowDim.left = CurrentWindow.Left;
@@ -427,7 +425,7 @@ void GetMonitorInfo(std::vector<FMonitorInfo>& OutMonitorInfo)
 	}
 }
 
-void FWindowsApplication::GetDisplayMetrics( FDisplayMetrics& OutDisplayMetrics ) const
+void WindowsApplication::GetDisplayMetrics( FDisplayMetrics& OutDisplayMetrics ) const
 {
 	// Total screen size of the primary monitor
 	OutDisplayMetrics.PrimaryDisplayWidth = ::GetSystemMetrics( SM_CXSCREEN );
@@ -452,12 +450,12 @@ void FWindowsApplication::GetDisplayMetrics( FDisplayMetrics& OutDisplayMetrics 
 	GetMonitorInfo(OutDisplayMetrics.MonitorInfo);
 }
 
-void FWindowsApplication::GetInitialDisplayMetrics( FDisplayMetrics& OutDisplayMetrics ) const
+void WindowsApplication::GetInitialDisplayMetrics( FDisplayMetrics& OutDisplayMetrics ) const
 {
 	OutDisplayMetrics = InitialDisplayMetrics;
 }
 
-void FWindowsApplication::DestroyApplication()
+void WindowsApplication::DestroyApplication()
 {
 
 }
@@ -478,7 +476,7 @@ static std::shared_ptr< WindowsWindow > FindWindowByHWND(const std::vector< std:
 
 
 /** All WIN32 messages sent to our app go here; this method simply passes them on */
-LRESULT CALLBACK FWindowsApplication::AppWndProc(HWND hwnd, uint32 msg, WPARAM wParam, LPARAM lParam)
+LRESULT CALLBACK WindowsApplication::AppWndProc(HWND hwnd, uint32 msg, WPARAM wParam, LPARAM lParam)
 {
 	//TODO: is there a need to check for multi threading?
 	//ensure( IsInGameThread() );
@@ -486,7 +484,7 @@ LRESULT CALLBACK FWindowsApplication::AppWndProc(HWND hwnd, uint32 msg, WPARAM w
 	return WindowApplication->ProcessMessage( hwnd, msg, wParam, lParam );
 }
 
-int32 FWindowsApplication::ProcessMessage( HWND hwnd, uint32 msg, WPARAM wParam, LPARAM lParam )
+int32 WindowsApplication::ProcessMessage( HWND hwnd, uint32 msg, WPARAM wParam, LPARAM lParam )
 {
 	std::shared_ptr < WindowsWindow > CurrentNativeEventWindowPtr = FindWindowByHWND(Windows, hwnd);
 
@@ -713,7 +711,7 @@ int32 FWindowsApplication::ProcessMessage( HWND hwnd, uint32 msg, WPARAM wParam,
 				IntPoint NewPosition(NewX,NewY);
 
 				// Only cache the screen position if its not minimized
-				if ( FWindowsApplication::MinimizedWindowPosition != NewPosition )
+				if ( WindowsApplication::MinimizedWindowPosition != NewPosition )
 				{
 					//TODO: fix message handler reference here
 					//MessageHandler->OnMovedWindow( CurrentNativeEventWindow, NewX, NewY );
@@ -934,7 +932,7 @@ int32 FWindowsApplication::ProcessMessage( HWND hwnd, uint32 msg, WPARAM wParam,
 	return DefWindowProc(hwnd, msg, wParam, lParam);
 }
 
-void FWindowsApplication::CheckForShiftUpEvents(const int32 KeyCode)
+void WindowsApplication::CheckForShiftUpEvents(const int32 KeyCode)
 {
 	// Since VK_SHIFT doesn't get an up message if the other shift key is held we need to poll for it
 	//TODO: Fix VK_SHIFT up
@@ -945,7 +943,7 @@ void FWindowsApplication::CheckForShiftUpEvents(const int32 KeyCode)
 // 	}
 }
 
-int32 FWindowsApplication::ProcessDeferredMessage( const FDeferredWindowsMessage& DeferredMessage )
+int32 WindowsApplication::ProcessDeferredMessage( const FDeferredWindowsMessage& DeferredMessage )
 {
 	if ( Windows.size() && !DeferredMessage.NativeWindow.expired() )
 	{
@@ -1434,7 +1432,7 @@ int32 FWindowsApplication::ProcessDeferredMessage( const FDeferredWindowsMessage
 	return 0;
 }
 
-void FWindowsApplication::ProcessDeferredDragDropOperation(const FDeferredWindowsDragDropOperation& Op)
+void WindowsApplication::ProcessDeferredDragDropOperation(const FDeferredWindowsDragDropOperation& Op)
 {
 	// Since we deferred the drag/drop event, we could not specify the correct cursor effect in time. Now we will just throw away the value.
 	DWORD DummyCursorEffect = 0;
@@ -1460,7 +1458,7 @@ void FWindowsApplication::ProcessDeferredDragDropOperation(const FDeferredWindow
 	}
 }
 
-bool FWindowsApplication::IsInputMessage( uint32 msg )
+bool WindowsApplication::IsInputMessage( uint32 msg )
 {
 	switch(msg)
 	{
@@ -1510,7 +1508,7 @@ bool FWindowsApplication::IsInputMessage( uint32 msg )
 	return false;
 }
 
-void FWindowsApplication::DeferMessage(std::shared_ptr <WindowsWindow>& NativeWindow, HWND InHWnd, uint32 InMessage, WPARAM InWParam, LPARAM InLParam, int32 MouseX, int32 MouseY, uint32 RawInputFlags)
+void WindowsApplication::DeferMessage(std::shared_ptr <WindowsWindow>& NativeWindow, HWND InHWnd, uint32 InMessage, WPARAM InWParam, LPARAM InLParam, int32 MouseX, int32 MouseY, uint32 RawInputFlags)
 {
 	if( true ) //TODO: FIX defer message conditions //GPumpingMessagesOutsideOfMainLoop && bAllowedToDeferMessageProcessing )
 	{
@@ -1523,7 +1521,7 @@ void FWindowsApplication::DeferMessage(std::shared_ptr <WindowsWindow>& NativeWi
 	}
 }
 
-void FWindowsApplication::PumpMessages( const float TimeDelta )
+void WindowsApplication::PumpMessages( const float TimeDelta )
 {
 	MSG Message;
 
@@ -1535,7 +1533,7 @@ void FWindowsApplication::PumpMessages( const float TimeDelta )
 	}
 }
 
-void FWindowsApplication::ProcessDeferredEvents( const float TimeDelta )
+void WindowsApplication::ProcessDeferredEvents( const float TimeDelta )
 {
 	// Process windows messages
 	{
@@ -1567,7 +1565,7 @@ void FWindowsApplication::ProcessDeferredEvents( const float TimeDelta )
 	}
 }
 
-void FWindowsApplication::PollGameDeviceState( const float TimeDelta )
+void WindowsApplication::PollGameDeviceState( const float TimeDelta )
 {
 	//TODO: FIX pull game device state
 	// initialize any externally-implemented input devices (we delay load initialize the array so any plugins have had time to load)
@@ -1616,12 +1614,12 @@ void FWindowsApplication::PollGameDeviceState( const float TimeDelta )
 // 	}
 // }
 
-void FWindowsApplication::DeferDragDropOperation(const FDeferredWindowsDragDropOperation& DeferredDragDropOperation)
+void WindowsApplication::DeferDragDropOperation(const FDeferredWindowsDragDropOperation& DeferredDragDropOperation)
 {
 	DeferredDragDropOperations.push_back(DeferredDragDropOperation);
 }
 
-HRESULT FWindowsApplication::OnOLEDragEnter( const HWND HWnd, const DragDropOLEData& OLEData, DWORD KeyState, POINTL CursorPosition, DWORD *CursorEffect)
+HRESULT WindowsApplication::OnOLEDragEnter( const HWND HWnd, const DragDropOLEData& OLEData, DWORD KeyState, POINTL CursorPosition, DWORD *CursorEffect)
 {
 	const std::shared_ptr < WindowsWindow > Window = FindWindowByHWND(Windows, HWnd);
 
@@ -1647,7 +1645,7 @@ HRESULT FWindowsApplication::OnOLEDragEnter( const HWND HWnd, const DragDropOLED
 	return 0;
 }
 
-HRESULT FWindowsApplication::OnOLEDragOver( const HWND HWnd, DWORD KeyState, POINTL CursorPosition, DWORD *CursorEffect)
+HRESULT WindowsApplication::OnOLEDragOver( const HWND HWnd, DWORD KeyState, POINTL CursorPosition, DWORD *CursorEffect)
 {
 	const std::shared_ptr < WindowsWindow > Window = FindWindowByHWND(Windows, HWnd);
 
@@ -1659,7 +1657,7 @@ HRESULT FWindowsApplication::OnOLEDragOver( const HWND HWnd, DWORD KeyState, POI
 	return 0;
 }
 
-HRESULT FWindowsApplication::OnOLEDragOut( const HWND HWnd )
+HRESULT WindowsApplication::OnOLEDragOut( const HWND HWnd )
 {
 	const std::shared_ptr < WindowsWindow > Window = FindWindowByHWND(Windows, HWnd);
 
@@ -1673,7 +1671,7 @@ HRESULT FWindowsApplication::OnOLEDragOut( const HWND HWnd )
 	return 0;
 }
 
-HRESULT FWindowsApplication::OnOLEDrop( const HWND HWnd, const DragDropOLEData& OLEData, DWORD KeyState, POINTL CursorPosition, DWORD *CursorEffect)
+HRESULT WindowsApplication::OnOLEDrop( const HWND HWnd, const DragDropOLEData& OLEData, DWORD KeyState, POINTL CursorPosition, DWORD *CursorEffect)
 {
 	const std::shared_ptr < WindowsWindow > Window = FindWindowByHWND(Windows, HWnd);
 

@@ -317,7 +317,7 @@ void hgeSprite::SetupQuadAlphaChannel(hgeQuad _quad) {
 	}
 
 	HTEXTURE pTex = _quad.tex;
-
+		//todo: fix texture writing
 		DWORD *pLockPtr = (DWORD*)hge->Texture_Lock((HTEXTURE)pTex);
 
 		int orgW = hge->Texture_GetWidth((HTEXTURE)pTex, true);

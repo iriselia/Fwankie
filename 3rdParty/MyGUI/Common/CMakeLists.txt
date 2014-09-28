@@ -88,7 +88,11 @@ add_library(${PROJECTNAME} STATIC ${HEADER_FILES} ${SOURCE_FILES})
 if(MYGUI_RENDERSYSTEM EQUAL 1)
 	add_dependencies(${PROJECTNAME} MyGUI.HGEPlatform)
 	target_link_libraries(${PROJECTNAME} MyGUI.HGEPlatform)
-	target_link_libraries(${PROJECTNAME} hge hgehelpers)
+	#
+	#
+	#
+	#
+	target_link_libraries(${PROJECTNAME} hgehelpers)
 elseif(MYGUI_RENDERSYSTEM EQUAL 2)
 	add_dependencies(${PROJECTNAME} MyGUI.OgrePlatform)
 	target_link_libraries(${PROJECTNAME} MyGUI.OgrePlatform)

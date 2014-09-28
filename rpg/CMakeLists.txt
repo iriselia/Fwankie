@@ -10,7 +10,10 @@ add_definitions(-DUNICODE -D_UNICODE)
 #------ additional includes ------
 include_directories(
 ${DIRECTX_SDK_DIR}/include
+
 ${CMAKE_SOURCE_DIR}/hge/core/include
+#${CMAKE_SOURCE_DIR}/hge/coredx11/include
+
 ${CMAKE_SOURCE_DIR}/hge/helpers/include
 ${CMAKE_SOURCE_DIR}/hge/hgeb2draw/include
 ${CMAKE_SOURCE_DIR}/3rdParty/TmxParser/include
@@ -36,9 +39,17 @@ link_libraries(
 ${DirectX_D3DX9_LIBRARY}
 ${DirectX_LIBRARY}
 Common
+#hge
+hgedx11
 hgeb2draw
 tmxparser
 Box2D
+)
+#------ directx version based link ------
+link_libraries(
+d3d11
+d3dx11
+d3dcompiler
 )
 
 #------ target -----

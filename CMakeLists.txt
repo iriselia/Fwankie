@@ -34,7 +34,8 @@ include(SetOutputDirectories)
 
 #--- HGE core library and helpers ---
 add_subdirectory( hge/helpers )
-add_subdirectory( hge/core )
+#add_subdirectory( hge/core )
+add_subdirectory( hge/coredx11 )
 add_subdirectory( hge/hgeb2draw )
 
 #--- 3rd Party library ---

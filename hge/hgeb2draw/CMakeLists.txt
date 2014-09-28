@@ -13,13 +13,15 @@ ${CURRENT_INCLUDE_DIRS}
 ${CMAKE_SOURCE_DIR}/3rdParty/Box2D
 ${CMAKE_SOURCE_DIR}/rpg/include
 ${CMAKE_SOURCE_DIR}/hge/core/include
-${HGEHELPERS_SOURCE_DIR}/include
+#${CMAKE_SOURCE_DIR}/hge/coredx11/include
+${CMAKE_SOURCE_DIR}/hge/helpers/include
 )
 
 #------ link directories listed ------
 link_directories( ${HGE_SOURCE_DIR}/lib )
 link_libraries(
-hge
+#hgedx11
+#hge
 Box2D
 )
 

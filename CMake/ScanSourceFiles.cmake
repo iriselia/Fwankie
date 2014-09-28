@@ -11,6 +11,10 @@ if( NOT MY_HEADERS STREQUAL "" )
 create_source_group("Header Files" "${CMAKE_CURRENT_SOURCE_DIR}/include" ${MY_HEADERS})
 endif()
 
+if( (MY_SRC STREQUAL "") AND (MY_HEADERS STREQUAL "") )
+message(FATAL_ERROR "Please insert at least one .cpp or .h file in to either src or include directory respectively.")
+endif()
+
 set (CURRENT_INCLUDE_DIRS "")
 foreach (_headerFile ${MY_HEADERS})
     get_filename_component(_dir ${_headerFile} PATH)
@@ -18,7 +22,9 @@ foreach (_headerFile ${MY_HEADERS})
 endforeach()
 list(REMOVE_DUPLICATES CURRENT_INCLUDE_DIRS)
 include_directories( ${CURRENT_INCLUDE_DIRS} )
-set(${PROJECT_NAME}_INCLUDE_DIRS ${CURRENT_INCLUDE_DIRS})
+
+set(${PROJECT_NAME}_INCLUDE_DIRS "${CURRENT_INCLUDE_DIRS}" CACHE STRING "")
+include_directories( ${${PROJECT_NAME}_INCLUDE_DIRS} )
 
 #------ target -----
 include(GenerateVcxprojUserSettings)

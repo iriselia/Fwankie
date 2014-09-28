@@ -70,6 +70,7 @@ namespace RPG_Debug {
 		Settings::load(TEXT("config.txt"));
 		bool b_windowed = true;
 
+		//hge->System_SetState(HGE_SHOWSPLASH, false);
 		hge->System_SetState(HGE_LOGFILE, "resources/game.log");
 		hge->System_SetState(HGE_FRAMEFUNC, FrameFunc);
 		hge->System_SetState(HGE_RENDERFUNC, RenderFunc);
@@ -80,6 +81,9 @@ namespace RPG_Debug {
 		hge->System_SetState(HGE_USETRANSPARENTCOLOR, true);
 
 		assert(hge->System_Initiate());
+
+		//Testing d3d11 only
+		//hge->Gfx_Test();
 
 		gui = new GUI();
 		gui->registerWindow(hge->System_GetState(HGE_HWND), hge, b_windowed);

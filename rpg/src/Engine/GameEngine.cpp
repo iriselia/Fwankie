@@ -57,11 +57,13 @@ void GameEngine::Init(EngineLoop* _pEngineLoop)
 
 	auto window = CreateGameWindow();
 	
-	static const char *szFormats[] = { "UNKNOWN", "R5G6B5", "X1R5G5B5", "A1R5G5B5", "X8R8G8B8", "A8R8G8B8" };
-	hgeGAPIAdapterIdentifier AdID;
-	D3DDISPLAYMODE Mode;
-	D3DFORMAT Format = D3DFMT_UNKNOWN;
-	UINT nModes, i;
+
+
+// 	static const char *szFormats[] = { "UNKNOWN", "R5G6B5", "X1R5G5B5", "A1R5G5B5", "X8R8G8B8", "A8R8G8B8" };
+// 	hgeGAPIAdapterIdentifier AdID;
+// 	D3DDISPLAYMODE Mode;
+// 	D3DFORMAT Format = D3DFMT_UNKNOWN;
+// 	UINT nModes, i;
 // 
 // 	// Init D3D
 // #if HGE_DIRECTX_VER == 9

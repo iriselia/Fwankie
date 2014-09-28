@@ -79,7 +79,7 @@ void SetupWindowsDebugConsole(void)
 #endif
 }
 
-//#define USE_HGE_MAIN
+#define USE_HGE_MAIN
 
 #ifdef USE_HGE_MAIN
 
